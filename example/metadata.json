@@ -1,0 +1,182 @@
+[
+    {
+        "stimulus": "domi_13_0000",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0001",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0002",
+        "controller_name": "MultiDominoes",
+        "num_frames": 180,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 124,
+        "first_target_contact_zone_frame": 148,
+        "first_target_hit_ground_frame": 121,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": -0.001
+        }
+    },
+    {
+        "stimulus": "domi_13_0003",
+        "controller_name": "MultiDominoes",
+        "num_frames": 170,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0004",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0005",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0006",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 110,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 106,
+        "final_target_displacement": {
+            "x": 0.009,
+            "y": 0.029,
+            "z": -0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0007",
+        "controller_name": "MultiDominoes",
+        "num_frames": 176,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 105,
+        "first_target_contact_zone_frame": 139,
+        "first_target_hit_ground_frame": 88,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.001
+        }
+    },
+    {
+        "stimulus": "domi_13_0008",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "stimulus": "domi_13_0009",
+        "controller_name": "MultiDominoes",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    }
+]
