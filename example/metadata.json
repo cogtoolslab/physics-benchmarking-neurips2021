@@ -1,6 +1,6 @@
 [
     {
-        "stimulus": "domi_13_0000",
+        "stimulus": "domi_17_0000",
         "controller_name": "MultiDominoes",
         "num_frames": 151,
         "is_trial_valid": true,
@@ -18,7 +18,7 @@
         }
     },
     {
-        "stimulus": "domi_13_0001",
+        "stimulus": "domi_17_0001",
         "controller_name": "MultiDominoes",
         "num_frames": 151,
         "is_trial_valid": true,
@@ -36,9 +36,9 @@
         }
     },
     {
-        "stimulus": "domi_13_0002",
+        "stimulus": "domi_17_0002",
         "controller_name": "MultiDominoes",
-        "num_frames": 180,
+        "num_frames": 192,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
@@ -54,9 +54,9 @@
         }
     },
     {
-        "stimulus": "domi_13_0003",
+        "stimulus": "domi_17_0003",
         "controller_name": "MultiDominoes",
-        "num_frames": 170,
+        "num_frames": 163,
         "is_trial_valid": true,
         "does_target_move": false,
         "does_target_contact_zone": false,
@@ -72,7 +72,7 @@
         }
     },
     {
-        "stimulus": "domi_13_0004",
+        "stimulus": "domi_17_0004",
         "controller_name": "MultiDominoes",
         "num_frames": 151,
         "is_trial_valid": true,
@@ -90,7 +90,7 @@
         }
     },
     {
-        "stimulus": "domi_13_0005",
+        "stimulus": "domi_17_0005",
         "controller_name": "MultiDominoes",
         "num_frames": 151,
         "is_trial_valid": true,
@@ -108,45 +108,45 @@
         }
     },
     {
-        "stimulus": "domi_13_0006",
+        "stimulus": "domi_17_0006",
         "controller_name": "MultiDominoes",
-        "num_frames": 151,
-        "is_trial_valid": true,
-        "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": true,
-        "first_target_move_frame": 110,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 106,
-        "final_target_displacement": {
-            "x": 0.009,
-            "y": 0.029,
-            "z": -0.0
-        }
-    },
-    {
-        "stimulus": "domi_13_0007",
-        "controller_name": "MultiDominoes",
-        "num_frames": 176,
+        "num_frames": 186,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
-        "first_target_move_frame": 105,
-        "first_target_contact_zone_frame": 139,
-        "first_target_hit_ground_frame": 88,
+        "first_target_move_frame": 110,
+        "first_target_contact_zone_frame": 141,
+        "first_target_hit_ground_frame": 106,
         "final_target_displacement": {
-            "x": 0.052,
-            "y": 0.05,
-            "z": 0.001
+            "x": 0.059,
+            "y": 0.06,
+            "z": 0.005
         }
     },
     {
-        "stimulus": "domi_13_0008",
+        "stimulus": "domi_17_0007",
         "controller_name": "MultiDominoes",
-        "num_frames": 151,
+        "num_frames": 158,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 83,
+        "first_target_contact_zone_frame": 116,
+        "first_target_hit_ground_frame": 73,
+        "final_target_displacement": {
+            "x": 0.062,
+            "y": 0.06,
+            "z": 0.005
+        }
+    },
+    {
+        "stimulus": "domi_17_0008",
+        "controller_name": "MultiDominoes",
+        "num_frames": 157,
         "is_trial_valid": true,
         "does_target_move": false,
         "does_target_contact_zone": false,
@@ -162,7 +162,7 @@
         }
     },
     {
-        "stimulus": "domi_13_0009",
+        "stimulus": "domi_17_0009",
         "controller_name": "MultiDominoes",
         "num_frames": 151,
         "is_trial_valid": true,
