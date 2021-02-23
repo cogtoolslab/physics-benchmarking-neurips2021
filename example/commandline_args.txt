@@ -1,11 +1,11 @@
 --num_middle_objects
 3
 --spacing_jitter
-0.2
+0.25
 --room
 box
 --mrot
-[-45,45]
+[-30,30]
 --pcolor
 1.0,1.0,1.0
 --monochrome
@@ -13,11 +13,11 @@ box
 --random
 0
 --seed
-0
+2
 --num
 10
 --dir
-/Users/db/neuroailab/physion/stimuli/scratch/domi_17
+/Users/db/neuroailab/physion/stimuli/example_dominoes
 --width
 256
 --height
