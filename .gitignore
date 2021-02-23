@@ -1,7 +1,6 @@
 .DS_Store
 .ipynb_checkpoints/
 *.csv
-*.json
 *.pdf
 *.png
 *.jpeg
@@ -54,7 +53,6 @@ __pycache__/
 
 .DS_Store
 *.csv
-*.json
 *.pdf
 *.png
 *.jpeg

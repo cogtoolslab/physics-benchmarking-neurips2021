@@ -1,0 +1,102 @@
+--dir
+/Users/db/neuroailab/physion/stimuli/example_dominoes
+--num
+10
+--temp
+D:/temp.hdf5
+--width
+256
+--height
+256
+--seed
+2
+--random
+0
+--num_views
+1
+--viewpoint
+0
+--run
+1
+--monochrome
+True
+--room
+box
+--save_passes
+_img,_id
+--save_movies
+True
+--save_labels
+True
+--num_middle_objects
+3
+--zone
+['cube']
+--target
+['cube']
+--probe
+['cube']
+--middle
+None
+--zscale
+{'x': 0.5, 'y': 0.01, 'z': 2.0}
+--zlocation
+None
+--tscale
+{'x': 0.1, 'y': 0.5, 'z': 0.25}
+--trot
+{'x': 0.0, 'y': 0.0, 'z': 0.0}
+--mrot
+[-30, 30]
+--mscale
+None
+--mmass
+[2.0, 7.0]
+--horizontal
+False
+--pscale
+{'x': 0.1, 'y': 0.5, 'z': 0.25}
+--pmass
+3.5
+--fscale
+[2.5, 2.5]
+--frot
+[0, 0]
+--foffset
+{'x': 0.0, 'y': 0.75, 'z': 0.0}
+--fjitter
+0.0
+--color
+[1.0, 0.0, 0.0]
+--zcolor
+[1.0, 1.0, 0.0]
+--pcolor
+[1.0, 1.0, 1.0]
+--mcolor
+None
+--collision_axis_length
+2.0
+--spacing_jitter
+0.25
+--remove_target
+0
+--camera_distance
+2.0
+--camera_min_height
+0.5
+--camera_max_height
+1.5
+--camera_min_angle
+0
+--camera_max_angle
+270
+--material_types
+['Wood']
+--tmaterial
+parquet_wood_red_cedar
+--zmaterial
+wood_european_ash
+--pmaterial
+parquet_wood_red_cedar
+--mmaterial
+parquet_wood_red_cedar
