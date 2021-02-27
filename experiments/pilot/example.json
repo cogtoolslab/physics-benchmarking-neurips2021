@@ -1,0 +1,3 @@
+example = {"towerID": "121319_05",
+ "imageURL": "https://curiotower.s3.amazonaws.com/121319_05.png",
+ "stim_version": "curiodrop"}
