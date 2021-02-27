@@ -154,7 +154,7 @@ function serve() {
       const query = request.body.query;
       const projection = request.body.projection;
       // hardcoded for now (TODO: get list of collections in db)
-	var collectionList = ['curiotower']; 
+	var collectionList = ['human_physics_benchmarking']; 
 	function checkCollectionForHits(collectionName, query, projection, callback) {
         const collection = database.collection(collectionName);        
         collection.find(query, projection).limit(1).toArray((err, items) => {          

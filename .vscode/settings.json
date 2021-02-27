@@ -4,5 +4,6 @@
         "titleBar.activeBackground": "#B50000",
         "titleBar.activeForeground": "#FFFCFC"
     },
-    "windowColors.🌈 BaseColor": "darkred"
+    "windowColors.🌈 BaseColor": "darkred",
+    "python.pythonPath": "/Users/felixbinder/anaconda3/envs/tools_bc/bin/python"
 }

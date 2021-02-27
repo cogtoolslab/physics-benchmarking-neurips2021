@@ -30,7 +30,7 @@ def check_exists(s3, bucket_name, stim_name):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--bucket_name', type=str, default='curiotower')
+    parser.add_argument('--bucket_name', type=str, default='human-physics-benchmarking')
     parser.add_argument('--path_to_stim', type=str, default='pngTower')
     args = parser.parse_args()
     

@@ -64,7 +64,7 @@ var serveFile = function(req, res) {
 
 function initializeWithTrials(socket) {
   var gameid = UUID();
-  var colname = 'curiotower_curiodrop';
+  var colname = 'human_physics_benchmarking_pilot';
   sendPostRequest('http://localhost:8000/db/getstims', {
     json: {
       dbname: 'stimuli',

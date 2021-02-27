@@ -9,12 +9,9 @@ function sendData(data) {
 function Experiment() {
   //cogsci 2020 data (run_0)
   this.type = 'image-button-response',
-  // this.dbname = 'curiotower';
-  // this.colname = 'tdw-height3Jitter3';
-  // this.iterationName = 'run_0';
 
-  this.dbname = 'curiotower';
-  this.colname = 'curiodrop';
+  this.dbname = 'human_physics_benchmarking';
+  this.colname = 'pilot';
   this.iterationName = 'run_1';
   // this.numTrials = 6; // TODO: dont hard code this, judy! infer it from the data
   this.condition = 'interesting' //_.sample([0, 1]) == 1 ? 'interesting' : 'stable';

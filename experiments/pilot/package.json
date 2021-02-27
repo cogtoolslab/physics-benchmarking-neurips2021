@@ -1,6 +1,6 @@
 {
-  "name": "curiotower",
-  "description": "what makes a tower interesting?",
+  "name": "human_physics_benchmarking",
+  "description": "",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -33,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cogtoolslab/curiotower.git"
+    "url": "git+https://github.com/cogtoolslab/human_physics_benchmarking.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cogtoolslab/curiotower/issues"
+    "url": "https://github.com/cogtoolslab/human_physics_benchmarking/issues"
   },
-  "homepage": "https://github.com/cogtoolslab/curiotower#readme"
+  "homepage": "https://github.com/cogtoolslab/human_physics_benchmarking#readme"
 }
