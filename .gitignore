@@ -161,3 +161,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# secrets
+.aws/credentials
