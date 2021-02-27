@@ -65,7 +65,7 @@ var serveFile = function(req, res) {
 function initializeWithTrials(socket) {
   var gameid = UUID();
   var colname = 'human_physics_benchmarking_pilot';
-  sendPostRequest('http://localhost:8000/db/getstims', {
+  sendPostRequest('http://localhost:8008/db/getstims', {
     json: {
       dbname: 'stimuli',
       colname: colname,
@@ -102,7 +102,7 @@ var UUID = function() {
 
 var writeDataToMongo = function(data) {
   sendPostRequest(
-    'http://localhost:8000/db/insert',
+    'http://localhost:8008/db/insert',
     { json: data },
     (error, res, body) => {
       if (!error && res.statusCode === 200) {
