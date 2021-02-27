@@ -31,7 +31,8 @@ def check_exists(s3, bucket_name, stim_name):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--bucket_name', type=str, default='human-physics-benchmarking')
-    parser.add_argument('--path_to_stim', type=str, default='pngTower')
+    parser.add_argument('--path_to_stim', type=str, default='stimuli')
+    parser.add_argument('--overwrite', type=bool, default=False)
     args = parser.parse_args()
     
     ## set up paths, etc.
@@ -53,10 +54,10 @@ if __name__ == "__main__":
         print('Created new bucket.')
     except:
         b = s3.Bucket(bucket_name)
-        print('Bucket already exists.')
+        print('Bucket already exists or credentials missing')
 
     ## do we want to overwrite files on s3?
-    overwrite = False
+    overwrite = args.overwrite
 
     ## set bucket and objects to public
     b.Acl().put(ACL='public-read') ## sets bucket to public
