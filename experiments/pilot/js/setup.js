@@ -8,8 +8,8 @@ function sendData(data) {
 // Define trial object with boilerplate
 function Experiment() {
   this.type = 'video-button-response',
-  this.dbname = 'human_physics_benchmarking';
-  this.colname = 'pilot';
+  this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
+  this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
   this.iterationName = 'run_1';
   this.condition = 'prediction';
   this.prompt = 'What is going to happen?';
@@ -66,7 +66,8 @@ function setupGame() {
         prolificID:  prolificID,
         studyID: studyID, 
         sessionID: sessionID,
-        gameID: gameid
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label
       });
     });
     console.log('trials', trials);
