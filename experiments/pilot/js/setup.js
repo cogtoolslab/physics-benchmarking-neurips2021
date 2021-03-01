@@ -7,15 +7,12 @@ function sendData(data) {
 
 // Define trial object with boilerplate
 function Experiment() {
-  //cogsci 2020 data (run_0)
-  this.type = 'image-button-response',
-
+  this.type = 'video-button-response',
   this.dbname = 'human_physics_benchmarking';
   this.colname = 'pilot';
   this.iterationName = 'run_1';
-  // this.numTrials = 6; // TODO: dont hard code this, judy! infer it from the data
-  this.condition = 'interesting' //_.sample([0, 1]) == 1 ? 'interesting' : 'stable';
-  this.prompt = this.condition == 'interesting' ? 'How interesting is this?' : 'How stable is this?';
+  this.condition = 'prediction';
+  this.prompt = 'What is going to happen?';
 };
 
 function setupGame() {
@@ -30,13 +27,14 @@ function setupGame() {
     //var turkInfo = jsPsych.turk.turkInfo();
 
     // These are flags to control which trial types are included in the experiment
-    const includeIntro = true;
-    const includeSurvey = true;
-    const includeGoodbye = true;
+    const includeIntro = false;
+    const includeSurvey = false;
+    const includeGoodbye = false;
 
     var gameid = d.gameid;
-    var meta = _.shuffle(d.meta);
-    console.log('meta', meta);    
+    var stims = d.stims
+    console.log('gameid', gameid);    
+    console.log('stims', stims);    
       
     var main_on_start = function (trial) {
       console.log('start of trial');
@@ -45,16 +43,25 @@ function setupGame() {
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
       socket.emit('currentData', data);
-      console.log('emitting data');
+      console.log('emitting data',data);
     }
 
     // Now construct trials list    
     var experimentInstance = new Experiment;
+
+    // lets make *really* sure that we save this data
+    jsPsych.data.addProperties({
+      dbname: experimentInstance.dbname,
+      colname: experimentInstance.colname,
+      iterationName: experimentInstance.iterationName,
+      condition: experimentInstance.condition
+    });
     
-    // loop over value in meta, then append to each the experiment instance info and the prolific, and trial num
-    var trials = _.map(meta, function(n,i) {
+    var trials = _.map(stims, function(n,i) {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
+        stimulus: [n.stim_url],
+        choices: ["Prediction 1", "Predction 2"],
         on_finish: main_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
@@ -62,22 +69,6 @@ function setupGame() {
         gameID: gameid
       });
     });
-
-
-    // var trials = _.map(_.range(experimentInstance.numTrials), function (n, i) {
-    //   return _.extend({}, experimentInstance, {
-    //     trialNum: i,
-    //     on_finish: main_on_finish,
-    //     on_start: main_on_start,
-    //     image_url: 'URL_PLACEHOLDER',
-    //     towerID: 'TOWERID_PLACEHOLDER',
-    //   });
-    // });
-
-    // var trials = _.flatten(_.map(session.trials, function(trialData, i) {
-    //   var trial = _.extend({}, additionalInfo, trialData, {trialNum: i});
-    //   return trial;
-    // }));
     console.log('trials', trials);
 
 
@@ -231,20 +222,6 @@ function setupGame() {
       ],
       on_finish: main_on_finish
     });
-
-
-
-
-    // var exitSurveyText = {
-    //   type: 'survey-text',
-    //   questions: [
-    //     { prompt: "Please enter your age:" },
-    //     { prompt: "What strategies did you use to rate the towers?", rows: 5, columns: 40 },
-    //     { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-    //     { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-    //     { prompt: "Any final thoughts?", rows: 5, columns: 40 }
-    //   ]
-    // };
 
     // add goodbye page
     var goodbye = {
