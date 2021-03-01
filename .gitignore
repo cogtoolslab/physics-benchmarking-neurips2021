@@ -167,3 +167,4 @@ venv.bak/
 
 .vscode/settings.json
 stimuli/human-physics-benchmarking-pilot_example.js
+.vscode/launch.json
