@@ -130,7 +130,7 @@ function serve() {
 
       // sort by number of times previously served up and take the first
       collection.aggregate([
-        { $addFields: { numGames: { $size: '$games' } } },
+        // { $addFields: { numGames: { $size: '$games' } } },
         { $sort: { numGames: 1 } },
         { $limit: 1 }
       ]).toArray((err, results) => {
@@ -138,8 +138,12 @@ function serve() {
           console.log(err);
         } else {
             // Immediately mark as annotated so others won't get it too
-
-          markAnnotation(collection, request.body.gameid, results[0]['_id']);
+          try{
+            markAnnotation(collection, request.body.gameid, results[0]['_id']);}
+            catch (err){
+              console.log("Couldn't mark gameID as served",err);
+            }
+            console.log("Sending",results[0]);
             response.send(results[0]);
         }
       });

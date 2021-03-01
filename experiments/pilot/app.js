@@ -62,9 +62,14 @@ var serveFile = function(req, res) {
   return res.sendFile(fileName, {root: __dirname});
 };
 
+function omit(obj, props) { //helper function to remove _id of stim object
+  props = props instanceof Array ? props : [props]
+  return eval(`(({${props.join(',')}, ...o}) => o)(obj)`)
+}
+
 function initializeWithTrials(socket) {
   var gameid = UUID();
-  var colname = 'human_physics_benchmarking_pilot';
+  var colname = 'human-physics-benchmarking-pilot_example'; //insert DATASETNAME here
   sendPostRequest('http://localhost:8008/db/getstims', {
     json: {
       dbname: 'stimuli',
@@ -73,12 +78,12 @@ function initializeWithTrials(socket) {
       gameid: gameid
     }
   }, (error, res, body) => {
-    if (!error && res.statusCode === 200) {
+    if (!error && res.statusCode === 200 && typeof body !== 'undefined')  {
       // send trial list (and id) to client
-      var packet = {
+      var packet = { 
         gameid: gameid,
-        meta: body.meta,
-        stim_version: body.stim_version
+        stims: omit(body.stims,['_id']),
+        stim_version: body.stim_version //TODO fix stim version
       };
       socket.emit('onConnected', packet);
     } else {
