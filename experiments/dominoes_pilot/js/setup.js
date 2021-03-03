@@ -25,6 +25,8 @@ function FamiliarizationExperiment() {
 }
 
 var last_correct = undefined;  //was the last trial correct? Needed for feedback in familiarization
+var correct = 0;
+var total = 0;
 
 function setupGame() {
   socket.on('onConnected', function (d) {
@@ -42,9 +44,6 @@ function setupGame() {
     const includeSurvey = true;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
-
-    var correct = 0;
-    var total = 0;
 
     var gameid = d.gameid;
     var stims = d.stims
@@ -144,7 +143,10 @@ function setupGame() {
       show_clickable_nav: true,
       allow_backward: false,
       delay: false,
-      on_finish: () => {}
+      on_finish: () => {
+        correct = 0;
+        total = 0; //reset the counters for the console feedback
+      }
     };
 
     familiarization_trials = _.flatten(_.zip(familiarization_trials_pre,familiarization_trials_post));
@@ -269,29 +271,6 @@ function setupGame() {
       on_finish: main_on_finish
     });
 
-
-    // var exitSurveyChoice = {
-    //   type: 'survey-multi-choice',
-    //   preamble: "<strong><u>Survey</u></strong>",
-    //   questions: [{
-    //     prompt: "What is your sex?",
-    //     name: "participantSex",
-    //     horizontal: true,
-    //     options: ["Male", "Female", "Neither/Other/Do Not Wish To Say"],
-    //     required: true
-    //   },
-    //   {
-    //     prompt: "Did you encounter any technical difficulties while completing this study? \
-    //         This could include: images were glitchy (e.g., did not load), ability to click \
-    //         was glitchy, or sections of the study did \
-    //         not load properly.",
-    //     name: "technicalDifficultiesBinary",
-    //     horizontal: true,
-    //     options: ["Yes", "No"],
-    //     required: true
-    //   }
-    //   ],
-    // };
     var surveyTextInfo = _.omit(_.extend({}, new Experiment), ['type', 'dev_mode']);
     var exitSurveyText = _.extend({}, surveyTextInfo, {
       type: 'survey-text',
@@ -309,8 +288,7 @@ function setupGame() {
     var goodbye = {
       type: 'instructions',
       pages: [
-        'Congrats! You are all done. Thanks for participating in our game! \
-        Click \'Next\' to submit this study.',
+        'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct! Click \'Next\' to submit this study.',
       ],
       show_clickable_nav: true,
       allow_backward: false,
