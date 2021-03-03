@@ -70,7 +70,7 @@ function setupGame() {
         else{
           console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
         }; //TODO take out before production
-      var last_correct = data.correct; //store the last correct for familiarization trials
+      last_correct = data.correct; //store the last correct for familiarization trials
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
