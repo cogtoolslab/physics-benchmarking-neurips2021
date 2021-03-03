@@ -11,9 +11,20 @@ function Experiment() {
   this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
   this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
   this.iterationName = 'run_1';
+  // this.phase = 'experiment';
   this.condition = 'prediction';
   this.prompt = 'Is the red block going to hit the yellow area?';
+  this.choices = ["No", "Yes"];
 };
+
+function FamiliarizationExperiment() {
+  // extends Experiment to provide basis for familizarization trials
+  Experiment.call(this);
+  this.condition = 'familiarization_prediction';
+  // this.phase = 'familiarization';
+}
+
+var last_correct = undefined;  //was the last trial correct? Needed for feedback in familiarization
 
 function setupGame() {
   socket.on('onConnected', function (d) {
@@ -30,14 +41,17 @@ function setupGame() {
     const includeIntro = true;
     const includeSurvey = true;
     const includeGoodbye = true;
+    const includeFamiliarizationTrials = true;
 
     var correct = 0;
     var total = 0;
 
     var gameid = d.gameid;
     var stims = d.stims
+    var familiarization_stims = d.familiarization_stims
     console.log('gameid', gameid);    
     console.log('stims', stims);    
+    console.log('familiarization_stims', familiarization_stims);    
       
     var main_on_start = function (trial) {
       console.log('start of trial');
@@ -56,13 +70,15 @@ function setupGame() {
         else{
           console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
         }; //TODO take out before production
+      var last_correct = data.correct; //store the last correct for familiarization trials
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
-
+    
     // Now construct trials list    
     var experimentInstance = new Experiment;
-
+    var familiarizationExperimentInstance = new FamiliarizationExperiment;
+    
     var fixation = { // per https://stackoverflow.com/questions/35826810/fixation-cross-in-jspsych
       type: 'html-keyboard-response',
       stimulus: '<div style="font-size:60px">+</div>',
@@ -72,14 +88,74 @@ function setupGame() {
       on_finish: ()=>{} // do nothing on trial end
     }; 
     
+    // set up familiarization trials
+    var familiarization_trials_pre =  _.map(familiarization_stims, function(n,i) {
+      return _.extend({}, familiarizationExperimentInstance, n, {
+        trialNum: i,
+        stimulus: [n.stim_url],
+        stop: 1.5, //STIM DURATION stop the video after X seconds
+        response_allowed_while_playing: true,
+        width: 500,
+        height: 500,
+        post_trial_gap: 0,
+        on_finish: main_on_finish,
+        prolificID:  prolificID,
+        studyID: studyID, 
+        sessionID: sessionID,
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label,
+        stim_ID: n.stim_ID
+        // save_trial_parameters: {} //selectively save parameters
+      });
+    });
+
+    var familiarization_trials_post =  _.map(familiarization_stims, function(n,i) {
+      return _.extend({}, familiarizationExperimentInstance, n, {
+        trialNum: i,
+        stimulus: [n.stim_url],
+        // stop: 1.5, //STIM DURATION stop the video after X seconds
+        response_allowed_while_playing: false,
+        width: 500,
+        height: 500,
+        post_trial_gap: 0,
+        on_finish: () => {}, //do nothing after trial shown
+        prolificID:  prolificID,
+        studyID: studyID, 
+        sessionID: sessionID,
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label,
+        stim_ID: n.stim_ID,
+        choices: ["Next"],
+        prompt: () => {if(last_correct) {
+            return "Nice, you predicted correctly. Above, you see the full video.";
+          }
+          else {
+            return "Sorry, you got that one wrong. Above, you see the full video.";
+          }}
+        // save_trial_parameters: {} //selectively save parameters
+      });
+    });
+
+    var end_familiarization = {
+      type: 'instructions',
+      pages: [
+        'You\'re now ready to start the full experiment.',
+      ],
+      show_clickable_nav: true,
+      allow_backward: false,
+      delay: false,
+      on_finish: () => {}
+    };
+
+    familiarization_trials = _.flatten(_.zip(familiarization_trials_pre,familiarization_trials_post));
+    familiarization_trials.push(end_familiarization);
+    
     // Variables shared for all trials. Set up the important stuff here.
     var trials = _.map(stims, function(n,i) {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        choices: ["No", "Yes"],
-        stop: 2, //stop the video after X seconds
-        pre_presentation_delay: 1, //how long to wait before showing the stimulus
+        stop: 1.5, //STIM DURATION stop the video after X seconds
         response_allowed_while_playing: true,
         width: 500,
         height: 500,
@@ -97,7 +173,8 @@ function setupGame() {
 
     //add fixation crosses
     trials = _.flatten(_.zip(_.fill(Array(trials.length),fixation), trials));
-    console.log('trials', trials);
+    console.log('experiment trials', trials);
+    console.log('familiarization trials', familiarization_trials);
 
 
 
@@ -233,7 +310,7 @@ function setupGame() {
       type: 'instructions',
       pages: [
         'Congrats! You are all done. Thanks for participating in our game! \
-        Click NEXT to submit this study.',
+        Click \'Next\' to submit this study.',
       ],
       show_clickable_nav: true,
       allow_backward: false,
@@ -249,6 +326,7 @@ function setupGame() {
     };
 
     // add all experiment elements to trials array
+    if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
     if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
