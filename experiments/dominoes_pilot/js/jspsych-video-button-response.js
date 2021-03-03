@@ -2,8 +2,10 @@
  * jspsych-video-button-response
  * Josh de Leeuw
  *
- * plugin for playing a video file and getting a button response
+ * plugin for playing a video file and getting a button response.
  *
+ * ADAPTED to hide the video after stopping it—DO NOT simply overwrite.
+ * 
  * documentation: docs.jspsych.org
  *
  **/
@@ -234,6 +236,7 @@ jsPsych.plugins["video-button-response"] = (function() {
         var currenttime = video_element.currentTime;
         if(currenttime >= trial.stop){
           video_element.pause();
+          video_element.style.visibility = "hidden"; //hide the video after stop
         }
       })
     }

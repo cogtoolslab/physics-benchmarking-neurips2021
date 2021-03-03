@@ -69,7 +69,7 @@ function omit(obj, props) { //helper function to remove _id of stim object
 
 function initializeWithTrials(socket) {
   var gameid = UUID();
-  var colname = 'human-physics-benchmarking-pilot_example'; //insert DATASETNAME here
+  var colname = 'human-physics-benchmarking-dominoes-pilot_example'; //insert STIMULI DATASETNAME here
   sendPostRequest('http://localhost:8008/db/getstims', {
     json: {
       dbname: 'stimuli',
@@ -83,6 +83,7 @@ function initializeWithTrials(socket) {
       var packet = { 
         gameid: gameid,
         stims: omit(body.stims,['_id']),
+        familiarization_stims: omit(body.familiarization_stims,['_id']),
         stim_version: body.stim_version //TODO fix stim version
       };
       socket.emit('onConnected', packet);

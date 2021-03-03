@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-This repo depends on outputs from `tdw_physics` (TODO: EMBED LINK) and `physopt` (TODO: EMBED LINK).
+This repo depends on outputs from [`tdw_physics`](https://github.com/threedworld-mit/tdw) and [`physopt`](https://github.com/neuroailab/physopt).
 
 
 ## Repo organization

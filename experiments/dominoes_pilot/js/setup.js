@@ -8,12 +8,23 @@ function sendData(data) {
 // Define trial object with boilerplate
 function Experiment() {
   this.type = 'video-button-response',
-  this.dbname = 'human_physics_benchmarking';
-  this.colname = 'pilot';
+  this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
+  this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
   this.iterationName = 'run_1';
+  // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'What is going to happen?';
+  this.prompt = 'Is the red block going to hit the yellow area?';
+  this.choices = ["No", "Yes"];
 };
+
+function FamiliarizationExperiment() {
+  // extends Experiment to provide basis for familizarization trials
+  Experiment.call(this);
+  this.condition = 'familiarization_prediction';
+  // this.phase = 'familiarization';
+}
+
+var last_correct = undefined;  //was the last trial correct? Needed for feedback in familiarization
 
 function setupGame() {
   socket.on('onConnected', function (d) {
@@ -27,14 +38,20 @@ function setupGame() {
     //var turkInfo = jsPsych.turk.turkInfo();
 
     // These are flags to control which trial types are included in the experiment
-    const includeIntro = false;
-    const includeSurvey = false;
-    const includeGoodbye = false;
+    const includeIntro = true;
+    const includeSurvey = true;
+    const includeGoodbye = true;
+    const includeFamiliarizationTrials = true;
+
+    var correct = 0;
+    var total = 0;
 
     var gameid = d.gameid;
     var stims = d.stims
+    var familiarization_stims = d.familiarization_stims
     console.log('gameid', gameid);    
     console.log('stims', stims);    
+    console.log('familiarization_stims', familiarization_stims);    
       
     var main_on_start = function (trial) {
       console.log('start of trial');
@@ -42,67 +59,132 @@ function setupGame() {
 
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
+      jsPsych.data.addProperties(jsPsych.currentTrial()
+      ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
+      // lets also add correctness info to data
+      data.correct = data.target_hit_zone_label == data.response;
+      if(data.correct){correct+=1};
+      total += 1;
+      if(data.correct){
+        console.log("Correct, got ",_.round((correct/total)*100,2),"% correct")}
+        else{
+          console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
+        }; //TODO take out before production
+      var last_correct = data.correct; //store the last correct for familiarization trials
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
-
+    
     // Now construct trials list    
     var experimentInstance = new Experiment;
-
-    // lets make *really* sure that we save this data
-    jsPsych.data.addProperties({
-      dbname: experimentInstance.dbname,
-      colname: experimentInstance.colname,
-      iterationName: experimentInstance.iterationName,
-      condition: experimentInstance.condition
-    });
+    var familiarizationExperimentInstance = new FamiliarizationExperiment;
     
-    var trials = _.map(stims, function(n,i) {
-      return _.extend({}, experimentInstance, n, {
+    var fixation = { // per https://stackoverflow.com/questions/35826810/fixation-cross-in-jspsych
+      type: 'html-keyboard-response',
+      stimulus: '<div style="font-size:60px">+</div>',
+      choices: jsPsych.NO_KEYS,
+      trial_duration: 1000, // in ms
+      post_trial_gap: 0,
+      on_finish: ()=>{} // do nothing on trial end
+    }; 
+    
+    // set up familiarization trials
+    var familiarization_trials_pre =  _.map(familiarization_stims, function(n,i) {
+      return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        choices: ["Prediction 1", "Predction 2"],
+        stop: 1.5, //STIM DURATION stop the video after X seconds
+        response_allowed_while_playing: true,
+        width: 500,
+        height: 500,
+        post_trial_gap: 0,
         on_finish: main_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
         sessionID: sessionID,
-        gameID: gameid
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label,
+        stim_ID: n.stim_ID
+        // save_trial_parameters: {} //selectively save parameters
       });
     });
-    console.log('trials', trials);
+
+    var familiarization_trials_post =  _.map(familiarization_stims, function(n,i) {
+      return _.extend({}, familiarizationExperimentInstance, n, {
+        trialNum: i,
+        stimulus: [n.stim_url],
+        // stop: 1.5, //STIM DURATION stop the video after X seconds
+        response_allowed_while_playing: false,
+        width: 500,
+        height: 500,
+        post_trial_gap: 0,
+        on_finish: () => {}, //do nothing after trial shown
+        prolificID:  prolificID,
+        studyID: studyID, 
+        sessionID: sessionID,
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label,
+        stim_ID: n.stim_ID,
+        choices: ["Next"],
+        prompt: () => {if(last_correct) {
+            return "Nice, you predicted correctly. Above, you see the full video.";
+          }
+          else {
+            return "Sorry, you got that one wrong. Above, you see the full video.";
+          }}
+        // save_trial_parameters: {} //selectively save parameters
+      });
+    });
+
+    var end_familiarization = {
+      type: 'instructions',
+      pages: [
+        'You\'re now ready to start the full experiment.',
+      ],
+      show_clickable_nav: true,
+      allow_backward: false,
+      delay: false,
+      on_finish: () => {}
+    };
+
+    familiarization_trials = _.flatten(_.zip(familiarization_trials_pre,familiarization_trials_post));
+    familiarization_trials.push(end_familiarization);
+    
+    // Variables shared for all trials. Set up the important stuff here.
+    var trials = _.map(stims, function(n,i) {
+      return _.extend({}, experimentInstance, n, {
+        trialNum: i,
+        stimulus: [n.stim_url],
+        stop: 1.5, //STIM DURATION stop the video after X seconds
+        response_allowed_while_playing: true,
+        width: 500,
+        height: 500,
+        post_trial_gap: 0,
+        on_finish: main_on_finish,
+        prolificID:  prolificID,
+        studyID: studyID, 
+        sessionID: sessionID,
+        gameID: gameid,
+        target_hit_zone_label: n.target_hit_zone_label,
+        stim_ID: n.stim_ID
+        // save_trial_parameters: {} //selectively save parameters
+      });
+    });
+
+    //add fixation crosses
+    trials = _.flatten(_.zip(_.fill(Array(trials.length),fixation), trials));
+    console.log('experiment trials', trials);
+    console.log('familiarization trials', familiarization_trials);
 
 
 
 
     var instructionsHTML = {
-      'str1': ['<p> On each trial, you will see an image of a block structure. Your goal is to rate how '+ experimentInstance.condition + ' it is. \
-      The rating scale ranges from 1 (not ' + experimentInstance.condition + ' at all) to 5 (extremely ' + experimentInstance.condition + '). </p> <p>Here are \
-      some example towers that should be given a score of 1 and some towers that should be given a score of 5.</p>',
-      '<div class="example_images">', 
-        '<div class="example_image" style="float:left;">', 
-          '<p style="text-align:center;">Example tower with ' + experimentInstance.condition + ' score of 1: </p>',
-          '<div class="eg_div"><img class="eg_img" src="assets/example-not-' + experimentInstance.condition + '.jpg" width="200" height="200"></div>',
-        '</div>',
-        '<div class="example_image" style="float:right;">',
-          '<p style="text-align:center;">Example tower with ' + experimentInstance.condition + ' score of 5: </p>',
-          '<div class="eg_div"><img class="eg_img" src="assets/example-' + experimentInstance.condition + '.jpg" width="200" height="200"></div>',
-        '</div>',
-      '</div>'].join(' '),
-      // 'str3': ['<p> If you notice any of the following, this should reduce the score you assign to that tracing:</p>',
-      //     '<ul><li>Adding extra objects to the tracing (e.g. scribbles, heart, flower, smiling faces, text)<img class="notice_img" src="img/extra.png"></li>',
-      //     '<li>Painting or "filling in" the reference shape, rather than tracing its outline<img class="notice_img" src="img/paint.png"></li></ul>',].join(' '),
-      'str2': '<p>After a brief two-second delay, \
-      the buttons will become active (dark gray) so you can submit your rating. Please take your time to provide as accurate of a rating as you can.</p> </p>',
-      'str3': "<p> When you finish, please click the submit button to finish the task. If a popup appears asking you if you are sure you want to leave the page, \
-      you must click YES to confirm that you want to leave the page. This will cause the study to submit. Let's begin!"
+      'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether a certain event will happen after the video ends. In this case, you\'ll be asked if the red object will touch the yellow area.']
     };
 
     // add consent pages
     consentHTML = {
-      'str1': '<p style="text-align:center;"> <b> We are scientists interested in understanding how computers can learn like children through play. </b></p> \
-      <p style="text-align:center;">In a previous study, we gave children a set of plastic shapes which they could arrange in any way they liked. \
-      In this study, you will be viewing some of the arrangements of computer generated towers and making judgments about them. \
-      Your task is to rate each tower on a 5-point scale. </p>',
       'str2': ["<u><p id='legal'>Consent to Participate</p></u>",
         "<p id='legal'>By completing this study, you are participating in a \
       study being performed by cognitive scientists in the UC San Diego \
@@ -130,12 +212,12 @@ function setupGame() {
       Institutional Review Board.</p><p>Click 'Next' to continue \
       participating in this study.</p>"
       ].join(' '),
-      'str4': '<p> We expect this study to take approximately 15-20 minutes to complete, \
+      'str4': '<p> We expect this study to take approximately XXX-XXX minutes to complete, \
       including the time it takes to read instructions.</p>',
       'str5': "<p>If you encounter a problem or error, send us an email \
       (cogtoolslab.requester@gmail.com) and we will make sure you're compensated \
       for your time! Please pay attention and do your best! Thank you!</p><p> Note: \
-        We recommend using Chrome. We have not tested this study in other browsers.</p>"
+        We recommend using Firefox or Chrome. We have not tested this study in other browsers.</p>"
 
     };
 
@@ -143,12 +225,12 @@ function setupGame() {
     var introMsg = {
       type: 'instructions',
       pages: [
-        consentHTML.str1,
+        // consentHTML.str1,
         consentHTML.str2,
         consentHTML.str3,
         instructionsHTML.str1,
-        instructionsHTML.str2,
-        instructionsHTML.str3,
+        // instructionsHTML.str2,
+        // instructionsHTML.str3,
         consentHTML.str4,
         consentHTML.str5,
         // instructionsHTML.str5,
@@ -215,7 +297,7 @@ function setupGame() {
       type: 'survey-text',
       questions: [
         { prompt: "Please enter your age:" },
-        { prompt: "What strategies did you use to rate the towers?", rows: 5, columns: 40 },
+        { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
         { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         { prompt: "Any final thoughts?", rows: 5, columns: 40 }
@@ -228,7 +310,7 @@ function setupGame() {
       type: 'instructions',
       pages: [
         'Congrats! You are all done. Thanks for participating in our game! \
-        Click NEXT to submit this study.',
+        Click \'Next\' to submit this study.',
       ],
       show_clickable_nav: true,
       allow_backward: false,
@@ -244,6 +326,7 @@ function setupGame() {
     };
 
     // add all experiment elements to trials array
+    if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
     if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
