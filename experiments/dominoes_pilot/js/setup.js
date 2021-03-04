@@ -59,6 +59,12 @@ function setupGame() {
 
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
+      socket.emit('currentData', data);
+      console.log('emitting data',data);
+    }
+
+    // at end of each trial save data locally and send data to server
+    var stim_on_finish = function (data) {
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
@@ -97,7 +103,7 @@ function setupGame() {
         width: 500,
         height: 500,
         post_trial_gap: 0,
-        on_finish: main_on_finish,
+        on_finish: stim_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
         sessionID: sessionID,
@@ -161,7 +167,7 @@ function setupGame() {
         width: 500,
         height: 500,
         post_trial_gap: 0,
-        on_finish: main_on_finish,
+        on_finish: stim_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
         sessionID: sessionID,
