@@ -237,6 +237,7 @@ jsPsych.plugins["video-button-response"] = (function() {
         if(currenttime >= trial.stop){
           video_element.pause();
           video_element.style.visibility = "hidden"; //hide the video after stop
+          enable_buttons(); //enable response after video stopped
         }
       })
     }

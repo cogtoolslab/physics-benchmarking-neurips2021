@@ -11,6 +11,7 @@ function Experiment() {
   this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
   this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
   this.iterationName = 'run_1';
+  this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
   this.prompt = 'Is the red block going to hit the yellow area?';
@@ -93,7 +94,6 @@ function setupGame() {
         trialNum: i,
         stimulus: [n.stim_url],
         stop: 1.5, //STIM DURATION stop the video after X seconds
-        response_allowed_while_playing: true,
         width: 500,
         height: 500,
         post_trial_gap: 0,
@@ -158,7 +158,6 @@ function setupGame() {
         trialNum: i,
         stimulus: [n.stim_url],
         stop: 1.5, //STIM DURATION stop the video after X seconds
-        response_allowed_while_playing: true,
         width: 500,
         height: 500,
         post_trial_gap: 0,
