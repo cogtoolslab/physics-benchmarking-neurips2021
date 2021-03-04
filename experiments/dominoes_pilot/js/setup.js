@@ -214,7 +214,7 @@ function setupGame() {
       Institutional Review Board.</p><p>Click 'Next' to continue \
       participating in this study.</p>"
       ].join(' '),
-      'str4': '<p> We expect this study to take approximately XXX-XXX minutes to complete, \
+      'str4': '<p> We expect this study to take approximately 10 to 15 minutes to complete, \
       including the time it takes to read instructions.</p>',
       'str5': "<p>If you encounter a problem or error, send us an email \
       (cogtoolslab.requester@gmail.com) and we will make sure you're compensated \
@@ -288,8 +288,13 @@ function setupGame() {
     var goodbye = {
       type: 'instructions',
       pages: [
-        'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct! Click \'Next\' to submit this study.',
+        'Congrats! You are all done. Thanks for participating in our game. \  Click \'Next\' to submit this study.',
       ],
+      on_start: (trial) => { //write the score to HTML
+        trial.pages = [
+          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct! Click \'Next\' to submit this study.',
+        ];
+      },
       show_clickable_nav: true,
       allow_backward: false,
       delay: false,
