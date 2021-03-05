@@ -89,7 +89,10 @@ function setupGame() {
       type: 'html-keyboard-response',
       stimulus: '<div style="font-size:60px">+</div>',
       choices: jsPsych.NO_KEYS,
-      trial_duration: 1000, // in ms
+      // trial_duration: 1000, // in ms
+      on_start: (trial) => {
+        trial.trial_duration = Math.random() * 1000 + 500 //random duration in milliseconds
+      },
       post_trial_gap: 0,
       on_finish: ()=>{} // do nothing on trial end
     }; 
