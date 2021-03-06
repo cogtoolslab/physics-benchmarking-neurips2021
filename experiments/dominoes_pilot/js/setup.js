@@ -124,7 +124,7 @@ function setupGame() {
     var familiarization_trials_post =  _.map(familiarization_stims, function(n,i) {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
-        stimulus: [n.stim_url],
+        stimulus: [n.stim_url], //rename stim_url for the video plugin
         // stop: 1.5, //STIM DURATION stop the video after X seconds
         response_allowed_while_playing: false,
         width: 500,
@@ -170,7 +170,7 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        stimulus_metadata: n, //to dump all the metadata back to mongodb
+        // stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
