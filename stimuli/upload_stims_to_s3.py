@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""NOTE: while this file might be useful to script uploading to S3, use `upload_stims_to_s3.ipynb` for the recent code instead."""
+
 import os
 from glob import glob
 import boto3
