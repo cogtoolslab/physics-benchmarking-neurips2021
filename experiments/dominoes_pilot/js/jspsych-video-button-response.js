@@ -269,7 +269,7 @@ jsPsych.plugins["video-button-response"] = (function() {
       var trial_data = {
         rt: response.rt,
         stimulus: trial.stimulus,
-        response: response.button
+        response: trial.choices[response.button] //return the button label instead of index
       };
 
       // clear the display

@@ -5,6 +5,10 @@ function sendData(data) {
   });
 }
 
+//randomize button order on a subject basis
+var get_random_choices = () => {if(Math.random() > .5){return ["No", "Yes"];}else{return ["Yes", "No"];}};
+var choices = get_random_choices(); //randomize button order
+
 // Define trial object with boilerplate
 function Experiment() {
   this.type = 'video-button-response',
@@ -15,7 +19,7 @@ function Experiment() {
   // this.phase = 'experiment';
   this.condition = 'prediction';
   this.prompt = 'Is the red block going to hit the yellow area?';
-  this.choices = ["No", "Yes"];
+  this.choices = choices;
 };
 
 function FamiliarizationExperiment() {
@@ -68,7 +72,7 @@ function setupGame() {
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
-      data.correct = data.target_hit_zone_label == data.response;
+      data.correct = data.target_hit_zone_label == (data.response == "Yes");
       if(data.correct){correct+=1};
       total += 1;
       if(data.correct){
@@ -166,6 +170,7 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
+        stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
