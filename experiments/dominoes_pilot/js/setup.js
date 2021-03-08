@@ -47,6 +47,7 @@ function setupGame() {
     // These are flags to control which trial types are included in the experiment
     const includeIntro = true;
     const includeSurvey = true;
+    const includeMentalRotation = true;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
 
@@ -271,6 +272,40 @@ function setupGame() {
         required: true
       },
       {
+        prompt: "How old are you?",
+        name: "participantAge",
+        horizontal: false,
+        options: [
+          "Under 12 years old",
+          "12-17 years old",
+          "18-24 years old",
+          "25-34 years old",
+          "35-44 years old",
+          "45-54 years old",
+          "55-64 years old",
+          "65-74 years old",
+          "75 years or older",
+          ],
+        required: true
+      },
+      {
+        prompt: "What is the highest level of education you have completed?",
+        name: "participantEducation",
+        horizontal: false,
+        options: [
+          "High school",
+          "Some high school",
+          "Bachelor’s degree",
+          "Master’s degree",
+          "Ph.D. or higher",
+          "Associates degree",
+          "Trade school",
+          "Prefer not to say",
+          "Other",
+          ],
+        required: true
+      },
+      {
         prompt: "Did you encounter any technical difficulties while completing this study? \
             This could include: images were glitchy (e.g., did not load), ability to click \
             was glitchy, or sections of the study did \
@@ -288,10 +323,9 @@ function setupGame() {
     var exitSurveyText = _.extend({}, surveyTextInfo, {
       type: 'survey-text',
       questions: [
-        { prompt: "Please enter your age:" },
         { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
-        { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-        { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
+        // { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
+        // { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         { prompt: "Any final thoughts?", rows: 5, columns: 40 }
       ],
       on_finish: main_on_finish
@@ -305,7 +339,7 @@ function setupGame() {
       ],
       on_start: (trial) => { //write the score to HTML
         trial.pages = [
-          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct! Click \'Next\' to submit this study.',
+          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct🎉! Click \'Next\' to submit this study.',
         ];
       },
       show_clickable_nav: true,
@@ -321,11 +355,25 @@ function setupGame() {
       // window.open("https://app.prolific.co/submissions/complete?cc=7A827F20","_self");
     };
 
+    // mental rotation task
+    var mentalRotationChoice = {
+      type: 'image-button-response',
+      image_url: 'img/shepard_metzler_rotation_task_1.png', //taken from http://dx.doi.org/10.1109/CTS.2009.5067476
+      choices: ['A', 'B', 'C'],
+      width: 500,
+      height: 180,
+      upper_bound: '',
+      lower_bound: '',
+      prompt: "Which of the three objects on the right is a rotated version of the object on the left?",
+      on_finish: main_on_finish
+    };
+
     // add all experiment elements to trials array
     if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
     if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
+    if (includeMentalRotation) trials.push(mentalRotationChoice);
     if (includeGoodbye) trials.push(goodbye);
 
 

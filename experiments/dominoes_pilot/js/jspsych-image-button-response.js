@@ -22,7 +22,7 @@ jsPsych.plugins["image-button-response"] = (function() {
             image_html: {
                 type: jsPsych.plugins.parameterType.IMAGE,
                 pretty_name: 'image HTML',
-                default: '<img src="%imageURL%" height="400" width="400" id="image_html">',
+                default: '<img src="%imageURL%" id="image_html">',
                 array: true,
                 description: 'The html of the image cue used to prompt drawing. Can create own style.'
             },
