@@ -2,11 +2,11 @@
 .ipynb_checkpoints/
 *.csv
 *.pdf
-*.png
-*.jpeg
-*.jpg
+# *.png
+# *.jpeg
+# *.jpg
 *.tiff
-*.svg
+# *.svg
 *.eps
 *.ai
 *.aux
@@ -51,16 +51,7 @@ __pycache__/
 *.synctex.gz
 *.pdf
 
-.DS_Store
-*.csv
-*.pdf
-*.png
-*.jpeg
-*.jpg
-*.tiff
-*.svg
-*.eps
-*.ai
+# Secrets
 auth.json
 auth.txt
 
