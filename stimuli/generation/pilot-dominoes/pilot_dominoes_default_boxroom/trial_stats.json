@@ -1,0 +1,26 @@
+{
+    "stimulus_name/avg_label": "b'pilot_dominoes_default_boxroom/0000'-b'pilot_dominoes_default_boxroom/0019'",
+    "controller_name/avg_label": "MultiDominoes",
+    "num_frames/avg_label": 201.9,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 0.6,
+    "does_target_contact_zone/avg_label": 0.6,
+    "does_target_miss_zone/avg_label": 0.0,
+    "does_target_hit_ground/avg_label": 0.7,
+    "first_target_move_frame/avg_label": 149.5,
+    "first_target_contact_zone_frame/avg_label": 187.25,
+    "first_target_hit_ground_frame/avg_label": 138.857,
+    "final_target_displacement/avg_label": {
+        "x": 0.032,
+        "y": 0.031,
+        "z": 0.0
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.037,
+        0.003
+    ],
+    "target_visible_area/avg_label": 0.009,
+    "zone_visible_area/avg_label": 0.017,
+    "probe_visible_area/avg_label": 0.07,
+    "num_trials": 20
+}
