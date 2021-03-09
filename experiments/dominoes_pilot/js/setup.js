@@ -9,12 +9,16 @@ function sendData(data) {
 var get_random_choices = () => {if(Math.random() > .5){return ["No", "Yes"];}else{return ["Yes", "No"];}};
 var choices = get_random_choices(); //randomize button order
 
+var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
+var colname = 'dominoes_pilot'; //insert COLLECTION NAME
+var itname = 'run_1'; //insert ITERATION NAME
+
 // Define trial object with boilerplate
 function Experiment() {
   this.type = 'video-button-response',
-  this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
-  this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
-  this.iterationName = 'run_1';
+  this.dbname = dbname;
+  this.colname = colname;
+  this.iterationName = itname;
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
@@ -64,12 +68,22 @@ function setupGame() {
 
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
+      // let's add gameID and relevant database fields
+      data.gameID = gameid;
+      data.dbname = dbname;
+      data.colname = colname;
+      data.iterationName = itname;
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
 
     // at end of each trial save data locally and send data to server
     var stim_on_finish = function (data) {
+      // let's add gameID and relevant database fields
+      data.gameID = gameid;
+      data.dbname = dbname;
+      data.colname = colname;
+      data.iterationName = itname;
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
@@ -260,9 +274,9 @@ function setupGame() {
 
 
     // exit survey trials
-    var surveyChoiceInfo = _.omit(_.extend({}, new Experiment), ['type', 'dev_mode']);
-    var exitSurveyChoice = _.extend({}, surveyChoiceInfo, {
+    var exitSurveyChoice =  {
       type: 'survey-multi-choice',
+      on_finish: main_on_finish,
       preamble: "<strong><u>Survey</u></strong>",
       questions: [{
         prompt: "What is your sex?",
@@ -315,13 +329,12 @@ function setupGame() {
         options: ["Yes", "No"],
         required: true
       }
-      ],
-      on_finish: main_on_finish
-    });
+      ]
+    };
 
     var surveyTextInfo = _.omit(_.extend({}, new Experiment), ['type', 'dev_mode']);
     var exitSurveyText = _.extend({}, surveyTextInfo, {
-      type: 'survey-text',
+      type: 'survey-text',      
       questions: [
         { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
         // { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
@@ -360,8 +373,6 @@ function setupGame() {
       type: 'image-button-response',
       image_url: 'img/shepard_metzler_rotation_task_1.png', //taken from http://dx.doi.org/10.1109/CTS.2009.5067476
       choices: ['A', 'B', 'C'],
-      width: 500,
-      height: 180,
       upper_bound: '',
       lower_bound: '',
       prompt: "Which of the three objects on the right is a rotated version of the object on the left?",
