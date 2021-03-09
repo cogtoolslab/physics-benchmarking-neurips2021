@@ -5,17 +5,25 @@ function sendData(data) {
   });
 }
 
+//randomize button order on a subject basis
+var get_random_choices = () => {if(Math.random() > .5){return ["No", "Yes"];}else{return ["Yes", "No"];}};
+var choices = get_random_choices(); //randomize button order
+
+var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
+var colname = 'dominoes_pilot'; //insert COLLECTION NAME
+var itname = 'run_1'; //insert ITERATION NAME
+
 // Define trial object with boilerplate
 function Experiment() {
   this.type = 'video-button-response',
-  this.dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
-  this.colname = 'dominoes_pilot'; //insert COLLECTION NAME
-  this.iterationName = 'run_1';
+  this.dbname = dbname;
+  this.colname = colname;
+  this.iterationName = itname;
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
   this.prompt = 'Is the red block going to hit the yellow area?';
-  this.choices = ["No", "Yes"];
+  this.choices = choices;
 };
 
 function FamiliarizationExperiment() {
@@ -43,6 +51,7 @@ function setupGame() {
     // These are flags to control which trial types are included in the experiment
     const includeIntro = true;
     const includeSurvey = true;
+    const includeMentalRotation = true;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
 
@@ -59,16 +68,26 @@ function setupGame() {
 
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
+      // let's add gameID and relevant database fields
+      data.gameID = gameid;
+      data.dbname = dbname;
+      data.colname = colname;
+      data.iterationName = itname;
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
 
     // at end of each trial save data locally and send data to server
     var stim_on_finish = function (data) {
+      // let's add gameID and relevant database fields
+      data.gameID = gameid;
+      data.dbname = dbname;
+      data.colname = colname;
+      data.iterationName = itname;
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
-      data.correct = data.target_hit_zone_label == data.response;
+      data.correct = data.target_hit_zone_label == (data.response == "Yes");
       if(data.correct){correct+=1};
       total += 1;
       if(data.correct){
@@ -120,7 +139,7 @@ function setupGame() {
     var familiarization_trials_post =  _.map(familiarization_stims, function(n,i) {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
-        stimulus: [n.stim_url],
+        stimulus: [n.stim_url], //rename stim_url for the video plugin
         // stop: 1.5, //STIM DURATION stop the video after X seconds
         response_allowed_while_playing: false,
         width: 500,
@@ -166,6 +185,7 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
+        // stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
@@ -254,15 +274,49 @@ function setupGame() {
 
 
     // exit survey trials
-    var surveyChoiceInfo = _.omit(_.extend({}, new Experiment), ['type', 'dev_mode']);
-    var exitSurveyChoice = _.extend({}, surveyChoiceInfo, {
+    var exitSurveyChoice =  {
       type: 'survey-multi-choice',
+      on_finish: main_on_finish,
       preamble: "<strong><u>Survey</u></strong>",
       questions: [{
         prompt: "What is your sex?",
         name: "participantSex",
         horizontal: true,
         options: ["Male", "Female", "Neither/Other/Do Not Wish To Say"],
+        required: true
+      },
+      {
+        prompt: "How old are you?",
+        name: "participantAge",
+        horizontal: false,
+        options: [
+          "Under 12 years old",
+          "12-17 years old",
+          "18-24 years old",
+          "25-34 years old",
+          "35-44 years old",
+          "45-54 years old",
+          "55-64 years old",
+          "65-74 years old",
+          "75 years or older",
+          ],
+        required: true
+      },
+      {
+        prompt: "What is the highest level of education you have completed?",
+        name: "participantEducation",
+        horizontal: false,
+        options: [
+          "High school",
+          "Some high school",
+          "Bachelor’s degree",
+          "Master’s degree",
+          "Ph.D. or higher",
+          "Associates degree",
+          "Trade school",
+          "Prefer not to say",
+          "Other",
+          ],
         required: true
       },
       {
@@ -275,18 +329,16 @@ function setupGame() {
         options: ["Yes", "No"],
         required: true
       }
-      ],
-      on_finish: main_on_finish
-    });
+      ]
+    };
 
     var surveyTextInfo = _.omit(_.extend({}, new Experiment), ['type', 'dev_mode']);
     var exitSurveyText = _.extend({}, surveyTextInfo, {
-      type: 'survey-text',
+      type: 'survey-text',      
       questions: [
-        { prompt: "Please enter your age:" },
         { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
-        { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-        { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
+        // { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
+        // { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         { prompt: "Any final thoughts?", rows: 5, columns: 40 }
       ],
       on_finish: main_on_finish
@@ -300,7 +352,7 @@ function setupGame() {
       ],
       on_start: (trial) => { //write the score to HTML
         trial.pages = [
-          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct! Click \'Next\' to submit this study.',
+          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct🎉! Click \'Next\' to submit this study.',
         ];
       },
       show_clickable_nav: true,
@@ -316,11 +368,23 @@ function setupGame() {
       // window.open("https://app.prolific.co/submissions/complete?cc=7A827F20","_self");
     };
 
+    // mental rotation task
+    var mentalRotationChoice = {
+      type: 'image-button-response',
+      image_url: 'img/shepard_metzler_rotation_task_1.png', //taken from http://dx.doi.org/10.1109/CTS.2009.5067476
+      choices: ['A', 'B', 'C'],
+      upper_bound: '',
+      lower_bound: '',
+      prompt: "Which of the three objects on the right is a rotated version of the object on the left?",
+      on_finish: main_on_finish
+    };
+
     // add all experiment elements to trials array
     if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
     if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
+    if (includeMentalRotation) trials.push(mentalRotationChoice);
     if (includeGoodbye) trials.push(goodbye);
 
 
