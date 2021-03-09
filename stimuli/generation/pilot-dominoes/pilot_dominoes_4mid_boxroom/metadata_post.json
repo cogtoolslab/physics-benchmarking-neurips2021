@@ -1,0 +1,167 @@
+[
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_0000",
+        "controller_name": "MultiDominoes",
+        "num_frames": 266,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 190,
+        "first_target_contact_zone_frame": 225,
+        "first_target_hit_ground_frame": 181,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.06,
+            -0.029
+        ],
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.014,
+        "probe_visible_area": 0.034,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 42000,
+        "push_time": 14,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_0001",
+        "controller_name": "MultiDominoes",
+        "num_frames": 260,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 179,
+        "first_target_contact_zone_frame": 216,
+        "first_target_hit_ground_frame": 173,
+        "final_target_displacement": {
+            "x": 0.053,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.079,
+            -0.034
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.012,
+        "probe_visible_area": 0.04,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 42001,
+        "push_time": 4,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_0002",
+        "controller_name": "MultiDominoes",
+        "num_frames": 244,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 171,
+        "first_target_contact_zone_frame": 207,
+        "first_target_hit_ground_frame": 162,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.001
+        },
+        "final_target_mask_displacement": [
+            0.078,
+            0.093
+        ],
+        "target_visible_area": 0.008,
+        "zone_visible_area": 0.011,
+        "probe_visible_area": 0.036,
+        "is_any_object_fully_occluded": false,
+        "room": "box",
+        "trial_seed": 42002,
+        "push_time": 5,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_0003",
+        "controller_name": "MultiDominoes",
+        "num_frames": 265,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 185,
+        "first_target_contact_zone_frame": 222,
+        "first_target_hit_ground_frame": 172,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.048,
+            0.071
+        ],
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.015,
+        "probe_visible_area": 0.029,
+        "is_any_object_fully_occluded": false,
+        "room": "box",
+        "trial_seed": 42003,
+        "push_time": 12,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_0004",
+        "controller_name": "MultiDominoes",
+        "num_frames": 267,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 188,
+        "first_target_contact_zone_frame": 225,
+        "first_target_hit_ground_frame": 174,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.075,
+            -0.133
+        ],
+        "target_visible_area": 0.011,
+        "zone_visible_area": 0.012,
+        "probe_visible_area": 0.023,
+        "is_any_object_fully_occluded": false,
+        "room": "box",
+        "trial_seed": 42004,
+        "push_time": 12,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    }
+]
