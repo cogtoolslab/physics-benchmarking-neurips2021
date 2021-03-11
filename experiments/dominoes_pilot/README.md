@@ -11,3 +11,7 @@ Changed metadata saved midway through.\
 Includes substantial amounts of nonsense testing trials.\
 Includes changes to survey structures.\
 Includes changes in demographics and familiarization.\
+
+### `run_2`
+Changed 03/11/21\
+Upped iteration number in preparation for pilot. Same stimulus set as end of `run_1`.
