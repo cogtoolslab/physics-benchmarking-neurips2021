@@ -155,10 +155,19 @@ jsPsych.plugins["video-button-response"] = (function() {
     }
     video_html +=">";
 
+    //preloading blobs doesn't work for safari
+    //HACK turn off preloading for Safari
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent); // https://stackoverflow.com/questions/7944460/detect-safari-browser#23522755
+
     var video_preload_blob = jsPsych.pluginAPI.getVideoBuffer(trial.stimulus[0]);
+    if(isSafari){
+      video_preload_blob = false;
+      console.log("Turning off preloading for Safari. Additional delay possible.");
+    }
     if(!video_preload_blob) {
       for(var i=0; i<trial.stimulus.length; i++){
         var file_name = trial.stimulus[i];
+        console.log("Loading stim"+file_name);
         if(file_name.indexOf('?') > -1){
           file_name = file_name.substring(0, file_name.indexOf('?'));
         }

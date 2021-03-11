@@ -85,6 +85,7 @@ function setupGame() {
       data.dbname = dbname;
       data.colname = colname;
       data.iterationName = itname;
+      data.stims_not_preloaded = /^((?!chrome|android).)*safari/i.test(navigator.userAgent); //HACK turned off preloading stimuli for Safari in jspsych-video-button-response.js
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
