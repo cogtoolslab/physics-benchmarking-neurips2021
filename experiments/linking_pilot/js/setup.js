@@ -11,7 +11,7 @@ var choices = get_random_choices(); //randomize button order
 
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
-var colname = 'towers_pilot'; //insert COLLECTION NAME
+var colname = 'linking_pilot'; //insert COLLECTION NAME
 var itname = 'run_1'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
