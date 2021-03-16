@@ -1,0 +1,322 @@
+[
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0000",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 167,
+        "first_target_hit_ground_frame": 170,
+        "final_target_displacement": {
+            "x": 1.164,
+            "y": -9.825,
+            "z": -10.223
+        },
+        "final_target_mask_displacement": [
+            0.341,
+            0.954
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.17,
+        "probe_visible_area": 0.022,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2000,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0001",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.313,
+            "y": -9.516,
+            "z": -9.907
+        },
+        "final_target_mask_displacement": [
+            0.069,
+            0.306
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.19,
+        "probe_visible_area": 0.19,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2001,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0002",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 232,
+        "first_target_hit_ground_frame": 250,
+        "final_target_displacement": {
+            "x": 0.775,
+            "y": -9.818,
+            "z": -10.099
+        },
+        "final_target_mask_displacement": [
+            0.423,
+            0.912
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.179,
+        "probe_visible_area": 0.016,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2002,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0003",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.195,
+            "y": -9.702,
+            "z": -9.982
+        },
+        "final_target_mask_displacement": [
+            0.008,
+            0.375
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.174,
+        "probe_visible_area": 0.022,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2003,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0004",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.202,
+            "y": -9.688,
+            "z": -10.052
+        },
+        "final_target_mask_displacement": [
+            -0.054,
+            0.311
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.166,
+        "probe_visible_area": 0.025,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2004,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0005",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 401,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.217,
+            "y": -9.707,
+            "z": -9.956
+        },
+        "final_target_mask_displacement": [
+            0.047,
+            0.362
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.177,
+        "probe_visible_area": 0.025,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2005,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0006",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 364,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 165,
+        "final_target_displacement": {
+            "x": 0.324,
+            "y": -9.779,
+            "z": -10.149
+        },
+        "final_target_mask_displacement": [
+            0.723,
+            0.802
+        ],
+        "target_visible_area": 0.038,
+        "zone_visible_area": 0.164,
+        "probe_visible_area": 0.038,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2006,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0007",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 292,
+        "first_target_hit_ground_frame": 301,
+        "final_target_displacement": {
+            "x": 0.712,
+            "y": -9.788,
+            "z": -9.913
+        },
+        "final_target_mask_displacement": [
+            0.355,
+            0.834
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.177,
+        "probe_visible_area": 0.016,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2007,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0008",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 155,
+        "first_target_hit_ground_frame": 156,
+        "final_target_displacement": {
+            "x": 0.973,
+            "y": -9.794,
+            "z": -10.265
+        },
+        "final_target_mask_displacement": [
+            0.368,
+            0.934
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.174,
+        "probe_visible_area": 0.021,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2008,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl1-8_aCyl_bCube_tdwroom_0009",
+        "controller_name": "Linking",
+        "git_commit": "67a709ea4c96795fbc1976705672ffa92c6f2cbc",
+        "num_frames": 355,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 170,
+        "final_target_displacement": {
+            "x": 0.305,
+            "y": -9.784,
+            "z": -9.806
+        },
+        "final_target_mask_displacement": [
+            0.017,
+            0.521
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.167,
+        "probe_visible_area": 0.022,
+        "is_any_object_fully_occluded": true,
+        "room": "tdw",
+        "trial_seed": 2009,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    }
+]

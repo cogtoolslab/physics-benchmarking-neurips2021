@@ -1,0 +1,35 @@
+{
+    "stimulus_name/avg_label": "pilot_towers_nb5_fr015_SJ030_mono0_boxroom_0000-pilot_towers_nb5_fr015_SJ030_mono0_boxroom_0014",
+    "controller_name/avg_label": "Tower",
+    "git_commit/avg_label": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+    "num_frames/avg_label": 459.467,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.467,
+    "does_target_miss_zone/avg_label": 0.533,
+    "does_target_hit_ground/avg_label": 0.467,
+    "first_target_move_frame/avg_label": 1.0,
+    "first_target_contact_zone_frame/avg_label": 272.857,
+    "first_target_hit_ground_frame/avg_label": 273.0,
+    "final_target_displacement/avg_label": {
+        "x": -1.002,
+        "y": -8.57,
+        "z": -9.973
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.296,
+        -0.003
+    ],
+    "target_visible_area/avg_label": 0.05,
+    "zone_visible_area/avg_label": 0.186,
+    "probe_visible_area/avg_label": 0.045,
+    "is_any_object_fully_occluded/avg_label": 0.6,
+    "room/avg_label": "box",
+    "trial_seed/avg_label": 8007.0,
+    "push_time/avg_label": 15.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 0.0,
+    "num_middle_objects/avg_label": 5.0,
+    "did_tower_fall/avg_label": 0.467,
+    "num_trials": 15
+}
