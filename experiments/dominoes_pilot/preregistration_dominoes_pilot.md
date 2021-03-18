@@ -24,7 +24,7 @@ Additionally (4), we predict that scenes that lead to more incorrect predictions
 ###   Study type
  <!-- indicate whether your study will be experimental or correlational -->
  Experimental
-###   Study design: stimulus generation
+###   Study design: stimulus generation 
  <!-- describe the overall design of the study (what will be manipulated and/or measured, specify whether manipulations will be between- or within-subjects, etc.) -->
  Within-subjects design. All subjects will be shown XXX scenes drawn from a set in random order.
  
@@ -41,7 +41,11 @@ Additionally (4), we predict that scenes that lead to more incorrect predictions
 Example stimulus:\
 ![Example stimulus](.preregistration_dominoes_pilot/pic_1615209831541.png)  
 
-###   Study design: task procedure
+####   Manipulated variables
+ <!-- If applicable, precisely define any variables you plan to manipulate, including the levels and whether the manipulation will be between or within subjects. -->
+As outlined above, subjects are not assigned to any conditions. The manipulations consist of the stimuli with underlying parameters as well as the sampling of stimuli.
+
+###   Study design: evaluation protocol 
 `TODO: Perhaps lay out in a numbered list the full sequence of events that transpire, in order within a session.`
 
 `TODO: Describe comprehension check trials where the participant demonstrates that they are able to reliably DETECT the target event. Foreshadowing/anticipating that we will need to specify reasonable criteria for what we do with outlier sessions where participants truly struggle with these.`
@@ -55,6 +59,12 @@ Example stimulus:\
  Before trials begin, subjects are shown 5 familiarization trials. After making a prediction, they are informed whether the prediction was correct and is shown the unabridged stimulus including the result of the trial. 
 
  Stimuli are designed to provide a roughly 50/50 split between positive and negative trials ("does the target object hit the target area?") in the set, with not counterbalancing on the sample shown to participants. `TODO: 0. Re-factor so that this information is contained above with the other stimulus sampling info. 1. In generate_metadata notebook, curate dataset so that it is balanced over stim dimensions. 2. Pre-sample sessions that ensure that exactly 50% of trials are positive, and potentially (at least approx.) balanced over a subset of the other dimensions.`
+
+###   Measured variables
+ <!-- Precisely define each variable that you will measure. This includes outcome measures, as well as other measured predictor variables. -->
+We measure:
+* `response`: prediction (either yes/no)
+* `rt`: time taken to make prediction
 
  After the trials, subjects will be asked to provide:
  * age
@@ -73,51 +83,39 @@ Participants will be recruited from {Prolific/Amazon Mechnical Turk/SONA/XXX} an
 
 Subjects are only allowed to take the task once.
 
-###   Sample size
+###   Sampling procedure
+`TODO: Describe OUR procedure for Phase 1: Stimulus Optimization and Phase 2: Deploy at scale. Phase 1 is iterative, and consists of two stages: generation & evaluation. What is the output of evaluation that will lead to what changes in generation? Sample size choices here can be ranges. Ranges that we can refine according to estimates of inter-subject reliability from initial pilots. Phase 2: Here is where we decide how many people we actually plan to run on which stims and budget for it.`
  <!-- indicate your target sample size and why that is your target (might be based in past research, for example) -->
  We aim for a sample size of XXX subjects based on prior experience on the task.
 
-###   Stopping rule
+ <!-- ###   Stopping rule -->
  <!-- specify how you will determine when to stop data collection -->
- Data collection will be stopped after the planned number of subjects has been recorded. 
-
-## Variables
-###   Manipulated variables
- <!-- If applicable, precisely define any variables you plan to manipulate, including the levels and whether the manipulation will be between or within subjects. -->
-As outlined above, subjects are not assigned to any conditions. The manipulations consist of the stimuli with underlying parameters as well as the sampling of stimuli.
-
-###   Measured variables
- <!-- Precisely define each variable that you will measure. This includes outcome measures, as well as other measured predictor variables. -->
-We measure:
-* `response`: prediction (either yes/no)
-* `rt`: time taken to make prediction
-
-###   Indices
- <!-- If applicable, define how measures will be combined into an index (or even a mean) and what measures will be used. Include a formula or a precise description of the method. -->
- *Not applicable*
+ <!-- Data collection will be stopped after the planned number of subjects has been recorded. -->
 
 ## Analysis Plan
 ###   Data exclusion
  <!-- How will you determine which data points or samples (if any) to exclude from your analyses? How will outliers be handled? Will you use any awareness or attention check? -->
  No explicit awareness check will be performed. 
  Subjects will be excluded if they display a sequence of responses clearly not related to the actual stimuli shown, precisely a sequence that:
- * contains XXX consecutive "yes" or "no" answers
+ * contains XXX consecutive "yes" or "no" answers (`TODO: quickie simulation to figure out the streak length that occurs <0.001 of the time`)
  or
- * contains a sequence of at least XXX iterating "yes" or "no"
-
+ * contains a sequence of at least XXX iterating "yes" or "no" 
+ 
 ###   Missing data
- Trials with missing data (ie. if a subjects stop mid-way through) will be discarded.
-
+`TODO: For Phase 1, include participants' data if they have completed at least 30% of the experiment. In Phase 2, define clean dataset as those participants who have completed the experiment. Define raw dataset as those participants who meet the criteria above but completed at least 30% of the experiment. We plan to estimate how much of a difference in measurement reliability there is between these two datasets. `
+Trials with missing data (ie. if a subjects stop mid-way through) will be discarded.
 <!-- Or should we keep them, since we're mostly interested on stimuli ratings? -->
 
 ###   Planned visualization
  <!-- Describe what kind of visualization you would use (e.g. boxplot, faceted histogram, scatterplot, etc.) to evaluate your data and determine what it can tell you about your research question -->
-A scatter plot, in which the points correspond to individual stimuli. The x-axis represents the number of physical objects in the stimulus (with jitter applied as the measure is ordinal), the y-axis represents the percentage of correct predictions out of all predictions for that stimulus. 
+
+`TODO: generalize to all stim dimensions`
+* A scatter plot, in which the points correspond to individual stimuli. The x-axis represents the number of physical objects in the stimulus (with jitter applied as the measure is ordinal), the y-axis represents the percentage of correct predictions out of all predictions for that stimulus. 
 Points are colorized according to the presence of distractor objects and the symbol representing the point denotes the presence or absence of occluder objects.
 
-Additionally, marginal bar plots showing rate of correct prediction for stimuli according to (1) number of physical objects, (2) presence of distractor and (3) presence of occluder are shown.
+* Additionally, marginal bar plots showing rate of correct prediction for stimuli according to (1) number of physical objects, (2) presence of distractor and (3) presence of occluder are shown.
 
-To investigate reaction time as a function of rate of correct predictions, we show a scatter plot in which the x-axis represents the rate of correct predictions and the y-axis the mean reaction time (with confidence intervals shown). The points correspond to individual stimuli. A fit line is shown.
+* To investigate reaction time as a function of rate of correct predictions, we show a scatter plot in which the x-axis represents the rate of correct predictions and the y-axis the mean reaction time (with confidence intervals shown). The points correspond to individual stimuli. A fit line is shown.
 
 ###   Predicted results
  <!-- What pattern do you expect to see in your planned visualization, based on the hypotheses you described earlier? -->
@@ -129,6 +127,6 @@ To investigate reaction time as a function of rate of correct predictions, we sh
  <!-- If you plan to explore your data to look for unspecified differences or relationships, you may include those plans here. If you list an exploratory test here, you are not obligated to report its results, but you are obligated to describe it as an exploratory result. -->
 We aim to explore the relation of demographic variables as well as the result of a one-trial spatial reasoning task on the performance of subjects: how does age, gender, educational status and the the result of a one-trial spatial reasoning task relate to the overall accuracy of a subject?
 
-Additionally, we aim to explore whether subjects show a consistent bias towards towards positive/negative predictions. 
+Additionally, we aim to explore whether subjects show a consistent bias towards towards positive/negative predictions. left/right biases. 
 
 <!-- We might also explore whether the speed of response predicts its correctness. Curve might be inverted U-shape: too fast or too slow leads to bad predictions. Perhaps too fast not, since the subjects always get 1500ms -->
