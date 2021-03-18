@@ -24,21 +24,27 @@ Additionally (4), we predict that scenes that lead to more incorrect predictions
 ###   Study type
  <!-- indicate whether your study will be experimental or correlational -->
  Experimental
-###   Study design
+###   Study design: stimulus generation
  <!-- describe the overall design of the study (what will be manipulated and/or measured, specify whether manipulations will be between- or within-subjects, etc.) -->
  Within-subjects design. All subjects will be shown XXX scenes drawn from a set in random order.
  
+ `TODO: describe sampling procedure over these stim dimensions.`
  The scenes in the set vary along the following dimensions:
- * Background type
- * Number of physical elements ("dominoes")
- * Number and kind of distractor objects (which are shown behind the physical elements)
- * Number and kind of occluder objects (shown in front of and partially covering the physical objects)
- * Color of the physical objects
- * Positional jitter of the physical objects
- * Rotational jitter of the physical objects
+ * Background type - `TODO: specify levels`
+ * Number of physical elements ("dominoes") - `TODO: specify levels` 
+ * Number and kind of distractor objects (which are shown behind the physical elements) - `TODO: specify levels` 
+ * Number and kind of occluder objects (shown in front of and partially covering the physical objects) - `TODO: specify levels` 
+ * Color of the physical objects - `TODO: specify levels` 
+ * Positional jitter of the physical objects - `TODO: specify levels` 
+ * Rotational jitter of the physical objects - `TODO: specify levels`
 
 Example stimulus:\
 ![Example stimulus](.preregistration_dominoes_pilot/pic_1615209831541.png)  
+
+###   Study design: task procedure
+`TODO: Perhaps lay out in a numbered list the full sequence of events that transpire, in order within a session.`
+
+`TODO: Describe comprehension check trials where the participant demonstrates that they are able to reliably DETECT the target event. Foreshadowing/anticipating that we will need to specify reasonable criteria for what we do with outlier sessions where participants truly struggle with these.`
 
  Each stimulus consists of a short video of a row of "dominoes" (physical objects), where the first domino is toppled by applying a force and the last one ("target object", colored red) is placed in front of a yellow target area. The video end after 1500ms, so whether or not the target object falls on the target area is not shown. 
  Subjects are tasked with responding "yes" or "no" depending on whether they'll be predict that the target object will hit the target area in the remainder of the video (not shown). No feedback during trials is given.
@@ -48,15 +54,16 @@ Example stimulus:\
 
  Before trials begin, subjects are shown 5 familiarization trials. After making a prediction, they are informed whether the prediction was correct and is shown the unabridged stimulus including the result of the trial. 
 
- Stimuli are designed to provide a roughly 50/50 split between positive and negative trials ("does the target object hit the target area?") in the set, with not counterbalancing on the sample shown to participants. 
+ Stimuli are designed to provide a roughly 50/50 split between positive and negative trials ("does the target object hit the target area?") in the set, with not counterbalancing on the sample shown to participants. `TODO: 0. Re-factor so that this information is contained above with the other stimulus sampling info. 1. In generate_metadata notebook, curate dataset so that it is balanced over stim dimensions. 2. Pre-sample sessions that ensure that exactly 50% of trials are positive, and potentially (at least approx.) balanced over a subset of the other dimensions.`
 
  After the trials, subjects will be asked to provide:
  * age
  * gender
  * education level
- * one trial Shephard Metzler mental rotation task
+ * difficulty rating
+ * one trial Shephard Metzler mental rotation task (`TODO: keep in the experiment? either investigate how many of these items would we need to ensure measurement reliability or defer to think about how to incorporate other classic spatial-cognition tests in the future to estimate within-subject between-task covariation.`)
  * free form feedback on the task
- 
+
  After the end of the study, subjects will be told their overall accuracy and the corresponding percentile compared to other subjects on the study. 
 
 ## Sampling Plan
