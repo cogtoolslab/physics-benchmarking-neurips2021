@@ -1,0 +1,172 @@
+[
+    {
+        "stimulus_name": "pilot_towers_nb4_fr015_SJ000_gr01_mono1_boxroom_0000",
+        "controller_name": "Tower",
+        "git_commit": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+        "num_frames": 195,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.955,
+            "y": -8.23,
+            "z": -10.001
+        },
+        "final_target_mask_displacement": [
+            -0.0,
+            0.02
+        ],
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.35,
+        "probe_visible_area": 0.007,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 421000,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "did_tower_fall": false
+    },
+    {
+        "stimulus_name": "pilot_towers_nb4_fr015_SJ000_gr01_mono1_boxroom_0001",
+        "controller_name": "Tower",
+        "git_commit": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+        "num_frames": 156,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.989,
+            "y": -8.032,
+            "z": -10.002
+        },
+        "final_target_mask_displacement": [
+            0.0,
+            0.005
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.281,
+        "probe_visible_area": 0.006,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 421001,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "did_tower_fall": false
+    },
+    {
+        "stimulus_name": "pilot_towers_nb4_fr015_SJ000_gr01_mono1_boxroom_0002",
+        "controller_name": "Tower",
+        "git_commit": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.994,
+            "y": -7.87,
+            "z": -10.0
+        },
+        "final_target_mask_displacement": [
+            -0.0,
+            -0.003
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.317,
+        "probe_visible_area": 0.006,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 421002,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "did_tower_fall": false
+    },
+    {
+        "stimulus_name": "pilot_towers_nb4_fr015_SJ000_gr01_mono1_boxroom_0003",
+        "controller_name": "Tower",
+        "git_commit": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+        "num_frames": 178,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.967,
+            "y": -7.692,
+            "z": -9.999
+        },
+        "final_target_mask_displacement": [
+            -0.0,
+            -0.017
+        ],
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.327,
+        "probe_visible_area": 0.004,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 421003,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "did_tower_fall": false
+    },
+    {
+        "stimulus_name": "pilot_towers_nb4_fr015_SJ000_gr01_mono1_boxroom_0004",
+        "controller_name": "Tower",
+        "git_commit": "768360329fe6ab721b5039aa37c51c68ad5df9b9",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.981,
+            "y": -8.088,
+            "z": -9.997
+        },
+        "final_target_mask_displacement": [
+            -0.001,
+            0.008
+        ],
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.341,
+        "probe_visible_area": 0.007,
+        "is_any_object_fully_occluded": false,
+        "room": "box",
+        "trial_seed": 421004,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "did_tower_fall": false
+    }
+]

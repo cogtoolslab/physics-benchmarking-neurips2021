@@ -1,0 +1,322 @@
+[
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0000",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 407,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 170,
+        "final_target_displacement": {
+            "x": 0.184,
+            "y": -9.733,
+            "z": -9.991
+        },
+        "final_target_mask_displacement": [
+            -0.001,
+            -0.548
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.268,
+        "probe_visible_area": 0.016,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 0,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0001",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 305,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 174,
+        "final_target_displacement": {
+            "x": 0.281,
+            "y": -9.749,
+            "z": -10.007
+        },
+        "final_target_mask_displacement": [
+            -0.026,
+            -0.545
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.266,
+        "probe_visible_area": 0.017,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0002",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 286,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 164,
+        "first_target_hit_ground_frame": 164,
+        "final_target_displacement": {
+            "x": 1.045,
+            "y": -9.819,
+            "z": -10.038
+        },
+        "final_target_mask_displacement": [
+            0.28,
+            -0.822
+        ],
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.266,
+        "probe_visible_area": 0.628,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 2,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0003",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 423,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 172,
+        "first_target_hit_ground_frame": 173,
+        "final_target_displacement": {
+            "x": 0.857,
+            "y": -9.756,
+            "z": -9.975
+        },
+        "final_target_mask_displacement": [
+            0.594,
+            -0.899
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.291,
+        "probe_visible_area": 0.009,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 3,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0004",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 297,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.281,
+            "y": -9.712,
+            "z": -9.952
+        },
+        "final_target_mask_displacement": [
+            0.135,
+            -0.676
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.272,
+        "probe_visible_area": 0.013,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 4,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0005",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 361,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 180,
+        "final_target_displacement": {
+            "x": 0.495,
+            "y": -9.768,
+            "z": -9.912
+        },
+        "final_target_mask_displacement": [
+            0.055,
+            -0.562
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.28,
+        "probe_visible_area": 0.019,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 5,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0006",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 404,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 165,
+        "final_target_displacement": {
+            "x": 0.431,
+            "y": -9.753,
+            "z": -9.984
+        },
+        "final_target_mask_displacement": [
+            -0.0,
+            -0.435
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.281,
+        "probe_visible_area": 0.026,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 6,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0007",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 370,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 165,
+        "first_target_hit_ground_frame": 165,
+        "final_target_displacement": {
+            "x": 0.797,
+            "y": -9.751,
+            "z": -9.894
+        },
+        "final_target_mask_displacement": [
+            0.178,
+            -0.796
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.284,
+        "probe_visible_area": 0.016,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 7,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0008",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 290,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 161,
+        "final_target_displacement": {
+            "x": 0.559,
+            "y": -9.759,
+            "z": -10.051
+        },
+        "final_target_mask_displacement": [
+            0.186,
+            -0.776
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.288,
+        "probe_visible_area": 0.013,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 8,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_linking_nl6_aCyl_bCube_boxroom_0009",
+        "controller_name": "Linking",
+        "git_commit": "2e0ffd83dbc5a299dc6d71f55f6e91256b524ee3",
+        "num_frames": 350,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 168,
+        "final_target_displacement": {
+            "x": 0.42,
+            "y": -9.761,
+            "z": -9.971
+        },
+        "final_target_mask_displacement": [
+            0.244,
+            -0.708
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.284,
+        "probe_visible_area": 0.011,
+        "is_any_object_fully_occluded": true,
+        "room": "box",
+        "trial_seed": 9,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    }
+]
