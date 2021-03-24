@@ -56,8 +56,15 @@ io.on('connection', function (socket) {
 
 });
 
+FORBIDDEN_FILES = ["auth.json"]
+
 var serveFile = function(req, res) {
   var fileName = req.params[0];
+  if(FORBIDDEN_FILES.includes(fileName)){
+    // Don't serve files that contain secrets
+    console.log("Forbidden file requested: "+filename);
+    return; 
+  }
   console.log('\t :: Express :: file requested: ' + fileName);
   return res.sendFile(fileName, {root: __dirname});
 };
