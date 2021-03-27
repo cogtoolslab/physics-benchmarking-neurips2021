@@ -135,7 +135,7 @@ After a particular set of stimuli has been chosen, we aim to collect fine graine
  <!-- How will you determine which data points or samples (if any) to exclude from your analyses? How will outliers be handled? Will you use any awareness or attention check? -->
  No explicit awareness check will be performed. 
  Subjects will be excluded if they display a sequence of responses clearly not related to the actual stimuli shown, precisely a sequence that either:
- * contains XXX consecutive "yes" or "no" answers (`TODO: quickie simulation to figure out the streak length that occurs <0.001 of the time`)
+ * contains 10 consecutive "yes" or "no" answers  <!-- Chance of that happening by chance when 50% likely is < 0.001> -->
  * contains a sequence of at least XXX iterating "yes" or "no"
  * were shown 10 familiarization trials (subjects guessed fewer than 4 out of the first 5 correctly and never got 3 correct guesses in a row in the subsequent 5) 
  
@@ -162,9 +162,13 @@ For each stimulus dimension, the following is produced:
 
  We also expect that the harder a stimulus is to predict correctly, the longer subjects take to make a response.
 
+### Planned analysis
+To compare human physical prediction ability with models of physical reasoning, we produce a vector of average rate of correct predictions per stimulus. For each stimulus in the set of stimuli, we store the rate of correct predictions to produce a vector in the range of $[0,1]$ of the length of the stimulus set.
+
 ###   Exploratory analysis
  <!-- If you plan to explore your data to look for unspecified differences or relationships, you may include those plans here. If you list an exploratory test here, you are not obligated to report its results, but you are obligated to describe it as an exploratory result. -->
-We aim to explore the relation of demographic variables as well as the result of a one-trial spatial reasoning task on the performance of subjects: how does age, gender, educational status and the the result of a one-trial spatial reasoning task relate to the overall accuracy of a subject?
+We aim to explore the relation of demographic variables <!-- as well as the result of a one-trial spatial reasoning task  -->
+on the performance of subjects: how does age, gender, educational status and the the result of a one-trial spatial reasoning task relate to the overall accuracy of a subject?
 
 Additionally, we aim to explore whether subjects show a consistent bias towards towards positive/negative predictions. left/right biases. 
 
