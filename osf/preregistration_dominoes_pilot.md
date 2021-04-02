@@ -66,8 +66,9 @@ As outlined above, subjects are not assigned to any conditions. The manipulation
 5. Not informing subjects that the main part of the trial starts
 6. 100 trials
     1. Fixation cross is shown for random interval between 500ms and 1000ms
-    2. Video is played for 1500ms, then hidden
-    3. Prediction is queried from subject (yes/no)
+    **2. First frozen frame shown for 500ms**
+    3. Video is played for 1500ms, then hidden
+    4. Prediction is queried from subject (yes/no)
 7. Demographics & Feedback
     * age
     * gender
