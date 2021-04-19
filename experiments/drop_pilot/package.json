@@ -1,0 +1,44 @@
+{
+  "name": "human_physics_benchmarking",
+  "description": "",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "color-convert": "~1.0.0",
+    "colors": "^1.1.2",
+    "cors": "^2.8.5",
+    "csv-parse": "~0.0.6",
+    "delta-e": "~0.0.7",
+    "engine.io-client": "^3.3.2",
+    "express": "^4.16.4",
+    "jsonfile": "~2.4.0",
+    "karma": "^2.0.0",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "mongodb": "^2.2.28",
+    "node-uuid": "1.4.1",
+    "npm": "^6.12.0",
+    "paper": "~0.11.2",
+    "request": "^2.81.0",
+    "socket.io": "^1.7.4",
+    "underscore": "~1.7.0",
+    "xmldom": "^0.1.27",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cogtoolslab/human_physics_benchmarking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cogtoolslab/human_physics_benchmarking/issues"
+  },
+  "homepage": "https://github.com/cogtoolslab/human_physics_benchmarking#readme"
+}
