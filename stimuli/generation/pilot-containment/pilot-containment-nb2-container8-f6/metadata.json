@@ -1,0 +1,162 @@
+[
+    {
+        "stimulus_name": "None",
+        "controller_name": "Containment",
+        "git_commit": "None",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 90,
+        "first_target_hit_ground_frame": 90,
+        "final_target_displacement": {
+            "x": -2.124,
+            "y": -9.701,
+            "z": -9.417
+        },
+        "final_target_mask_displacement": [
+            NaN,
+            NaN
+        ],
+        "target_visible_area": 0.0,
+        "zone_visible_area": 0.159,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "None",
+        "controller_name": "Containment",
+        "git_commit": "None",
+        "num_frames": 366,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -1.039,
+            "y": -9.66,
+            "z": -9.981
+        },
+        "final_target_mask_displacement": [
+            0.247,
+            -0.007
+        ],
+        "target_visible_area": 0.0,
+        "zone_visible_area": 0.178,
+        "probe_visible_area": 0.004,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "None",
+        "controller_name": "Containment",
+        "git_commit": "None",
+        "num_frames": 429,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 119,
+        "first_target_hit_ground_frame": 119,
+        "final_target_displacement": {
+            "x": -0.234,
+            "y": -9.962,
+            "z": -9.457
+        },
+        "final_target_mask_displacement": [
+            0.533,
+            -0.4
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.19,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "None",
+        "controller_name": "Containment",
+        "git_commit": "None",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -1.062,
+            "y": -9.835,
+            "z": -9.849
+        },
+        "final_target_mask_displacement": [
+            NaN,
+            NaN
+        ],
+        "target_visible_area": 0.0,
+        "zone_visible_area": 0.173,
+        "probe_visible_area": 0.006,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "None",
+        "controller_name": "Containment",
+        "git_commit": "None",
+        "num_frames": 337,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 74,
+        "first_target_hit_ground_frame": 103,
+        "final_target_displacement": {
+            "x": -2.19,
+            "y": -9.947,
+            "z": -9.726
+        },
+        "final_target_mask_displacement": [
+            0.23,
+            0.233
+        ],
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.184,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 0
+    }
+]
