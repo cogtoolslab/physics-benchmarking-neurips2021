@@ -13,7 +13,7 @@ const app = express();
 const ObjectID = mongodb.ObjectID;
 const MongoClient = mongodb.MongoClient;
 const port = 8017; 
-const mongoCreds = require('./auth.json');
+const mongoCreds = require('../auth.json');
 const mongoURL = `mongodb://${mongoCreds.user}:${mongoCreds.password}@localhost:27017/`;
 const handlers = {};
 

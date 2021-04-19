@@ -52,7 +52,7 @@ function setupGame() {
     // These are flags to control which trial types are included in the experiment
     const includeIntro = true;
     const includeSurvey = true;
-    const includeMentalRotation = true;
+    const includeMentalRotation = false;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
 
@@ -90,6 +90,7 @@ function setupGame() {
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
       data.correct = data.target_hit_zone_label == (data.response == "Yes");
+      console.log("response:", data.response, "|| hit_zone:", data.target_hit_zone_label)
       if(data.correct){correct+=1};
       total += 1;
       if(data.correct){
