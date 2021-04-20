@@ -12,7 +12,7 @@ var choices = get_random_choices(); //randomize button order
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
 var colname = 'collision_pilot'; //insert COLLECTION NAME
-var itname = 'iteration_1'; //insert ITERATION NAME
+var itname = 'iteration_1_internal'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
@@ -23,7 +23,7 @@ function Experiment() {
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'Is the red block going to hit the yellow area?';
+  this.prompt = 'Is the red object going to hit the yellow area?';
   this.choices = choices;
 };
 
