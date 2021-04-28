@@ -1,0 +1,98 @@
+[
+    {
+        "stimulus_name": "pilot-containment-box_0000",
+        "controller_name": "Containment",
+        "git_commit": "c2e24e44ccd6455d7baada010363a51ebff49999",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.905,
+            "y": -8.931,
+            "z": -9.993
+        },
+        "final_target_mask_displacement": [
+            -0.006,
+            -0.043
+        ],
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.171,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-box_0001",
+        "controller_name": "Containment",
+        "git_commit": "c2e24e44ccd6455d7baada010363a51ebff49999",
+        "num_frames": 323,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.921,
+            "y": -8.927,
+            "z": -10.042
+        },
+        "final_target_mask_displacement": [
+            -0.015,
+            -0.039
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.166,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-box_0002",
+        "controller_name": "Containment",
+        "git_commit": "c2e24e44ccd6455d7baada010363a51ebff49999",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 22,
+        "final_target_displacement": {
+            "x": -3.242,
+            "y": -8.891,
+            "z": -7.532
+        },
+        "final_target_mask_displacement": [
+            NaN,
+            NaN
+        ],
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.0,
+        "probe_visible_area": 0.0,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 1
+    }
+]
