@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot-containment-box_0000-pilot-containment-box_0009",
+    "controller_name/avg_label": "Containment",
+    "git_commit/avg_label": "2df973bdb49a0939c33d08bc3e805cf415fa4725",
+    "num_frames/avg_label": 369.2,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.3,
+    "does_target_miss_zone/avg_label": 0.7,
+    "does_target_hit_ground/avg_label": 0.3,
+    "first_target_move_frame/avg_label": 1.0,
+    "first_target_contact_zone_frame/avg_label": 101.0,
+    "first_target_hit_ground_frame/avg_label": 102.0,
+    "final_target_displacement/avg_label": {
+        "x": -1.007,
+        "y": -9.837,
+        "z": -10.098
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.234,
+        0.073
+    ],
+    "target_visible_area/avg_label": 0.003,
+    "zone_visible_area/avg_label": 0.135,
+    "probe_visible_area/avg_label": 0.013,
+    "is_any_object_fully_occluded/avg_label": 1.0,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": -1.0,
+    "push_time/avg_label": 15.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 1.0,
+    "num_trials": 10
+}
