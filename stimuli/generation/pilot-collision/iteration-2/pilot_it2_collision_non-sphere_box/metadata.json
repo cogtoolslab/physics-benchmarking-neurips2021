@@ -1,0 +1,322 @@
+[
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0000",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 33,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 5,
+        "final_target_displacement": {
+            "x": 0.018,
+            "y": 0.009,
+            "z": 0.024
+        },
+        "final_target_mask_displacement": [
+            -0.005,
+            0.007
+        ],
+        "target_visible_area": 0.005,
+        "zone_visible_area": 0.03,
+        "probe_visible_area": 0.007,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42000,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0001",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": null,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": 0.009,
+            "y": 0.001,
+            "z": -0.001
+        },
+        "final_target_mask_displacement": [
+            -0.001,
+            0.002
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.006,
+        "probe_visible_area": 0.006,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": 42001,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0002",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 25,
+        "first_target_contact_zone_frame": 72,
+        "first_target_hit_ground_frame": 25,
+        "final_target_displacement": {
+            "x": 0.369,
+            "y": 0.111,
+            "z": 0.01
+        },
+        "final_target_mask_displacement": [
+            -0.008,
+            -0.155
+        ],
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.014,
+        "probe_visible_area": 0.014,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42002,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0003",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 17,
+        "first_target_contact_zone_frame": 27,
+        "first_target_hit_ground_frame": 18,
+        "final_target_displacement": {
+            "x": 0.531,
+            "y": 0.138,
+            "z": -0.005
+        },
+        "final_target_mask_displacement": [
+            0.065,
+            0.377
+        ],
+        "target_visible_area": 0.008,
+        "zone_visible_area": 0.009,
+        "probe_visible_area": 0.008,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42003,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0004",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 17,
+        "first_target_contact_zone_frame": 49,
+        "first_target_hit_ground_frame": 18,
+        "final_target_displacement": {
+            "x": 0.338,
+            "y": 0.135,
+            "z": -0.081
+        },
+        "final_target_mask_displacement": [
+            0.206,
+            -0.397
+        ],
+        "target_visible_area": 0.031,
+        "zone_visible_area": 0.092,
+        "probe_visible_area": 0.007,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42004,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0005",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 20,
+        "first_target_contact_zone_frame": 98,
+        "first_target_hit_ground_frame": 21,
+        "final_target_displacement": {
+            "x": 0.356,
+            "y": 0.132,
+            "z": 0.076
+        },
+        "final_target_mask_displacement": [
+            0.012,
+            -0.213
+        ],
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.012,
+        "probe_visible_area": 0.018,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42005,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0006",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 27,
+        "first_target_contact_zone_frame": 52,
+        "first_target_hit_ground_frame": 27,
+        "final_target_displacement": {
+            "x": 0.137,
+            "y": 0.095,
+            "z": -0.001
+        },
+        "final_target_mask_displacement": [
+            0.067,
+            0.207
+        ],
+        "target_visible_area": 0.011,
+        "zone_visible_area": 0.006,
+        "probe_visible_area": 0.011,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42006,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0007",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 19,
+        "final_target_displacement": {
+            "x": 0.18,
+            "y": 0.001,
+            "z": -0.037
+        },
+        "final_target_mask_displacement": [
+            -0.027,
+            -0.042
+        ],
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.016,
+        "probe_visible_area": 0.011,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": 42007,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0008",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 152,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 32,
+        "first_target_contact_zone_frame": 68,
+        "first_target_hit_ground_frame": 31,
+        "final_target_displacement": {
+            "x": 0.131,
+            "y": 0.101,
+            "z": 0.038
+        },
+        "final_target_mask_displacement": [
+            0.204,
+            0.28
+        ],
+        "target_visible_area": 0.018,
+        "zone_visible_area": 0.029,
+        "probe_visible_area": 0.008,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42008,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    },
+    {
+        "stimulus_name": "pilot_it2_collision_non-sphere_box_0009",
+        "controller_name": "Collision",
+        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 36,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 37,
+        "final_target_displacement": {
+            "x": 0.047,
+            "y": 0.0,
+            "z": 0.011
+        },
+        "final_target_mask_displacement": [
+            0.009,
+            -0.028
+        ],
+        "target_visible_area": 0.015,
+        "zone_visible_area": 0.006,
+        "probe_visible_area": 0.013,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42009,
+        "push_time": 0,
+        "num_distractors": 0,
+        "num_occluders": 0
+    }
+]
