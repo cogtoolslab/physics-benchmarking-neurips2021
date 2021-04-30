@@ -12,11 +12,11 @@ var choices = get_random_choices(); //randomize button order
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
 var colname = 'collision_pilot'; //insert COLLECTION NAME
-var itname = 'iteration_1_internal'; //insert ITERATION NAME
+var itname = 'iteration_2_internal'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
-  this.type = 'video-button-response',
+  this.type = 'video-overlay-button-response',
   this.dbname = dbname;
   this.colname = colname;
   this.iterationName = itname;
@@ -123,7 +123,8 @@ function setupGame() {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        stop: 1.5, //STIM DURATION stop the video after X seconds
+        overlay: [n.map_url],
+        stop: 0.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
         post_trial_gap: 0,
@@ -187,8 +188,9 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
+        overlay: [n.map_url],
         // stimulus_metadata: n, //to dump all the metadata back to mongodb
-        stop: 1.5, //STIM DURATION stop the video after X seconds
+        stop: 0.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
         post_trial_gap: 0,
