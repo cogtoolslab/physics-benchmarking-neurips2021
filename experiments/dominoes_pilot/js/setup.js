@@ -16,14 +16,14 @@ var itname = 'run_2'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
-  this.type = 'video-button-response',
+  this.type = 'video-overlay-button-response',
   this.dbname = dbname;
   this.colname = colname;
   this.iterationName = itname;
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'Is the red block going to hit the yellow area?';
+  this.prompt = 'Is the red object going to hit the yellow area?';
   this.choices = choices;
 };
 
@@ -123,6 +123,9 @@ function setupGame() {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
+        overlay: [n.map_url],
+        overlay_time: 2.,
+        blink_time: 500,
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
@@ -187,7 +190,10 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        // stimulus_metadata: n, //to dump all the metadata back to mongodb
+        overlay: [n.map_url],
+        overlay_time: 2.,
+        blink_time: 500,
+        stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,

@@ -16,14 +16,14 @@ var itname = 'iteration_1_internal'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
-  this.type = 'video-button-response',
+  this.type = 'video-overlay-button-response',
   this.dbname = dbname;
   this.colname = colname;
   this.iterationName = itname;
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'Is the red block going to hit the yellow area?';
+  this.prompt = 'Is the red object going to hit the yellow area?';
   this.choices = choices;
 };
 
@@ -52,7 +52,7 @@ function setupGame() {
     // These are flags to control which trial types are included in the experiment
     const includeIntro = true;
     const includeSurvey = true;
-    const includeMentalRotation = false;
+    const includeMentalRotation = true;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
 
@@ -90,7 +90,6 @@ function setupGame() {
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
       data.correct = data.target_hit_zone_label == (data.response == "Yes");
-      console.log("response:", data.response, "|| hit_zone:", data.target_hit_zone_label)
       if(data.correct){correct+=1};
       total += 1;
       if(data.correct){
@@ -124,6 +123,9 @@ function setupGame() {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
+        overlay: [n.map_url],
+        overlay_time: 2.,
+        blink_time: 500,
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
@@ -188,7 +190,10 @@ function setupGame() {
       return _.extend({}, experimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url],
-        // stimulus_metadata: n, //to dump all the metadata back to mongodb
+        overlay: [n.map_url],
+        overlay_time: 2.,
+        blink_time: 500,
+        stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 1.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
