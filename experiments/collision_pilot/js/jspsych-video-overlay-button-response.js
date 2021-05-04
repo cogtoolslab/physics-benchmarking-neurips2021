@@ -15,6 +15,7 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
   var plugin = {};
 
   jsPsych.pluginAPI.registerPreload('video-overlay-button-response', 'stimulus', 'video');
+  jsPsych.pluginAPI.registerPreload('video-overlay-button-response', 'overlay', 'image');
 
   plugin.info = {
     name: 'video-overlay-button-response',
@@ -91,7 +92,7 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
       overlay_time: {
         type: jsPsych.plugins.parameterType.FLOAT,
         pretty_name: 'OverlayTime',
-        default: 1,
+        default: 1.,
         description: 'How long to show the first frame and the overlay.'
       },
       rate: {
@@ -133,7 +134,7 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
       response_allowed_while_playing: {
         type: jsPsych.plugins.parameterType.BOOL,
         pretty_name: 'Response allowed while playing',
-        default: true,
+        default: false,
         description: 'If true, then responses are allowed while the video is playing. '+
           'If false, then the video must finish playing before a response is accepted.'
       }
@@ -146,28 +147,25 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
     var video_html = '<div>'
     video_html += '<video id="jspsych-video-overlay-button-response-stimulus"';
 
-    // trial.start = trial.overlay_time; // we want to start the video after the overlay time
-
     if(trial.width) {
       video_html += ' width="'+trial.width+'"';
     }
     if(trial.height) {
       video_html += ' height="'+trial.height+'"';
     }
-    if(trial.autoplay & (trial.start == null)){
-      // if autoplay is true and the start time is specified, then the video will start automatically
-      // via the play() method, rather than the autoplay attribute, to prevent showing the first frame
-      video_html += " autoplay ";
-    }
+    // if(trial.autoplay & (trial.start == null)){
+    //   // if autoplay is true and the start time is specified, then the video will start automatically
+    //   // via the play() method, rather than the autoplay attribute, to prevent showing the first frame
+    //   video_html += " autoplay ";
+    // }
     if(trial.controls){
       video_html +=" controls ";
     }
-    if (trial.start !== null) {
-      // hide video element when page loads if the start time is specified, 
-      // to prevent the video element from showing the first frame
-      video_html += ' style="visibility: hidden;"'; 
-    }
-    
+    // if (trial.start !== null) {
+    //   // hide video element when page loads if the start time is specified, 
+    //   // to prevent the video element from showing the first frame
+    //   video_html += ' style="visibility: hidden;"'; 
+    // }
     video_html +=">";
     
     //preloading blobs doesn't work for safari
@@ -197,7 +195,7 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
     video_html += "</video>";
     
     //save the html using only the video
-    video_only_html = video_html + "</div>";
+    video_html_1 = video_html;
     //add the image
     overlay_html = '<image id="jspsych-video-overlay-button-response-overlay"';
     if(trial.width) {
@@ -207,12 +205,11 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
       overlay_html += ' height="'+trial.height+'"';
     }   
     overlay_html += 'src="' + trial.overlay + '"';
-    // overlay_html += 'style = "position: absolute; top: 0px; left: 0px;"';
     overlay_html += 'style = "position: absolute;  margin-left: -' + trial.width + 'px;"';
-    overlay_html += '/>';
+    overlay_html += '/image>';
     //done adding the image
     video_html += overlay_html;
-    video_html += "</div>";
+    video_html_2 = "</div>";
 
     //display buttons
     var buttons = [];
@@ -227,28 +224,25 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
         buttons.push(trial.button_html);
       }
     }
-    video_html += '<div id="jspsych-video-overlay-button-response-btngroup">';
+    video_html_2 += '<div id="jspsych-video-overlay-button-response-btngroup">';
     for (var i = 0; i < trial.choices.length; i++) {
       var str = buttons[i].replace(/%choice%/g, trial.choices[i]);
-      video_html += '<div class="jspsych-video-overlay-button-response-button" style="cursor: pointer; display: inline-block; margin:'+trial.margin_vertical+' '+trial.margin_horizontal+'" id="jspsych-video-overlay-button-response-button-' + i +'" data-choice="'+i+'">'+str+'</div>';
+      video_html_2 += '<div class="jspsych-video-overlay-button-response-button" style="cursor: pointer; display: inline-block; margin:'+trial.margin_vertical+' '+trial.margin_horizontal+'" id="jspsych-video-overlay-button-response-button-' + i +'" data-choice="'+i+'">'+str+'</div>';
     }
-    video_html += '</div>';
+    video_html_2 += '</div>';
 
     // add prompt if there is one
     if (trial.prompt !== null) {
-      video_html += trial.prompt;
+      video_html_2 += trial.prompt;
     }
-
-    display_element.innerHTML = video_html;
     
-    var start_time = performance.now();
-
+    display_element.innerHTML = video_html_1 + overlay_html + video_html_2;
+    
     var video_element = display_element.querySelector('#jspsych-video-overlay-button-response-stimulus');
-
-    if(video_preload_blob){
-      video_element.src = video_preload_blob;
-    }
-
+    var overlay_element = display_element.querySelector('#jspsych-video-overlay-button-response-overlay');    
+    
+    if(video_preload_blob){video_element.src = video_preload_blob;}
+    disable_buttons();
     video_element.onended = function(){
       if(trial.trial_ends_after_video){
         end_trial();
@@ -256,22 +250,9 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
         enable_buttons();
       }
     }
-
+  
     video_element.playbackRate = trial.rate;
-
-    // if video start time is specified, hide the video and set the starting time
-    // before showing and playing, so that the video doesn't automatically show the first frame
-    if(trial.start !== null){
-      video_element.pause();
-      video_element.currentTime = trial.start;
-      video_element.onseeked = function() {
-        video_element.style.visibility = "visible";
-        if (trial.autoplay) {
-          video_element.play();
-        }
-      }
-    }
-
+  
     if(trial.stop !== null){
       video_element.addEventListener('timeupdate', function(e){
         var currenttime = video_element.currentTime;
@@ -282,6 +263,20 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
         }
       })
     }
+    var start_time = performance.now();
+
+    //wait and then start the trial
+    if (trial.overlay != null){
+    jsPsych.pluginAPI.setTimeout(hide_overlay_and_start,trial.overlay_time*1000);
+    } else{
+    hide_overlay_and_start();
+    }
+      
+    function hide_overlay_and_start() {
+      overlay_element.hidden = true;
+      video_element.play();
+    }
+    
 
     if(trial.response_allowed_while_playing){
       enable_buttons();
