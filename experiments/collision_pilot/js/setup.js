@@ -12,7 +12,7 @@ var choices = get_random_choices(); //randomize button order
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
 var colname = 'collision_pilot'; //insert COLLECTION NAME
-var itname = 'iteration_2_internal'; //insert ITERATION NAME
+var itname = 'iteration_2'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
@@ -124,6 +124,8 @@ function setupGame() {
         trialNum: i,
         stimulus: [n.stim_url],
         overlay: [n.map_url],
+        overlay_time: 2.,
+        blink_time: 500,
         stop: 0.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
@@ -189,7 +191,9 @@ function setupGame() {
         trialNum: i,
         stimulus: [n.stim_url],
         overlay: [n.map_url],
-        // stimulus_metadata: n, //to dump all the metadata back to mongodb
+        overlay_time: 2.,
+        blink_time: 500,
+        stimulus_metadata: n, //to dump all the metadata back to mongodb
         stop: 0.5, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
