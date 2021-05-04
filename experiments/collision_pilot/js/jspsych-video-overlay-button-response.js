@@ -195,25 +195,23 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
       }
     }
     video_html += "</video>";
-
+    
+    //save the html using only the video
+    video_only_html = video_html + "</div>";
     //add the image
-    video_html += '<style type="text/css" media="screen">.image:after { content: ""; position: absolute; width: 257px; height: 257px; left: 0; top: 0; right: 0; bottom: 0; background: url(https://i.imgur.com/HDbLxjZ.png) no-repeat 0 0; background-size: cover; }'
-
-    // video_html += '<image id="jspsych-video-overlay-button-response-overlay"';
-    // if(trial.width) {
-    //   video_html += ' width="'+trial.width+'"';
-    // }
-    // if(trial.height) {
-    //   video_html += ' height="'+trial.height+'"';
-    // }   
-    // video_html += 'src="' + trial.overlay + '"';
-    // video_html += '/>';
-
-    // lets add css to make it overlap
-
-
+    overlay_html = '<image id="jspsych-video-overlay-button-response-overlay"';
+    if(trial.width) {
+      overlay_html += ' width="'+trial.width+'"';
+    }
+    if(trial.height) {
+      overlay_html += ' height="'+trial.height+'"';
+    }   
+    overlay_html += 'src="' + trial.overlay + '"';
+    // overlay_html += 'style = "position: absolute; top: 0px; left: 0px;"';
+    overlay_html += 'style = "position: absolute;  margin-left: -' + trial.width + 'px;"';
+    overlay_html += '/>';
     //done adding the image
-
+    video_html += overlay_html;
     video_html += "</div>";
 
     //display buttons
