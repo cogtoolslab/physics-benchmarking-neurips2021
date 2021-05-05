@@ -3,7 +3,7 @@
 --num
 10
 --ramp
-1
+0
 --save_passes
 _img
 --save_movies
@@ -29,7 +29,7 @@ cube
 --spacing_jitter
 0.10
 --fscale
-0.5
+[0.5,5.0]
 --zscale
 5.0,0.01,5.0
 --pmass
