@@ -6,7 +6,7 @@ function sendData(data) {
 }
 
 //randomize button order on a subject basis
-var get_random_choices = () => {if(Math.random() > .5){return ["No", "Yes"];}else{return ["Yes", "No"];}};
+var get_random_choices = () => {if(Math.random() > .5){return ["NO", "YES"];}else{return ["YES", "NO"];}};
 var choices = get_random_choices(); //randomize button order
 
 // Set the important study info here
@@ -37,6 +37,7 @@ function FamiliarizationExperiment() {
 var last_correct = undefined;  //was the last trial correct? Needed for feedback in familiarization
 var correct = 0;
 var total = 0;
+var last_yes = undefined;
 
 function setupGame() {
   socket.on('onConnected', function (d) {
@@ -89,7 +90,7 @@ function setupGame() {
       jsPsych.data.addProperties(jsPsych.currentTrial()
       ); //let's make sure to send ALL the data //TODO: maybe selectively send data to db
       // lets also add correctness info to data
-      data.correct = data.target_hit_zone_label == (data.response == "Yes");
+      data.correct = data.target_hit_zone_label == (data.response == "YES");
       if(data.correct){correct+=1};
       total += 1;
       if(data.correct){
@@ -98,6 +99,7 @@ function setupGame() {
           console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
         }; //TODO take out before production
       last_correct = data.correct; //store the last correct for familiarization trials
+      last_yes = (data.response == "YES") //store if the last reponse is yes
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
@@ -158,11 +160,17 @@ function setupGame() {
         target_hit_zone_label: n.target_hit_zone_label,
         stim_ID: n.stim_ID,
         choices: ["Next"],
-        prompt: () => {if(last_correct) {
-            return "Nice, you predicted correctly. Above, you see the full video.";
-          }
+        prompt: () => {if(last_correct & last_yes) {
+            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+          } 
+          else if (last_correct & !last_yes) {
+            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+          } 
+          else if (!last_correct & last_yes) {
+            return "❌ Sorry, you got that one wrong. The red object did not hit the yellow area. Above, you see the full video.";
+          } 
           else {
-            return "Sorry, you got that one wrong. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The red object did hit the yellow area. Above, you see the full video.";
           }}
         // save_trial_parameters: {} //selectively save parameters
       });
@@ -218,7 +226,9 @@ function setupGame() {
 
 
     var instructionsHTML = {
-      'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether a certain event will happen after the video ends. In this case, you\'ll be asked if the red object will touch the yellow area.']
+      'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
+      a certain event will happen after the video ends. In this case, you\'ll be asked if the red object will touch the yellow area.\
+      </p><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warm up trials, you will receive feedback on the correctness, but not on test trials.']
     };
 
     // add consent pages
