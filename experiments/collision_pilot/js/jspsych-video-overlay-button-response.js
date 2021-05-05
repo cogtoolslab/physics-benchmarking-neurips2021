@@ -10,7 +10,7 @@
  *
  **/
 
-jsPsych.plugins["video-overlay-button-response"] = (function() {
+ jsPsych.plugins["video-overlay-button-response"] = (function() {
 
   var plugin = {};
 
@@ -279,17 +279,19 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
     }
 
     //set up blinks
-    hidden = true;
-    _.range(0,trial.overlay_time*1000,trial.blink_time).forEach(
-      t => {
-        if(hidden){
-          jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = true;}, t);}
-          else{
-            jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = false;}, t);}
-        hidden = !hidden;
-        console.log(hidden,t);
-      }
-    )
+    if (trial.overlay != undefined){
+      hidden = true;
+      _.range(0,trial.overlay_time*1000,trial.blink_time).forEach(
+        t => {
+          if(hidden){
+            jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = true;}, t);}
+            else{
+              jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = false;}, t);}
+          hidden = !hidden;
+          console.log(hidden,t);
+        }
+      )
+    }
       
     function hide_overlay_and_start() {
       overlay_element.hidden = true;
