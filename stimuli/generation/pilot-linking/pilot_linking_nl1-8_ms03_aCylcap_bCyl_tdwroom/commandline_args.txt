@@ -16,6 +16,8 @@ _img
 --save_movies
 --num_middle_range
 [1,9]
+--fscale
+[0.5,5.0]
 --mmass
 2.0
 --mgrad

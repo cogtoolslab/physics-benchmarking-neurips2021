@@ -65,3 +65,5 @@ _img,_id
 0.05
 --room
 tdw
+--fscale
+[0.5,5.0]
