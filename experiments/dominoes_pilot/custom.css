@@ -7,7 +7,8 @@
 /* Container holding jsPsych content */
 * {
   font-family: 'Lato', sans-serif;
-  background-color: #F5F5F5;
+  /* The following line breaks overlays—why? */
+  /* background-color: #F5F5F5; */ 
 }
 
 #upper_bound{
