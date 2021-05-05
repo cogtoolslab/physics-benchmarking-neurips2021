@@ -36,6 +36,8 @@ cylinder
 4.0
 --zone
 cube
+--fscale
+[0.5,5.0]
 --zscale
 2.0,0.01,4.0
 --zlocation

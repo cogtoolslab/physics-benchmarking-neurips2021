@@ -99,7 +99,7 @@ function setupGame() {
           console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
         }; //TODO take out before production
       last_correct = data.correct; //store the last correct for familiarization trials
-      last_yes = (data.response == "YES") //store if the last reponse is yes
+      last_yes = (data.response == "YES"); //store if the last reponse is yes
       socket.emit('currentData', data);
       console.log('emitting data',data);
     }
@@ -160,11 +160,12 @@ function setupGame() {
         target_hit_zone_label: n.target_hit_zone_label,
         stim_ID: n.stim_ID,
         choices: ["Next"],
-        prompt: () => {if(last_correct & last_yes) {
+        prompt: () => {
+          if(last_correct & last_yes) {
             return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
           } 
           else if (last_correct & !last_yes) {
-            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+            return "✅ Nice, you got that right. The red object indeed did not hit the yellow area. Above, you see the full video.";
           } 
           else if (!last_correct & last_yes) {
             return "❌ Sorry, you got that one wrong. The red object did not hit the yellow area. Above, you see the full video.";
