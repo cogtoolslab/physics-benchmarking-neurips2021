@@ -52,7 +52,7 @@ function setupGame() {
     // These are flags to control which trial types are included in the experiment
     const includeIntro = true;
     const includeSurvey = true;
-    const includeMentalRotation = true;
+    const includeMentalRotation = false;
     const includeGoodbye = true;
     const includeFamiliarizationTrials = true;
 
