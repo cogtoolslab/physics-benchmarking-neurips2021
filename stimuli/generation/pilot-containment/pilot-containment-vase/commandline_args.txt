@@ -1,0 +1,10 @@
+--save_passes
+_img
+--save_labels
+--save_movies
+--num=2
+--fwait
+15
+--num_occluders=1
+--dir
+/Users/choldawa/Documents/Projects/tdw_physics/tdw_physics/target_controllers/pilot-containment-box

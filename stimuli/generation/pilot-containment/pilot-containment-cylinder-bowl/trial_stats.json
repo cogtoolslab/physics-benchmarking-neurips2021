@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot-containment-cylinder-bowl_0000",
+    "controller_name/avg_label": "Containment",
+    "git_commit/avg_label": "c2e24e44ccd6455d7baada010363a51ebff49999",
+    "num_frames/avg_label": 409.0,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.0,
+    "does_target_miss_zone/avg_label": 1.0,
+    "does_target_hit_ground/avg_label": 0.333,
+    "first_target_move_frame/avg_label": 1.0,
+    "first_target_contact_zone_frame/avg_label": null,
+    "first_target_hit_ground_frame/avg_label": 22.0,
+    "final_target_displacement/avg_label": {
+        "x": -1.689,
+        "y": -8.916,
+        "z": -9.189
+    },
+    "final_target_mask_displacement/avg_label": [
+        -0.01,
+        -0.041
+    ],
+    "target_visible_area/avg_label": 0.005,
+    "zone_visible_area/avg_label": 0.112,
+    "probe_visible_area/avg_label": 0.002,
+    "is_any_object_fully_occluded/avg_label": 1.0,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": -1.0,
+    "push_time/avg_label": 15.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 1.0,
+    "num_trials": 3
+}

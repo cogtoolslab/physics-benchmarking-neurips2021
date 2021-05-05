@@ -1,0 +1,29 @@
+{
+    "stimulus_name/avg_label": "pilot_dominoes_SJ020_d3chairs_o1plants_tdwroom_0000-pilot_dominoes_SJ020_d3chairs_o1plants_tdwroom_0019",
+    "controller_name/avg_label": "MultiDominoes",
+    "num_frames/avg_label": 187.65,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 0.55,
+    "does_target_contact_zone/avg_label": 0.55,
+    "does_target_miss_zone/avg_label": 0.0,
+    "does_target_hit_ground/avg_label": 0.55,
+    "first_target_move_frame/avg_label": 133.0,
+    "first_target_contact_zone_frame/avg_label": 176.455,
+    "first_target_hit_ground_frame/avg_label": 141.455,
+    "final_target_displacement/avg_label": {
+        "x": 0.03,
+        "y": 0.032,
+        "z": -0.0
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.038,
+        0.003
+    ],
+    "target_visible_area/avg_label": 0.089,
+    "zone_visible_area/avg_label": 0.061,
+    "probe_visible_area/avg_label": 0.026,
+    "num_distractors/avg_label": 3.0,
+    "num_occluders/avg_label": 1.0,
+    "num_middle_objects/avg_label": 3.0,
+    "num_trials": 20
+}

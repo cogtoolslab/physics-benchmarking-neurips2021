@@ -1,0 +1,15 @@
+--save_passes
+_img
+--save_labels
+--save_movies
+--num=1
+--fwait
+15
+--only_use_flex_objects
+--num_occluders
+1
+--occluder=core
+--dir
+/Users/choldawa/Documents/Projects/tdw_physics/tdw_physics/target_controllers/pilot-containment-box
+--width=512
+--height=512

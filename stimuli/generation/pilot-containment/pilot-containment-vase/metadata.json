@@ -1,0 +1,66 @@
+[
+    {
+        "stimulus_name": "pilot-containment-box_0000",
+        "controller_name": "Containment",
+        "git_commit": "2df973bdb49a0939c33d08bc3e805cf415fa4725",
+        "num_frames": 289,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.946,
+            "y": -9.399,
+            "z": -9.852
+        },
+        "final_target_mask_displacement": [
+            0.259,
+            -0.012
+        ],
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.166,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-box_0001",
+        "controller_name": "Containment",
+        "git_commit": "2df973bdb49a0939c33d08bc3e805cf415fa4725",
+        "num_frames": 262,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.893,
+            "y": -9.722,
+            "z": -10.188
+        },
+        "final_target_mask_displacement": [
+            NaN,
+            NaN
+        ],
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.138,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": -1,
+        "push_time": 15,
+        "num_distractors": 0,
+        "num_occluders": 1
+    }
+]

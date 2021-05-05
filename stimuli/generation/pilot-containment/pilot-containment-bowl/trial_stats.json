@@ -1,33 +1,33 @@
 {
-    "stimulus_name/avg_label": "None",
+    "stimulus_name/avg_label": "pilot-containment-bowl_0000-pilot-containment-bowl_0001",
     "controller_name/avg_label": "Containment",
-    "git_commit/avg_label": "None",
-    "num_frames/avg_label": 407.2,
+    "git_commit/avg_label": "c2e24e44ccd6455d7baada010363a51ebff49999",
+    "num_frames/avg_label": 448.0,
     "is_trial_valid/avg_label": 1.0,
     "does_target_move/avg_label": 1.0,
-    "does_target_contact_zone/avg_label": 0.6,
-    "does_target_miss_zone/avg_label": 0.4,
-    "does_target_hit_ground/avg_label": 0.6,
+    "does_target_contact_zone/avg_label": 1.0,
+    "does_target_miss_zone/avg_label": 0.0,
+    "does_target_hit_ground/avg_label": 1.0,
     "first_target_move_frame/avg_label": 1.0,
-    "first_target_contact_zone_frame/avg_label": 94.333,
-    "first_target_hit_ground_frame/avg_label": 104.0,
+    "first_target_contact_zone_frame/avg_label": 50.0,
+    "first_target_hit_ground_frame/avg_label": 61.5,
     "final_target_displacement/avg_label": {
-        "x": -1.33,
-        "y": -9.821,
-        "z": -9.686
+        "x": -0.117,
+        "y": -9.831,
+        "z": -10.159
     },
     "final_target_mask_displacement/avg_label": [
-        0.337,
-        -0.058
+        -0.081,
+        -0.29
     ],
-    "target_visible_area/avg_label": 0.001,
-    "zone_visible_area/avg_label": 0.177,
+    "target_visible_area/avg_label": 0.002,
+    "zone_visible_area/avg_label": 0.156,
     "probe_visible_area/avg_label": 0.004,
     "is_any_object_fully_occluded/avg_label": 1.0,
     "room/avg_label": "b'box'",
     "trial_seed/avg_label": -1.0,
     "push_time/avg_label": 15.0,
     "num_distractors/avg_label": 0.0,
-    "num_occluders/avg_label": 0.0,
-    "num_trials": 5
+    "num_occluders/avg_label": 1.0,
+    "num_trials": 2
 }
