@@ -161,16 +161,16 @@ function setupGame() {
         stim_ID: n.stim_ID,
         choices: ["Next"],
         prompt: () => {if(last_correct & last_yes) {
-            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+            return "✅ Nice, you got that right. The target object did indeed hit the target zone. Above, you see the full video.";
           } 
           else if (last_correct & !last_yes) {
-            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+            return "✅ Nice, you got that right. The target object indeed didn't hit the target zone. Above, you see the full video.";
           } 
           else if (!last_correct & last_yes) {
-            return "❌ Sorry, you got that one wrong. The red object did not hit the yellow area. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The target object did not hit the target zone. Above, you see the full video.";
           } 
           else {
-            return "❌ Sorry, you got that one wrong. The red object did hit the yellow area. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The target object did hit the target zone. Above, you see the full video.";
           }}
         // save_trial_parameters: {} //selectively save parameters
       });
@@ -227,7 +227,7 @@ function setupGame() {
 
     var instructionsHTML = {
       'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
-      a certain event will happen after the video ends. In this case, you\'ll be asked if the red object will touch the yellow area.\
+      a certain event will happen after the video ends. In this case, you\'ll be asked if the target object will touch the target zone.\
       </p><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warm up trials, you will receive feedback on the correctness, but not on test trials.']
     };
 
