@@ -228,8 +228,8 @@ function setupGame() {
 
     var instructionsHTML = {
       'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
-      a certain event will happen after the video ends. In this case, you\'ll be asked if the red object will touch the yellow area.\
-      </p><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warm up trials, you will receive feedback on the correctness, but not on test trials.']
+      a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and an area in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the area marked in yellow.\
+      </p><div><img src="img/blinkingdemo.gif"></div><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warm up trials, you will receive feedback on the correctness, but not on the real trials.']
     };
 
     // add consent pages
@@ -267,7 +267,6 @@ function setupGame() {
       (cogtoolslab.requester@gmail.com) and we will make sure you're compensated \
       for your time! Please pay attention and do your best! Thank you!</p><p> Note: \
         We recommend using Firefox or Chrome. We have not tested this study in other browsers.</p>"
-
     };
 
     //combine instructions and consent
