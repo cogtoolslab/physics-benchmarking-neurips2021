@@ -279,7 +279,7 @@ jsPsych.plugins["video-overlay-button-response"] = (function() {
     }
 
     //set up blinks
-    hidden = false;
+    hidden = true;
     _.range(0,trial.overlay_time*1000,trial.blink_time).forEach(
       t => {
         if(hidden){
