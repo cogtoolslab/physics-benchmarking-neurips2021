@@ -23,7 +23,7 @@ function Experiment() {
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'Is the red object going to hit the yellow area?';
+  this.prompt = 'Is the target object going to hit the target zone?';
   this.choices = choices;
 };
 
