@@ -158,16 +158,16 @@ function setupGame() {
         stim_ID: n.stim_ID,
         choices: ["Next"],
         prompt: () => {if(last_correct & last_yes) {
-            return "✅ Nice, you predicted correctly. The red block indeed hit the yellow ground. Above, you see the full video.";
+            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
           } 
           else if (last_correct & !last_yes) {
-            return "✅ Nice, you predicted correctly. The red block indeed will not hit the yellow ground. Above, you see the full video.";
+            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
           } 
           else if (!last_correct & last_yes) {
-            return "❌ Sorry, you got that one wrong. The red block will not hit the yellow ground. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The red object did not hit the yellow area. Above, you see the full video.";
           } 
           else {
-            return "❌ Sorry, you got that one wrong. The red block will hit the yellow ground. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The red object did hit the yellow area. Above, you see the full video.";
           }}
         // save_trial_parameters: {} //selectively save parameters
       });
