@@ -1,4 +1,4 @@
-var DEBUG_MODE = false; //print debug and piloting information to the console
+var DEBUG_MODE = true; //print debug and piloting information to the console
 
 function sendData(data) {
   console.log('sending data to mturk');
@@ -242,7 +242,7 @@ function setupGame() {
     var instructionsHTML = {
       'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
       a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and an area in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the area marked in yellow.\
-      </p><div><img src="img/blinkingdemo.gif"></div><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warm up trials, you will receive feedback on the correctness, but not on the real trials.']
+      </p><div><img src="img/blinkingdemo.gif"></div><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warmup trials, you will find out whether your response was correct or not, but you won\'t on the real trials.']
     };
 
     // add consent pages
@@ -275,7 +275,7 @@ function setupGame() {
       participating in this study.</p>"
       ].join(' '),
       'str4': '<p> We expect this study to take approximately 10 to 15 minutes to complete, \
-      including the time it takes to read instructions.</p>',
+      including the time it takes to read these instructions.</p>',
       'str5': "<p>If you encounter a problem or error, send us an email \
       (cogtoolslab.requester@gmail.com) and we will make sure you're compensated \
       for your time! Please pay attention and do your best! Thank you!</p><p> Note: \
