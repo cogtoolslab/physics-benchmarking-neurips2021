@@ -1,3 +1,8 @@
+--tcolor
+None
+--zcolor
+None
+--only_use_flex_objects
 --collision_axis_length
 2
 --probe

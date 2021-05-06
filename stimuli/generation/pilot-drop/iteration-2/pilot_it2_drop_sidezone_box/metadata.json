@@ -2,8 +2,8 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0000",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 189,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -13,16 +13,16 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": 50,
         "final_target_displacement": {
-            "x": 0.097,
-            "y": 0.08,
-            "z": -0.214
+            "x": 0.212,
+            "y": 0.016,
+            "z": -0.232
         },
         "final_target_mask_displacement": [
-            0.813,
-            0.016
+            NaN,
+            NaN
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.17,
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.017,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -36,27 +36,27 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0001",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 194,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 59,
-        "first_target_hit_ground_frame": 59,
+        "first_target_contact_zone_frame": 60,
+        "first_target_hit_ground_frame": 60,
         "final_target_displacement": {
-            "x": -0.18,
-            "y": 0.185,
-            "z": 1.101
+            "x": 0.133,
+            "y": 0.323,
+            "z": 1.761
         },
         "final_target_mask_displacement": [
-            0.83,
-            -0.512
+            NaN,
+            NaN
         ],
-        "target_visible_area": 0.011,
-        "zone_visible_area": 0.064,
+        "target_visible_area": 0.014,
+        "zone_visible_area": 0.225,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -70,27 +70,27 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0002",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 151,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 225,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 56,
-        "first_target_hit_ground_frame": 56,
+        "first_target_contact_zone_frame": 63,
+        "first_target_hit_ground_frame": 64,
         "final_target_displacement": {
-            "x": 0.541,
-            "y": 0.284,
-            "z": 0.239
+            "x": -0.284,
+            "y": 0.021,
+            "z": 0.169
         },
         "final_target_mask_displacement": [
-            0.637,
-            0.105
+            0.729,
+            -0.182
         ],
-        "target_visible_area": 0.011,
-        "zone_visible_area": 0.057,
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.106,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -104,29 +104,29 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0003",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 245,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 170,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 91,
-        "first_target_hit_ground_frame": 51,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 57,
         "final_target_displacement": {
-            "x": -0.703,
-            "y": 0.119,
-            "z": -0.356
+            "x": -0.382,
+            "y": 0.0,
+            "z": -0.51
         },
         "final_target_mask_displacement": [
-            0.773,
-            0.267
+            1.061,
+            0.213
         ],
-        "target_visible_area": 0.008,
-        "zone_visible_area": 0.228,
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.095,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": false,
+        "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 42003,
         "push_time": 0,
@@ -138,8 +138,8 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0004",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 151,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 252,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -147,18 +147,18 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 61,
+        "first_target_hit_ground_frame": 56,
         "final_target_displacement": {
-            "x": 0.177,
-            "y": -0.0,
-            "z": -0.075
+            "x": 0.113,
+            "y": 0.048,
+            "z": -0.685
         },
         "final_target_mask_displacement": [
-            1.014,
-            0.103
+            0.886,
+            0.237
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.062,
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.131,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -172,29 +172,29 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0005",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 285,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 275,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 50,
         "first_target_hit_ground_frame": 51,
         "final_target_displacement": {
-            "x": -0.095,
-            "y": -0.0,
-            "z": -0.248
+            "x": -0.114,
+            "y": 0.071,
+            "z": 0.705
         },
         "final_target_mask_displacement": [
-            0.892,
-            -0.019
+            0.99,
+            0.057
         ],
-        "target_visible_area": 0.008,
-        "zone_visible_area": 0.114,
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.235,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": false,
+        "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 42005,
         "push_time": 0,
@@ -206,27 +206,27 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0006",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 53,
+        "first_target_contact_zone_frame": 48,
+        "first_target_hit_ground_frame": 49,
         "final_target_displacement": {
-            "x": 0.059,
-            "y": 0.0,
-            "z": -0.435
+            "x": 0.061,
+            "y": 0.08,
+            "z": 0.313
         },
         "final_target_mask_displacement": [
-            0.916,
-            0.165
+            0.894,
+            -0.019
         ],
         "target_visible_area": 0.003,
-        "zone_visible_area": 0.163,
+        "zone_visible_area": 0.242,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -240,27 +240,27 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0007",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 190,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 56,
-        "first_target_hit_ground_frame": 56,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 50,
         "final_target_displacement": {
-            "x": 0.11,
-            "y": 0.165,
-            "z": 1.072
+            "x": 0.289,
+            "y": 0.119,
+            "z": -0.133
         },
         "final_target_mask_displacement": [
-            0.433,
-            0.003
+            0.776,
+            -0.067
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.091,
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.201,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -274,27 +274,27 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0008",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 50,
-        "first_target_hit_ground_frame": 49,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 46,
         "final_target_displacement": {
-            "x": -0.735,
-            "y": 0.152,
-            "z": 0.071
+            "x": 0.263,
+            "y": 0.159,
+            "z": -0.594
         },
         "final_target_mask_displacement": [
-            0.917,
-            0.176
+            0.535,
+            0.123
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.137,
+        "target_visible_area": 0.013,
+        "zone_visible_area": 0.189,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -308,7 +308,7 @@
     {
         "stimulus_name": "pilot_it2_drop_sidezone_box_0009",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -316,19 +316,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 49,
-        "first_target_hit_ground_frame": 49,
+        "first_target_contact_zone_frame": 53,
+        "first_target_hit_ground_frame": 54,
         "final_target_displacement": {
-            "x": 0.334,
-            "y": 0.171,
-            "z": 0.367
+            "x": -0.053,
+            "y": 0.322,
+            "z": 0.422
         },
         "final_target_mask_displacement": [
-            0.754,
-            -0.088
+            1.006,
+            -0.169
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.083,
+        "target_visible_area": 0.018,
+        "zone_visible_area": 0.073,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
