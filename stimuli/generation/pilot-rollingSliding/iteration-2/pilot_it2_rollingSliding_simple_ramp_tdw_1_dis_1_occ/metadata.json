@@ -1,0 +1,322 @@
+[
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0000",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 253,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": 115,
+        "first_target_hit_ground_frame": 75,
+        "final_target_displacement": {
+            "x": 1.118,
+            "y": -0.99,
+            "z": -0.048
+        },
+        "final_target_mask_displacement": [
+            0.76,
+            -0.916
+        ],
+        "target_visible_area": 0.013,
+        "zone_visible_area": 0.134,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0001",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 190,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": 117,
+        "first_target_hit_ground_frame": 75,
+        "final_target_displacement": {
+            "x": 1.129,
+            "y": -0.99,
+            "z": 0.028
+        },
+        "final_target_mask_displacement": [
+            0.54,
+            -0.851
+        ],
+        "target_visible_area": 0.019,
+        "zone_visible_area": 0.137,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0002",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 191,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": 104,
+        "first_target_hit_ground_frame": 75,
+        "final_target_displacement": {
+            "x": 1.152,
+            "y": -0.99,
+            "z": 0.062
+        },
+        "final_target_mask_displacement": [
+            0.748,
+            -0.792
+        ],
+        "target_visible_area": 0.01,
+        "zone_visible_area": 0.116,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": true,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0003",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 180,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 18,
+        "first_target_contact_zone_frame": 109,
+        "first_target_hit_ground_frame": 74,
+        "final_target_displacement": {
+            "x": 1.092,
+            "y": -0.888,
+            "z": -0.071
+        },
+        "final_target_mask_displacement": [
+            0.755,
+            -0.632
+        ],
+        "target_visible_area": 0.008,
+        "zone_visible_area": 0.217,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0004",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 192,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 18,
+        "first_target_contact_zone_frame": 98,
+        "first_target_hit_ground_frame": 73,
+        "final_target_displacement": {
+            "x": 1.077,
+            "y": -0.889,
+            "z": -0.036
+        },
+        "final_target_mask_displacement": [
+            0.831,
+            -0.747
+        ],
+        "target_visible_area": 0.019,
+        "zone_visible_area": 0.163,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": true,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0005",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 302,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 11,
+        "first_target_contact_zone_frame": 101,
+        "first_target_hit_ground_frame": 69,
+        "final_target_displacement": {
+            "x": 1.622,
+            "y": -0.842,
+            "z": 0.002
+        },
+        "final_target_mask_displacement": [
+            0.652,
+            -0.66
+        ],
+        "target_visible_area": 0.019,
+        "zone_visible_area": 0.069,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": true,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0006",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 248,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 11,
+        "first_target_contact_zone_frame": 101,
+        "first_target_hit_ground_frame": 69,
+        "final_target_displacement": {
+            "x": 1.363,
+            "y": -0.755,
+            "z": -0.102
+        },
+        "final_target_mask_displacement": [
+            0.745,
+            -0.934
+        ],
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.218,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0007",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 76,
+        "final_target_displacement": {
+            "x": 0.73,
+            "y": -0.739,
+            "z": 0.033
+        },
+        "final_target_mask_displacement": [
+            0.813,
+            -0.649
+        ],
+        "target_visible_area": 0.03,
+        "zone_visible_area": 0.096,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0008",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 286,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": 103,
+        "first_target_hit_ground_frame": 75,
+        "final_target_displacement": {
+            "x": 1.152,
+            "y": -0.99,
+            "z": -0.108
+        },
+        "final_target_mask_displacement": [
+            0.695,
+            -0.883
+        ],
+        "target_visible_area": 0.011,
+        "zone_visible_area": 0.16,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0009",
+        "controller_name": "RollingSliding",
+        "git_commit": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
+        "num_frames": 245,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 19,
+        "first_target_contact_zone_frame": 108,
+        "first_target_hit_ground_frame": 75,
+        "final_target_displacement": {
+            "x": 1.132,
+            "y": -0.99,
+            "z": -0.058
+        },
+        "final_target_mask_displacement": [
+            0.642,
+            -0.625
+        ],
+        "target_visible_area": 0.024,
+        "zone_visible_area": 0.094,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": false,
+        "room": "b'tdw'",
+        "trial_seed": -1,
+        "push_time": 0,
+        "num_distractors": 1,
+        "num_occluders": 1
+    }
+]

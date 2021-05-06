@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_collision_tdw_2_dis_2_occ_0000-pilot_it2_rollingSliding_simple_collision_tdw_2_dis_2_occ_0009",
+    "controller_name/avg_label": "Collision",
+    "git_commit/avg_label": "04d13218da836d984221e283723b4139d48bc51c-cc26a26d707579aa3ed6587c2a23647e8461732b",
+    "num_frames/avg_label": 151.8,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 0.5,
+    "does_target_contact_zone/avg_label": 0.3,
+    "does_target_miss_zone/avg_label": 0.2,
+    "does_target_hit_ground/avg_label": 0.7,
+    "first_target_move_frame/avg_label": 28.4,
+    "first_target_contact_zone_frame/avg_label": 77.333,
+    "first_target_hit_ground_frame/avg_label": 6.857,
+    "final_target_displacement/avg_label": {
+        "x": 0.067,
+        "y": 0.042,
+        "z": -0.013
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.05,
+        0.026
+    ],
+    "target_visible_area/avg_label": 0.01,
+    "zone_visible_area/avg_label": 0.036,
+    "probe_visible_area/avg_label": 0.011,
+    "is_any_object_fully_occluded/avg_label": 0.8,
+    "room/avg_label": "b'tdw'",
+    "trial_seed/avg_label": 42004.5,
+    "push_time/avg_label": 0.0,
+    "num_distractors/avg_label": 2.0,
+    "num_occluders/avg_label": 2.0,
+    "num_trials": 10
+}

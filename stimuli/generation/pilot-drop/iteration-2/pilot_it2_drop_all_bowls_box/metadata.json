@@ -2,7 +2,7 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0000",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -10,19 +10,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 53,
-        "first_target_hit_ground_frame": 54,
+        "first_target_contact_zone_frame": 51,
+        "first_target_hit_ground_frame": 52,
         "final_target_displacement": {
-            "x": 0.124,
-            "y": 0.09,
-            "z": -0.294
+            "x": 0.292,
+            "y": 0.01,
+            "z": -0.309
         },
         "final_target_mask_displacement": [
-            0.756,
-            -0.062
+            0.805,
+            -0.02
         ],
-        "target_visible_area": 0.004,
-        "zone_visible_area": 0.194,
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.031,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -36,27 +36,27 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0001",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 266,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 70,
-        "first_target_hit_ground_frame": 71,
+        "first_target_contact_zone_frame": 71,
+        "first_target_hit_ground_frame": 72,
         "final_target_displacement": {
-            "x": 0.131,
-            "y": 0.203,
-            "z": 0.483
+            "x": 0.207,
+            "y": 0.0,
+            "z": 1.552
         },
         "final_target_mask_displacement": [
-            0.984,
-            -0.201
+            1.541,
+            -0.449
         ],
-        "target_visible_area": 0.011,
-        "zone_visible_area": 0.019,
+        "target_visible_area": 0.015,
+        "zone_visible_area": 0.212,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -70,27 +70,27 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0002",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 151,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
-        "does_target_hit_ground": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 62,
-        "first_target_hit_ground_frame": 63,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": 0.541,
-            "y": 0.191,
-            "z": 0.423
+            "x": -0.155,
+            "y": 0.122,
+            "z": 0.051
         },
         "final_target_mask_displacement": [
-            0.704,
-            0.049
+            0.688,
+            -0.015
         ],
-        "target_visible_area": 0.011,
-        "zone_visible_area": 0.195,
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.209,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -104,7 +104,7 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0003",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -112,21 +112,21 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 52,
-        "first_target_hit_ground_frame": 52,
+        "first_target_contact_zone_frame": 82,
+        "first_target_hit_ground_frame": 83,
         "final_target_displacement": {
-            "x": -0.371,
-            "y": 0.126,
-            "z": -0.313
+            "x": -0.169,
+            "y": 0.01,
+            "z": -0.532
         },
         "final_target_mask_displacement": [
-            0.74,
-            -0.068
+            1.171,
+            0.211
         ],
-        "target_visible_area": 0.008,
-        "zone_visible_area": 0.202,
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.188,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": false,
+        "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 42003,
         "push_time": 0,
@@ -138,27 +138,27 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0004",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 151,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 72,
+        "first_target_hit_ground_frame": 73,
         "final_target_displacement": {
-            "x": 0.091,
-            "y": 0.059,
-            "z": -0.041
+            "x": 0.083,
+            "y": 0.092,
+            "z": -0.892
         },
         "final_target_mask_displacement": [
-            1.128,
-            -0.057
+            0.999,
+            0.338
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.146,
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.209,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -172,29 +172,29 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0005",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 302,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 168,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 63,
-        "first_target_hit_ground_frame": 63,
+        "first_target_contact_zone_frame": 50,
+        "first_target_hit_ground_frame": 51,
         "final_target_displacement": {
-            "x": -0.206,
-            "y": 0.191,
-            "z": -1.76
+            "x": -0.094,
+            "y": 0.072,
+            "z": 0.363
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            0.614,
+            -0.045
         ],
-        "target_visible_area": 0.009,
-        "zone_visible_area": 0.201,
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.189,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": false,
+        "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 42005,
         "push_time": 0,
@@ -206,27 +206,27 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0006",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 48,
+        "first_target_hit_ground_frame": 49,
         "final_target_displacement": {
-            "x": -0.056,
-            "y": 0.131,
-            "z": -0.05
+            "x": 0.063,
+            "y": 0.08,
+            "z": 0.401
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            0.943,
+            -0.013
         ],
-        "target_visible_area": 0.004,
-        "zone_visible_area": 0.177,
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.138,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -240,27 +240,27 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0007",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
-        "num_frames": 211,
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 100,
-        "first_target_hit_ground_frame": 101,
+        "first_target_contact_zone_frame": 52,
+        "first_target_hit_ground_frame": 53,
         "final_target_displacement": {
-            "x": 0.023,
-            "y": 0.377,
-            "z": 0.338
+            "x": 0.373,
+            "y": 0.129,
+            "z": -0.19
         },
         "final_target_mask_displacement": [
-            0.536,
-            0.043
+            0.904,
+            0.076
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.182,
+        "target_visible_area": 0.005,
+        "zone_visible_area": 0.168,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -274,7 +274,7 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0008",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -282,19 +282,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 78,
-        "first_target_hit_ground_frame": 79,
+        "first_target_contact_zone_frame": 47,
+        "first_target_hit_ground_frame": 47,
         "final_target_displacement": {
-            "x": -0.623,
-            "y": 0.152,
-            "z": -0.231
+            "x": 0.284,
+            "y": 0.169,
+            "z": -0.484
         },
         "final_target_mask_displacement": [
-            0.964,
-            0.224
+            0.556,
+            0.015
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.134,
+        "target_visible_area": 0.013,
+        "zone_visible_area": 0.205,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -308,7 +308,7 @@
     {
         "stimulus_name": "pilot_it2_drop_all_bowls_box_0009",
         "controller_name": "Drop",
-        "git_commit": "47cfd39a36eb7ee0664cac215dd28f12d08f2540",
+        "git_commit": "fc4df8204812f07903d96025ec579b3c4a031d83",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -316,18 +316,18 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 53,
-        "first_target_hit_ground_frame": 53,
+        "first_target_contact_zone_frame": 56,
+        "first_target_hit_ground_frame": 56,
         "final_target_displacement": {
-            "x": 0.413,
-            "y": 0.171,
-            "z": 0.46
+            "x": 0.075,
+            "y": 0.01,
+            "z": 0.29
         },
         "final_target_mask_displacement": [
-            0.672,
-            -0.022
+            0.791,
+            0.071
         ],
-        "target_visible_area": 0.015,
+        "target_visible_area": 0.018,
         "zone_visible_area": 0.177,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,

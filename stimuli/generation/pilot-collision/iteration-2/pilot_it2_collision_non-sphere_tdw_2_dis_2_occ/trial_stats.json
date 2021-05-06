@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot_it2_collision_non-sphere_tdw_2_dis_2_occ_0000-pilot_it2_collision_non-sphere_tdw_2_dis_2_occ_0009",
+    "controller_name/avg_label": "Collision",
+    "git_commit/avg_label": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+    "num_frames/avg_label": 151.7,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 0.9,
+    "does_target_contact_zone/avg_label": 0.4,
+    "does_target_miss_zone/avg_label": 0.5,
+    "does_target_hit_ground/avg_label": 0.9,
+    "first_target_move_frame/avg_label": 24.444,
+    "first_target_contact_zone_frame/avg_label": 52.0,
+    "first_target_hit_ground_frame/avg_label": 10.111,
+    "final_target_displacement/avg_label": {
+        "x": 0.147,
+        "y": 0.05,
+        "z": 0.011
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.018,
+        0.008
+    ],
+    "target_visible_area/avg_label": 0.008,
+    "zone_visible_area/avg_label": 0.02,
+    "probe_visible_area/avg_label": 0.011,
+    "is_any_object_fully_occluded/avg_label": 1.0,
+    "room/avg_label": "b'tdw'",
+    "trial_seed/avg_label": 42004.5,
+    "push_time/avg_label": 0.0,
+    "num_distractors/avg_label": 2.0,
+    "num_occluders/avg_label": 2.0,
+    "num_trials": 10
+}
