@@ -1,3 +1,5 @@
+var DEBUG_MODE = false; //print debug and piloting information to the console
+
 function sendData(data) {
   console.log('sending data to mturk');
   jsPsych.turk.submitToTurk({
@@ -60,14 +62,12 @@ function setupGame() {
     var gameid = d.gameid;
     var stims = d.stims
     var familiarization_stims = d.familiarization_stims
-    console.log('gameid', gameid);    
-    console.log('stims', stims);    
-    console.log('familiarization_stims', familiarization_stims);    
+    if(DEBUG_MODE){
+      console.log('gameid', gameid);    
+      console.log('stims', stims);    
+      console.log('familiarization_stims', familiarization_stims);
+    }    
       
-    var main_on_start = function (trial) {
-      console.log('start of trial');
-    };
-
     // at end of each trial save data locally and send data to server
     var main_on_finish = function (data) {
       // let's add gameID and relevant database fields
@@ -75,8 +75,10 @@ function setupGame() {
       data.dbname = dbname;
       data.colname = colname;
       data.iterationName = itname;
-      socket.emit('currentData', data);
-      console.log('emitting data',data);
+      if(DEBUG_MODE){
+        socket.emit('currentData', data);
+        console.log('emitting data',data);
+    }
     }
 
     // at end of each trial save data locally and send data to server
@@ -93,15 +95,23 @@ function setupGame() {
       data.correct = data.target_hit_zone_label == (data.response == "YES");
       if(data.correct){correct+=1};
       total += 1;
-      if(data.correct){
-        console.log("Correct, got ",_.round((correct/total)*100,2),"% correct")}
-        else{
-          console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
-        }; //TODO take out before production
+      if(DEBUG_MODE){
+        if(data.correct){
+          console.log("Correct, got ",_.round((correct/total)*100,2),"% correct")}
+          else{
+            console.log("Wrong, got ",_.round((correct/total)*100,2),"% correct")
+          };
+        }
       last_correct = data.correct; //store the last correct for familiarization trials
       last_yes = (data.response == "YES"); //store if the last reponse is yes
       socket.emit('currentData', data);
-      console.log('emitting data',data);
+      if(DEBUG_MODE){console.log('emitting data',data);}
+    }
+
+    var stim_log = function(data){
+      if(DEBUG_MODE){
+        console.log("This is " + data.stim_ID + " with label " + data.target_hit_zone_label);
+      }
     }
     
     // Now construct trials list    
@@ -132,6 +142,7 @@ function setupGame() {
         width: 500,
         height: 500,
         post_trial_gap: 0,
+        on_start: stim_log,
         on_finish: stim_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
@@ -207,6 +218,7 @@ function setupGame() {
         width: 500,
         height: 500,
         post_trial_gap: 0,
+        on_start: stim_log,
         on_finish: stim_on_finish,
         prolificID:  prolificID,
         studyID: studyID, 
@@ -220,9 +232,10 @@ function setupGame() {
 
     //add fixation crosses
     trials = _.flatten(_.zip(_.fill(Array(trials.length),fixation), trials));
-    console.log('experiment trials', trials);
-    console.log('familiarization trials', familiarization_trials);
-
+    if(DEBUG_MODE){
+      console.log('experiment trials', trials);
+      console.log('familiarization trials', familiarization_trials);
+}
 
 
 
@@ -379,8 +392,8 @@ function setupGame() {
       on_finish: function() {
         // $(".confetti").remove();
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
-                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=34BB0C6B" }, 500)
-        sendData();
+                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=50AEDCF9" }, 500)
+        // sendData();
       }
       //change the link below to your prolific-provided URL
       // window.open("https://app.prolific.co/submissions/complete?cc=7A827F20","_self");

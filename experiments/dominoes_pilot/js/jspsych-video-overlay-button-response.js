@@ -186,7 +186,7 @@
     if(!video_preload_blob) {
       for(var i=0; i<trial.stimulus.length; i++){
         var file_name = trial.stimulus[i];
-        console.log("Loading stim"+file_name);
+        if (DEBUG_MODE){console.log("Loading stim"+file_name);}
         if(file_name.indexOf('?') > -1){
           file_name = file_name.substring(0, file_name.indexOf('?'));
         }
