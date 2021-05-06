@@ -288,7 +288,6 @@
             else{
               jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = false;}, t);}
           hidden = !hidden;
-          console.log(hidden,t);
         }
       )
     }

@@ -30,7 +30,7 @@
       overlay: {
         type: jsPsych.plugins.parameterType.IMAGE,
         pretty_name: 'Overlay',
-        default: undefined,
+        default: null,
         description: 'The overlay to place over the video before it starts.'
       },
       choices: {
@@ -186,7 +186,7 @@
     if(!video_preload_blob) {
       for(var i=0; i<trial.stimulus.length; i++){
         var file_name = trial.stimulus[i];
-        console.log("Loading stim"+file_name);
+        if (DEBUG_MODE){console.log("Loading stim"+file_name);}
         if(file_name.indexOf('?') > -1){
           file_name = file_name.substring(0, file_name.indexOf('?'));
         }
@@ -203,18 +203,20 @@
     //save the html using only the video
     video_html_1 = video_html;
     //add the image
-    overlay_html = '<image id="jspsych-video-overlay-button-response-overlay"';
-    if(trial.width) {
-      overlay_html += ' width="'+trial.width+'"';
+    if (trial.overlay != null){
+      overlay_html = '<image id="jspsych-video-overlay-button-response-overlay"';
+      if(trial.width) {
+        overlay_html += ' width="'+trial.width+'"';
+      }
+      if(trial.height) {
+        overlay_html += ' height="'+trial.height+'"';
+      }   
+      overlay_html += 'src="' + trial.overlay + '"';
+      overlay_html += 'style = "position: absolute;  margin-left: -' + trial.width + 'px;"';
+      overlay_html += '/image>';
+      //done adding the image
+      video_html += overlay_html;
     }
-    if(trial.height) {
-      overlay_html += ' height="'+trial.height+'"';
-    }   
-    overlay_html += 'src="' + trial.overlay + '"';
-    overlay_html += 'style = "position: absolute;  margin-left: -' + trial.width + 'px;"';
-    overlay_html += '/image>';
-    //done adding the image
-    video_html += overlay_html;
     video_html_2 = "</div>";
 
     //display buttons
@@ -279,7 +281,7 @@
     }
 
     //set up blinks
-    if (trial.overlay != undefined){
+    if (trial.overlay != null){
       hidden = true;
       _.range(0,trial.overlay_time*1000,trial.blink_time).forEach(
         t => {
@@ -288,7 +290,6 @@
             else{
               jsPsych.pluginAPI.setTimeout(() => {overlay_element.hidden = false;}, t);}
           hidden = !hidden;
-          console.log(hidden,t);
         }
       )
     }
