@@ -370,7 +370,7 @@ function setupGame() {
         { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
         // { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         // { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-        { prompt: "Any final thoughts?", rows: 5, columns: 40 }
+        // { prompt: "Any final thoughts?", rows: 5, columns: 40 }
       ],
       on_finish: main_on_finish
     });
