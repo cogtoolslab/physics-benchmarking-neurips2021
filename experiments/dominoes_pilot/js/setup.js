@@ -390,7 +390,7 @@ function setupGame() {
       ],
       on_start: (trial) => { //write the score to HTML
         trial.pages = [
-          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct🎉! Click \'Next\' to submit this study.',
+          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,0)+'% correct🎉! Click \'Next\' to submit this study.',
         ];
       },
       show_clickable_nav: true,
