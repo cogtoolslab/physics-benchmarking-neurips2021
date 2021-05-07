@@ -305,6 +305,13 @@ function setupGame() {
 
 
     // exit survey trials
+    var exitSurveyAge = {
+      type: 'survey-text',
+      on_finish: main_on_finish,
+      questions: [
+        { prompt: "How old are you?", rows: 1, columns: 3, name: "participantAge", placeholder: "Age" },
+      ]
+    }
     var exitSurveyChoice =  {
       type: 'survey-multi-choice',
       on_finish: main_on_finish,
@@ -316,23 +323,23 @@ function setupGame() {
         options: ["Male", "Female", "Neither/Other/Do Not Wish To Say"],
         required: true
       },
-      {
-        prompt: "How old are you?",
-        name: "participantAge",
-        horizontal: false,
-        options: [
-          "Under 12 years old",
-          "12-17 years old",
-          "18-24 years old",
-          "25-34 years old",
-          "35-44 years old",
-          "45-54 years old",
-          "55-64 years old",
-          "65-74 years old",
-          "75 years or older",
-          ],
-        required: true
-      },
+      // {
+      //   prompt: "How old are you?",
+      //   name: "participantAge",
+      //   horizontal: false,
+      //   options: [
+      //     "Under 12 years old",
+      //     "12-17 years old",
+      //     "18-24 years old",
+      //     "25-34 years old",
+      //     "35-44 years old",
+      //     "45-54 years old",
+      //     "55-64 years old",
+      //     "65-74 years old",
+      //     "75 years or older",
+      //     ],
+      //   required: true
+      // },
       {
         prompt: "What is the highest level of education you have completed?",
         name: "participantEducation",
@@ -413,9 +420,10 @@ function setupGame() {
     // add all experiment elements to trials array
     if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
-    if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
-    if (includeMentalRotation) trials.push(mentalRotationChoice);
+    if (includeSurvey) trials.push(exitSurveyChoice);
+    if (includeSurvey) trials.push(exitSurveyAge);
+    // if (includeMentalRotation) trials.push(mentalRotationChoice);
     if (includeGoodbye) trials.push(goodbye);
 
 
