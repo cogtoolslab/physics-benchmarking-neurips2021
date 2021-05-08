@@ -4,6 +4,8 @@ None
 /Volumes/FJBexHDD/tdw/pilot-drop/iteration-2/pilot_it2_drop_all_bowls_tdw_2_dis_2_occ
 --num
 10
+--num_multiplier
+1
 --temp
 NONE
 --width
@@ -15,7 +17,7 @@ NONE
 --gpu
 0
 --seed
-42
+60
 --random
 0
 --num_views
@@ -116,7 +118,7 @@ False
 parquet_wood_red_cedar
 --zmaterial
 wood_european_ash
---rm˘aterial
+--rmaterial
 None
 --pmaterial
 parquet_wood_red_cedar
@@ -139,7 +141,7 @@ None
 --occluder_aspect_ratio
 None
 --no_moving_distractors
-False
+True
 --remove_middle
 False
 --model_libraries
@@ -147,6 +149,8 @@ False
 --only_use_flex_objects
 True
 --training_data_mode
+False
+--match_probe_and_target_color
 False
 --drop
 ['bowl', 'cone', 'cube', 'cylinder', 'dumbbell', 'octahedron', 'pentagon', 'pipe', 'platonic', 'pyramid', 'sphere', 'torus', 'triangular_prism']

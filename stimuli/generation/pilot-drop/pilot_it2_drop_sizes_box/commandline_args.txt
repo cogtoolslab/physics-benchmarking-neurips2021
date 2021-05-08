@@ -18,7 +18,8 @@ bowl,cube,cylinder
 --random
 0
 --seed
-42
+247
+--no_moving_distractors
 --num
 10
 --room

@@ -30,7 +30,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+958
+--no_moving_distractors
 --num
 10
 --room

@@ -22,7 +22,8 @@ pyramid,cone,triangular_prism
 --random
 0
 --seed
-42
+660
+--no_moving_distractors
 --num
 10
 --room
