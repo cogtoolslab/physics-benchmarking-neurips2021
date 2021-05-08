@@ -22,7 +22,8 @@ None
 --random
 0
 --seed
-42
+487
+--no_moving_distractors
 --num
 10
 --room

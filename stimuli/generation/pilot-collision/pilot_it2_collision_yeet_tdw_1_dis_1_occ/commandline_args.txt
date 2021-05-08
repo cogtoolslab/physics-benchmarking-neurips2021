@@ -8,9 +8,11 @@ None
 --fupforce
 [1.2,1.5]
 --fscale
-[2.3,3.3]
+[2.3,3.85]
 --frot
-[-10,10]
+[-7,7]
+--tscale
+0.25,0.8,0.25
 --num_occluders
 1
 --occluder
@@ -32,7 +34,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+482
+--no_moving_distractors
 --num
 10
 --room
