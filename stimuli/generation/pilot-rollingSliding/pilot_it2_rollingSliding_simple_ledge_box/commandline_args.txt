@@ -26,9 +26,10 @@ None
 --random
 0
 --seed
-42
+995
+--no_moving_distractors
 --num
-10
+13
 --room
 box
 --save_labels

@@ -1,33 +1,33 @@
 {
-    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0000-pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0009",
+    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0000-pilot_it2_rollingSliding_simple_ramp_tdw_1_dis_1_occ_0012",
     "controller_name/avg_label": "RollingSliding",
-    "git_commit/avg_label": "d7d6e0ada0f28872ce14f4269a9f72732e7a3813",
-    "num_frames/avg_label": 223.8,
+    "git_commit/avg_label": "61cc05cbc1024f78ec41925f6dab760c277cdcbe",
+    "num_frames/avg_label": 218.077,
     "is_trial_valid/avg_label": 1.0,
     "does_target_move/avg_label": 1.0,
-    "does_target_contact_zone/avg_label": 0.9,
-    "does_target_miss_zone/avg_label": 0.1,
+    "does_target_contact_zone/avg_label": 0.385,
+    "does_target_miss_zone/avg_label": 0.615,
     "does_target_hit_ground/avg_label": 1.0,
-    "first_target_move_frame/avg_label": 17.2,
-    "first_target_contact_zone_frame/avg_label": 106.222,
-    "first_target_hit_ground_frame/avg_label": 73.6,
+    "first_target_move_frame/avg_label": 4.0,
+    "first_target_contact_zone_frame/avg_label": 116.2,
+    "first_target_hit_ground_frame/avg_label": 59.077,
     "final_target_displacement/avg_label": {
-        "x": 1.157,
-        "y": -0.906,
-        "z": -0.03
+        "x": 0.916,
+        "y": -1.029,
+        "z": 0.033
     },
     "final_target_mask_displacement/avg_label": [
-        0.718,
-        -0.769
+        0.664,
+        -0.604
     ],
-    "target_visible_area/avg_label": 0.016,
-    "zone_visible_area/avg_label": 0.14,
+    "target_visible_area/avg_label": 0.059,
+    "zone_visible_area/avg_label": 0.123,
     "probe_visible_area/avg_label": null,
-    "is_any_object_fully_occluded/avg_label": 0.3,
+    "is_any_object_fully_occluded/avg_label": 0.231,
     "room/avg_label": "b'tdw'",
     "trial_seed/avg_label": -1.0,
     "push_time/avg_label": 0.0,
     "num_distractors/avg_label": 1.0,
     "num_occluders/avg_label": 1.0,
-    "num_trials": 10
+    "num_trials": 13
 }
