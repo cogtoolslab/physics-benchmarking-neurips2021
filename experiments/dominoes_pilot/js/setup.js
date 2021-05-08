@@ -1,4 +1,4 @@
-var DEBUG_MODE = true; //print debug and piloting information to the console
+var DEBUG_MODE = false; //print debug and piloting information to the console
 
 function sendData(data) {
   console.log('sending data to mturk');
@@ -14,7 +14,7 @@ var choices = get_random_choices(); //randomize button order
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
 var colname = 'dominoes_pilot'; //insert COLLECTION NAME
-var itname = 'iteration_2_internal'; //insert ITERATION NAME
+var itname = 'iteration_2_smallpilot1'; //insert ITERATION NAME
 
 // Define trial object with boilerplate
 function Experiment() {
@@ -305,6 +305,13 @@ function setupGame() {
 
 
     // exit survey trials
+    var exitSurveyAge = {
+      type: 'survey-text',
+      on_finish: main_on_finish,
+      questions: [
+        { prompt: "How old are you?", rows: 1, columns: 3, name: "participantAge", placeholder: "Age" },
+      ]
+    }
     var exitSurveyChoice =  {
       type: 'survey-multi-choice',
       on_finish: main_on_finish,
@@ -316,23 +323,23 @@ function setupGame() {
         options: ["Male", "Female", "Neither/Other/Do Not Wish To Say"],
         required: true
       },
-      {
-        prompt: "How old are you?",
-        name: "participantAge",
-        horizontal: false,
-        options: [
-          "Under 12 years old",
-          "12-17 years old",
-          "18-24 years old",
-          "25-34 years old",
-          "35-44 years old",
-          "45-54 years old",
-          "55-64 years old",
-          "65-74 years old",
-          "75 years or older",
-          ],
-        required: true
-      },
+      // {
+      //   prompt: "How old are you?",
+      //   name: "participantAge",
+      //   horizontal: false,
+      //   options: [
+      //     "Under 12 years old",
+      //     "12-17 years old",
+      //     "18-24 years old",
+      //     "25-34 years old",
+      //     "35-44 years old",
+      //     "45-54 years old",
+      //     "55-64 years old",
+      //     "65-74 years old",
+      //     "75 years or older",
+      //     ],
+      //   required: true
+      // },
       {
         prompt: "What is the highest level of education you have completed?",
         name: "participantEducation",
@@ -370,7 +377,7 @@ function setupGame() {
         { prompt: "What strategies did you use to predict what will happen?", rows: 5, columns: 40 },
         // { prompt: "What criteria mattered most when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
         // { prompt: "What criteria did not matter when evaluating " + experimentInstance.condition + "?", rows: 5, columns: 40 },
-        { prompt: "Any final thoughts?", rows: 5, columns: 40 }
+        // { prompt: "Any final thoughts?", rows: 5, columns: 40 }
       ],
       on_finish: main_on_finish
     });
@@ -383,7 +390,7 @@ function setupGame() {
       ],
       on_start: (trial) => { //write the score to HTML
         trial.pages = [
-          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,2)+'% correct🎉! Click \'Next\' to submit this study.',
+          'Congrats! You are all done. Thanks for participating in our game. \ You\'ve gotten '+_.round((correct/total)*100,0)+'% correct🎉! Click \'Next\' to submit this study.',
         ];
       },
       show_clickable_nav: true,
@@ -413,9 +420,10 @@ function setupGame() {
     // add all experiment elements to trials array
     if (includeFamiliarizationTrials) trials = _.concat(familiarization_trials, trials);
     if (includeIntro) trials.unshift(introMsg);
-    if (includeSurvey) trials.push(exitSurveyChoice);
     if (includeSurvey) trials.push(exitSurveyText);
-    if (includeMentalRotation) trials.push(mentalRotationChoice);
+    if (includeSurvey) trials.push(exitSurveyChoice);
+    if (includeSurvey) trials.push(exitSurveyAge);
+    // if (includeMentalRotation) trials.push(mentalRotationChoice);
     if (includeGoodbye) trials.push(goodbye);
 
 
