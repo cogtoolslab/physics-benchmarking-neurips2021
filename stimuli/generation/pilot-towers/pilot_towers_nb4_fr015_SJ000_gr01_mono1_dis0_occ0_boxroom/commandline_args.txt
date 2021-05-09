@@ -16,6 +16,8 @@ _img
 512
 --width
 512
+--tcolor=None
+--zcolor=None
 --zone
 cube
 --mscale
@@ -31,7 +33,7 @@ cube
 --spacing_jitter
 0.00
 --fscale
-[0.5,5.0]
+[7,14.0]
 --zscale
 5.0,0.01,5.0
 --pmass

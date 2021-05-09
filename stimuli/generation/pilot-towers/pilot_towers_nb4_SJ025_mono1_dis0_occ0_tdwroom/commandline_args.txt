@@ -1,7 +1,7 @@
 --dir
-/Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_towers_nb4_SJ025_mono1_boxroom/
+/Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_towers_nb4_SJ025_mono1_tdwroom/
 --num
-10
+30
 --ramp
 0
 --save_passes
@@ -11,11 +11,13 @@ _img
 --random
 0
 --seed
-2
+1
 --height
 512
 --width
 512
+--tcolor=None
+--zcolor=None
 --zone
 cube
 --mscale
@@ -29,7 +31,7 @@ cube
 --spacing_jitter
 0.25
 --fscale
-[0.5,5.0]
+[1,6.0]
 --zscale
 5.0,0.01,5.0
 --pmass
@@ -41,6 +43,6 @@ cube
 --zfriction
 0.1
 --room
-box
+tdw
 --collision_axis_length
 1.75
