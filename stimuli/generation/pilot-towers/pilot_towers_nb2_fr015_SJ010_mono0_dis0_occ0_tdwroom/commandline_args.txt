@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_towers_nb2_fr015_SJ010_mono0_tdwroom/
 --num
-15
+20
 --ramp
 0
 --save_passes
