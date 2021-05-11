@@ -23,7 +23,7 @@ _img
 --bmass=2,3
 --bcolor=None
 --fscale=4,8
---num=20
+--num=25
 --num_distractors=1
 --distractor
 full
