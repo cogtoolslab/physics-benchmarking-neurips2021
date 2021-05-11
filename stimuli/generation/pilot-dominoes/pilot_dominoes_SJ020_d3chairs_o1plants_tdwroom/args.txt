@@ -3,13 +3,17 @@ None
 --dir
 /Volumes/FJBexHDD/tdw/pilot-dominoes/iteration-2/pilot_dominoes_SJ020_d3chairs_o1plants_tdwroom
 --num
-20
+30
+--num_multiplier
+1
 --temp
 NONE
 --width
 512
 --height
 512
+--framerate
+30
 --gpu
 0
 --seed
@@ -152,6 +156,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 0.95
 --occluder_aspect_ratio
 None
+--no_moving_distractors
+True
 --remove_middle
 False
 --model_libraries
@@ -159,6 +165,8 @@ False
 --only_use_flex_objects
 False
 --training_data_mode
+False
+--match_probe_and_target_color
 False
 --color
 None

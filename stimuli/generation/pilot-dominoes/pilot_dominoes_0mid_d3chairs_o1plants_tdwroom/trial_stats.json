@@ -1,35 +1,35 @@
 {
-    "stimulus_name/avg_label": "pilot_dominoes_0mid_d3chairs_o1plants_tdwroom_0000-pilot_dominoes_0mid_d3chairs_o1plants_tdwroom_0021",
+    "stimulus_name/avg_label": "pilot_dominoes_0mid_d3chairs_o1plants_tdwroom_0000-pilot_dominoes_0mid_d3chairs_o1plants_tdwroom_0027",
     "controller_name/avg_label": "MultiDominoes",
-    "git_commit/avg_label": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
-    "num_frames/avg_label": 200.864,
+    "git_commit/avg_label": "6322a7df036427c6997fdcab3f63cbbf8881089e-b1fc5228492b14209f12c2872c5483b98b29c9cb",
+    "num_frames/avg_label": 152.071,
     "is_trial_valid/avg_label": 1.0,
-    "does_target_move/avg_label": 0.318,
-    "does_target_contact_zone/avg_label": 0.227,
-    "does_target_miss_zone/avg_label": 0.091,
-    "does_target_hit_ground/avg_label": 0.318,
-    "first_target_move_frame/avg_label": 85.143,
-    "first_target_contact_zone_frame/avg_label": 106.4,
-    "first_target_hit_ground_frame/avg_label": 91.0,
+    "does_target_move/avg_label": 0.25,
+    "does_target_contact_zone/avg_label": 0.25,
+    "does_target_miss_zone/avg_label": 0.0,
+    "does_target_hit_ground/avg_label": 0.25,
+    "first_target_move_frame/avg_label": 60.286,
+    "first_target_contact_zone_frame/avg_label": 106.857,
+    "first_target_hit_ground_frame/avg_label": 66.429,
     "final_target_displacement/avg_label": {
-        "x": 0.005,
-        "y": 0.028,
-        "z": 0.008
+        "x": 0.015,
+        "y": 0.017,
+        "z": -0.0
     },
     "final_target_mask_displacement/avg_label": [
-        0.038,
-        -0.01
+        0.025,
+        0.011
     ],
-    "target_visible_area/avg_label": 0.09,
-    "zone_visible_area/avg_label": 0.029,
-    "probe_visible_area/avg_label": 0.017,
-    "is_any_object_fully_occluded/avg_label": 0.409,
+    "target_visible_area/avg_label": 0.038,
+    "zone_visible_area/avg_label": 0.031,
+    "probe_visible_area/avg_label": 0.05,
+    "is_any_object_fully_occluded/avg_label": 0.429,
     "room/avg_label": "b'tdw'",
-    "trial_seed/avg_label": 420010.5,
+    "trial_seed/avg_label": 420013.5,
     "push_time/avg_label": 30.0,
     "num_distractors/avg_label": 3.0,
     "num_occluders/avg_label": 1.0,
     "num_middle_objects/avg_label": 0.0,
     "remove_middle/avg_label": 0.0,
-    "num_trials": 22
+    "num_trials": 28
 }

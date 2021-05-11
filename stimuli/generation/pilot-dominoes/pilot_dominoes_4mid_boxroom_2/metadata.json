@@ -2,7 +2,7 @@
     {
         "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0000",
         "controller_name": "MultiDominoes",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
         "num_frames": 243,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -22,7 +22,7 @@
             0.145
         ],
         "target_visible_area": 0.013,
-        "zone_visible_area": 0.009,
+        "zone_visible_area": 0.03,
         "probe_visible_area": 0.023,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -36,7 +36,7 @@
     {
         "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0001",
         "controller_name": "MultiDominoes",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
         "num_frames": 241,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -70,7 +70,7 @@
     {
         "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0002",
         "controller_name": "MultiDominoes",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
         "num_frames": 248,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -86,10 +86,10 @@
             "z": 0.0
         },
         "final_target_mask_displacement": [
-            0.091,
-            0.172
+            -0.004,
+            -0.004
         ],
-        "target_visible_area": 0.013,
+        "target_visible_area": 0.926,
         "zone_visible_area": 0.013,
         "probe_visible_area": 0.011,
         "is_any_object_fully_occluded": false,
@@ -104,7 +104,7 @@
     {
         "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0003",
         "controller_name": "MultiDominoes",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
         "num_frames": 226,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -138,7 +138,7 @@
     {
         "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0004",
         "controller_name": "MultiDominoes",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
         "num_frames": 250,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -164,6 +164,74 @@
         "room": "b'box'",
         "trial_seed": 42004,
         "push_time": 10,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0005",
+        "controller_name": "MultiDominoes",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "num_frames": 238,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 163,
+        "first_target_contact_zone_frame": 199,
+        "first_target_hit_ground_frame": 157,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.127,
+            0.178
+        ],
+        "target_visible_area": 0.015,
+        "zone_visible_area": 0.008,
+        "probe_visible_area": 0.015,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42005,
+        "push_time": 4,
+        "num_distractors": 0,
+        "num_occluders": 0,
+        "num_middle_objects": 4,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_dominoes_4mid_boxroom_2_0006",
+        "controller_name": "MultiDominoes",
+        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "num_frames": 248,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 166,
+        "first_target_contact_zone_frame": 203,
+        "first_target_hit_ground_frame": 152,
+        "final_target_displacement": {
+            "x": 0.052,
+            "y": 0.05,
+            "z": 0.0
+        },
+        "final_target_mask_displacement": [
+            0.075,
+            -0.171
+        ],
+        "target_visible_area": 0.01,
+        "zone_visible_area": 0.022,
+        "probe_visible_area": 0.009,
+        "is_any_object_fully_occluded": false,
+        "room": "b'box'",
+        "trial_seed": 42006,
+        "push_time": 7,
         "num_distractors": 0,
         "num_occluders": 0,
         "num_middle_objects": 4,

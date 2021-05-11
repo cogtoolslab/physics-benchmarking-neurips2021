@@ -1,3 +1,4 @@
+--no_moving_distractors
 --random
 0
 --seed
@@ -29,7 +30,7 @@ None
 --zcolor
 None
 --num
-5
+7
 --save_labels
 --save_passes
 _img
