@@ -93,7 +93,7 @@ window.jsPsych = (function() {
       'preload_video': [],
       'use_webaudio': true,
       'exclusions': {},
-      'show_progress_bar': false,
+      'show_progress_bar': true,
       'message_progress_bar': 'Completion Progress',
       'auto_update_progress_bar': true,
       'auto_preload': true,
@@ -1024,7 +1024,7 @@ window.jsPsych = (function() {
   function drawProgressBar(msg) {
     document.querySelector('.jspsych-display-element').insertAdjacentHTML('afterbegin',
       '<div id="jspsych-progressbar-container">' +
-      '<span>' +
+      '<span id = "pb_msg">' +
       msg +
       '</span>' +
       '<div id="jspsych-progressbar-outer">' +
@@ -1032,9 +1032,15 @@ window.jsPsych = (function() {
       '</div></div>');
   }
 
+  function updateProgressBarMessage(msg) {
+    var span = document.getElementById("pb_msg");
+    span.innerText = msg;
+  }
+
   function updateProgressBar() {
     var progress = jsPsych.progress().percent_complete;
     core.setProgressBar(progress / 100);
+    updateProgressBarMessage('Completion Progress: ' + progress.toFixed(1).toString() + ' % finished')
   }
 
   var progress_bar_amount = 0;
