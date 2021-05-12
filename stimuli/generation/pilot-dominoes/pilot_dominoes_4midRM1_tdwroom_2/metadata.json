@@ -2,7 +2,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0000",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -18,11 +18,11 @@
             "z": -0.0
         },
         "final_target_mask_displacement": [
-            0.0,
+            -0.0,
             -0.0
         ],
-        "target_visible_area": 0.024,
-        "zone_visible_area": 0.024,
+        "target_visible_area": 0.009,
+        "zone_visible_area": 0.015,
         "probe_visible_area": 0.025,
         "is_any_object_fully_occluded": false,
         "room": "b'tdw'",
@@ -36,7 +36,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0001",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 170,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -52,11 +52,11 @@
             "z": -0.0
         },
         "final_target_mask_displacement": [
-            0.032,
-            0.097
+            -0.0,
+            0.0
         ],
-        "target_visible_area": 0.024,
-        "zone_visible_area": 0.94,
+        "target_visible_area": 0.013,
+        "zone_visible_area": 0.013,
         "probe_visible_area": 0.011,
         "is_any_object_fully_occluded": false,
         "room": "b'tdw'",
@@ -70,7 +70,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0002",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -104,7 +104,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0003",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 170,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -138,7 +138,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0004",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -172,7 +172,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0005",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": false,
@@ -206,7 +206,7 @@
     {
         "stimulus_name": "pilot_dominoes_4midRM1_tdwroom_2_0006",
         "controller_name": "MultiDominoes",
-        "git_commit": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 165,
         "is_trial_valid": true,
         "does_target_move": false,

@@ -1,7 +1,7 @@
 {
     "stimulus_name/avg_label": "pilot_dominoes_4mid_boxroom_0000-pilot_dominoes_4mid_boxroom_0006",
     "controller_name/avg_label": "MultiDominoes",
-    "git_commit/avg_label": "6322a7df036427c6997fdcab3f63cbbf8881089e",
+    "git_commit/avg_label": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
     "num_frames/avg_label": 242.0,
     "is_trial_valid/avg_label": 1.0,
     "does_target_move/avg_label": 1.0,
@@ -17,10 +17,10 @@
         "z": 0.0
     },
     "final_target_mask_displacement/avg_label": [
-        0.075,
-        0.07
+        0.08,
+        0.079
     ],
-    "target_visible_area/avg_label": 0.014,
+    "target_visible_area/avg_label": 0.012,
     "zone_visible_area/avg_label": 0.015,
     "probe_visible_area/avg_label": 0.019,
     "is_any_object_fully_occluded/avg_label": 0.143,

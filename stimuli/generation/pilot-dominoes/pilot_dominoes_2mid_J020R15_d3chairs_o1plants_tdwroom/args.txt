@@ -39,7 +39,7 @@ True
 --save_labels
 True
 --save_meshes
-False
+True
 --num_middle_objects
 2
 --zone
@@ -163,7 +163,7 @@ False
 --model_libraries
 ['models_core.json', 'models_full.json', 'models_special.json', 'models_flex.json']
 --only_use_flex_objects
-False
+True
 --training_data_mode
 False
 --match_probe_and_target_color
