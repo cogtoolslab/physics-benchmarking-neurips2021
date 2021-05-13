@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_ramp_box_0000-pilot_it2_rollingSliding_simple_ramp_box_0012",
+    "controller_name/avg_label": "RollingSliding",
+    "git_commit/avg_label": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+    "num_frames/avg_label": 227.077,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.538,
+    "does_target_miss_zone/avg_label": 0.462,
+    "does_target_hit_ground/avg_label": 1.0,
+    "first_target_move_frame/avg_label": 3.769,
+    "first_target_contact_zone_frame/avg_label": 107.143,
+    "first_target_hit_ground_frame/avg_label": 59.538,
+    "final_target_displacement/avg_label": {
+        "x": 1.013,
+        "y": -1.025,
+        "z": 0.051
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.685,
+        -0.671
+    ],
+    "target_visible_area/avg_label": 0.014,
+    "zone_visible_area/avg_label": 0.141,
+    "probe_visible_area/avg_label": null,
+    "is_any_object_fully_occluded/avg_label": 0.0,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": -1.0,
+    "push_time/avg_label": 0.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 0.0,
+    "num_trials": 13
+}
