@@ -3,13 +3,17 @@ None
 --dir
 /Volumes/FJBexHDD/tdw/pilot-dominoes/iteration-2/pilot_dominoes_1mid_J025R45_boxroom
 --num
-20
+30
+--num_multiplier
+1
 --temp
 NONE
 --width
 512
 --height
 512
+--framerate
+30
 --gpu
 0
 --seed
@@ -35,7 +39,7 @@ True
 --save_labels
 True
 --save_meshes
-False
+True
 --num_middle_objects
 1
 --zone
@@ -152,13 +156,17 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 0.75
 --occluder_aspect_ratio
 None
+--no_moving_distractors
+True
 --remove_middle
 False
 --model_libraries
 ['models_core.json', 'models_full.json', 'models_special.json', 'models_flex.json']
 --only_use_flex_objects
-False
+True
 --training_data_mode
+False
+--match_probe_and_target_color
 False
 --color
 None
