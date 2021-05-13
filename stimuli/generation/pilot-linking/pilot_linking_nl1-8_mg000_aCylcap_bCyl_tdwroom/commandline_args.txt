@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl1-8_mg000_aCylcap_bCyl_tdwroom
 --num
-10
+25
 --height
 512
 --width
@@ -10,14 +10,17 @@
 0
 --seed
 42
+--tcolor=None
+--zcolor=None
 --save_labels
 --save_passes
 _img
 --save_movies
+--save_meshes
 --num_middle_range
 [1,9]
 --fscale
-[0.5,5.0]
+[1,4.0]
 --mmass
 2.0
 --mgrad
@@ -39,11 +42,11 @@ cylinder
 --zone
 torus
 --zscale
-3.0,0.02,3.0
+[[2.0,3],0.02,[2.0,3]]
 --base
 cylinder
 --bscale
-[0.6,0.3,0.6]
+[0.3,0.3,0.3]
 --bmass
 4.0
 --attachment_fixed
@@ -72,3 +75,4 @@ _img,_id
 --room
 tdw
 --attachment_capped
+--only_use_flex_objects

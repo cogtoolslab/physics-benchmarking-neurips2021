@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl1-8_ms03_aCylcap_bCyl_tdwroom
 --num
-5
+25
 --height
 512
 --width
@@ -10,14 +10,17 @@
 0
 --seed
 420
+--tcolor=None
+--zcolor=None
 --save_labels
 --save_passes
 _img
 --save_movies
+--save_meshes
 --num_middle_range
 [1,9]
 --fscale
-[0.5,5.0]
+[2,8]
 --mmass
 2.0
 --mgrad
@@ -35,7 +38,7 @@ cylinder
 --ascale
 [0.15,1.0,0.15]
 --amass
-4.0
+3.0
 --zone
 cube
 --zscale
@@ -45,9 +48,9 @@ cube
 --base
 cylinder
 --bscale
-[0.6,0.3,0.6]
+[[0.3,0.5],[0.2,0.4],[0.3,0.5]]
 --bmass
-4.0
+3.0
 --attachment_fixed
 --pcolor
 None
@@ -74,3 +77,17 @@ _img,_id
 --room
 tdw
 --attachment_capped
+--num_occluders
+1
+--occluder
+full
+--occluder_categories
+coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,laptop computer,globe,bookshelf,desktop computer,garden plant,garden plant,garden plant
+--num_distractors
+1
+--distractor
+full
+--distractor_categories
+coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,laptop computer,globe,bookshelf,desktop computer,garden plant,garden plant,garden plant
+--no_moving_distractors
+--only_use_flex_objects

@@ -1,0 +1,33 @@
+{
+    "stimulus_name/avg_label": "pilot_linking_nl6_aCyl_bCube_occ1_dis1_boxroom_0000-pilot_linking_nl6_aCyl_bCube_occ1_dis1_boxroom_0014",
+    "controller_name/avg_label": "Linking",
+    "git_commit/avg_label": "a89b122082d684365bb6512440b04eb69d3bb37b",
+    "num_frames/avg_label": 331.533,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.0,
+    "does_target_miss_zone/avg_label": 1.0,
+    "does_target_hit_ground/avg_label": 0.267,
+    "first_target_move_frame/avg_label": 1.0,
+    "first_target_contact_zone_frame/avg_label": null,
+    "first_target_hit_ground_frame/avg_label": 149.0,
+    "final_target_displacement/avg_label": {
+        "x": 1.488,
+        "y": -9.581,
+        "z": -10.251
+    },
+    "final_target_mask_displacement/avg_label": [
+        -0.024,
+        -0.333
+    ],
+    "target_visible_area/avg_label": 0.034,
+    "zone_visible_area/avg_label": 0.427,
+    "probe_visible_area/avg_label": 0.017,
+    "is_any_object_fully_occluded/avg_label": 1.0,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": 7.0,
+    "push_time/avg_label": 15.0,
+    "num_distractors/avg_label": 1.0,
+    "num_occluders/avg_label": 1.0,
+    "num_trials": 15
+}

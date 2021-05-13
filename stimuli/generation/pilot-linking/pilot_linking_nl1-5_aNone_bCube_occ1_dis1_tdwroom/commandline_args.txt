@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl1-5_aNone_bCube_tdwroom
 --num
-10
+25
 --height
 512
 --width
@@ -10,10 +10,13 @@
 0
 --seed
 1
+--tcolor=None
+--zcolor=None
 --save_labels
 --save_passes
 _img
 --save_movies
+--save_meshes
 --num_middle_range
 [1,6]
 --mmass
@@ -66,4 +69,18 @@ _img,_id
 --room
 tdw
 --fscale
-[0.5,5.0]
+[1,7.0]
+--num_occluders
+1
+--occluder
+full
+--occluder_categories
+coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,laptop computer,globe,bookshelf,desktop computer,garden plant,garden plant,garden plant
+--num_distractors
+1
+--distractor
+full
+--distractor_categories
+coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,laptop computer,globe,bookshelf,desktop computer,garden plant,garden plant,garden plant
+--no_moving_distractors
+--only_use_flex_objects

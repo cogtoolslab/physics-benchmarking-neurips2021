@@ -4,6 +4,7 @@
 _img
 --save_labels
 --save_movies
+--save_meshes
 --fwait
 15
 --width=512

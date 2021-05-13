@@ -4,6 +4,7 @@
 _img
 --save_labels
 --save_movies
+--save_meshes
 --fwait
 15
 --width=512
@@ -34,3 +35,4 @@ full
 coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,laptop computer,globe,bookshelf,desktop computer,garden plant,garden plant,garden plant
 --num_occluders
 1
+--only_use_flex_objects
