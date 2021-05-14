@@ -76,8 +76,8 @@ function omit(obj, props) { //helper function to remove _id of stim object
 
 function initializeWithTrials(socket) {
   var gameid = UUID();
-  var colname = 'human-physics-benchmarking-linking-pilot_example'; //insert STIMULI DATASETNAME here
-  sendPostRequest('http://localhost:8016/db/getstims', {
+  var colname = 'human-physics-benchmarking-linking-pilot_production_1'; //insert STIMULI DATASETNAME here
+  sendPostRequest('http://localhost:8051/db/getstims', {
     json: {
       dbname: 'stimuli',
       colname: colname,
@@ -115,7 +115,7 @@ var UUID = function() {
 
 var writeDataToMongo = function(data) {
   sendPostRequest(
-    'http://localhost:8016/db/insert',
+    'http://localhost:8051/db/insert',
     { json: data },
     (error, res, body) => {
       if (!error && res.statusCode === 200) {
