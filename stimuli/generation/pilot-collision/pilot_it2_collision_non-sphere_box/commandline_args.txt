@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --collision_axis_length
 2
 --target
@@ -26,7 +27,8 @@ bowl,cone,cube,cylinder,dumbbell,pentagon,pipe,pyramid,torus
 --random
 0
 --seed
-42
+498
+--no_moving_distractors
 --num
 10
 --room

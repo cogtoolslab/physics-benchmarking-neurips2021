@@ -1,3 +1,6 @@
+--only_use_flex_objects
+--save_meshes
+--no_moving_distractors
 --random
 0
 --seed
@@ -29,7 +32,7 @@ None
 --zcolor
 None
 --num
-20
+30
 --save_labels
 --save_passes
 _img

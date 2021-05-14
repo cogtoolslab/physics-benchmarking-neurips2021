@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --target
 bowl,cube,cylinder
 --dscale
@@ -18,7 +19,8 @@ bowl,cube,cylinder
 --random
 0
 --seed
-42
+247
+--no_moving_distractors
 --num
 10
 --room

@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --ramp
 0
 --use_ledge
@@ -38,9 +39,10 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+6
+--no_moving_distractors
 --num
-10
+13
 --room
 tdw
 --save_labels

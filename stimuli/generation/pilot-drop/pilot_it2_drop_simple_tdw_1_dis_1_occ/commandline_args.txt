@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --target
 bowl,cube,cylinder,pipe
 --tscale
@@ -28,7 +29,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+612
+--no_moving_distractors
 --num
 10
 --room

@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --collision_axis_length
 2
 --pscale
@@ -34,7 +35,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+148
+--no_moving_distractors
 --num
 10
 --room

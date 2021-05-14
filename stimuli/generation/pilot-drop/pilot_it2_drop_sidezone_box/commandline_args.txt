@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --zone
 cube
 --zlocation
@@ -22,7 +23,8 @@ pyramid,cone,triangular_prism
 --random
 0
 --seed
-42
+660
+--no_moving_distractors
 --num
 10
 --room

@@ -3,12 +3,13 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --collision_axis_length
 2
 --frot
-[-5,5]
+[-8,8]
 --fscale
-[5.0,8.0]
+[5.0,11.0]
 --fupforce
 [0.0,0.0]
 --target
@@ -36,7 +37,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-42
+925
+--no_moving_distractors
 --num
 10
 --room

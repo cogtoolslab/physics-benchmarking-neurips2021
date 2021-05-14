@@ -1,33 +1,33 @@
 {
-    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_ledge_box_0000-pilot_it2_rollingSliding_simple_ledge_box_0009",
+    "stimulus_name/avg_label": "pilot_it2_rollingSliding_simple_ledge_box_0000-pilot_it2_rollingSliding_simple_ledge_box_0012",
     "controller_name/avg_label": "RollingSliding",
-    "git_commit/avg_label": "fc4df8204812f07903d96025ec579b3c4a031d83",
-    "num_frames/avg_label": 199.3,
+    "git_commit/avg_label": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+    "num_frames/avg_label": 213.692,
     "is_trial_valid/avg_label": 1.0,
     "does_target_move/avg_label": 1.0,
-    "does_target_contact_zone/avg_label": 0.6,
-    "does_target_miss_zone/avg_label": 0.4,
+    "does_target_contact_zone/avg_label": 0.692,
+    "does_target_miss_zone/avg_label": 0.308,
     "does_target_hit_ground/avg_label": 1.0,
     "first_target_move_frame/avg_label": 1.0,
-    "first_target_contact_zone_frame/avg_label": 46.667,
+    "first_target_contact_zone_frame/avg_label": 47.778,
     "first_target_hit_ground_frame/avg_label": 1.0,
     "final_target_displacement/avg_label": {
-        "x": 1.194,
-        "y": 0.147,
-        "z": 0.116
+        "x": 1.473,
+        "y": 0.182,
+        "z": 0.003
     },
     "final_target_mask_displacement/avg_label": [
-        -0.297,
-        -0.024
+        -0.295,
+        0.122
     ],
-    "target_visible_area/avg_label": 0.015,
-    "zone_visible_area/avg_label": 0.085,
+    "target_visible_area/avg_label": 0.014,
+    "zone_visible_area/avg_label": 0.091,
     "probe_visible_area/avg_label": null,
     "is_any_object_fully_occluded/avg_label": 0.0,
     "room/avg_label": "b'box'",
-    "trial_seed/avg_label": 42004.5,
+    "trial_seed/avg_label": 995006.0,
     "push_time/avg_label": 0.0,
     "num_distractors/avg_label": 0.0,
     "num_occluders/avg_label": 0.0,
-    "num_trials": 10
+    "num_trials": 13
 }

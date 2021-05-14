@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl1-6_ms03-7_aCylcap_bCyl_tdwroom
 --num
-10
+25
 --height
 512
 --width
@@ -10,10 +10,13 @@
 0
 --seed
 421
+--tcolor=None
+--zcolor=None
 --save_labels
 --save_passes
 _img
 --save_movies
+--save_meshes
 --num_middle_range
 [1,7]
 --mmass
@@ -37,7 +40,7 @@ cylinder
 --zone
 cube
 --fscale
-[0.5,5.0]
+[1,7.0]
 --zscale
 2.0,0.01,4.0
 --zlocation
@@ -74,3 +77,5 @@ _img,_id
 --room
 tdw
 --attachment_capped
+--no_moving_distractors
+--only_use_flex_objects

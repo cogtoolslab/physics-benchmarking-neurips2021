@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --ramp
 0
 --use_ledge
@@ -26,9 +27,10 @@ None
 --random
 0
 --seed
-42
+995
+--no_moving_distractors
 --num
-10
+13
 --room
 box
 --save_labels

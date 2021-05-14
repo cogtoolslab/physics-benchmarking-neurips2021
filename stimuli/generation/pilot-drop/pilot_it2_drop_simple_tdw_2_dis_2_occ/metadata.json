@@ -2,7 +2,7 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0000",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -13,20 +13,20 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": 0.136,
-            "y": 0.868,
-            "z": -0.138
+            "x": 0.05,
+            "y": 1.059,
+            "z": -0.063
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            0.251,
+            0.097
         ],
-        "target_visible_area": 0.001,
-        "zone_visible_area": 0.022,
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.16,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42000,
+        "trial_seed": 75000,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -36,8 +36,8 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0001",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
-        "num_frames": 302,
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -47,20 +47,20 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": 0.101,
-            "y": 0.555,
-            "z": 0.146
+            "x": -0.046,
+            "y": 0.432,
+            "z": 0.069
         },
         "final_target_mask_displacement": [
-            0.564,
-            -0.048
+            0.675,
+            0.047
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.193,
+        "target_visible_area": 0.006,
+        "zone_visible_area": 0.169,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42001,
+        "trial_seed": 75001,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -70,7 +70,7 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0002",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -81,20 +81,20 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.131,
-            "y": 0.075,
-            "z": 0.05
+            "x": -0.005,
+            "y": 0.817,
+            "z": -0.146
         },
         "final_target_mask_displacement": [
-            0.681,
-            -0.065
+            0.289,
+            0.07
         ],
-        "target_visible_area": 0.007,
-        "zone_visible_area": 0.201,
+        "target_visible_area": 0.003,
+        "zone_visible_area": 0.147,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42002,
+        "trial_seed": 75002,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -104,31 +104,31 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0003",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
-        "num_frames": 287,
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 220,
+        "first_target_hit_ground_frame": 220,
         "final_target_displacement": {
-            "x": -0.033,
-            "y": 1.059,
-            "z": -0.185
+            "x": 0.175,
+            "y": 0.249,
+            "z": -0.656
         },
         "final_target_mask_displacement": [
-            0.301,
-            0.039
+            0.941,
+            0.29
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.132,
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.136,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42003,
+        "trial_seed": 75003,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -138,31 +138,31 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0004",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
-        "num_frames": 302,
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 173,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 63,
+        "first_target_hit_ground_frame": 64,
         "final_target_displacement": {
-            "x": -0.035,
-            "y": 1.012,
-            "z": -0.178
+            "x": 0.026,
+            "y": 0.01,
+            "z": -0.08
         },
         "final_target_mask_displacement": [
-            0.286,
-            -0.011
+            NaN,
+            NaN
         ],
         "target_visible_area": 0.001,
         "zone_visible_area": 0.152,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42004,
+        "trial_seed": 75004,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -172,41 +172,7 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0005",
         "controller_name": "Drop",
-        "git_commit": "024058b67d74b66556f9bc2850e4aea5b61f9c1c",
-        "num_frames": 250,
-        "is_trial_valid": true,
-        "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
-        "does_target_hit_ground": true,
-        "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 54,
-        "first_target_hit_ground_frame": 55,
-        "final_target_displacement": {
-            "x": -0.179,
-            "y": 0.072,
-            "z": -0.06
-        },
-        "final_target_mask_displacement": [
-            NaN,
-            NaN
-        ],
-        "target_visible_area": 0.002,
-        "zone_visible_area": 0.161,
-        "probe_visible_area": null,
-        "is_any_object_fully_occluded": true,
-        "room": "b'tdw'",
-        "trial_seed": 42005,
-        "push_time": 0,
-        "num_distractors": 2,
-        "num_occluders": 2,
-        "num_middle_objects": 0,
-        "remove_middle": false
-    },
-    {
-        "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0006",
-        "controller_name": "Drop",
-        "git_commit": "04d13218da836d984221e283723b4139d48bc51c",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -217,20 +183,54 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": 0.042,
-            "y": 0.666,
-            "z": 0.208
+            "x": 0.088,
+            "y": 0.95,
+            "z": 0.184
         },
         "final_target_mask_displacement": [
-            0.44,
-            -0.014
+            NaN,
+            NaN
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.125,
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.026,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42006,
+        "trial_seed": 75005,
+        "push_time": 0,
+        "num_distractors": 2,
+        "num_occluders": 2,
+        "num_middle_objects": 0,
+        "remove_middle": false
+    },
+    {
+        "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0006",
+        "controller_name": "Drop",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 67,
+        "first_target_hit_ground_frame": 68,
+        "final_target_displacement": {
+            "x": 0.026,
+            "y": 0.013,
+            "z": -0.127
+        },
+        "final_target_mask_displacement": [
+            NaN,
+            NaN
+        ],
+        "target_visible_area": 0.001,
+        "zone_visible_area": 0.174,
+        "probe_visible_area": null,
+        "is_any_object_fully_occluded": true,
+        "room": "b'tdw'",
+        "trial_seed": 75006,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -240,31 +240,31 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0007",
         "controller_name": "Drop",
-        "git_commit": "04d13218da836d984221e283723b4139d48bc51c",
-        "num_frames": 174,
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 302,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 84,
-        "first_target_hit_ground_frame": 84,
+        "first_target_contact_zone_frame": 54,
+        "first_target_hit_ground_frame": 54,
         "final_target_displacement": {
-            "x": 0.476,
-            "y": 0.129,
-            "z": -0.31
+            "x": -0.488,
+            "y": 0.177,
+            "z": 1.2
         },
         "final_target_mask_displacement": [
-            0.833,
-            0.192
+            0.543,
+            -0.167
         ],
-        "target_visible_area": 0.005,
-        "zone_visible_area": 0.139,
+        "target_visible_area": 0.015,
+        "zone_visible_area": 0.21,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42007,
+        "trial_seed": 75007,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -274,31 +274,31 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0008",
         "controller_name": "Drop",
-        "git_commit": "04d13218da836d984221e283723b4139d48bc51c",
-        "num_frames": 302,
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
-        "does_target_hit_ground": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 61,
-        "first_target_hit_ground_frame": 61,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": 0.57,
-            "y": 0.402,
-            "z": -0.042
+            "x": 0.091,
+            "y": 0.713,
+            "z": -0.017
         },
         "final_target_mask_displacement": [
-            0.389,
-            -0.096
+            0.486,
+            -0.062
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.186,
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.185,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42008,
+        "trial_seed": 75008,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,
@@ -308,7 +308,7 @@
     {
         "stimulus_name": "pilot_it2_drop_simple_tdw_2_dis_2_occ_0009",
         "controller_name": "Drop",
-        "git_commit": "04d13218da836d984221e283723b4139d48bc51c",
+        "git_commit": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -316,23 +316,23 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 64,
-        "first_target_hit_ground_frame": 64,
+        "first_target_contact_zone_frame": 56,
+        "first_target_hit_ground_frame": 57,
         "final_target_displacement": {
-            "x": -0.1,
-            "y": 0.322,
-            "z": 0.367
+            "x": -0.057,
+            "y": 0.01,
+            "z": 0.02
         },
         "final_target_mask_displacement": [
-            0.864,
-            -0.003
+            0.017,
+            -0.001
         ],
-        "target_visible_area": 0.017,
-        "zone_visible_area": 0.174,
+        "target_visible_area": 0.048,
+        "zone_visible_area": 0.146,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'tdw'",
-        "trial_seed": 42009,
+        "trial_seed": 75009,
         "push_time": 0,
         "num_distractors": 2,
         "num_occluders": 2,

@@ -3,6 +3,7 @@ None
 --zcolor
 None
 --only_use_flex_objects
+--save_meshes
 --target
 bowl
 --ymin
@@ -20,7 +21,8 @@ bowl
 --random
 0
 --seed
-42
+736
+--no_moving_distractors
 --num
 10
 --room
