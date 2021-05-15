@@ -1039,8 +1039,23 @@ window.jsPsych = (function() {
 
   function updateProgressBar() {
     var progress = jsPsych.progress().percent_complete;
+    var total_trials = (timeline.length() -5)/2;
     core.setProgressBar(progress / 100);
-    updateProgressBarMessage('Completion Progress: ' + progress.toFixed(1).toString() + ' % finished')
+    // updateProgressBarMessage('Completion Progress: ' + progress.toFixed(1).toString() + ' % finished')
+    if (global_trial_index < 21) {
+      var current_trial_index = Math.floor((global_trial_index+1)/2)
+    } else if (global_trial_index < 23) {
+      var current_trial_index = 10
+    } else {
+      var current_trial_index = Math.floor((global_trial_index-1)/2)
+    }
+
+    if (current_trial_index <= 160) {
+      updateProgressBarMessage('Completion Progress: ' + current_trial_index + ' / ' + total_trials + ' Trials')
+    } else {
+      updateProgressBarMessage('All trials completed')
+    }
+    
   }
 
   var progress_bar_amount = 0;
