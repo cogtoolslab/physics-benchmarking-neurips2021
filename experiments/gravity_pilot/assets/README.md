@@ -1,1 +1,0 @@
-This folder contains image and other media files that we need for this experiment.
