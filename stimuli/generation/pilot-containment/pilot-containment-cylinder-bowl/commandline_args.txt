@@ -7,6 +7,10 @@ _img
 --save_meshes
 --fwait
 15
+--random
+0
+--seed
+4
 --width=512
 --height=512
 --only_use_flex_objects

@@ -7,6 +7,10 @@ _img
 --save_meshes
 --fwait
 15
+--random
+0
+--seed
+7
 --zone=torus
 --width=512
 --height=512
