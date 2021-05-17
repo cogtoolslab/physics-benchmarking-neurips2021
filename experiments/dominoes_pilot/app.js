@@ -115,7 +115,7 @@ var UUID = function() {
 
 var writeDataToMongo = function(data) {
   sendPostRequest(
-    'http://localhost:8036/db/insert',
+    'http://localhost:8044/db/insert',
     { json: data },
     (error, res, body) => {
       if (!error && res.statusCode === 200) {
