@@ -12,10 +12,10 @@ _img
 --only_use_flex_objects
 --random
 0
---tcolor=None
---zcolor=None
 --seed
 13
+--tcolor=None
+--zcolor=None
 --height
 512
 --width
