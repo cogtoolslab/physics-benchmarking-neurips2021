@@ -1,6 +1,5 @@
 .DS_Store
 .ipynb_checkpoints/
-*.csv
 *.pdf
 # *.png
 # *.jpeg
