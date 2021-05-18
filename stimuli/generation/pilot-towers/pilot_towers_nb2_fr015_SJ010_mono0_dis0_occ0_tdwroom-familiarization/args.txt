@@ -1,7 +1,7 @@
 --dir
-/Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_towers_nb2_fr015_SJ010_mono1_tdwroom/
+/Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_towers_nb2_fr015_SJ010_mono0_tdwroom/
 --num
-10
+15
 --temp
 D:/temp.hdf5
 --width
@@ -11,7 +11,7 @@ D:/temp.hdf5
 --gpu
 None
 --seed
-0
+13
 --random
 0
 --num_views
@@ -21,7 +21,7 @@ None
 --run
 1
 --monochrome
-True
+False
 --room
 tdw
 --save_passes
