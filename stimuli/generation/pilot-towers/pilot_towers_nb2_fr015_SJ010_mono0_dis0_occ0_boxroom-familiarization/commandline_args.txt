@@ -45,7 +45,7 @@ cube
 --zfriction
 0.15
 --room
-tdw
+box
 --collision_axis_length
 2.0
 --tower_cap
