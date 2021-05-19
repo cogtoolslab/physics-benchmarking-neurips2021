@@ -22,6 +22,7 @@ _img
 --spacing_jitter=0.3
 --attachment=None
 --base=bowl
+--ascale=0
 --bscale=0.5,1.1
 --bmass=2,3
 --bcolor=None
