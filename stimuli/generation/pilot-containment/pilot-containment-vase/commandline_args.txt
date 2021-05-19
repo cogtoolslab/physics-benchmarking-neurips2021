@@ -22,7 +22,7 @@ _img
 --num_middle_range=1,4
 --spacing_jitter=0.2
 --attachment=None
---ascale=0.3,0.7
+--ascale=0
 --amass=2,3
 --base=bowl
 --bscale=0.7,1.5,0.7
