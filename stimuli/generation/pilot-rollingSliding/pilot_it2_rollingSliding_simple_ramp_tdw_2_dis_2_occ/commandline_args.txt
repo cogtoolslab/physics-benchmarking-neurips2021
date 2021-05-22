@@ -5,7 +5,7 @@ None
 --only_use_flex_objects
 --save_meshes
 --room
-box
+tdw
 --probe
 bowl,cone,cube,cylinder,dumbbell,pentagon,pipe,pyramid,torus,sphere
 --trot
@@ -45,7 +45,7 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 --random
 0
 --seed
-96
+743
 --no_moving_distractors
 --num
 13
@@ -54,4 +54,4 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 _img
 --save_movies
 --dir
-/Volumes/FJBexHDD/tdw/pilot-rollingSliding/iteration-2/pilot_it2_rollingSliding_simple_ramp_box_2_dis_2_occ
+/Volumes/FJBexHDD/tdw/pilot-rollingSliding/iteration-2/pilot_it2_rollingSliding_simple_ramp_tdw_2_dis_2_occ

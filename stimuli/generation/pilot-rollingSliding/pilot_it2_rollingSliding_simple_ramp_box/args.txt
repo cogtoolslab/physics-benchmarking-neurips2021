@@ -5,7 +5,7 @@ None
 --num
 13
 --num_multiplier
-1
+1.0
 --temp
 NONE
 --width
@@ -19,7 +19,7 @@ NONE
 --seed
 755
 --random
-1
+0
 --num_views
 1
 --viewpoint
@@ -145,6 +145,8 @@ False
 --only_use_flex_objects
 True
 --training_data_mode
+False
+--readout_data_mode
 False
 --match_probe_and_target_color
 False

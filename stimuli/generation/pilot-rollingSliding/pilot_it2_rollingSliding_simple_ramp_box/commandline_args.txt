@@ -30,6 +30,8 @@ bowl,cone,cube,cylinder,dumbbell,pentagon,pipe,pyramid,torus,sphere
 512
 --width
 512
+--random
+0
 --seed
 755
 --no_moving_distractors
