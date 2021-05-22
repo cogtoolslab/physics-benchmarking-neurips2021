@@ -399,7 +399,7 @@ function setupGame() {
       on_finish: function() {
         // $(".confetti").remove();
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
-                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=50AEDCF9" }, 500)
+                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=3CA7DF5F" }, 500)
         // sendData();
       }
       //change the link below to your prolific-provided URL
