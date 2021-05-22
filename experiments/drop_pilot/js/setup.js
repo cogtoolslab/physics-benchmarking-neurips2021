@@ -138,7 +138,7 @@ function setupGame() {
         overlay: [n.map_url],
         overlay_time: 2.,
         blink_time: 500,
-        stop: 1.5, //STIM DURATION stop the video after X seconds
+        stop: 1.0, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
         post_trial_gap: 0,
@@ -158,7 +158,7 @@ function setupGame() {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url], //rename stim_url for the video plugin
-        // stop: 1.5, //STIM DURATION stop the video after X seconds
+        // stop: 1.0, //STIM DURATION stop the video after X seconds
         response_allowed_while_playing: false,
         width: 500,
         height: 500,
@@ -214,7 +214,7 @@ function setupGame() {
         overlay_time: 2.,
         blink_time: 500,
         stimulus_metadata: n, //to dump all the metadata back to mongodb
-        stop: 1.5, //STIM DURATION stop the video after X seconds
+        stop: 1.0, //STIM DURATION stop the video after X seconds
         width: 500,
         height: 500,
         post_trial_gap: 0,
