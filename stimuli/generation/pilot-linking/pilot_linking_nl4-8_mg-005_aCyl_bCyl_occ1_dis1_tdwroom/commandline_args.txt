@@ -1,7 +1,7 @@
 --dir
 /Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl4-8_mg-005_aCyl_bCyl_tdwroom
 --num
-25
+35
 --height
 512
 --width
