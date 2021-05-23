@@ -241,7 +241,7 @@ function setupGame() {
 
     var instructionsHTML = {
       'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
-      a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and an area in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the area marked in yellow.\
+      a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and another object in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the object marked in yellow.\
       </p><div><img src="img/blinkingdemo.gif"></div><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warmup trials, you will find out whether your response was correct or not, but you won\'t on the real trials.']
     };
 
