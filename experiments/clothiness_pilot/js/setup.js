@@ -25,7 +25,7 @@ function Experiment() {
   this.response_allowed_while_playing = false;
   // this.phase = 'experiment';
   this.condition = 'prediction';
-  this.prompt = 'Is the red object going to hit the yellow area?';
+  this.prompt = 'Is the red object going to hit the yellow object?';
   this.choices = choices;
 };
 
@@ -173,16 +173,16 @@ function setupGame() {
         choices: ["Next"],
         prompt: () => {
           if(last_correct & last_yes) {
-            return "✅ Nice, you got that right. The red object did indeed hit the yellow area. Above, you see the full video.";
+            return "✅ Nice, you got that right. The red object did indeed hit the yellow object. Above, you see the full video.";
           } 
           else if (last_correct & !last_yes) {
-            return "✅ Nice, you got that right. The red object indeed did not hit the yellow area. Above, you see the full video.";
+            return "✅ Nice, you got that right. The red object indeed did not hit the yellow object. Above, you see the full video.";
           } 
           else if (!last_correct & last_yes) {
-            return "❌ Sorry, you got that one wrong. The red object did not hit the yellow area. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The red object did not hit the yellow object. Above, you see the full video.";
           } 
           else {
-            return "❌ Sorry, you got that one wrong. The red object did hit the yellow area. Above, you see the full video.";
+            return "❌ Sorry, you got that one wrong. The red object did hit the yellow object. Above, you see the full video.";
           }}
         // save_trial_parameters: {} //selectively save parameters
       });
@@ -241,7 +241,7 @@ function setupGame() {
 
     var instructionsHTML = {
       'str1': ['<p> On each trial, you will see a brief video of a few objects interacting.</p><p>Your task will be to predict whether \
-      a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and an area in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the area marked in yellow.\
+      a certain event will happen after the video ends.</p><p>Before the video starts, you\'ll see one object flash in red and another object in yellow. Remember these objects! You\'ll be asked if the object marked in red will touch the object marked in yellow.\
       </p><div><img src="img/blinkingdemo.gif"></div><p>You will do a few “warmup” trials first, followed by 150 real trials. For the warmup trials, you will find out whether your response was correct or not, but you won\'t on the real trials.']
     };
 
@@ -399,7 +399,7 @@ function setupGame() {
       on_finish: function() {
         // $(".confetti").remove();
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
-                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=50AEDCF9" }, 500)
+                setTimeout(function () { location.href = "https://app.prolific.co/submissions/complete?cc=3CA7DF5F" }, 500)
         // sendData();
       }
       //change the link below to your prolific-provided URL

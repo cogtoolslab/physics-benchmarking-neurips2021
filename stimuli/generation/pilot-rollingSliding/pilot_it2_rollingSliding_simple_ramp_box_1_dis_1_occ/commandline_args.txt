@@ -42,6 +42,8 @@ coffee table,houseplant,vase,chair,dog,sofa,flowerpot,coffee maker,stool,laptop,
 512
 --width
 512
+--random
+0
 --seed
 803
 --no_moving_distractors
