@@ -14,7 +14,7 @@ var choices = get_random_choices(); //randomize button order
 // Set the important study info here
 var dbname = 'human_physics_benchmarking'; //insert DATABASE NAME
 var colname = 'towers_pilot'; //insert COLLECTION NAME
-var itname = 'production_1_testing'; //insert ITERATION NAME. This marks the responses, but does NOT determine which stimuli are pulled. Change the field in app.js for that
+var itname = 'production_2_testing'; //insert ITERATION NAME. This marks the responses, but does NOT determine which stimuli are pulled. Change the field in app.js for that
 
 // Define trial object with boilerplate
 function Experiment() {
