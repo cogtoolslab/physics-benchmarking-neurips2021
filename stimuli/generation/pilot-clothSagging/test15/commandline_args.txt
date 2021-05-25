@@ -31,7 +31,7 @@ None
 512
 --save_labels
 --collision_label_threshold
-0.122
+0.122373044491
 --only_use_flex_objects
 --anchor_jitter
 0.1

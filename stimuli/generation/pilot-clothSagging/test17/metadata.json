@@ -2,7 +2,7 @@
     {
         "stimulus_name": "test17_0000",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -31,7 +31,7 @@
     {
         "stimulus_name": "test17_0001",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -49,7 +49,7 @@
         "target_visible_area": 0.12,
         "zone_visible_area": 0.006,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": true,
+        "is_any_object_fully_occluded": false,
         "room": "b'box'",
         "trial_seed": 8001,
         "push_time": 0,
@@ -60,7 +60,7 @@
     {
         "stimulus_name": "test17_0002",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -72,11 +72,11 @@
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
-            0.512,
-            -0.01
+            0.541,
+            -0.002
         ],
-        "target_visible_area": 0.176,
-        "zone_visible_area": 0.176,
+        "target_visible_area": 0.169,
+        "zone_visible_area": 0.007,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
         "room": "b'box'",
@@ -89,7 +89,7 @@
     {
         "stimulus_name": "test17_0003",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -118,7 +118,7 @@
     {
         "stimulus_name": "test17_0004",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -134,7 +134,7 @@
             -0.08
         ],
         "target_visible_area": 0.04,
-        "zone_visible_area": 0.946,
+        "zone_visible_area": 0.005,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -147,7 +147,7 @@
     {
         "stimulus_name": "test17_0005",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -160,7 +160,7 @@
         "final_target_displacement": null,
         "final_target_mask_displacement": [
             0.54,
-            -0.081
+            -0.078
         ],
         "target_visible_area": 0.112,
         "zone_visible_area": 0.008,
@@ -176,7 +176,7 @@
     {
         "stimulus_name": "test17_0006",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -205,7 +205,7 @@
     {
         "stimulus_name": "test17_0007",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -234,7 +234,7 @@
     {
         "stimulus_name": "test17_0008",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -246,13 +246,13 @@
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
-            0.438,
-            0.001
+            0.403,
+            -0.003
         ],
-        "target_visible_area": 0.065,
+        "target_visible_area": 0.069,
         "zone_visible_area": 0.005,
         "probe_visible_area": null,
-        "is_any_object_fully_occluded": true,
+        "is_any_object_fully_occluded": false,
         "room": "b'box'",
         "trial_seed": 8008,
         "push_time": 0,
@@ -263,7 +263,7 @@
     {
         "stimulus_name": "test17_0009",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -275,10 +275,10 @@
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
-            0.387,
-            0.078
+            0.428,
+            0.058
         ],
-        "target_visible_area": 0.149,
+        "target_visible_area": 0.137,
         "zone_visible_area": 0.009,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": false,
@@ -292,7 +292,7 @@
     {
         "stimulus_name": "test17_0010",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -321,7 +321,7 @@
     {
         "stimulus_name": "test17_0011",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -350,7 +350,7 @@
     {
         "stimulus_name": "test17_0012",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -379,7 +379,7 @@
     {
         "stimulus_name": "test17_0013",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -391,11 +391,11 @@
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
-            0.609,
-            0.06
+            0.689,
+            0.065
         ],
-        "target_visible_area": 0.035,
-        "zone_visible_area": 0.035,
+        "target_visible_area": 0.031,
+        "zone_visible_area": 0.004,
         "probe_visible_area": null,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -408,7 +408,7 @@
     {
         "stimulus_name": "test17_0014",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -437,7 +437,7 @@
     {
         "stimulus_name": "test17_0015",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -466,7 +466,7 @@
     {
         "stimulus_name": "test17_0016",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -495,7 +495,7 @@
     {
         "stimulus_name": "test17_0017",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -524,7 +524,7 @@
     {
         "stimulus_name": "test17_0018",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -536,8 +536,8 @@
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
-            0.501,
-            -0.011
+            0.502,
+            -0.01
         ],
         "target_visible_area": 0.026,
         "zone_visible_area": 0.005,
@@ -553,7 +553,7 @@
     {
         "stimulus_name": "test17_0019",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
