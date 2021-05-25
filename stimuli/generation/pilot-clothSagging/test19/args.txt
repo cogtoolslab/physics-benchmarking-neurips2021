@@ -1,7 +1,7 @@
 --port
 None
 --dir
-F:\TDW\hdf5\cloth_sagging\test13\
+F:\TDW\hdf5\cloth_sagging\test19\
 --num
 20
 --num_multiplier
@@ -17,7 +17,7 @@ NONE
 --gpu
 0
 --seed
-4
+9
 --random
 0
 --num_views
@@ -43,7 +43,7 @@ True
 --num_middle_objects
 3
 --zone
-['sphere']
+['cylinder']
 --target
 ['cube']
 --probe
@@ -57,7 +57,7 @@ None
 --rfriction
 False
 --zscale
-{'x': 0.3, 'y': 0.3, 'z': 0.3}
+{'x': 0.2, 'y': 0.3, 'z': 0.2}
 --zlocation
 None
 --zfriction
@@ -179,17 +179,17 @@ False
 --fwait
 30
 --collision_label_threshold
-0.122099883854
+0.122409294611
 --min_distance_ratio
-0.3
+0.25
 --max_distance_ratio
-0.7
+0.6
 --min_anchorloc
 -0.4
 --max_anchorloc
 0.4
 --anchor_height
-0.6
+0.7
 --anchor_jitter
 0.1
 --height_jitter
