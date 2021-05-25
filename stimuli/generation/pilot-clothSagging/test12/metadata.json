@@ -2,7 +2,7 @@
     {
         "stimulus_name": "test12_0000",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -10,7 +10,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 45,
+        "first_target_contact_zone_frame": 44,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -31,15 +31,15 @@
     {
         "stimulus_name": "test12_0001",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 46,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -60,7 +60,7 @@
     {
         "stimulus_name": "test12_0002",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -68,7 +68,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 49,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -89,7 +89,7 @@
     {
         "stimulus_name": "test12_0003",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -97,7 +97,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 54,
+        "first_target_contact_zone_frame": 47,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -118,7 +118,7 @@
     {
         "stimulus_name": "test12_0004",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -147,7 +147,7 @@
     {
         "stimulus_name": "test12_0005",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -155,7 +155,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 46,
+        "first_target_contact_zone_frame": 43,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -176,15 +176,15 @@
     {
         "stimulus_name": "test12_0006",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -205,7 +205,7 @@
     {
         "stimulus_name": "test12_0007",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -213,7 +213,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 51,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -234,15 +234,15 @@
     {
         "stimulus_name": "test12_0008",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 49,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -263,7 +263,7 @@
     {
         "stimulus_name": "test12_0009",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -292,15 +292,15 @@
     {
         "stimulus_name": "test12_0010",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 45,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -321,7 +321,7 @@
     {
         "stimulus_name": "test12_0011",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -329,7 +329,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 49,
+        "first_target_contact_zone_frame": 47,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -350,7 +350,7 @@
     {
         "stimulus_name": "test12_0012",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -358,7 +358,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 55,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -379,7 +379,7 @@
     {
         "stimulus_name": "test12_0013",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -387,7 +387,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 50,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -408,7 +408,7 @@
     {
         "stimulus_name": "test12_0014",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -416,7 +416,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 47,
+        "first_target_contact_zone_frame": 45,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -437,15 +437,15 @@
     {
         "stimulus_name": "test12_0015",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 47,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -466,15 +466,15 @@
     {
         "stimulus_name": "test12_0016",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
-        "does_target_contact_zone": false,
+        "does_target_contact_zone": true,
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": null,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -495,7 +495,7 @@
     {
         "stimulus_name": "test12_0017",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -503,7 +503,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 46,
+        "first_target_contact_zone_frame": 45,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [
@@ -524,7 +524,7 @@
     {
         "stimulus_name": "test12_0018",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -553,7 +553,7 @@
     {
         "stimulus_name": "test12_0019",
         "controller_name": "ClothSagging",
-        "git_commit": "207fcaefd7d818d1e26799406c9739e674a4bd37",
+        "git_commit": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": null,
@@ -561,7 +561,7 @@
         "does_target_miss_zone": null,
         "does_target_hit_ground": null,
         "first_target_move_frame": null,
-        "first_target_contact_zone_frame": 53,
+        "first_target_contact_zone_frame": 48,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": null,
         "final_target_mask_displacement": [

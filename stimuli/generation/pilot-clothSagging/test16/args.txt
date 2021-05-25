@@ -3,9 +3,9 @@ None
 --dir
 F:\TDW\hdf5\cloth_sagging\test16\
 --num
-0
+20
 --num_multiplier
-1
+1.0
 --temp
 NONE
 --width
@@ -39,7 +39,7 @@ True
 --save_labels
 True
 --save_meshes
-False
+True
 --num_middle_objects
 3
 --zone
@@ -179,7 +179,7 @@ False
 --fwait
 30
 --collision_label_threshold
-0.123
+0.122041266412
 --min_distance_ratio
 0.2
 --max_distance_ratio

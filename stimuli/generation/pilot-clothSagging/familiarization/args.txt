@@ -1,7 +1,7 @@
 --port
 None
 --dir
-F:\TDW\hdf5\cloth_sagging\test13\
+F:\TDW\hdf5\cloth_sagging\familiarization\
 --num
 20
 --num_multiplier
@@ -17,7 +17,7 @@ NONE
 --gpu
 0
 --seed
-4
+10
 --random
 0
 --num_views
@@ -43,7 +43,7 @@ True
 --num_middle_objects
 3
 --zone
-['sphere']
+['cone']
 --target
 ['cube']
 --probe
@@ -57,7 +57,7 @@ None
 --rfriction
 False
 --zscale
-{'x': 0.3, 'y': 0.3, 'z': 0.3}
+{'x': 0.2, 'y': 0.4, 'z': 0.2}
 --zlocation
 None
 --zfriction
@@ -111,15 +111,15 @@ True
 --remove_zone
 0
 --camera_distance
-[1.5, 2.5]
+[2.0, 2.5]
 --camera_min_height
 1.5
 --camera_max_height
 2.0
 --camera_min_angle
-0.0
+30.0
 --camera_max_angle
-90.0
+60.0
 --camera_left_right_reflections
 True
 --material_types
@@ -179,19 +179,19 @@ False
 --fwait
 30
 --collision_label_threshold
-0.122099883854
+0.122195027769
 --min_distance_ratio
-0.3
+0.2
 --max_distance_ratio
-0.7
+0.8
 --min_anchorloc
--0.4
+-0.3
 --max_anchorloc
 0.4
 --anchor_height
 0.6
 --anchor_jitter
-0.1
+0.2
 --height_jitter
 0.2
 --color
