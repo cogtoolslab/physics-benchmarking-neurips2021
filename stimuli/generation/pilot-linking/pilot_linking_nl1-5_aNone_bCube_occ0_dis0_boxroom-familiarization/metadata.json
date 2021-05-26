@@ -1,9 +1,9 @@
 [
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0000",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0000",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 184,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 244,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -13,16 +13,16 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.965,
+            "x": -0.964,
             "y": -9.809,
-            "z": -9.998
+            "z": -9.999
         },
         "final_target_mask_displacement": [
-            0.008,
-            -0.011
+            0.01,
+            -0.013
         ],
         "target_visible_area": 0.002,
-        "zone_visible_area": 0.314,
+        "zone_visible_area": 0.308,
         "probe_visible_area": 0.012,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -32,10 +32,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0001",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0001",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 365,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 322,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -45,13 +45,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.187,
+            "x": -0.199,
             "y": -9.766,
-            "z": -9.97
+            "z": -9.967
         },
         "final_target_mask_displacement": [
-            0.096,
-            -0.331
+            0.097,
+            -0.325
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.31,
@@ -64,22 +64,22 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0002",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0002",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 342,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 60,
-        "first_target_hit_ground_frame": 60,
+        "first_target_contact_zone_frame": 59,
+        "first_target_hit_ground_frame": 59,
         "final_target_displacement": {
-            "x": 1.724,
+            "x": 1.678,
             "y": -10.0,
-            "z": -9.564
+            "z": -9.798
         },
         "final_target_mask_displacement": [
             NaN,
@@ -96,28 +96,28 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0003",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0003",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 224,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 118,
-        "first_target_hit_ground_frame": 77,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": 149,
         "final_target_displacement": {
-            "x": 0.359,
-            "y": -9.908,
-            "z": -9.886
+            "x": -0.088,
+            "y": -9.866,
+            "z": -9.913
         },
         "final_target_mask_displacement": [
-            0.223,
-            -0.529
+            0.202,
+            -0.425
         ],
-        "target_visible_area": 0.006,
+        "target_visible_area": 0.003,
         "zone_visible_area": 0.292,
         "probe_visible_area": 0.013,
         "is_any_object_fully_occluded": true,
@@ -128,9 +128,9 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0004",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0004",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -138,16 +138,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 58,
-        "first_target_hit_ground_frame": 58,
+        "first_target_contact_zone_frame": 81,
+        "first_target_hit_ground_frame": 81,
         "final_target_displacement": {
-            "x": 1.809,
-            "y": -10.0,
-            "z": -9.917
+            "x": 0.606,
+            "y": -9.995,
+            "z": -9.983
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            0.044,
+            -0.691
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.293,
@@ -160,9 +160,9 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0005",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0005",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -173,13 +173,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.38,
+            "x": -0.382,
             "y": -9.857,
-            "z": -9.953
+            "z": -9.933
         },
         "final_target_mask_displacement": [
             -0.06,
-            -0.213
+            -0.233
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.285,
@@ -192,9 +192,9 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0006",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0006",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -203,15 +203,15 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 51,
+        "first_target_hit_ground_frame": 52,
         "final_target_displacement": {
-            "x": -0.204,
-            "y": -10.0,
-            "z": -10.033
+            "x": -0.139,
+            "y": -9.999,
+            "z": -10.271
         },
         "final_target_mask_displacement": [
-            0.169,
-            -0.325
+            0.14,
+            -0.412
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.299,
@@ -224,9 +224,9 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0007",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0007",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -235,15 +235,15 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 97,
+        "first_target_hit_ground_frame": 107,
         "final_target_displacement": {
-            "x": -0.232,
-            "y": -9.855,
-            "z": -10.008
+            "x": -0.527,
+            "y": -9.807,
+            "z": -9.96
         },
         "final_target_mask_displacement": [
-            0.13,
-            -0.38
+            0.104,
+            -0.235
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.311,
@@ -256,26 +256,26 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0008",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0008",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 302,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 232,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 66,
-        "first_target_hit_ground_frame": 66,
+        "first_target_contact_zone_frame": 63,
+        "first_target_hit_ground_frame": 63,
         "final_target_displacement": {
-            "x": 0.908,
+            "x": 0.851,
             "y": -9.907,
-            "z": -9.759
+            "z": -9.864
         },
         "final_target_mask_displacement": [
-            0.207,
-            -0.897
+            0.181,
+            -0.855
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.311,
@@ -288,10 +288,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0009",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0009",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 368,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 252,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -301,13 +301,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.946,
+            "x": -0.95,
             "y": -9.682,
-            "z": -9.991
+            "z": -9.993
         },
         "final_target_mask_displacement": [
-            0.006,
-            -0.025
+            0.008,
+            -0.023
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.307,
@@ -320,26 +320,26 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0010",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0010",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 189,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 89,
-        "first_target_hit_ground_frame": 89,
+        "first_target_contact_zone_frame": 91,
+        "first_target_hit_ground_frame": 92,
         "final_target_displacement": {
-            "x": 1.162,
+            "x": 1.098,
             "y": -9.909,
-            "z": -9.916
+            "z": -10.001
         },
         "final_target_mask_displacement": [
-            0.457,
-            -0.976
+            0.426,
+            -0.961
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.292,
@@ -352,26 +352,26 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0011",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0011",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 398,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 98,
-        "first_target_hit_ground_frame": 98,
+        "first_target_contact_zone_frame": 51,
+        "first_target_hit_ground_frame": 51,
         "final_target_displacement": {
-            "x": -0.079,
-            "y": -9.912,
-            "z": -10.355
+            "x": 1.505,
+            "y": -10.0,
+            "z": -9.932
         },
         "final_target_mask_displacement": [
-            0.065,
-            -0.416
+            NaN,
+            NaN
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.291,
@@ -384,29 +384,29 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0012",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0012",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 424,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 74,
-        "first_target_hit_ground_frame": 75,
+        "first_target_contact_zone_frame": 66,
+        "first_target_hit_ground_frame": 74,
         "final_target_displacement": {
-            "x": 1.038,
-            "y": -9.908,
-            "z": -9.915
+            "x": 0.808,
+            "y": -9.995,
+            "z": -9.893
         },
         "final_target_mask_displacement": [
-            0.259,
-            -0.93
+            0.254,
+            -0.842
         ],
         "target_visible_area": 0.002,
-        "zone_visible_area": 0.312,
+        "zone_visible_area": 0.316,
         "probe_visible_area": 0.012,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -416,10 +416,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0013",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0013",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 440,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -427,15 +427,15 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 108,
+        "first_target_hit_ground_frame": 98,
         "final_target_displacement": {
-            "x": -0.411,
-            "y": -9.815,
-            "z": -10.062
+            "x": -0.626,
+            "y": -9.844,
+            "z": -9.97
         },
         "final_target_mask_displacement": [
-            0.147,
-            -0.25
+            0.124,
+            -0.14
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.303,
@@ -448,22 +448,22 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0014",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0014",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 224,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 71,
+        "first_target_contact_zone_frame": 61,
+        "first_target_hit_ground_frame": 61,
         "final_target_displacement": {
-            "x": 2.124,
+            "x": 2.065,
             "y": -9.912,
-            "z": -10.028
+            "z": -9.831
         },
         "final_target_mask_displacement": [
             NaN,
@@ -480,26 +480,26 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0015",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0015",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 225,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 246,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 186,
+        "first_target_hit_ground_frame": 187,
         "final_target_displacement": {
-            "x": 0.242,
-            "y": -9.663,
-            "z": -9.981
+            "x": 0.672,
+            "y": -9.936,
+            "z": -9.964
         },
         "final_target_mask_displacement": [
-            0.058,
-            -0.573
+            0.168,
+            -0.743
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.31,
@@ -512,10 +512,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0016",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0016",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 362,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 379,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -525,13 +525,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.973,
+            "x": -0.974,
             "y": -9.648,
-            "z": -9.999
+            "z": -9.996
         },
         "final_target_mask_displacement": [
-            0.007,
-            -0.011
+            0.01,
+            -0.01
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.307,
@@ -544,26 +544,26 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0017",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0017",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 320,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 334,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 96,
-        "first_target_hit_ground_frame": 77,
+        "first_target_contact_zone_frame": 121,
+        "first_target_hit_ground_frame": 120,
         "final_target_displacement": {
-            "x": 0.303,
-            "y": -9.949,
-            "z": -9.923
+            "x": 0.11,
+            "y": -9.928,
+            "z": -9.946
         },
         "final_target_mask_displacement": [
-            0.037,
-            -0.457
+            0.044,
+            -0.4
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.314,
@@ -576,10 +576,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0018",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0018",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 306,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 279,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -589,13 +589,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.984,
+            "x": -0.991,
             "y": -9.485,
             "z": -10.0
         },
         "final_target_mask_displacement": [
-            0.007,
-            -0.006
+            0.008,
+            -0.003
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.313,
@@ -608,10 +608,10 @@
         "num_occluders": 0
     },
     {
-        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization-stims_0019",
+        "stimulus_name": "pilot_linking_nl1-5_aNone_bCube_occ0_dis0_boxroom-familiarization_0019",
         "controller_name": "Linking",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 362,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -619,15 +619,15 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 81,
+        "first_target_hit_ground_frame": 74,
         "final_target_displacement": {
-            "x": -0.114,
-            "y": -9.911,
-            "z": -9.99
+            "x": -0.433,
+            "y": -9.856,
+            "z": -9.977
         },
         "final_target_mask_displacement": [
-            0.161,
-            -0.392
+            0.098,
+            -0.256
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.306,

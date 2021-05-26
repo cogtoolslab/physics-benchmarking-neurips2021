@@ -1,35 +1,35 @@
 {
-    "stimulus_name/avg_label": "pilot_towers_nb3_fr015_SJ025_mono1_tdwroom_0000-pilot_towers_nb3_fr015_SJ025_mono1_tdwroom_0029",
+    "stimulus_name/avg_label": "pilot_towers_nb3_fr015_SJ025_mono1_dis0_occ0_tdwroom_0000-pilot_towers_nb3_fr015_SJ025_mono1_dis0_occ0_tdwroom_0019",
     "controller_name/avg_label": "Tower",
-    "git_commit/avg_label": "576304ef3be1198726a3d1a2fe098582d50c42cc",
-    "num_frames/avg_label": 467.433,
+    "git_commit/avg_label": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+    "num_frames/avg_label": 338.45,
     "is_trial_valid/avg_label": 1.0,
     "does_target_move/avg_label": 1.0,
-    "does_target_contact_zone/avg_label": 0.533,
-    "does_target_miss_zone/avg_label": 0.467,
-    "does_target_hit_ground/avg_label": 0.533,
+    "does_target_contact_zone/avg_label": 0.55,
+    "does_target_miss_zone/avg_label": 0.45,
+    "does_target_hit_ground/avg_label": 0.55,
     "first_target_move_frame/avg_label": 1.0,
-    "first_target_contact_zone_frame/avg_label": 256.812,
-    "first_target_hit_ground_frame/avg_label": 256.938,
+    "first_target_contact_zone_frame/avg_label": 142.545,
+    "first_target_hit_ground_frame/avg_label": 142.636,
     "final_target_displacement/avg_label": {
-        "x": -0.939,
-        "y": -9.238,
-        "z": -10.071
+        "x": -0.963,
+        "y": -9.298,
+        "z": -10.202
     },
     "final_target_mask_displacement/avg_label": [
-        0.332,
-        -0.038
+        0.293,
+        0.079
     ],
-    "target_visible_area/avg_label": 0.026,
-    "zone_visible_area/avg_label": 0.359,
-    "probe_visible_area/avg_label": 0.006,
-    "is_any_object_fully_occluded/avg_label": 0.533,
-    "room/avg_label": "tdw",
-    "trial_seed/avg_label": 8014.5,
+    "target_visible_area/avg_label": 0.006,
+    "zone_visible_area/avg_label": 0.376,
+    "probe_visible_area/avg_label": 0.005,
+    "is_any_object_fully_occluded/avg_label": 0.65,
+    "room/avg_label": "b'tdw'",
+    "trial_seed/avg_label": 8009.5,
     "push_time/avg_label": 15.0,
     "num_distractors/avg_label": 0.0,
     "num_occluders/avg_label": 0.0,
     "num_middle_objects/avg_label": 3.0,
-    "did_tower_fall/avg_label": 0.533,
-    "num_trials": 30
+    "did_tower_fall/avg_label": 0.55,
+    "num_trials": 20
 }

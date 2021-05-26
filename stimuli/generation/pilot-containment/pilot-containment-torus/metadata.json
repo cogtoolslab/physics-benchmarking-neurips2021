@@ -1,8 +1,8 @@
 [
     {
-        "stimulus_name": "pilot-containment-torus-stims_0000",
+        "stimulus_name": "pilot-containment-torus_0000",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -10,16 +10,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 122,
-        "first_target_hit_ground_frame": 122,
+        "first_target_contact_zone_frame": 119,
+        "first_target_hit_ground_frame": 119,
         "final_target_displacement": {
-            "x": 0.841,
-            "y": -9.711,
-            "z": -10.341
+            "x": 1.136,
+            "y": -9.903,
+            "z": -10.662
         },
         "final_target_mask_displacement": [
-            0.331,
-            -0.712
+            0.325,
+            -0.862
         ],
         "target_visible_area": 0.005,
         "zone_visible_area": 0.153,
@@ -32,9 +32,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0001",
+        "stimulus_name": "pilot-containment-torus_0001",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -42,20 +42,20 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 90,
-        "first_target_hit_ground_frame": 91,
+        "first_target_contact_zone_frame": 94,
+        "first_target_hit_ground_frame": 94,
         "final_target_displacement": {
-            "x": 1.318,
-            "y": -9.859,
-            "z": -9.166
+            "x": 1.294,
+            "y": -9.959,
+            "z": -9.431
         },
         "final_target_mask_displacement": [
-            0.839,
-            -0.967
+            0.369,
+            -0.431
         ],
-        "target_visible_area": 0.007,
+        "target_visible_area": 0.014,
         "zone_visible_area": 0.16,
-        "probe_visible_area": 0.003,
+        "probe_visible_area": 0.01,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6001,
@@ -64,26 +64,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0002",
+        "stimulus_name": "pilot-containment-torus_0002",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 301,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 135,
-        "first_target_hit_ground_frame": 145,
+        "first_target_contact_zone_frame": 88,
+        "first_target_hit_ground_frame": 89,
         "final_target_displacement": {
-            "x": -0.309,
-            "y": -9.927,
-            "z": -9.814
+            "x": -0.426,
+            "y": -9.607,
+            "z": -9.835
         },
         "final_target_mask_displacement": [
-            0.201,
-            -0.198
+            0.191,
+            -0.185
         ],
         "target_visible_area": 0.007,
         "zone_visible_area": 0.138,
@@ -96,28 +96,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0003",
+        "stimulus_name": "pilot-containment-torus_0003",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 342,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 330,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 64,
-        "first_target_hit_ground_frame": 65,
+        "first_target_contact_zone_frame": 68,
+        "first_target_hit_ground_frame": 69,
         "final_target_displacement": {
-            "x": -0.693,
-            "y": -9.977,
-            "z": -10.036
+            "x": -0.705,
+            "y": -9.989,
+            "z": -9.958
         },
         "final_target_mask_displacement": [
-            0.182,
-            -0.094
+            0.186,
+            -0.098
         ],
-        "target_visible_area": 0.002,
+        "target_visible_area": 0.003,
         "zone_visible_area": 0.14,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
@@ -128,10 +128,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0004",
+        "stimulus_name": "pilot-containment-torus_0004",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 230,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 247,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -141,13 +141,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.995,
+            "x": -0.963,
             "y": -9.403,
-            "z": -10.005
+            "z": -10.0
         },
         "final_target_mask_displacement": [
-            0.0,
-            -0.032
+            -0.002,
+            -0.043
         ],
         "target_visible_area": 0.006,
         "zone_visible_area": 0.165,
@@ -160,10 +160,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0005",
+        "stimulus_name": "pilot-containment-torus_0005",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 151,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 171,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -173,13 +173,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.921,
-            "y": -9.502,
-            "z": -9.983
+            "x": -0.885,
+            "y": -9.595,
+            "z": -9.979
         },
         "final_target_mask_displacement": [
-            0.002,
-            0.009
+            0.03,
+            -0.006
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.182,
@@ -192,9 +192,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0006",
+        "stimulus_name": "pilot-containment-torus_0006",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -202,16 +202,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 78,
-        "first_target_hit_ground_frame": 78,
+        "first_target_contact_zone_frame": 77,
+        "first_target_hit_ground_frame": 83,
         "final_target_displacement": {
-            "x": -1.971,
-            "y": -9.556,
-            "z": -8.635
+            "x": -2.845,
+            "y": -9.539,
+            "z": -8.587
         },
         "final_target_mask_displacement": [
-            0.37,
-            0.729
+            0.264,
+            0.884
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.173,
@@ -224,10 +224,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0007",
+        "stimulus_name": "pilot-containment-torus_0007",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 163,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -237,17 +237,17 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.543,
-            "y": -9.58,
-            "z": -10.005
+            "x": -0.626,
+            "y": -9.593,
+            "z": -10.008
         },
         "final_target_mask_displacement": [
-            0.021,
-            -0.17
+            0.019,
+            -0.171
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.179,
-        "probe_visible_area": 0.011,
+        "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6007,
@@ -256,9 +256,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0008",
+        "stimulus_name": "pilot-containment-torus_0008",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -266,16 +266,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 98,
-        "first_target_hit_ground_frame": 98,
+        "first_target_contact_zone_frame": 99,
+        "first_target_hit_ground_frame": 99,
         "final_target_displacement": {
-            "x": -1.454,
-            "y": -9.811,
-            "z": -7.979
+            "x": -1.378,
+            "y": -9.745,
+            "z": -8.256
         },
         "final_target_mask_displacement": [
-            0.866,
-            0.507
+            0.732,
+            0.354
         ],
         "target_visible_area": 0.004,
         "zone_visible_area": 0.137,
@@ -288,10 +288,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0009",
+        "stimulus_name": "pilot-containment-torus_0009",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 405,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 381,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -301,13 +301,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.682,
-            "y": -9.531,
-            "z": -9.967
+            "x": -0.692,
+            "y": -9.523,
+            "z": -9.964
         },
         "final_target_mask_displacement": [
-            0.006,
-            -0.115
+            0.004,
+            -0.086
         ],
         "target_visible_area": 0.008,
         "zone_visible_area": 0.189,
@@ -320,10 +320,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0010",
+        "stimulus_name": "pilot-containment-torus_0010",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 151,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 206,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -335,15 +335,15 @@
         "final_target_displacement": {
             "x": -0.895,
             "y": -9.391,
-            "z": -9.965
+            "z": -9.964
         },
         "final_target_mask_displacement": [
-            -0.008,
-            -0.056
+            -0.009,
+            -0.058
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.166,
-        "probe_visible_area": 0.004,
+        "probe_visible_area": 0.024,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6010,
@@ -352,9 +352,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0011",
+        "stimulus_name": "pilot-containment-torus_0011",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -362,16 +362,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 68,
-        "first_target_hit_ground_frame": 68,
+        "first_target_contact_zone_frame": 71,
+        "first_target_hit_ground_frame": 89,
         "final_target_displacement": {
-            "x": -0.435,
-            "y": -9.895,
-            "z": -10.545
+            "x": -0.242,
+            "y": -9.771,
+            "z": -11.03
         },
         "final_target_mask_displacement": [
-            0.362,
-            -0.361
+            0.314,
+            -0.481
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.173,
@@ -384,10 +384,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0012",
+        "stimulus_name": "pilot-containment-torus_0012",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 277,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 408,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -397,13 +397,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.598,
-            "y": -9.361,
-            "z": -10.028
+            "x": -0.593,
+            "y": -9.398,
+            "z": -9.975
         },
         "final_target_mask_displacement": [
-            0.044,
-            -0.094
+            0.048,
+            -0.088
         ],
         "target_visible_area": 0.004,
         "zone_visible_area": 0.167,
@@ -416,41 +416,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0013",
+        "stimulus_name": "pilot-containment-torus_0013",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 341,
-        "is_trial_valid": true,
-        "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
-        "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
-        "final_target_displacement": {
-            "x": -1.047,
-            "y": -9.598,
-            "z": -10.106
-        },
-        "final_target_mask_displacement": [
-            0.046,
-            0.019
-        ],
-        "target_visible_area": 0.002,
-        "zone_visible_area": 0.17,
-        "probe_visible_area": 0.003,
-        "is_any_object_fully_occluded": true,
-        "room": "b'box'",
-        "trial_seed": 6013,
-        "push_time": 15,
-        "num_distractors": 1,
-        "num_occluders": 1
-    },
-    {
-        "stimulus_name": "pilot-containment-torus-stims_0014",
-        "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 151,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -461,13 +429,45 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.43,
+            "x": -0.838,
+            "y": -9.535,
+            "z": -10.02
+        },
+        "final_target_mask_displacement": [
+            -0.004,
+            -0.082
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.163,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": 6013,
+        "push_time": 15,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-torus_0014",
+        "controller_name": "Containment",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 151,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -0.437,
             "y": -9.497,
-            "z": -10.028
+            "z": -10.023
         },
         "final_target_mask_displacement": [
             0.051,
-            -0.204
+            -0.2
         ],
         "target_visible_area": 0.004,
         "zone_visible_area": 0.163,
@@ -480,30 +480,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0015",
+        "stimulus_name": "pilot-containment-torus_0015",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 151,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 236,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 64,
+        "first_target_hit_ground_frame": 64,
         "final_target_displacement": {
-            "x": -0.534,
-            "y": -9.584,
-            "z": -10.0
+            "x": -0.585,
+            "y": -9.947,
+            "z": -10.03
         },
         "final_target_mask_displacement": [
-            0.037,
-            -0.137
+            0.143,
+            -0.128
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.176,
-        "probe_visible_area": 0.744,
+        "probe_visible_area": 0.002,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6015,
@@ -512,26 +512,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0016",
+        "stimulus_name": "pilot-containment-torus_0016",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 379,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 130,
-        "first_target_hit_ground_frame": 130,
+        "first_target_contact_zone_frame": 128,
+        "first_target_hit_ground_frame": 157,
         "final_target_displacement": {
-            "x": 0.08,
-            "y": -9.809,
-            "z": -9.285
+            "x": -0.002,
+            "y": -9.99,
+            "z": -9.197
         },
         "final_target_mask_displacement": [
-            0.428,
-            -0.618
+            0.455,
+            -0.552
         ],
         "target_visible_area": 0.004,
         "zone_visible_area": 0.172,
@@ -544,10 +544,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0017",
+        "stimulus_name": "pilot-containment-torus_0017",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 334,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 392,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
@@ -555,15 +555,15 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": 60,
-        "first_target_hit_ground_frame": 60,
+        "first_target_hit_ground_frame": 66,
         "final_target_displacement": {
-            "x": -1.245,
-            "y": -9.779,
-            "z": -10.182
+            "x": -1.692,
+            "y": -9.639,
+            "z": -10.161
         },
         "final_target_mask_displacement": [
-            0.28,
-            0.195
+            0.326,
+            0.308
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.167,
@@ -576,10 +576,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0018",
+        "stimulus_name": "pilot-containment-torus_0018",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 326,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 256,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
@@ -589,13 +589,13 @@
         "first_target_contact_zone_frame": 58,
         "first_target_hit_ground_frame": 59,
         "final_target_displacement": {
-            "x": -0.756,
-            "y": -9.967,
-            "z": -9.993
+            "x": -0.788,
+            "y": -9.922,
+            "z": -10.09
         },
         "final_target_mask_displacement": [
-            0.15,
-            -0.064
+            0.148,
+            -0.058
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.165,
@@ -608,9 +608,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0019",
+        "stimulus_name": "pilot-containment-torus_0019",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -618,19 +618,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 178,
-        "first_target_hit_ground_frame": 180,
+        "first_target_contact_zone_frame": 78,
+        "first_target_hit_ground_frame": 80,
         "final_target_displacement": {
-            "x": 0.775,
-            "y": -10.0,
-            "z": -9.885
+            "x": -1.343,
+            "y": -9.99,
+            "z": -8.945
         },
         "final_target_mask_displacement": [
-            0.25,
-            -0.783
+            0.329,
+            0.302
         ],
         "target_visible_area": 0.008,
-        "zone_visible_area": 0.132,
+        "zone_visible_area": 0.131,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -640,30 +640,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0020",
+        "stimulus_name": "pilot-containment-torus_0020",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 434,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 71,
-        "first_target_hit_ground_frame": 71,
+        "first_target_contact_zone_frame": 78,
+        "first_target_hit_ground_frame": 78,
         "final_target_displacement": {
-            "x": -1.474,
-            "y": -9.651,
-            "z": -9.582
+            "x": -1.861,
+            "y": -9.939,
+            "z": -9.993
         },
         "final_target_mask_displacement": [
-            0.476,
-            0.029
+            0.472,
+            0.283
         ],
         "target_visible_area": 0.005,
-        "zone_visible_area": 0.158,
-        "probe_visible_area": 0.158,
+        "zone_visible_area": 0.153,
+        "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6020,
@@ -672,10 +672,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0021",
+        "stimulus_name": "pilot-containment-torus_0021",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 240,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -685,13 +685,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.798,
+            "x": -0.91,
             "y": -9.523,
-            "z": -9.962
+            "z": -9.955
         },
         "final_target_mask_displacement": [
-            0.005,
-            -0.07
+            0.001,
+            -0.061
         ],
         "target_visible_area": 0.007,
         "zone_visible_area": 0.174,
@@ -704,26 +704,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0022",
+        "stimulus_name": "pilot-containment-torus_0022",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 164,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 413,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 148,
+        "first_target_hit_ground_frame": 148,
         "final_target_displacement": {
-            "x": -0.767,
-            "y": -9.433,
-            "z": -9.884
+            "x": 0.344,
+            "y": -9.636,
+            "z": -9.905
         },
         "final_target_mask_displacement": [
-            0.006,
-            -0.124
+            0.174,
+            -0.452
         ],
         "target_visible_area": 0.008,
         "zone_visible_area": 0.169,
@@ -736,10 +736,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0023",
+        "stimulus_name": "pilot-containment-torus_0023",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 151,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 232,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -749,17 +749,17 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.935,
-            "y": -9.425,
-            "z": -9.997
+            "x": -0.977,
+            "y": -9.358,
+            "z": -10.029
         },
         "final_target_mask_displacement": [
-            -0.004,
-            -0.009
+            -0.014,
+            0.021
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.102,
-        "probe_visible_area": 0.167,
+        "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 6023,
@@ -768,10 +768,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-torus-stims_0024",
+        "stimulus_name": "pilot-containment-torus_0024",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 151,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 207,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -781,13 +781,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -1.103,
-            "y": -9.22,
-            "z": -10.068
+            "x": -1.123,
+            "y": -9.24,
+            "z": -10.024
         },
         "final_target_mask_displacement": [
-            0.032,
-            0.019
+            0.04,
+            0.016
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.137,

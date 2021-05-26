@@ -1,27 +1,27 @@
 [
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0000",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0000",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 204,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 301,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 85,
-        "first_target_hit_ground_frame": 86,
+        "first_target_contact_zone_frame": 88,
+        "first_target_hit_ground_frame": 116,
         "final_target_displacement": {
-            "x": -1.739,
+            "x": -2.204,
             "y": -9.76,
-            "z": -9.631
+            "z": -10.158
         },
         "final_target_mask_displacement": [
-            0.493,
-            0.257
+            0.402,
+            0.282
         ],
-        "target_visible_area": 0.014,
+        "target_visible_area": 0.013,
         "zone_visible_area": 0.165,
         "probe_visible_area": 0.002,
         "is_any_object_fully_occluded": true,
@@ -32,10 +32,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0001",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0001",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 156,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 256,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -45,13 +45,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.903,
-            "y": -8.697,
-            "z": -10.081
+            "x": -0.956,
+            "y": -8.7,
+            "z": -10.101
         },
         "final_target_mask_displacement": [
-            -0.005,
-            -0.084
+            -0.021,
+            -0.031
         ],
         "target_visible_area": 0.006,
         "zone_visible_area": 0.128,
@@ -64,10 +64,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0002",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0002",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 163,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 167,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -77,13 +77,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.844,
-            "y": -8.765,
-            "z": -9.961
+            "x": -0.859,
+            "y": -8.783,
+            "z": -9.977
         },
         "final_target_mask_displacement": [
-            -0.009,
-            -0.0
+            -0.049,
+            -0.018
         ],
         "target_visible_area": 0.011,
         "zone_visible_area": 0.177,
@@ -96,10 +96,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0003",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0003",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 383,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 226,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -109,17 +109,17 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.933,
-            "y": -8.864,
-            "z": -9.968
+            "x": -0.964,
+            "y": -8.863,
+            "z": -9.953
         },
         "final_target_mask_displacement": [
-            -0.006,
-            -0.025
+            -0.002,
+            -0.001
         ],
-        "target_visible_area": 0.007,
+        "target_visible_area": 0.293,
         "zone_visible_area": 0.057,
-        "probe_visible_area": 0.634,
+        "probe_visible_area": 0.0,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 4003,
@@ -128,9 +128,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0004",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0004",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -138,8 +138,8 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 73,
-        "first_target_hit_ground_frame": 73,
+        "first_target_contact_zone_frame": 75,
+        "first_target_hit_ground_frame": 75,
         "final_target_displacement": {
             "x": 1.13,
             "y": -9.846,
@@ -149,8 +149,8 @@
             NaN,
             NaN
         ],
-        "target_visible_area": 0.006,
-        "zone_visible_area": 0.186,
+        "target_visible_area": 0.005,
+        "zone_visible_area": 0.18,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -160,28 +160,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0005",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0005",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 271,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 207,
-        "first_target_hit_ground_frame": 207,
+        "first_target_contact_zone_frame": 130,
+        "first_target_hit_ground_frame": 130,
         "final_target_displacement": {
-            "x": -1.277,
-            "y": -9.767,
-            "z": -11.112
+            "x": -1.643,
+            "y": -9.536,
+            "z": -10.703
         },
         "final_target_mask_displacement": [
-            0.396,
-            0.188
+            0.133,
+            0.079
         ],
-        "target_visible_area": 0.011,
+        "target_visible_area": 0.048,
         "zone_visible_area": 0.177,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
@@ -192,30 +192,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0006",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0006",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 249,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 350,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 79,
-        "first_target_hit_ground_frame": 90,
+        "first_target_contact_zone_frame": 78,
+        "first_target_hit_ground_frame": 95,
         "final_target_displacement": {
-            "x": -1.605,
+            "x": -1.42,
             "y": -9.796,
-            "z": -10.602
+            "z": -10.81
         },
         "final_target_mask_displacement": [
-            0.398,
-            0.025
+            NaN,
+            NaN
         ],
         "target_visible_area": 0.01,
         "zone_visible_area": 0.106,
-        "probe_visible_area": 0.002,
+        "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 4006,
@@ -224,30 +224,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0007",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0007",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 434,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 132,
-        "first_target_hit_ground_frame": 132,
+        "first_target_contact_zone_frame": 185,
+        "first_target_hit_ground_frame": 186,
         "final_target_displacement": {
-            "x": -1.5,
-            "y": -9.82,
-            "z": -10.962
+            "x": 0.509,
+            "y": -9.83,
+            "z": -11.84
         },
         "final_target_mask_displacement": [
-            0.415,
-            0.395
+            NaN,
+            NaN
         ],
         "target_visible_area": 0.006,
         "zone_visible_area": 0.107,
-        "probe_visible_area": 0.004,
+        "probe_visible_area": 0.006,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 4007,
@@ -256,28 +256,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0008",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0008",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 231,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 288,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 128,
-        "first_target_hit_ground_frame": 149,
+        "first_target_contact_zone_frame": 167,
+        "first_target_hit_ground_frame": 168,
         "final_target_displacement": {
-            "x": 0.078,
+            "x": 0.181,
             "y": -9.99,
-            "z": -10.187
+            "z": -10.157
         },
         "final_target_mask_displacement": [
-            0.496,
-            -0.473
+            0.494,
+            -0.521
         ],
-        "target_visible_area": 0.004,
+        "target_visible_area": 0.005,
         "zone_visible_area": 0.098,
         "probe_visible_area": 0.001,
         "is_any_object_fully_occluded": true,
@@ -288,9 +288,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0009",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0009",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -298,20 +298,20 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 66,
-        "first_target_hit_ground_frame": 66,
+        "first_target_contact_zone_frame": 69,
+        "first_target_hit_ground_frame": 75,
         "final_target_displacement": {
-            "x": 0.162,
+            "x": 0.043,
             "y": -9.792,
-            "z": -7.416
+            "z": -7.413
         },
         "final_target_mask_displacement": [
-            1.143,
-            0.452
+            1.091,
+            0.458
         ],
-        "target_visible_area": 0.011,
+        "target_visible_area": 0.01,
         "zone_visible_area": 0.157,
-        "probe_visible_area": 0.004,
+        "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 4009,
@@ -320,29 +320,29 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0010",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0010",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 320,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 269,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 89,
-        "first_target_hit_ground_frame": 96,
+        "first_target_contact_zone_frame": 87,
+        "first_target_hit_ground_frame": 97,
         "final_target_displacement": {
-            "x": -1.432,
-            "y": -9.841,
-            "z": -10.915
+            "x": -1.088,
+            "y": -9.692,
+            "z": -10.42
         },
         "final_target_mask_displacement": [
-            0.351,
-            0.298
+            0.363,
+            0.144
         ],
-        "target_visible_area": 0.004,
-        "zone_visible_area": 0.103,
+        "target_visible_area": 0.005,
+        "zone_visible_area": 0.313,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -352,30 +352,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0011",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0011",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 327,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 287,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 134,
-        "first_target_hit_ground_frame": 168,
+        "first_target_contact_zone_frame": 150,
+        "first_target_hit_ground_frame": 150,
         "final_target_displacement": {
-            "x": 0.266,
+            "x": -1.177,
             "y": -9.89,
-            "z": -9.969
+            "z": -10.321
         },
         "final_target_mask_displacement": [
-            0.333,
-            -0.402
+            0.353,
+            0.156
         ],
-        "target_visible_area": 0.002,
+        "target_visible_area": 0.001,
         "zone_visible_area": 0.096,
-        "probe_visible_area": 0.003,
+        "probe_visible_area": 0.005,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 4011,
@@ -384,28 +384,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0012",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0012",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 329,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 91,
-        "first_target_hit_ground_frame": 92,
+        "first_target_contact_zone_frame": 86,
+        "first_target_hit_ground_frame": 93,
         "final_target_displacement": {
-            "x": -1.42,
-            "y": -9.99,
-            "z": -10.339
+            "x": -1.241,
+            "y": -9.876,
+            "z": -11.992
         },
         "final_target_mask_displacement": [
-            0.375,
-            0.151
+            0.178,
+            0.014
         ],
-        "target_visible_area": 0.002,
+        "target_visible_area": 0.001,
         "zone_visible_area": 0.187,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
@@ -416,26 +416,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0013",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0013",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 400,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 385,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 75,
-        "first_target_hit_ground_frame": 75,
+        "first_target_contact_zone_frame": 78,
+        "first_target_hit_ground_frame": 78,
         "final_target_displacement": {
-            "x": -1.714,
+            "x": -2.265,
             "y": -9.863,
-            "z": -9.399
+            "z": -10.494
         },
         "final_target_mask_displacement": [
-            0.654,
-            0.452
+            0.434,
+            0.386
         ],
         "target_visible_area": 0.004,
         "zone_visible_area": 0.129,
@@ -448,28 +448,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0014",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0014",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 295,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 448,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 100,
-        "first_target_hit_ground_frame": 100,
+        "first_target_contact_zone_frame": 121,
+        "first_target_hit_ground_frame": 122,
         "final_target_displacement": {
-            "x": -0.869,
-            "y": -9.501,
-            "z": -9.179
+            "x": -0.973,
+            "y": -9.76,
+            "z": -8.089
         },
         "final_target_mask_displacement": [
-            0.651,
-            -0.14
+            0.836,
+            -0.245
         ],
-        "target_visible_area": 0.016,
+        "target_visible_area": 0.014,
         "zone_visible_area": 0.17,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
@@ -480,10 +480,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0015",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0015",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 263,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 276,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -493,15 +493,15 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.902,
-            "y": -8.947,
-            "z": -9.988
+            "x": -0.73,
+            "y": -8.851,
+            "z": -9.928
         },
         "final_target_mask_displacement": [
-            0.001,
-            -0.04
+            0.0,
+            0.002
         ],
-        "target_visible_area": 0.001,
+        "target_visible_area": 0.752,
         "zone_visible_area": 0.171,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
@@ -512,26 +512,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0016",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0016",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 260,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 196,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 140,
-        "first_target_hit_ground_frame": 141,
+        "first_target_contact_zone_frame": 117,
+        "first_target_hit_ground_frame": 117,
         "final_target_displacement": {
-            "x": -1.806,
-            "y": -9.789,
-            "z": -10.343
+            "x": -0.721,
+            "y": -9.58,
+            "z": -10.535
         },
         "final_target_mask_displacement": [
-            0.384,
-            0.124
+            0.386,
+            -0.198
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.074,
@@ -544,28 +544,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0017",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0017",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 390,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 135,
-        "first_target_hit_ground_frame": 135,
+        "first_target_contact_zone_frame": 117,
+        "first_target_hit_ground_frame": 150,
         "final_target_displacement": {
-            "x": -0.886,
-            "y": -9.81,
-            "z": -10.841
+            "x": -0.789,
+            "y": -9.623,
+            "z": -10.842
         },
         "final_target_mask_displacement": [
-            0.347,
-            -0.181
+            0.284,
+            -0.2
         ],
-        "target_visible_area": 0.007,
+        "target_visible_area": 0.008,
         "zone_visible_area": 0.19,
         "probe_visible_area": 0.002,
         "is_any_object_fully_occluded": true,
@@ -576,9 +576,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0018",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0018",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -586,16 +586,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 77,
-        "first_target_hit_ground_frame": 77,
+        "first_target_contact_zone_frame": 79,
+        "first_target_hit_ground_frame": 79,
         "final_target_displacement": {
-            "x": -2.711,
-            "y": -9.797,
-            "z": -9.486
+            "x": -2.896,
+            "y": -9.799,
+            "z": -9.801
         },
         "final_target_mask_displacement": [
-            0.882,
-            0.802
+            0.778,
+            0.896
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.196,
@@ -608,29 +608,29 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0019",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0019",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 420,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 139,
-        "first_target_hit_ground_frame": 139,
+        "first_target_contact_zone_frame": 177,
+        "first_target_hit_ground_frame": 197,
         "final_target_displacement": {
-            "x": -0.551,
-            "y": -9.775,
-            "z": -11.129
+            "x": -2.471,
+            "y": -9.766,
+            "z": -10.873
         },
         "final_target_mask_displacement": [
-            0.333,
-            0.095
+            0.379,
+            0.69
         ],
         "target_visible_area": 0.01,
-        "zone_visible_area": 0.923,
+        "zone_visible_area": 0.183,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -640,10 +640,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0020",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0020",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 182,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 180,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -653,13 +653,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.976,
-            "y": -8.865,
-            "z": -10.035
+            "x": -0.985,
+            "y": -8.86,
+            "z": -10.023
         },
         "final_target_mask_displacement": [
-            -0.003,
-            -0.037
+            -0.017,
+            -0.031
         ],
         "target_visible_area": 0.006,
         "zone_visible_area": 0.183,
@@ -672,10 +672,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0021",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0021",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 328,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 167,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -685,16 +685,16 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -1.043,
-            "y": -8.805,
-            "z": -10.0
+            "x": -1.016,
+            "y": -8.803,
+            "z": -9.993
         },
         "final_target_mask_displacement": [
-            -0.017,
-            -0.056
+            -0.035,
+            -0.059
         ],
-        "target_visible_area": 0.008,
-        "zone_visible_area": 0.038,
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.035,
         "probe_visible_area": 0.001,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -704,9 +704,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0022",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0022",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -715,18 +715,18 @@
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
         "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": 91,
+        "first_target_hit_ground_frame": 93,
         "final_target_displacement": {
-            "x": -1.068,
+            "x": -1.066,
             "y": -9.759,
-            "z": -7.054
+            "z": -7.103
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            1.349,
+            -0.889
         ],
-        "target_visible_area": 0.014,
-        "zone_visible_area": 0.197,
+        "target_visible_area": 0.013,
+        "zone_visible_area": 0.18,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -736,10 +736,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0023",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0023",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 180,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 189,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -749,16 +749,16 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.735,
+            "x": -0.739,
             "y": -8.842,
-            "z": -10.046
+            "z": -9.985
         },
         "final_target_mask_displacement": [
-            0.006,
-            -0.053
+            -0.01,
+            -0.046
         ],
         "target_visible_area": 0.004,
-        "zone_visible_area": 0.881,
+        "zone_visible_area": 0.155,
         "probe_visible_area": 0.002,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -768,28 +768,28 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cylinder-bowl-stims_0024",
+        "stimulus_name": "pilot-containment-cylinder-bowl_0024",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 388,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 106,
-        "first_target_hit_ground_frame": 124,
+        "first_target_contact_zone_frame": 161,
+        "first_target_hit_ground_frame": 161,
         "final_target_displacement": {
-            "x": -0.622,
-            "y": -9.779,
-            "z": -11.058
+            "x": -0.984,
+            "y": -9.787,
+            "z": -11.684
         },
         "final_target_mask_displacement": [
-            NaN,
-            NaN
+            0.265,
+            0.051
         ],
-        "target_visible_area": 0.012,
+        "target_visible_area": 0.01,
         "zone_visible_area": 0.146,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,

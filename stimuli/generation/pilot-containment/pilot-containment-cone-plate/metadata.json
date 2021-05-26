@@ -1,8 +1,8 @@
 [
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0000",
+        "stimulus_name": "pilot-containment-cone-plate_0000",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -10,20 +10,20 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 95,
-        "first_target_hit_ground_frame": 95,
+        "first_target_contact_zone_frame": 56,
+        "first_target_hit_ground_frame": 57,
         "final_target_displacement": {
-            "x": -0.764,
-            "y": -9.74,
-            "z": -8.893
+            "x": -0.576,
+            "y": -9.742,
+            "z": -8.853
         },
         "final_target_mask_displacement": [
-            -0.036,
-            -0.304
+            0.252,
+            -0.508
         ],
-        "target_visible_area": 0.017,
-        "zone_visible_area": 0.175,
-        "probe_visible_area": 0.175,
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.171,
+        "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 3000,
@@ -32,10 +32,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0001",
+        "stimulus_name": "pilot-containment-cone-plate_0001",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 205,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 242,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -45,16 +45,16 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.701,
-            "y": -9.693,
-            "z": -9.837
+            "x": -1.331,
+            "y": -9.743,
+            "z": -10.143
         },
         "final_target_mask_displacement": [
-            0.34,
-            -0.128
+            0.068,
+            -0.09
         ],
-        "target_visible_area": 0.003,
-        "zone_visible_area": 0.178,
+        "target_visible_area": 0.017,
+        "zone_visible_area": 0.179,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -64,10 +64,10 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0002",
+        "stimulus_name": "pilot-containment-cone-plate_0002",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 166,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 221,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": false,
@@ -77,13 +77,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.491,
-            "y": -9.879,
-            "z": -9.952
+            "x": -0.367,
+            "y": -9.891,
+            "z": -9.919
         },
         "final_target_mask_displacement": [
-            0.204,
-            -0.149
+            0.202,
+            -0.164
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.159,
@@ -96,9 +96,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0003",
+        "stimulus_name": "pilot-containment-cone-plate_0003",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -106,19 +106,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 45,
-        "first_target_hit_ground_frame": 46,
+        "first_target_contact_zone_frame": 47,
+        "first_target_hit_ground_frame": 48,
         "final_target_displacement": {
-            "x": -1.65,
-            "y": -9.445,
-            "z": -12.51
+            "x": -1.182,
+            "y": -9.579,
+            "z": -12.316
         },
         "final_target_mask_displacement": [
-            -0.11,
-            0.192
+            -0.129,
+            0.094
         ],
-        "target_visible_area": 0.01,
-        "zone_visible_area": 0.16,
+        "target_visible_area": 0.011,
+        "zone_visible_area": 0.159,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -128,9 +128,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0004",
+        "stimulus_name": "pilot-containment-cone-plate_0004",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -138,19 +138,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 99,
-        "first_target_hit_ground_frame": 100,
+        "first_target_contact_zone_frame": 100,
+        "first_target_hit_ground_frame": 112,
         "final_target_displacement": {
-            "x": -2.136,
-            "y": -9.735,
-            "z": -11.155
+            "x": -1.119,
+            "y": -9.948,
+            "z": -10.838
         },
         "final_target_mask_displacement": [
-            0.407,
-            0.574
+            0.351,
+            0.198
         ],
-        "target_visible_area": 0.009,
-        "zone_visible_area": 0.117,
+        "target_visible_area": 0.008,
+        "zone_visible_area": 0.118,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -160,73 +160,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0005",
+        "stimulus_name": "pilot-containment-cone-plate_0005",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 450,
-        "is_trial_valid": true,
-        "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
-        "does_target_hit_ground": true,
-        "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 80,
-        "first_target_hit_ground_frame": 80,
-        "final_target_displacement": {
-            "x": -1.279,
-            "y": -9.919,
-            "z": -9.261
-        },
-        "final_target_mask_displacement": [
-            0.568,
-            0.279
-        ],
-        "target_visible_area": 0.002,
-        "zone_visible_area": 0.166,
-        "probe_visible_area": 0.003,
-        "is_any_object_fully_occluded": true,
-        "room": "b'box'",
-        "trial_seed": 3005,
-        "push_time": 15,
-        "num_distractors": 1,
-        "num_occluders": 1
-    },
-    {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0006",
-        "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 452,
-        "is_trial_valid": true,
-        "does_target_move": true,
-        "does_target_contact_zone": true,
-        "does_target_miss_zone": false,
-        "does_target_hit_ground": true,
-        "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 104,
-        "first_target_hit_ground_frame": 105,
-        "final_target_displacement": {
-            "x": -0.753,
-            "y": -9.996,
-            "z": -7.445
-        },
-        "final_target_mask_displacement": [
-            0.969,
-            0.932
-        ],
-        "target_visible_area": 0.009,
-        "zone_visible_area": 0.135,
-        "probe_visible_area": 0.002,
-        "is_any_object_fully_occluded": true,
-        "room": "b'box'",
-        "trial_seed": 3006,
-        "push_time": 15,
-        "num_distractors": 1,
-        "num_occluders": 1
-    },
-    {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0007",
-        "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -237,13 +173,77 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -1.302,
-            "y": -9.442,
-            "z": -9.963
+            "x": -0.955,
+            "y": -9.872,
+            "z": -10.162
         },
         "final_target_mask_displacement": [
-            0.411,
-            0.082
+            0.408,
+            -0.076
+        ],
+        "target_visible_area": 0.002,
+        "zone_visible_area": 0.178,
+        "probe_visible_area": 0.003,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": 3005,
+        "push_time": 15,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-cone-plate_0006",
+        "controller_name": "Containment",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": 111,
+        "first_target_hit_ground_frame": 112,
+        "final_target_displacement": {
+            "x": -0.812,
+            "y": -9.686,
+            "z": -12.011
+        },
+        "final_target_mask_displacement": [
+            0.163,
+            -0.441
+        ],
+        "target_visible_area": 0.009,
+        "zone_visible_area": 0.136,
+        "probe_visible_area": 0.002,
+        "is_any_object_fully_occluded": true,
+        "room": "b'box'",
+        "trial_seed": 3006,
+        "push_time": 15,
+        "num_distractors": 1,
+        "num_occluders": 1
+    },
+    {
+        "stimulus_name": "pilot-containment-cone-plate_0007",
+        "controller_name": "Containment",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
+        "is_trial_valid": true,
+        "does_target_move": true,
+        "does_target_contact_zone": false,
+        "does_target_miss_zone": true,
+        "does_target_hit_ground": false,
+        "first_target_move_frame": 1,
+        "first_target_contact_zone_frame": null,
+        "first_target_hit_ground_frame": null,
+        "final_target_displacement": {
+            "x": -1.368,
+            "y": -9.458,
+            "z": -9.928
+        },
+        "final_target_mask_displacement": [
+            0.416,
+            0.084
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.165,
@@ -256,9 +256,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0008",
+        "stimulus_name": "pilot-containment-cone-plate_0008",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -266,16 +266,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 59,
-        "first_target_hit_ground_frame": 60,
+        "first_target_contact_zone_frame": 61,
+        "first_target_hit_ground_frame": 61,
         "final_target_displacement": {
-            "x": -2.147,
-            "y": -9.539,
-            "z": -12.02
+            "x": -1.665,
+            "y": -9.816,
+            "z": -11.961
         },
         "final_target_mask_displacement": [
-            -0.03,
-            0.542
+            -0.06,
+            0.403
         ],
         "target_visible_area": 0.011,
         "zone_visible_area": 0.098,
@@ -288,9 +288,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0009",
+        "stimulus_name": "pilot-containment-cone-plate_0009",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -301,13 +301,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.386,
-            "y": -9.947,
-            "z": -10.1
+            "x": -0.326,
+            "y": -9.903,
+            "z": -10.131
         },
         "final_target_mask_displacement": [
-            0.132,
-            -0.195
+            0.14,
+            -0.22
         ],
         "target_visible_area": 0.001,
         "zone_visible_area": 0.158,
@@ -320,9 +320,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0010",
+        "stimulus_name": "pilot-containment-cone-plate_0010",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -330,16 +330,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 73,
-        "first_target_hit_ground_frame": 74,
+        "first_target_contact_zone_frame": 75,
+        "first_target_hit_ground_frame": 76,
         "final_target_displacement": {
-            "x": 1.012,
-            "y": -9.618,
-            "z": -9.522
+            "x": 1.285,
+            "y": -9.573,
+            "z": -10.044
         },
         "final_target_mask_displacement": [
-            0.645,
-            -0.805
+            0.508,
+            -0.945
         ],
         "target_visible_area": 0.009,
         "zone_visible_area": 0.108,
@@ -352,9 +352,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0011",
+        "stimulus_name": "pilot-containment-cone-plate_0011",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -362,19 +362,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 80,
-        "first_target_hit_ground_frame": 81,
+        "first_target_contact_zone_frame": 79,
+        "first_target_hit_ground_frame": 80,
         "final_target_displacement": {
-            "x": 2.407,
-            "y": -9.889,
-            "z": -9.541
+            "x": 2.574,
+            "y": -9.995,
+            "z": -9.662
         },
         "final_target_mask_displacement": [
             NaN,
             NaN
         ],
-        "target_visible_area": 0.01,
-        "zone_visible_area": 0.201,
+        "target_visible_area": 0.009,
+        "zone_visible_area": 0.138,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -384,9 +384,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0012",
+        "stimulus_name": "pilot-containment-cone-plate_0012",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -397,13 +397,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.372,
-            "y": -9.905,
-            "z": -10.207
+            "x": -0.379,
+            "y": -9.875,
+            "z": -10.205
         },
         "final_target_mask_displacement": [
-            0.074,
-            -0.122
+            0.054,
+            -0.108
         ],
         "target_visible_area": 0.001,
         "zone_visible_area": 0.178,
@@ -416,9 +416,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0013",
+        "stimulus_name": "pilot-containment-cone-plate_0013",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -426,12 +426,12 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 87,
-        "first_target_hit_ground_frame": 88,
+        "first_target_contact_zone_frame": 62,
+        "first_target_hit_ground_frame": 92,
         "final_target_displacement": {
-            "x": 0.559,
-            "y": -9.622,
-            "z": -6.818
+            "x": 0.479,
+            "y": -9.995,
+            "z": -7.545
         },
         "final_target_mask_displacement": [
             NaN,
@@ -439,8 +439,8 @@
         ],
         "target_visible_area": 0.01,
         "zone_visible_area": 0.103,
-        "probe_visible_area": 0.007,
-        "is_any_object_fully_occluded": false,
+        "probe_visible_area": 0.004,
+        "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 3013,
         "push_time": 15,
@@ -448,26 +448,26 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0014",
+        "stimulus_name": "pilot-containment-cone-plate_0014",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 363,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 352,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 50,
-        "first_target_hit_ground_frame": 50,
+        "first_target_contact_zone_frame": 52,
+        "first_target_hit_ground_frame": 52,
         "final_target_displacement": {
-            "x": -1.477,
-            "y": -9.877,
-            "z": -11.223
+            "x": -1.475,
+            "y": -9.842,
+            "z": -11.121
         },
         "final_target_mask_displacement": [
-            0.164,
-            -0.023
+            0.175,
+            -0.001
         ],
         "target_visible_area": 0.002,
         "zone_visible_area": 0.141,
@@ -480,9 +480,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0015",
+        "stimulus_name": "pilot-containment-cone-plate_0015",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -490,19 +490,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 89,
-        "first_target_hit_ground_frame": 90,
+        "first_target_contact_zone_frame": 91,
+        "first_target_hit_ground_frame": 92,
         "final_target_displacement": {
-            "x": 2.527,
-            "y": -9.574,
-            "z": -11.431
+            "x": 2.831,
+            "y": -9.807,
+            "z": -12.036
         },
         "final_target_mask_displacement": [
-            0.187,
-            -0.849
+            0.152,
+            -0.798
         ],
         "target_visible_area": 0.012,
-        "zone_visible_area": 0.163,
+        "zone_visible_area": 0.162,
         "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -512,9 +512,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0016",
+        "stimulus_name": "pilot-containment-cone-plate_0016",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -522,16 +522,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 137,
-        "first_target_hit_ground_frame": 138,
+        "first_target_contact_zone_frame": 108,
+        "first_target_hit_ground_frame": 109,
         "final_target_displacement": {
-            "x": -0.54,
-            "y": -9.531,
-            "z": -7.492
+            "x": -1.558,
+            "y": -9.537,
+            "z": -7.823
         },
         "final_target_mask_displacement": [
-            0.902,
-            -0.912
+            0.837,
+            -0.252
         ],
         "target_visible_area": 0.011,
         "zone_visible_area": 0.153,
@@ -544,9 +544,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0017",
+        "stimulus_name": "pilot-containment-cone-plate_0017",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -557,13 +557,13 @@
         "first_target_contact_zone_frame": null,
         "first_target_hit_ground_frame": null,
         "final_target_displacement": {
-            "x": -0.552,
-            "y": -9.827,
-            "z": -10.484
+            "x": -0.735,
+            "y": -9.767,
+            "z": -10.223
         },
         "final_target_mask_displacement": [
-            0.41,
-            -0.246
+            0.447,
+            -0.057
         ],
         "target_visible_area": 0.003,
         "zone_visible_area": 0.124,
@@ -576,29 +576,29 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0018",
+        "stimulus_name": "pilot-containment-cone-plate_0018",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 447,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
         "does_target_contact_zone": true,
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 38,
-        "first_target_hit_ground_frame": 54,
+        "first_target_contact_zone_frame": 41,
+        "first_target_hit_ground_frame": 41,
         "final_target_displacement": {
-            "x": -1.499,
-            "y": -9.753,
-            "z": -11.529
+            "x": -1.264,
+            "y": -9.779,
+            "z": -11.774
         },
         "final_target_mask_displacement": [
-            0.107,
-            -0.148
+            -0.035,
+            -0.177
         ],
-        "target_visible_area": 0.012,
-        "zone_visible_area": 0.1,
+        "target_visible_area": 0.004,
+        "zone_visible_area": 0.099,
         "probe_visible_area": 0.002,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -608,9 +608,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0019",
+        "stimulus_name": "pilot-containment-cone-plate_0019",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -618,19 +618,19 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 68,
-        "first_target_hit_ground_frame": 68,
+        "first_target_contact_zone_frame": 71,
+        "first_target_hit_ground_frame": 87,
         "final_target_displacement": {
-            "x": -2.195,
-            "y": -9.886,
-            "z": -10.578
+            "x": -2.149,
+            "y": -9.953,
+            "z": -9.732
         },
         "final_target_mask_displacement": [
-            0.218,
-            0.272
+            0.327,
+            0.426
         ],
         "target_visible_area": 0.004,
-        "zone_visible_area": 0.184,
+        "zone_visible_area": 0.185,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -640,9 +640,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0020",
+        "stimulus_name": "pilot-containment-cone-plate_0020",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -650,20 +650,20 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 54,
-        "first_target_hit_ground_frame": 55,
+        "first_target_contact_zone_frame": 56,
+        "first_target_hit_ground_frame": 57,
         "final_target_displacement": {
-            "x": -2.542,
-            "y": -9.484,
-            "z": -12.427
+            "x": -1.861,
+            "y": -9.666,
+            "z": -12.082
         },
         "final_target_mask_displacement": [
-            -0.127,
-            0.375
+            0.464,
+            0.738
         ],
-        "target_visible_area": 0.008,
+        "target_visible_area": 0.02,
         "zone_visible_area": 0.126,
-        "probe_visible_area": 0.135,
+        "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 3020,
@@ -672,9 +672,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0021",
+        "stimulus_name": "pilot-containment-cone-plate_0021",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -682,20 +682,20 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 192,
-        "first_target_hit_ground_frame": 193,
+        "first_target_contact_zone_frame": 120,
+        "first_target_hit_ground_frame": 121,
         "final_target_displacement": {
-            "x": 0.113,
-            "y": -9.642,
-            "z": -11.152
+            "x": -0.502,
+            "y": -9.842,
+            "z": -12.222
         },
         "final_target_mask_displacement": [
-            0.241,
-            -0.314
+            0.169,
+            -0.192
         ],
-        "target_visible_area": 0.008,
+        "target_visible_area": 0.011,
         "zone_visible_area": 0.169,
-        "probe_visible_area": 0.003,
+        "probe_visible_area": 0.011,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 3021,
@@ -704,9 +704,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0022",
+        "stimulus_name": "pilot-containment-cone-plate_0022",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -717,16 +717,16 @@
         "first_target_contact_zone_frame": 71,
         "first_target_hit_ground_frame": 72,
         "final_target_displacement": {
-            "x": -1.288,
+            "x": -1.163,
             "y": -9.553,
-            "z": -12.338
+            "z": -12.453
         },
         "final_target_mask_displacement": [
-            0.0,
-            0.015
+            -0.15,
+            0.035
         ],
-        "target_visible_area": 0.111,
-        "zone_visible_area": 0.111,
+        "target_visible_area": 0.007,
+        "zone_visible_area": 0.104,
         "probe_visible_area": 0.003,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
@@ -736,30 +736,30 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0023",
+        "stimulus_name": "pilot-containment-cone-plate_0023",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
-        "num_frames": 185,
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
+        "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
-        "does_target_contact_zone": false,
-        "does_target_miss_zone": true,
-        "does_target_hit_ground": false,
+        "does_target_contact_zone": true,
+        "does_target_miss_zone": false,
+        "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": null,
-        "first_target_hit_ground_frame": null,
+        "first_target_contact_zone_frame": 143,
+        "first_target_hit_ground_frame": 144,
         "final_target_displacement": {
-            "x": -0.422,
-            "y": -9.591,
-            "z": -9.843
+            "x": 1.453,
+            "y": -9.793,
+            "z": -9.567
         },
         "final_target_mask_displacement": [
-            0.31,
-            -0.243
+            0.26,
+            -0.816
         ],
         "target_visible_area": 0.005,
-        "zone_visible_area": 0.143,
-        "probe_visible_area": 0.018,
+        "zone_visible_area": 0.141,
+        "probe_visible_area": 0.004,
         "is_any_object_fully_occluded": true,
         "room": "b'box'",
         "trial_seed": 3023,
@@ -768,9 +768,9 @@
         "num_occluders": 1
     },
     {
-        "stimulus_name": "pilot-containment-cone-plate-stims_0024",
+        "stimulus_name": "pilot-containment-cone-plate_0024",
         "controller_name": "Containment",
-        "git_commit": "a89b122082d684365bb6512440b04eb69d3bb37b",
+        "git_commit": "7e1051a0fbd62347c739bec27b7b2d9e3d26efba",
         "num_frames": 452,
         "is_trial_valid": true,
         "does_target_move": true,
@@ -778,16 +778,16 @@
         "does_target_miss_zone": false,
         "does_target_hit_ground": true,
         "first_target_move_frame": 1,
-        "first_target_contact_zone_frame": 54,
-        "first_target_hit_ground_frame": 55,
+        "first_target_contact_zone_frame": 53,
+        "first_target_hit_ground_frame": 54,
         "final_target_displacement": {
-            "x": 0.109,
-            "y": -9.768,
-            "z": -12.807
+            "x": -0.004,
+            "y": -9.886,
+            "z": -12.901
         },
         "final_target_mask_displacement": [
-            0.051,
-            -0.328
+            0.04,
+            -0.317
         ],
         "target_visible_area": 0.007,
         "zone_visible_area": 0.082,
