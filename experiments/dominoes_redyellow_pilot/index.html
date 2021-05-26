@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <!-- https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error -->
+    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="#"> 
+    <title>Physics experiment</title>
+
+<head>
+  <script type="text/javascript" src="js/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+  <link href="custom.css" rel="stylesheet" type="text/css">
+
+  <!-- JsPsych -->
+  <script type="text/javascript" src="js/jspsych.js"></script>
+  <script type="text/javascript" src="js/jspsych-video-overlay-button-response.js"></script>
+  <script type="text/javascript" src="js/jspsych-image-button-response.js"></script>
+  <script type="text/javascript" src="js/jspsych-html-keyboard-response.js"></script>
+  <script type="text/javascript" src="js/jspsych-survey-text.js"></script>
+  <script type="text/javascript" src="js/jspsych-survey-multi-choice.js"></script>
+  <script src="js/jspsych-instructions.js"></script>
+  <script type="text/javascript" src="js/setup.js"></script>
+
+  <script type="text/javascript">
+    socket = io.connect();
+    window.onload = function() {
+      setupGame();
+    }
+  </script>
+
+</head>
+
+<body style="font-family: Lato, 'sans-serif'"></body>
+
+</html>
