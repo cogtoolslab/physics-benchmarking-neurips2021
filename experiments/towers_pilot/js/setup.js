@@ -158,7 +158,7 @@ function setupGame() {
       return _.extend({}, familiarizationExperimentInstance, n, {
         trialNum: i,
         stimulus: [n.stim_url], //rename stim_url for the video plugin
-        // stop: 1.5, //STIM DURATION stop the video after X seconds
+        stop: 4.0, //STIM DURATION stop the video after X seconds
         response_allowed_while_playing: false,
         width: 500,
         height: 500,
