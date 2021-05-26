@@ -75,8 +75,8 @@ function setupGame() {
       data.dbname = dbname;
       data.colname = colname;
       data.iterationName = itname;
-      if(DEBUG_MODE){
-        socket.emit('currentData', data);
+     socket.emit('currentData', data);      
+     if(DEBUG_MODE){
         console.log('emitting data',data);
     }
     }
