@@ -6,8 +6,8 @@ from glob import glob
 import argparse
 
 '''
-To upload data, run:
-python upload_data.py --path_to_data=/results/csv/ --bucket_name=physics-benchmarking-results
+To upload results, run:
+python upload_results.py --path_to_data=../results/csv/ --bucket_name=physics-benchmarking-results
 
 '''
 

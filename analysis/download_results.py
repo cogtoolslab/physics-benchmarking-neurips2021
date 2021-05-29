@@ -29,6 +29,7 @@ if __name__ == "__main__":
   print('Overwrite local data with downloaded data from S3? {}'.format(overwrite))
 
   ## create data subdirs if they do not exist
+  os.makedirs(path_to_data) if not os.path.exists(path_to_data) else None
   if not os.path.exists(os.path.join(path_to_data,'humans')):
     os.makedirs(os.path.join(path_to_data,'humans'))
     os.makedirs(os.path.join(path_to_data,'models'))
