@@ -117,8 +117,8 @@ neurips2021_iterations = [
     'bucket_name' : 'human-physics-benchmarking-drop-pilot',
     'stim_version' : 'production_2',
     'iterationName' : 'production_2_testing'},
-    {'study' : "cloth_pilot",
-    'bucket_name' : 'human-physics-benchmarking-cloth-pilot',
+    {'study' : "clothiness_pilot",
+    'bucket_name' : 'human-physics-benchmarking-clothiness-pilot',
     'stim_version' : 'production_2',
     'iterationName' : 'production_2_testing'},
 ]
