@@ -36,6 +36,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--path_to_data', type=str, help='path to data', default='../results/csv/')
     parser.add_argument('--bucket_name', type=str, help='bucket_name', default='physics-benchmarking-results')
+    parser.add_argument('--overwrite', type=str2bool, help='boolean flag to set to overwrite what is in S3 or not', default='False')
     parser.add_argument('--public_read', type=str2bool, help='boolean flag to set to publicly readable or not', default='False')
     args = parser.parse_args()
     
@@ -59,9 +60,6 @@ if __name__ == "__main__":
         b = s3.Bucket(args.bucket_name)
         print('Bucket already exists.')
 
-    ## do we want to overwrite files on s3?
-    overwrite = False
-
     ## set bucket and objects to public
     if args.public_read==True:
         b.Acl().put(ACL='public-read') ## sets bucket to public
@@ -72,7 +70,7 @@ if __name__ == "__main__":
         dirname = path_to_file.split('/')[-2]
         keyname = os.path.join(dirname,filename)
 
-        if ((check_exists(s3, args.bucket_name, keyname)==False) | (overwrite==True)):
+        if ((check_exists(s3, args.bucket_name, keyname)==False) | (args.overwrite==True)):
             print('Now uploading {} | {} of {}'.format(path_to_file.split('/')[-1],(i+1),len(data_paths)))
             s3.Object(args.bucket_name,keyname).upload_file(path_to_file) ## upload data
             if args.public_read==True:
