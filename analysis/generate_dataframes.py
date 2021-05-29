@@ -75,18 +75,34 @@ def make_dir_if_not_exists(dir_name):
         os.makedirs(dir_name)
     return dir_name
 
+def anonymize(subjID):
+    '''
+    import mapper dict from anonymize_mapper.py (ignored in github repo)
+    apply to anonymize prolific IDs
+    '''
+    try:
+        from anonymize_mapper import mapper
+    except:
+        print('ERROR: You need the anonymize_mapper file in order to generate anonymized results.')
+        sys.exit()
+    return ''.join([mapper[char] for char in list(subjID)])
+
 ## create directories that don't already exist        
 result = [make_dir_if_not_exists(x) for x in [results_dir,csv_dir]]
 
 # set vars 
 try:
-    auth = pd.read_csv(os.path.join(proj_dir,'auth.txt'), header = None) # this auth.txt file contains the password for the sketchloop user. Place in repo folder
+    auth = pd.read_csv(os.path.join(analysis_dir,'auth.txt'), header = None) # this auth.txt file contains the password for the sketchloop user. Place in repo folder
 except: 
     print('ERROR: Before you can generate dataframes, please make sure you have the auth.txt file with mongodb credentials.')
     sys.exit()
+
 pswd = auth.values[0][0]
 user = 'sketchloop'
 host = 'cogtoolslab.org'
+
+# do we want to anonymize prolific IDs?
+anonymize=True
 
 # have to fix this to be able to analyze from local
 import pymongo as pm
@@ -185,6 +201,13 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     #Generate some useful views
     df_trial_entries = df[(df['condition'] == 'prediction') & (df['trial_type'] == 'video-overlay-button-response')] #only experimental trials
     df_trial_entries['study'] = [study]*len(df_trial_entries)
+    
+    # apply anonymization
+    if anonymize==True:    
+        print('Anonymizing prolificIDs')
+        df_trial_entries.assign(prolificIDAnon = df_trial_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
+        df_trial_entries.drop(labels=['prolificID'],axis=1, inplace=True)
+
     # save out df_trials_entries
     df_trial_entries.to_csv(os.path.join(csv_dir,"human_responses-{}-{}.csv".format(study,iterationName)))
 
