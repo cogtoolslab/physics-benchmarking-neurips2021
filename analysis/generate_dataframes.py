@@ -79,7 +79,11 @@ def make_dir_if_not_exists(dir_name):
 result = [make_dir_if_not_exists(x) for x in [results_dir,csv_dir]]
 
 # set vars 
-auth = pd.read_csv(os.path.join(proj_dir,'auth.txt'), header = None) # this auth.txt file contains the password for the sketchloop user. Place in repo folder
+try:
+    auth = pd.read_csv(os.path.join(proj_dir,'auth.txt'), header = None) # this auth.txt file contains the password for the sketchloop user. Place in repo folder
+except: 
+    print('ERROR: Before you can generate dataframes, please make sure you have the auth.txt file with mongodb credentials.')
+    sys.exit()
 pswd = auth.values[0][0]
 user = 'sketchloop'
 host = 'cogtoolslab.org'
