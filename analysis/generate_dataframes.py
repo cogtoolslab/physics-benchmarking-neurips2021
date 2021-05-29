@@ -51,7 +51,7 @@ def item(x):
 
 # set up directories
 ## directory & file hierarchy
-proj_dir = os.path.abspath('.')
+proj_dir = os.path.abspath('../')
 analysis_dir =  os.path.abspath('.')
 results_dir = os.path.join(proj_dir,'results')
 csv_dir = os.path.join(results_dir,'csv/humans')
@@ -186,7 +186,7 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     df_trial_entries = df[(df['condition'] == 'prediction') & (df['trial_type'] == 'video-overlay-button-response')] #only experimental trials
     df_trial_entries['study'] = [study]*len(df_trial_entries)
     # save out df_trials_entries
-    df_trial_entries.to_csv(os.path.join(csv_dir,"trial_entries_"+study+".csv"))
+    df_trial_entries.to_csv(os.path.join(csv_dir,"human_responses_{}_{}.csv".format(study,iterationName)))
 
     #generate per stim aggregated df
     df_trial_entries['c'] = 1 #add dummy variable for count in agg
@@ -195,8 +195,9 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
         'c' : 'count',
     })
     #save
-    per_stim_agg.to_csv(os.path.join(csv_dir,"per_stim_agg_"+study+".csv"))
+    per_stim_agg.to_csv(os.path.join(csv_dir,"human_accuracy_{}_{}.csv".format(study,iterationName)))
     return
+
 
 
 if __name__ == "__main__":
