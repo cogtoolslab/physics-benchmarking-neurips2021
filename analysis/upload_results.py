@@ -46,6 +46,7 @@ if __name__ == "__main__":
     ## tell user some useful information
     print('Path to data is : {}'.format(args.path_to_data))
     print('Uploading to this bucket: {}'.format(args.bucket_name))
+    print('Set ACL settings to public-read: {}'.format(args.public_read))
 
     ## establish connection to s3 
     s3 = boto3.resource('s3')
