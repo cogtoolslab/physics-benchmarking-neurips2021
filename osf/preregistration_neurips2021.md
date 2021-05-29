@@ -107,7 +107,7 @@ We measure:
 ## Sampling Plan
 ###   Data collection procedure
  <!-- describe the method you will use to collect your data, and your inclusion/exclusion criteria. This should include your sampling frame, how participants will be recruited, and whether/how they will be compensated. -->
-Participants will be recruited from {Prolific/Amazon Mechnical Turk/SONA/XXX} and compensated $XXX, which roughly corresponds to $12/hr. participants will not be rewarded for correct responses.
+Participants will be recruited from Prolific and compensated $XXX, which roughly corresponds to $12/hr. participants will not be rewarded for correct responses.
 
 participants are only allowed to take the task once.
 
