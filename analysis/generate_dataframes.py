@@ -178,8 +178,8 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     
     #mark unfinished entries
     df['complete_experiment'] = df['gameID'].isin(complete_gameids) 
-    # we only consider the first 100 gameIDs
-    complete_gameids = complete_gameids[:100]       
+    # # we only consider the first 100 gameIDs
+    # complete_gameids = complete_gameids[:100]       
     #exclude unfinished games ⚠️
     df = df[df['gameID'].isin(complete_gameids)]
     #Generate some useful views
