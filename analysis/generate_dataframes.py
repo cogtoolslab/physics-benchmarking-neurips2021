@@ -121,8 +121,8 @@ neurips2021_iterations = [
     'bucket_name' : 'human-physics-benchmarking-drop-pilot',
     'stim_version' : 'production_2',
     'iterationName' : 'production_2_testing'},
-    {'study' : "cloth_pilot",
-    'bucket_name' : 'human-physics-benchmarking-cloth-pilot',
+    {'study' : "clothiness_pilot",
+    'bucket_name' : 'human-physics-benchmarking-clothiness-pilot',
     'stim_version' : 'production_2',
     'iterationName' : 'production_2_testing'},
 ]
@@ -202,6 +202,6 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
 if __name__ == "__main__":
     print("Fetching neurIPS 2021 results")
     for i,it_fields in enumerate(neurips2021_iterations):
-        print("Fetching",i,"from",len(neurips2021_iterations),"—",it_fields['study'])
+        print("Fetching",i+1,"from",len(neurips2021_iterations),"—",it_fields['study'])
         get_dfs_from_mongo(**it_fields)
     print("Done.")
