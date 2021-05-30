@@ -205,7 +205,7 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     # apply anonymization
     if anonymizeIDs==True:    
         print('Anonymizing prolificIDs')
-        df_trial_entries.assign(prolificIDAnon = df_trial_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
+        df_trial_entries = df_trial_entries.assign(prolificIDAnon = df_trial_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
         df_trial_entries.drop(labels=['prolificID'],axis=1, inplace=True)
 
     # save out df_trials_entries
