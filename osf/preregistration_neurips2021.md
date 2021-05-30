@@ -125,8 +125,8 @@ After a particular set of stimuli has been chosen, we aim to collect fine graine
 ###   Data exclusion (finalized before beginning formal analyses on May 29 2021)
  <!-- How will you determine which data points or samples (if any) to exclude from your analyses? How will outliers be handled? Will you use any awareness or attention check? -->
  Data from an entire experimental session will be excluded if the responses:
- * contain a sequence of either 10 consecutive "yes" or 10 consecurive "no" answers  <!-- Chance of that happening by chance when 50% likely is < 0.001> -->
- * contain a sequence of at least 20 trials alternating "yes" and "no" responses
+ * contain a sequence of greater than 12 consecutive "yes" or 12 consecutive "no" answers (based on simulations run with p(yes)=0.5)
+ * contain a sequence of at least 24 trials alternating "yes" and "no" responses
  * are correct for fewer than 4 out of 10 familiarization trials (i.e., 30% correct or lower)
  * the mean accuracy for that participant is below 3 standard deviations below the median accuracy across all participants for that scenario
  * the mean log-transformed response time for that participant is 3 standard deviations above the median log-transformed response time across all participants for that scenario
