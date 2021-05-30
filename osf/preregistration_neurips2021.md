@@ -53,22 +53,21 @@ Example stimulus:\
  <!-- If applicable, precisely define any variables you plan to manipulate, including the levels and whether the manipulation will be between or within participants. -->
 As outlined above, participants are not assigned to any conditions. The manipulations consist of the stimuli with underlying parameters as well as the sampling of stimuli.
 
-We manipulated
-
 ###   Study design: evaluation protocol 
 
 **Sequence of events in a session**
 1. Consent form and study information
 2. Task explanation
-3. Familiarization trials – 5 initially shown, with up to 10
-    1. Video is played for 1500ms, then hidden
-    2. Prediction is queried from subject (yes/no)
-    3. Full video is shown and feedback is given (correct/incorrect)
-4. If sufficient number of familiarization trials guessed correctly (4 out first 5 OR three correct in a row) proceed to (5.) otherwise end of study
-5. Not informing participants that the main part of the trial starts
+3. Familiarization trials – 10 shown
+		1. First frozen frame shown for 2000ms, with red/yellow segmentation map indicating agent/patient object flashing at 2Hz
+    2. Video is played for 1500ms, then hidden
+    3. Prediction is queried from subject (yes/no)
+    4. Full video is shown and feedback is given (correct/incorrect)
+    5. Participants can proceed after full video has played
+5. Participants are informed that the main trial starts
 6. 100 trials
-    1. Fixation cross is shown for random interval between 500ms and 1000ms
-    **2. First frozen frame shown for 500ms**
+    1. Fixation cross is shown for random interval between 500ms and 1500ms
+    2. First frozen frame shown for 2000ms, with red/yellow segmentation map indicating agent/patient object flashing at 2Hz
     3. Video is played for 1500ms, then hidden
     4. Prediction is queried from subject (yes/no)
 7. Demographics & Feedback
@@ -76,7 +75,7 @@ We manipulated
     * gender
     * education level
     * difficulty rating ("How difficult did you find this task?", 5 point Likert scale)
-8. participants are shown their rate of correct guesses and percentile
+8. Participants are shown their rate of correct guesses
 9. End of study
 
 Each stimulus consists of a short video clip of a visual scene containing various objects physically interacting with each other. 
@@ -107,19 +106,17 @@ We measure:
 ## Sampling Plan
 ###   Data collection procedure
  <!-- describe the method you will use to collect your data, and your inclusion/exclusion criteria. This should include your sampling frame, how participants will be recruited, and whether/how they will be compensated. -->
-Participants will be recruited from Prolific and compensated $XXX, which roughly corresponds to $12/hr. participants will not be rewarded for correct responses.
+Participants will be recruited from Prolific and compensated $4, which roughly corresponds to $12/hr. participants will not be rewarded for correct responses.
 
-participants are only allowed to take the task once.
+Participants are only allowed to take the task once. However, participants are able to take a version of the experiment with another scenario.
 
 ###   Sampling procedure
  <!-- indicate your target sample size and why that is your target (might be based in past research, for example) -->
-The study will be run in two phases: a first phase iterating generating stimuli and evaluating them and a second phase collecting fine grained data on a chosen set of stimuli.
-
-After a particular set of stimuli has been chosen, we aim to collect fine grained data. After a particular set of stimuli satisfying our desiderate has been chosen ((1) about 75% total accuracy, (2) spread of difficulty between stimuli), we collect participants up to a total of XXX participants. 
 
  <!-- ###   Stopping rule -->
  <!-- specify how you will determine when to stop data collection -->
  <!-- Data collection will be stopped after the planned number of participants has been recorded. -->
+ Data collection will be stopped after 100 participants have completed the experiment. 
 
 ## Analysis Plan
 ###   Data exclusion (finalized before beginning formal analyses on May 29 2021)
@@ -180,6 +177,9 @@ For each model, we will compute the correlation between its response vector and 
 A model's response pattern will be considered more similar to humans' insofar as the mean model-human correlation (across humans) lies closer to the mean human-human correlation (for all pairs of humans).
 
 ###### **Cohen's kappa**
-**TODO**
+For each pair of human participants, we will compute Cohen’s kappa between their responses across the 150 stimuli, yielding a distribution of pairwise human-human Cohen’s kappa. The mutually exclusive categories used in calculating Cohen’s kappa is whether each of the 150 responses was predicted to be positive or negative.
+For each model, we will compute Cohen’s kappa between its response vector and every human participant, as well as every other model. 
+A model's response pattern will be considered more similar to humans' insofar as the mean model-human Cohen’s kappa (across humans) lies closer to the mean human-human Cohen’s kappa (for all pairs of humans).
+
 
 <!-- We might also explore whether the speed of response predicts its correctness. Curve might be inverted U-shape: too fast or too slow leads to bad predictions. Perhaps too fast not, since the participants always get 1500ms -->
