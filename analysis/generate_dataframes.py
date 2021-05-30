@@ -102,7 +102,7 @@ user = 'sketchloop'
 host = 'cogtoolslab.org'
 
 # do we want to anonymize prolific IDs?
-anonymize=True
+anonymizeIDs=True
 
 # have to fix this to be able to analyze from local
 import pymongo as pm
@@ -200,10 +200,10 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     df = df[df['gameID'].isin(complete_gameids)]
     #Generate some useful views
     df_trial_entries = df[(df['condition'] == 'prediction') & (df['trial_type'] == 'video-overlay-button-response')] #only experimental trials
-    df_trial_entries['study'] = [study]*len(df_trial_entries)
+    df_trial_entries.assign(study=[study]*len(df_trial_entries), axis=0)
     
     # apply anonymization
-    if anonymize==True:    
+    if anonymizeIDs==True:    
         print('Anonymizing prolificIDs')
         df_trial_entries.assign(prolificIDAnon = df_trial_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
         df_trial_entries.drop(labels=['prolificID'],axis=1, inplace=True)
