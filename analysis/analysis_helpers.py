@@ -66,7 +66,7 @@ def apply_exclusion_criteria(D):
     
     ## flag sessions with long streaks
     streakyIDs = []
-    for name, group in D.groupby('gameID'):
+    for name, group in D.groupby('prolificIDAnon'):
         seq = group['response'].values
         streak_length = get_longest_streak_length(group['response'].values)
         if streak_length>thresh:
@@ -76,7 +76,7 @@ def apply_exclusion_criteria(D):
     ## flag sessions with suspicious alternation pattern
     alternatingIDs = []
     pattern = list(np.unique(D['response'].values))*10
-    for name, group in D.groupby('gameID'):
+    for name, group in D.groupby('prolificIDAnon'):
         seq = group['response'].values
         substr = ''.join(pattern)
         fullstr = ''.join(seq)
@@ -88,14 +88,14 @@ def apply_exclusion_criteria(D):
     print('TODO: Still need to flag familiarization trial failures!!!!')
     
     ## flag sessions with unusually low accuracy
-    Dacc = D.groupby('gameID').agg({'correct':np.mean})
+    Dacc = D.groupby('prolificIDAnon').agg({'correct':np.mean})
     thresh = np.mean(Dacc['correct']) - 3*np.std(Dacc['correct'])
     Dacc = Dacc.assign(lowAcc = Dacc['correct']<thresh)
     lowAccIDs = list(Dacc[Dacc['lowAcc']==True].index)
     print('There are {} flagged IDs so far due to low accuracy.'.format(len(lowAccIDs))) 
     
     ## flag sessions with unusually high RTs
-    Drt = D.groupby('gameID').agg({'logRT':np.median})
+    Drt = D.groupby('prolificIDAnon').agg({'logRT':np.median})
     thresh = np.median(Drt['logRT']) + 3*np.std(Drt['logRT'])
     Drt = Drt.assign(highRT = Drt['logRT']>thresh)
     highRTIDs = list(Drt[Drt['highRT']==True].index)
@@ -106,8 +106,8 @@ def apply_exclusion_criteria(D):
     print('There are a total of {} flagged IDs.'.format(len(np.unique(flaggedIDs))))  
     
     ## removing flagged sessions from dataset
-    D = D[~D.gameID.isin(flaggedIDs)]
-    numSubs = len(np.unique(D.gameID.values))
+    D = D[~D.prolificIDAnon.isin(flaggedIDs)]
+    numSubs = len(np.unique(D.prolificIDAnon.values))
     print('There are a total of {} valid and complete sessions for {}.'.format(numSubs, scenarionName))   
     
     return D
