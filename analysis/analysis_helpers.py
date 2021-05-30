@@ -36,7 +36,45 @@ def get_longest_streak_length(seq):
     return max([y for x,y in lst])
 
 
-def apply_exclusion_criteria(D):
+def bootstrap_mean(D, col = 'correct', nIter=1000):
+    bootmean = []
+    for currIter in np.arange(nIter):
+        bootD = D.sample(n=len(D),random_state=currIter, replace=True)            
+        bootmean.append(np.mean(bootD[col].values))
+    return bootmean
+
+def load_and_preprocess_data(path_to_data):
+    '''
+    apply basic preprocessing to human dataframe
+    '''
+
+    ## load in data
+    d = pd.read_csv(path_to_data)
+
+    ## add column for scenario name
+    scenarioName = path_to_data.split('/')[-1].split('-')[1].split('_')[0]
+
+    ## some utility vars
+    #colnames_with_variable_entries = [col for col in sorted(d.columns) if len(np.unique(d[col]))>1]
+    colnames = ['gameID','trialNum','prolificIDAnon','stim_ID','response','target_hit_zone_label','correct','choices','rt']
+    # colnames = ['gameID','trialNum','stim_ID','response','target_hit_zone_label','correct','choices','rt']
+
+    ## subset dataframe by colnames of interest
+    _D = d[colnames]
+    _D = _D.assign(scenarioName = scenarioName)
+
+    ## preprocess RTs (subtract 2500ms presentation time, log transform)
+    _D = _D.assign(RT = _D['rt'] - 2500) 
+    _D = _D.assign(logRT = np.log(_D['RT']))
+    _D = _D.drop(columns=['rt'],axis=1)
+
+    ## convert responses to boolean
+    binary_mapper = {'YES':True, 'NO':False}
+    _D = _D.assign(responseBool = _D['response'].apply(lambda x: binary_mapper[x]), axis=0)
+
+    return _D
+
+def apply_exclusion_criteria(D, verbose=False):
     
     '''
      Based on `preregistration_neurips2021.md`
@@ -62,7 +100,8 @@ def apply_exclusion_criteria(D):
     
     ## what is 97.5th percentile for random sequences of length numTrials and p=0.5?
     thresh = get_streak_thresh(150, 0.5)
-    print('97.5th percentile for streak length is {}.'.format(thresh)) 
+    if verbose:
+        print('97.5th percentile for streak length is {}.'.format(thresh)) 
     
     ## flag sessions with long streaks
     streakyIDs = []
@@ -71,7 +110,8 @@ def apply_exclusion_criteria(D):
         streak_length = get_longest_streak_length(group['response'].values)
         if streak_length>thresh:
             streakyIDs.append(name)
-    print('There are {} flagged IDs so far due to long streaks.'.format(len(streakyIDs)))
+    if verbose:
+        print('There are {} flagged IDs so far due to long streaks.'.format(len(streakyIDs)))
     
     ## flag sessions with suspicious alternation pattern
     alternatingIDs = []
@@ -82,36 +122,41 @@ def apply_exclusion_criteria(D):
         fullstr = ''.join(seq)
         if substr in fullstr:
             alternatingIDs.append(name)
-    print('There are {} flagged IDs so far due to alternating sequences.'.format(len(alternatingIDs)))
+    if verbose:
+        print('There are {} flagged IDs so far due to alternating sequences.'.format(len(alternatingIDs)))
     
     ## TODO: flag familiarization trial failures    
-    print('TODO: Still need to flag familiarization trial failures!!!!')
+    if verbose:
+        print('TODO: Still need to flag familiarization trial failures!!!!')
     
     ## flag sessions with unusually low accuracy
     Dacc = D.groupby('prolificIDAnon').agg({'correct':np.mean})
     thresh = np.mean(Dacc['correct']) - 3*np.std(Dacc['correct'])
     Dacc = Dacc.assign(lowAcc = Dacc['correct']<thresh)
     lowAccIDs = list(Dacc[Dacc['lowAcc']==True].index)
-    print('There are {} flagged IDs so far due to low accuracy.'.format(len(lowAccIDs))) 
+    if verbose:
+        print('There are {} flagged IDs so far due to low accuracy.'.format(len(lowAccIDs))) 
     
     ## flag sessions with unusually high RTs
     Drt = D.groupby('prolificIDAnon').agg({'logRT':np.median})
     thresh = np.median(Drt['logRT']) + 3*np.std(Drt['logRT'])
     Drt = Drt.assign(highRT = Drt['logRT']>thresh)
     highRTIDs = list(Drt[Drt['highRT']==True].index)
-    print('There are {} flagged IDs so far due to high RTs.'.format(len(highRTIDs)))    
+    if verbose:
+        print('There are {} flagged IDs so far due to high RTs.'.format(len(highRTIDs)))    
     
     ## combining all flagged sessions
     flaggedIDs = streakyIDs + alternatingIDs + lowAccIDs + highRTIDs
-    print('There are a total of {} flagged IDs.'.format(len(np.unique(flaggedIDs))))  
+    if verbose:
+        print('There are a total of {} flagged IDs.'.format(len(np.unique(flaggedIDs))))  
     
     ## removing flagged sessions from dataset
     D = D[~D.prolificIDAnon.isin(flaggedIDs)]
     numSubs = len(np.unique(D.prolificIDAnon.values))
-    print('There are a total of {} valid and complete sessions for {}.'.format(numSubs, scenarionName))   
+    if verbose:
+        print('There are a total of {} valid and complete sessions for {}.'.format(numSubs, scenarionName))   
     
     return D
-
 
 
 
