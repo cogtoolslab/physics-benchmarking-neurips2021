@@ -177,6 +177,9 @@ For each model, we will compute the correlation between its response vector and 
 A model's response pattern will be considered more similar to humans' insofar as the mean model-human correlation (across humans) lies closer to the mean human-human correlation (for all pairs of humans).
 
 ###### **Cohen's kappa**
-**TODO**
+For each pair of human participants, we will compute Cohen’s kappa between their responses across the 150 stimuli, yielding a distribution of pairwise human-human Cohen’s kappa. The mutually exclusive categories used in calculating Cohen’s kappa is whether each of the 150 responses was predicted to be positive or negative.
+For each model, we will compute Cohen’s kappa between its response vector and every human participant, as well as every other model. 
+A model's response pattern will be considered more similar to humans' insofar as the mean model-human Cohen’s kappa (across humans) lies closer to the mean human-human Cohen’s kappa (for all pairs of humans).
+
 
 <!-- We might also explore whether the speed of response predicts its correctness. Curve might be inverted U-shape: too fast or too slow leads to bad predictions. Perhaps too fast not, since the participants always get 1500ms -->
