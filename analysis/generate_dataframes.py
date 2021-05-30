@@ -51,8 +51,11 @@ def item(x):
 
 # set up directories
 ## directory & file hierarchy
-proj_dir = os.path.abspath('../')
-analysis_dir =  os.path.abspath('.')
+try:
+    proj_dir = str(os.path.abspath(__file__)).split('human-physics-benchmarking')[0]+'human-physics-benchmarking'
+except:
+    print("ERROR: this script needs to be located in the human-physics-benchmarking folder")
+analysis_dir =  os.path.join(proj_dir,'analysis')
 results_dir = os.path.join(proj_dir,'results')
 csv_dir = os.path.join(results_dir,'csv/humans')
 
