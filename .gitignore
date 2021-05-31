@@ -160,3 +160,7 @@ venv.bak/
 stimuli/human-physics-benchmarking-pilot_example.js
 .vscode/launch.json
 experiments/towers_pilot/.vscode/settings.json
+
+# downloaded stims
+analysis/mp4s/*
+analysis/hdf5s/*
