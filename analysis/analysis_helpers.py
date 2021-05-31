@@ -158,5 +158,14 @@ def apply_exclusion_criteria(D, verbose=False):
     
     return D
 
+def process_model_dataframe(MD):
+    """Apply a couple of steps to read in the output of the model results"""
+    ## make column for prob_pos
+    MD['Probability Positive'] = MD['Predicted Prob'].apply(lambda x: eval(",".join(x.split(" ")))[1])
 
+    ## add correctness info
+    MD['correct'] = MD['Actual Outcome'] == MD['Predicted Outcome']
 
+    ## reverse renaming of scenarios
+    MD = MD.replace('rollslide','rollingsliding')
+    return MD
