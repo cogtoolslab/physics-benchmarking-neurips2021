@@ -161,6 +161,14 @@ stimuli/human-physics-benchmarking-pilot_example.js
 .vscode/launch.json
 experiments/towers_pilot/.vscode/settings.json
 
+
 # downloaded stims
 analysis/mp4s/*
 analysis/hdf5s/*
+
+# results files
+results/csv/humans/sessionIDs.csv
+results/csv/humans/prolific_export_*
+results/csv/humans/human_responses-*
+results/csv/humans/demographics.csv
+
