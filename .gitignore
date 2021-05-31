@@ -165,7 +165,7 @@ experiments/towers_pilot/.vscode/settings.json
 # downloaded stims
 analysis/mp4s/*
 analysis/hdf5s/*
-
+analysis/maps/*
 
 # results files
 results/csv/humans/sessionIDs.csv
