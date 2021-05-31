@@ -166,6 +166,7 @@ experiments/towers_pilot/.vscode/settings.json
 analysis/mp4s/*
 analysis/hdf5s/*
 
+
 # results files
 results/csv/humans/sessionIDs.csv
 results/csv/humans/prolific_export_*
