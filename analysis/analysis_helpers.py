@@ -168,4 +168,18 @@ def process_model_dataframe(MD):
 
     ## reverse renaming of scenarios
     MD = MD.replace('rollslide','rollingsliding')
+    MD = MD.replace('cloth','clothiness')
+
+    ## force unique model string
+    MD['ModelID'] = ["_".join(attr) for attr in zip(
+    MD['Model'],
+    MD['Encoder Type'],
+    MD['Encoder Training Task'], 
+    MD['Encoder Training Dataset'],
+    MD['Dynamics Type'],
+    MD['Dynamics Training Task'],
+    MD['Dynamics Training Dataset'],
+    ["readout"]*len(MD),
+    MD['Readout Type'],
+    MD['Readout Train Data'])]
     return MD
