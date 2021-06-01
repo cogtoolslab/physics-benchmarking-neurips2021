@@ -72,6 +72,9 @@ def load_and_preprocess_data(path_to_data):
     binary_mapper = {'YES':True, 'NO':False}
     _D = _D.assign(responseBool = _D['response'].apply(lambda x: binary_mapper[x]), axis=0)
 
+    ## remove _img from stimulus name
+    _D ['stim_ID']= _D['stim_ID'].apply(lambda n: n.split("_img")[0])
+
     return _D
 
 def apply_exclusion_criteria(D, verbose=False):
@@ -169,6 +172,9 @@ def process_model_dataframe(MD):
     ## reverse renaming of scenarios
     MD = MD.replace('rollslide','rollingsliding')
     MD = MD.replace('cloth','clothiness')
+
+    ## add canonical stim name (ie remove redyellow)
+    MD['Canon Stimulus Name'] = MD['Stimulus Name'].apply(lambda n: "".join(n.split('-redyellow')))
 
     ## force unique model string
     MD['ModelID'] = ["_".join(attr) for attr in zip(
