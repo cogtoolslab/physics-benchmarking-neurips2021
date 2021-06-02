@@ -163,8 +163,12 @@ def apply_exclusion_criteria(D, verbose=False):
 
 def process_model_dataframe(MD):
     """Apply a couple of steps to read in the output of the model results"""
-    ## make column for prob_pos
-    MD['Probability Positive'] = MD['Predicted Prob'].apply(lambda x: eval(",".join(x.split(" ")))[1])
+    # ## make column for prob_pos
+    # try:
+    #     MD['Probability Positive'] = MD['Predicted Prob'].apply(lambda x: eval(",".join(x.split(" ")))[1])
+    # except AttributeError:
+    #     MD['Probability Positive'] = MD['Predicted Prob']
+
 
     ## add correctness info
     MD['correct'] = MD['Actual Outcome'] == MD['Predicted Outcome']
@@ -178,14 +182,17 @@ def process_model_dataframe(MD):
 
     ## force unique model string
     MD['ModelID'] = ["_".join(attr) for attr in zip(
-    MD['Model'],
-    MD['Encoder Type'],
-    MD['Encoder Training Task'], 
-    MD['Encoder Training Dataset'],
-    MD['Dynamics Type'],
-    MD['Dynamics Training Task'],
-    MD['Dynamics Training Dataset'],
+    MD['Model'].astype(str),
+    MD['Encoder Type'].astype(str),
+    MD['Encoder Training Seed'].astype(str),
+    MD['Encoder Training Task'].astype(str), 
+    MD['Encoder Training Dataset'].astype(str),
+    MD['Dynamics Training Task'].astype(str),
+    MD['Dynamics Training Seed'].astype(str),
+    MD['Dynamics Training Dataset'].astype(str),
     ["readout"]*len(MD),
-    MD['Readout Type'],
-    MD['Readout Train Data'])]
+    MD['Readout Type'].astype(str),
+    MD['Readout Train Data'].astype(str),
+    MD['filename'].astype(str)
+    )]
     return MD
