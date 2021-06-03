@@ -4,6 +4,25 @@ import numpy as np
 import scipy.stats as stats
 import pandas as pd
 
+#which columns identify a model?
+MODEL_COLS = [
+     'Model',
+     'Readout Train Data',
+     'Readout Type',
+     'Encoder Type',
+     'Dynamics Type',
+     'Encoder Pre-training Task',
+     'Encoder Pre-training Dataset',
+     'Encoder Pre-training Seed',
+     'Encoder Training Task',
+     'Encoder Training Dataset',
+     'Encoder Training Seed',
+     'Dynamics Training Task',
+     'Dynamics Training Dataset',
+     'Dynamics Training Seed',
+     'ModelID',
+     'Model Kind']
+
 def item(x):
     """Returns representative single item; helper function for pd.agg"""
     return x.tail(1).item()
@@ -161,6 +180,8 @@ def apply_exclusion_criteria(D, verbose=False):
     
     return D
 
+def same_or_nan(acol,bcol): return [a if a != b else np.nan for a,b in zip(acol,bcol)]
+
 def process_model_dataframe(MD):
     """Apply a couple of steps to read in the output of the model results"""
     # ## make column for prob_pos
@@ -195,4 +216,46 @@ def process_model_dataframe(MD):
     MD['Readout Train Data'].astype(str),
     MD['filename'].astype(str)
     )]
+    
+    ## force unique model string
+    MD['ModelID'] = ["_".join(attr) for attr in zip(
+    MD['Model'].astype(str),
+    MD['Encoder Type'].astype(str),
+    MD['Encoder Training Seed'].astype(str),
+    MD['Encoder Training Task'].astype(str), 
+    MD['Encoder Training Dataset'].astype(str),
+    MD['Dynamics Training Task'].astype(str),
+    MD['Dynamics Training Seed'].astype(str),
+    MD['Dynamics Training Dataset'].astype(str),
+    ["readout"]*len(MD),
+    MD['Readout Type'].astype(str),
+    MD['Readout Train Data'].astype(str),
+    MD['filename'].astype(str)
+    )]
+
+    # add a model kind—the granularity that we want to plot over—columns
+    #this ignores the specific datasets if they match the testing data, but not otherwise
+    # get a list of models to plot
+    MD['Model Kind'] = np.nan
+    _MD = MD[MODEL_COLS].copy()
+    #clear out scenario specific values, but keep non-scenario specific ones
+    for col in [
+            'Readout Train Data',
+            'Encoder Pre-training Dataset',
+            'Encoder Training Task',
+            'Dynamics Training Task']:
+        _MD[col] = same_or_nan(_MD[col],MD['Readout Test Data']) #save only scenario for those rows where it disagress with the test data
+    
+    MD['Model Kind'] = ["_".join(attr) for attr in zip(
+        _MD['Model'].astype(str),
+        _MD['Encoder Type'].astype(str),
+        _MD['Encoder Training Seed'].astype(str),
+        _MD['Encoder Training Task'].astype(str), 
+        _MD['Encoder Training Dataset'].astype(str),
+        _MD['Dynamics Training Task'].astype(str),
+        _MD['Dynamics Training Seed'].astype(str),
+        _MD['Dynamics Training Dataset'].astype(str),
+        _MD['Readout Train Data'].astype(str),
+    )]
+
     return MD
