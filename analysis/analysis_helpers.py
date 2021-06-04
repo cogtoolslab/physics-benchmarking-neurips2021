@@ -22,6 +22,9 @@ MODEL_COLS = [
      'Dynamics Training Seed',
      'ModelID',
      'Model Kind']
+#Which columns can we abstract over the concrete dataset over?
+DATASET_ABSTRACTION_COLS = ['Encoder Training Dataset','Dynamics Training Dataset','Readout Train Data']
+DATASET_ABSTRACTED_COLS = [c+ " Type" for c in DATASET_ABSTRACTION_COLS]
 
 def item(x):
     """Returns representative single item; helper function for pd.agg"""
@@ -184,12 +187,6 @@ def same_or_nan(acol,bcol): return [a if a != b else np.nan for a,b in zip(acol,
 
 def process_model_dataframe(MD):
     """Apply a couple of steps to read in the output of the model results"""
-    # ## make column for prob_pos
-    # try:
-    #     MD['Probability Positive'] = MD['Predicted Prob'].apply(lambda x: eval(",".join(x.split(" ")))[1])
-    # except AttributeError:
-    #     MD['Probability Positive'] = MD['Predicted Prob']
-
 
     ## add correctness info
     MD['correct'] = MD['Actual Outcome'] == MD['Predicted Outcome']
@@ -197,9 +194,18 @@ def process_model_dataframe(MD):
     ## reverse renaming of scenarios
     MD = MD.replace('rollslide','rollingsliding')
     MD = MD.replace('cloth','clothiness')
+    MD = MD.replace('no_rollslide','no_rollingsliding')
+    MD = MD.replace('no_cloth','no_clothiness')
 
     ## add canonical stim name (ie remove redyellow)
     MD['Canon Stimulus Name'] = MD['Stimulus Name'].apply(lambda n: "".join(n.split('-redyellow')))
+
+    ## set dataset columns to 'same' if they match the test data
+    for col in DATASET_ABSTRACTION_COLS:
+        MD[col+" Type"] = MD[col]
+        MD.loc[MD[col] == MD["Readout Test Data"],col+" Type"] = "same"
+        MD.loc[MD[col] == ["no_"+n for n in MD["Readout Test Data"]],col+" Type"] = "all_but_this"
+        # MD.loc[MD[col] == "all",col+" Type"] == "all
 
     ## force unique model string
     MD['ModelID'] = ["_".join(attr) for attr in zip(
@@ -235,27 +241,18 @@ def process_model_dataframe(MD):
 
     # add a model kind—the granularity that we want to plot over—columns
     #this ignores the specific datasets if they match the testing data, but not otherwise
+    #ignores Dynamics Training, so we can loop over it in plotting
     # get a list of models to plot
-    MD['Model Kind'] = np.nan
-    _MD = MD[MODEL_COLS].copy()
-    #clear out scenario specific values, but keep non-scenario specific ones
-    for col in [
-            'Readout Train Data',
-            'Encoder Pre-training Dataset',
-            'Encoder Training Task',
-            'Dynamics Training Task']:
-        _MD[col] = same_or_nan(_MD[col],MD['Readout Test Data']) #save only scenario for those rows where it disagress with the test data
-    
     MD['Model Kind'] = ["_".join(attr) for attr in zip(
-        _MD['Model'].astype(str),
-        _MD['Encoder Type'].astype(str),
-        _MD['Encoder Training Seed'].astype(str),
-        _MD['Encoder Training Task'].astype(str), 
-        _MD['Encoder Training Dataset'].astype(str),
-        _MD['Dynamics Training Task'].astype(str),
-        _MD['Dynamics Training Seed'].astype(str),
-        _MD['Dynamics Training Dataset'].astype(str),
-        _MD['Readout Train Data'].astype(str),
+        MD['Model'].astype(str),
+        MD['Encoder Type'].astype(str),
+        MD['Encoder Training Seed'].astype(str),
+        MD['Encoder Training Task'].astype(str), 
+        MD['Encoder Training Dataset Type'].astype(str),
+        MD['Dynamics Training Task'].astype(str),
+        MD['Dynamics Training Seed'].astype(str),
+        # MD['Dynamics Training Dataset Type'].astype(str),
+        MD['Readout Train Data Type'].astype(str),
     )]
 
     return MD

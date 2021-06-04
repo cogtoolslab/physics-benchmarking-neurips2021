@@ -204,15 +204,21 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     #Generate some useful views
     df_trial_entries = df[(df['condition'] == 'prediction') & (df['trial_type'] == 'video-overlay-button-response')] #only experimental trials
     df_trial_entries = df_trial_entries.assign(study=[study]*len(df_trial_entries), axis=0)
+    df_familiarization_entries = df[(df['condition'] == 'familiarization_prediction') & (df['trial_type'] == 'video-overlay-button-response')] #only experimental fam trials
+    df_familiarization_entries = df_familiarization_entries.assign(study=[study]*len(df_familiarization_entries), axis=0)
     
     # apply anonymization
     if anonymizeIDs==True:    
         print('Anonymizing prolificIDs')
         df_trial_entries = df_trial_entries.assign(prolificIDAnon = df_trial_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
         df_trial_entries.drop(labels=['prolificID'],axis=1, inplace=True)
+        df_familiarization_entries = df_familiarization_entries.assign(prolificIDAnon = df_familiarization_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
+        df_familiarization_entries.drop(labels=['prolificID'],axis=1, inplace=True)
 
     # save out df_trials_entries
     df_trial_entries.to_csv(os.path.join(csv_dir,"human_responses-{}-{}.csv".format(study,iterationName)))
+    # save out df_famili arizations_entries
+    df_familiarization_entries.to_csv(os.path.join(csv_dir,"familiarization_human_responses-{}-{}.csv".format(study,iterationName)))
 
     #generate per stim aggregated df
     df_trial_entries['c'] = 1 #add dummy variable for count in agg
