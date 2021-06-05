@@ -28,6 +28,7 @@ node_modules/
 features/
 .Rproj.user
 anonymize_mapper.py
+results/csv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
