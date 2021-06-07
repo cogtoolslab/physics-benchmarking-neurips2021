@@ -1,14 +1,11 @@
 # Pregistration for NeurIPS 2021 submission
 
 **Researchers**: Felix Binder, Cameron Holdaway, Sirui Tao, Daniel Bear, Judy Fan ... and then some
-<!-- Not actually sure who everyone on the project actually is -->
 
 ## Study information
-<!-- give your study a brief and informative title -->
 **Title**: Human physics benchmarking
 
 ### Research questions
-<!-- specify the broad and specific questions guiding your study -->
 Predicting the future outcome of physical scenarios is a paradigm case of using models to represent and reason about the world. Intuitive physics is central to intelligent behavior in physical environments. 
 In this study, we aim to identify features of physical scenes that make correct human physical prediction difficult. 
 Additionally, we aim to collect data on which scenes are difficult for human participants to predict correctly in order to compare human participants against a range of computational models of physical scene prediction. 
@@ -187,6 +184,5 @@ A model's response pattern will be considered more similar to humans' insofar as
 For each pair of human participants, we will compute Cohen’s kappa between their responses across the 150 stimuli, yielding a distribution of pairwise human-human Cohen’s kappa. The mutually exclusive categories used in calculating Cohen’s kappa is whether each of the 150 responses was predicted to be positive or negative.
 For each model, we will compute Cohen’s kappa between its response vector and every human participant, as well as every other model. 
 A model's response pattern will be considered more similar to humans' insofar as the mean model-human Cohen’s kappa (across humans) lies closer to the mean human-human Cohen’s kappa (for all pairs of humans).
-
 
 <!-- We might also explore whether the speed of response predicts its correctness. Curve might be inverted U-shape: too fast or too slow leads to bad predictions. Perhaps too fast not, since the participants always get 1500ms -->
