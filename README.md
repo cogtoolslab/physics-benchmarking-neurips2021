@@ -25,9 +25,9 @@ Here is what each main directory in this repo contains:
 - `stimuli`: This directory contains any download/preprocessing scripts for data (a.k.a. stimuli) that are the _inputs_ to human behavioral experiments. This repo assumes you have generated stimuli using `tdw_physics`. This repo uses code in this directory to upload stimuli to AWS S3 and generate metadata to control the timeline of stimulus presentation in the human behavioral experiments.
 - `utils`: This directory is meant to contain any files containing general helper functions. 
 
-## Reproducibility of results
+<!-- ## Reproducibility of results -->
 
-### Regenerating the dataset
+<!-- ### Regenerating the dataset
 To download the code used to generate the training and test datasets, please follow these instructions:
 1. XXX
 2. YYY
@@ -44,12 +44,12 @@ To reproduce the human behavioral experiments, please follow these instructions:
 1. XXX
 2. YYY
 3. ZZZ
-
-### Reproducing the analyses of human and modeling behavior reported in the paper
+ -->
+## Reproducing analyses of human and modeling behavior
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
 
-1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. If this does not work, please download this zipped folder: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip).
+1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. If this does not work, please download this zipped folder and move it to the `results` directory: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip).
 2. **Reproducing analyses.** To reproduce the key analyses reported in the paper, please run the following notebooks in this sequence:
 	- `summarize_human_model_behavior.ipynb`: The purpose of this notebook is to:
 		* Apply preprocessing to human behavioral data
