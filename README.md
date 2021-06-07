@@ -49,7 +49,7 @@ To reproduce the human behavioral experiments, please follow these instructions:
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
 
-1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. 
+1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. If this does not work, please download this zipped folder: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip).
 2. **Reproducing analyses.** To reproduce the key analyses reported in the paper, please run the following notebooks in this sequence:
 	- `summarize_human_model_behavior.ipynb`: The purpose of this notebook is to:
 		* Apply preprocessing to human behavioral data
