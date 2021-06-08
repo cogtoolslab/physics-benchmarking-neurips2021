@@ -45,11 +45,14 @@ To reproduce the human behavioral experiments, please follow these instructions:
 2. YYY
 3. ZZZ
  -->
+## Downloading the dataset (a.k.a. the physical prediction stimuli)
+You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
+
 ## Reproducing analyses of human and modeling behavior
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
 
-1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. If this does not work, please download this zipped folder and move it to the `results` directory: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip).
+1. **Downloading results.** To download the "raw" human and model prediction behavior, please navigate to the `analysis` directory and execute the following command at the command line: `python download_results.py`. This script will fetch several CSV files and download them to subdirectories within `results/csv`. If this does not work, please download this zipped folder (`csv`) and move it to the `results` directory: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/model_human_results.zip).
 2. **Reproducing analyses.** To reproduce the key analyses reported in the paper, please run the following notebooks in this sequence:
 	- `summarize_human_model_behavior.ipynb`: The purpose of this notebook is to:
 		* Apply preprocessing to human behavioral data
