@@ -81,6 +81,7 @@ if __name__ == '__main__':
         scenario_path = os.path.join(save_path, sc.capitalize())        
         
         print('Downloading Scenario: {}'.format(sc.capitalize()))
+        print('Bucket Name: {}'.format(bucket_name))
         print('Data will download to: {}'.format(scenario_path))
         print('Overwrite local data with downloaded data from S3? {}'.format(overwrite))
 
@@ -103,8 +104,6 @@ if __name__ == '__main__':
 
         # keep only the ones that have response data
         sc_names = list(stim_names[stim_names['scenario'] == sc]['stim_ID'])
-        print("stims: %s", len(stims))
-        print("names: %s", len(sc_names))
         if not args.hdf5s:
             sc_names = [nm + '_img' for nm in sc_names] + ([nm + '_map' for nm in sc_names] if not args.redyellow else [])
 
@@ -128,6 +127,7 @@ if __name__ == '__main__':
                 sv_type += '-redyellow'
             sv_dir = os.path.join(sv_dir, sv_type)
             os.makedirs(sv_dir) if not os.path.exists(sv_dir) else None
-            s3.meta.client.download_file(bucket_name, s.key, os.path.join(sv_dir, s.key))
+            if overwrite or (not os.path.exists(os.path.join(sv_dir, s.key))):
+                s3.meta.client.download_file(bucket_name, s.key, os.path.join(sv_dir, s.key))
         end = time.time()
         print("Successfully downloaded the %s scenario: took %d seconds" % (sc.capitalize(), int(end - start)))
