@@ -2,9 +2,9 @@
 
 ## Dataset generation
 
-This repo depends on outputs from [`tdw_physics`](https://github.com/threedworld-mit/tdw).
+This repo depends on outputs from [`tdw_physics`](https://github.com/alters-mit/tdw_physics).
 
-Specifically, [`tdw_physics`](https://github.com/threedworld-mit/tdw) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
+Specifically, [`tdw_physics`](https://github.com/alters-mit/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
 
 ## Modeling experiments
 This repo depends on outputs from [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking).
