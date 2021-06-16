@@ -48,6 +48,8 @@ To reproduce the human behavioral experiments, please follow these instructions:
 ## Downloading the dataset (a.k.a. the physical prediction stimuli)
 You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
 
+The full HDF5 files for each testing stimulus are considerably larger than the movie stimuli. These include depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as the physical states of objects and trial-level metadata. The HDF5s for the Physion testing set can be downloaded here: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.tar.gz).
+
 ## Reproducing analyses of human and modeling behavior
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
