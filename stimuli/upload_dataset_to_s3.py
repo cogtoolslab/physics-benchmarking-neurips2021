@@ -35,7 +35,7 @@ class ProgressPercentage(object):
         with self._lock:
             self._seen_so_far += bytes_amount
             percentage = (self._seen_so_far / self._size) * 100
-            sys.stdout.write("\r%s  %s / %s  (%.2f \%)" % (ntpath.basename(self._filename), size(self._seen_so_far), size(self._size), percentage))
+            sys.stdout.write("\r%s  %s / %s  (%.2f \%%)" % (ntpath.basename(self._filename), size(self._seen_so_far), size(self._size), percentage))
             sys.stdout.flush()
 
 
