@@ -2,9 +2,9 @@
 
 ## Dataset generation
 
-This repo depends on outputs from [`tdw_physics`](https://github.com/alters-mit/tdw_physics).
+This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/tdw_physics).
 
-Specifically, [`tdw_physics`](https://github.com/alters-mit/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
+Specifically, [`tdw_physics`](https://github.com/neuroailab/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
 
 ## Modeling experiments
 This repo depends on outputs from [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking).
@@ -47,6 +47,8 @@ To reproduce the human behavioral experiments, please follow these instructions:
  -->
 ## Downloading the dataset (a.k.a. the physical prediction stimuli)
 You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
+
+The full HDF5 files for each testing stimulus are considerably larger than the movie stimuli. These include depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as the physical states of objects and trial-level metadata. The HDF5s for the Physion testing set can be downloaded here: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz).
 
 ## Reproducing analyses of human and modeling behavior
 

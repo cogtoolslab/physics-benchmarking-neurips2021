@@ -6,7 +6,7 @@ from glob import glob
 import argparse
 
 '''
-To download features & metadata, use command: python download_data.py 
+To download features & metadata, use command: python download_results.py 
 
 '''
 
