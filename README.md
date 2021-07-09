@@ -45,10 +45,21 @@ To reproduce the human behavioral experiments, please follow these instructions:
 2. YYY
 3. ZZZ
  -->
-## Downloading the dataset (a.k.a. the physical prediction stimuli)
+## Downloading the testing dataset (a.k.a. the physical prediction stimuli)
 You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
 
 The full HDF5 files for each testing stimulus are considerably larger than the movie stimuli. These include depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as the physical states of objects and trial-level metadata. The HDF5s for the Physion testing set can be downloaded here: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz).
+
+## Downloading the training datasets
+The dataset used to train the models we benchmarked consists of ~2000 movies from each of the eight physical scenarios (or subsets of this meant to assess various types of generalization.) These trials were generated from the same distribution of physical parameters as the testing stimuli (above), so models trained on this dataset will not encounter any "new physics" during testing.
+
+In addition, we created "readout fitting sets" of 1000 trials for each of the eight scenarios. These trials are drawn from the same physical parameter distributions as above, but in addition they also have the same "red agent object, yellow patient object" visual appearance as the testing trials. The purpose of these readout sets is to fit a simple model (i.e. logistic regression) from a set of _pretrained model features_ to do the red-yellow OCP task. Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
+
+You can download MP4s of all the training trials here [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz) and HDF5s for each scenario's training and readout sets below:
+
+| Scenario | Training Set         | Readout Set       |
+| -------- | -------------------- | ----------------- |
+| Dominoes | [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_training_HDF5s.tar.gz](Dominoes_training.tar.gz) |          |
 
 ## Reproducing analyses of human and modeling behavior
 
