@@ -60,6 +60,13 @@ You can download MP4s of all the training trials here [https://physics-benchmark
 | Scenario | Training Set         | Readout Set       |
 | -------- | -------------------- | ----------------- |
 | Dominoes | [Dominoes_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_training_HDF5s.tar.gz) | [Dominoes_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_readout_HDF5s.tar.gz)         |
+| Support | [Support_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Support_training_HDF5s.tar.gz) | [Support_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Support_readout_HDF5s.tar.gz)         |
+| Collide | [Collide_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Collide_training_HDF5s.tar.gz) | [Collide_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Collide_readout_HDF5s.tar.gz)         |
+| Contain | [Contain_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Contain_training_HDF5s.tar.gz) | [Contain_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Contain_readout_HDF5s.tar.gz)         |
+| Drop | [Drop_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drop_training_HDF5s.tar.gz) | [Drop_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drop_readout_HDF5s.tar.gz)         |
+| Roll | [Roll_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Roll_training_HDF5s.tar.gz) | [Roll_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Rollreadout_HDF5s.tar.gz)         |
+| Link | [Link_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_training_HDF5s.tar.gz) | [Link_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_readout_HDF5s.tar.gz)         |
+| Drape | [Drape_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_training_HDF5s.tar.gz) | [Drape_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_readout_HDF5s.tar.gz)         |
 
 ## Reproducing analyses of human and modeling behavior
 
