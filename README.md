@@ -59,7 +59,7 @@ You can download MP4s of all the training trials here [https://physics-benchmark
 
 | Scenario | Training Set         | Readout Set       |
 | -------- | -------------------- | ----------------- |
-| Dominoes | [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_training_HDF5s.tar.gz](Dominoes_training.tar.gz) |          |
+| Dominoes | [Dominoes_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_training_HDF5s.tar.gz) | [Dominoes_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_readout_HDF5s.tar.gz)         |
 
 ## Reproducing analyses of human and modeling behavior
 
