@@ -16,8 +16,9 @@ do
     case $arg_name in
         (./*familiarization*) continue;;
     esac
-    cmd="python3 "$controller_dir$scenario".py $arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --training_data_mode"
+    cmd="python3 "$controller_dir$scenario".py @$arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --training_data_mode"
     echo $cmd
+    eval " $cmd"
 done
 
 group=readout
@@ -29,6 +30,7 @@ do
     case $arg_name in
         (./*familiarization*) continue;;
     esac
-    cmd="python3 "$controller_dir$scenario".py $arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier
+    cmd="python3 "$controller_dir$scenario".py @$arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --readout_data_mode"
     echo $cmd
+    eval " $cmd"
 done

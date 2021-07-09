@@ -22,8 +22,9 @@ do
     else
         controller=$controller_dir$scenario
     fi
-    cmd="python3 "$controller".py $arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --training_data_mode"
+    cmd="python3 "$controller".py @$arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --training_data_mode"
     echo $cmd
+    eval " $cmd"
 done
 
 group=readout
@@ -41,6 +42,7 @@ do
     else
         controller=$controller_dir$scenario
     fi
-    cmd="python3 "$controller".py $arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier
+    cmd="python3 "$controller".py @$arg_name""commandline_args.txt --dir "$output_dir$scenario"${arg_name#.}"$group" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$multiplier" --readout_data_mode"
     echo $cmd
+    eval " $cmd"
 done
