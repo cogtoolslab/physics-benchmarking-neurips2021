@@ -1,5 +1,7 @@
 # Physion: Evaluating Physical Prediction from Vision in Humans and Machines
 
+![Animation of the 8 scenarios](figures/scenario_animation.gif)
+
 ## Dataset generation
 
 This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/tdw_physics).
