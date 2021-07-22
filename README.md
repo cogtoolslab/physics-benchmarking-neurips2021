@@ -2,6 +2,13 @@
 
 ![Animation of the 8 scenarios](figures/scenario_animation.gif)
 
+This repo contains code and data to reproduce the results in our paper, [Physion: Evaluating Physical Prediction from Vision in Humans and Machines](https://arxiv.org/abs/2106.08261).
+
+1. [Dataset generation](#dataset-generation)
+2. [Modeling experiments](#modeling-experiments)
+3. [Human experiments](#human-experiments)
+4. [Comparing models and humans](#comparing-models-and-humans)
+
 ## Dataset generation
 
 This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/tdw_physics).
@@ -29,26 +36,6 @@ Here is what each main directory in this repo contains:
 - `stimuli`: This directory contains any download/preprocessing scripts for data (a.k.a. stimuli) that are the _inputs_ to human behavioral experiments. This repo assumes you have generated stimuli using `tdw_physics`. This repo uses code in this directory to upload stimuli to AWS S3 and generate metadata to control the timeline of stimulus presentation in the human behavioral experiments.
 - `utils`: This directory is meant to contain any files containing general helper functions. 
 
-<!-- ## Reproducibility of results -->
-
-<!-- ### Regenerating the dataset
-To download the code used to generate the training and test datasets, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
-
-### Reproducing modeling experiments
-To reproduce the model training and evaluation experiments, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
-
-### Reproducing human experiments
-To reproduce the human behavioral experiments, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
- -->
 ## Downloading the testing dataset (a.k.a. the physical prediction stimuli)
 You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
 
@@ -72,7 +59,7 @@ You can download MP4s of all the training trials here [https://physics-benchmark
 | Link | [Link_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_training_HDF5s.tar.gz) | [Link_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_readout_HDF5s.tar.gz)         | [Link_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_testing_HDF5s.tar.gz) |
 | Drape | [Drape_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_training_HDF5s.tar.gz) | [Drape_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_readout_HDF5s.tar.gz)         | [Drape_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_testing_HDF5s.tar.gz) |
 
-## Reproducing analyses of human and modeling behavior
+## Comparing models and humans
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
 
@@ -90,12 +77,3 @@ The results reported in this paper can be reproduced by running the Jupyter note
 		* Visualize human-human and model-human agreement (Cohen's kappa)
 		* Compare performance between models	
 	- `paper_plots.ipynb`: The purpose of this notebook is to create publication-quality figures for inclusion in the paper.
-
-
-
-
-
-
-
-
-
