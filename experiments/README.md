@@ -1,10 +1,13 @@
-Directory to contain experiment code (e.g., HTML/CSS/JavaScript) for this project.
+This directory contains code to run the human physical prediction experiments (e.g., HTML/CSS/JavaScript) reported in this paper.
+
+### Human experiments repo organization
+
+
 
 ### Checklist for starting data collection on new online experiment
-- Complete your OSF pre-registration worksheet
-- Make sure that data is being saved correctly by drafting your analysis notebook
-- Write instructions
-- Figure out how subject payment is going to work
-- Add consent form to appear before instructions
-- Configure HIT settings using nosub: https://github.com/longouyang/nosub
-- Test task out in MTurk Sandbox
+1. OSF-style [preregistration worksheet](../prereg/preregistration_neurips2021.md) completed.
+2. Ensure that data is being saved correctly in the analysis notebook
+3. Write & validate instructions with semi-naive participants.
+4. Figure out how subject payment is going to work
+5. Add consent form to appear before instructions
+6. Test task out on Prolific
