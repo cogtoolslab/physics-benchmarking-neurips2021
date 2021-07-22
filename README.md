@@ -72,9 +72,35 @@ Specifically, [`tdw_physics`](https://github.com/neuroailab/tdw_physics) is used
 Instructions for using the ThreeDWorld simulator to regenerate datasets used in our work can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/master/stimuli). Links for downloading the Physion testing, training, and readout fitting datasets can be found below.
 
 ## Modeling experiments
-This repo depends on outputs from [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking).
 
-The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo was used to conduct physical-prediction model training and evaluation. 
+The modeling component of this repo depends on the [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo.  The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo implements an interface through which a wide variety of physics prediction models from the literature (be they neural networks or otherwise) can be adapted to accept the inputs provided by our training and testing datasets and produce outputs for comparison with our human measurements. 
+
+
+The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) also contains code for model training and evaluation.  Specifically, [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) implements three train/test procols:
+
+- The `only protocol`, in which each candidate physics model architecture is trained -- using that model's native loss function as specified by the model's authors -- separately on each of the scenarios listed above (e.g. "dominoes", "support", &c).  This produces eight separately-trained models per candidate architecture (one for each scenario).  Each of these separate models are then tested in comparison to humans on the testing data for that scenario.
+- A `all protocol`, in which each candidate physics architecture is trained on mixed data from all of the scenarios simultaneously (again, using that model's native loss function). This single model is then tested and compared to humans separately on each scenario.
+- A `all-but-one protocol`, in which each candidate physics architecture is trained on mixed data drawn for all but one scenario -- separately for all possible choices of the held-out scenario.  This produces eight separately-trained models per candidate architecture (one for each held-out scenario).  Each of these separate models are then tested in comparison to humans on the testing data for that scenario.
+
+Results from each of the three protocols are separately compared to humans (as described below in the section on comparison of humans to models).  All model-human comparisons are carried using a representation-learning paradigm, in which models are trained on their native loss functions (as encoded by the original authors of the model).  Trained models are then evaluated on the specific physion red-object-contacts-yellow-zone prediction task.  This evaluation is carried by further training a "readout", implemented as a linear logistic regression.  Readouts are always trained in a per-scenario fashion. 
+
+Currently, physopt implements the following specific physics prediction models:
+
+
+| Model Name | Our Code Link | Original Paper | Description |
+| ---------- | ------------- | -------------- | ----------- |
+| SVG        |               | [`Denton and Fergus 2018`](http://proceedings.mlr.press/v80/denton18a.html) | Image-like latent |
+| OP3        |               | [`Veerapaneni et. al. 2020`](http://proceedings.mlr.press/v100/veerapaneni20a.html) | |
+| CSWM       |               | [`Kipf et. al. 2020`](https://openreview.net/forum?id=H1gax6VtDB) | |
+| RPIN       |               | [`Qi et. al. 2021`](https://openreview.net/forum?id=_X_4Akcd8Re) | |
+| pVGG-mlp   |               | | |
+| pVGG-lstm  |               | | |
+| pDEIT-mlp  |               | [`Touvron et. al.`](https://arxiv.org/abs/2012.12877)| |
+| pDEIT-lstm |               | | |
+| GNS        |               | [`Sanchez-Gonzalez et. al. 2020`](https://arxiv.org/abs/2002.09405)| |
+| GNS-R      |               | | |
+| DPI        |               | [`Li et. al. 2019`](http://dpi.csail.mit.edu/)| |  
+
 
 ## Human experiments
 
