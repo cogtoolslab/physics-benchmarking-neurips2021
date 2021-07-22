@@ -97,7 +97,7 @@ Currently, physopt implements the following specific physics prediction models:
 | RPIN       |               | [`Qi et. al. 2021`](https://openreview.net/forum?id=_X_4Akcd8Re) | |
 | pVGG-mlp   |               | | |
 | pVGG-lstm  |               | | |
-| pDEIT-mlp  |               | [`Touvron et. al.`](https://arxiv.org/abs/2012.12877)| |
+| pDEIT-mlp  |               | [`Touvron et. al. 2020`](https://arxiv.org/abs/2012.12877)| |
 | pDEIT-lstm |               | | |
 | GNS        |               | [`Sanchez-Gonzalez et. al. 2020`](https://arxiv.org/abs/2002.09405)| |
 | GNS-R      |               | | |
