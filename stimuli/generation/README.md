@@ -1,21 +1,18 @@
 # Reenerating training, readout, and testing data
 
 1. Install [`tdw_physics`](https://github.com/neuroailab/tdw_physics/tree/master) following the instructions
-2. Bash scripts for generating both training and readout data can be found in their corresponding subdirectories under `generation` (i.e. `./generation/[SCENARIO]/generate_[SCENARIO].sh`)
-   1. The script takes two *positional* args, the first being the absolute path to where you want the output data saved. Default is `$HOME/physion_data`.
-   2. The second is the absolute path to the `tdw_physics` repo on the system. Default is `$HOME/tdw_physics`.
+2. Bash scripts for generating training and readout data, testing data, or human stimuli can be found in the `scripts` subdirectory. The usage is ```cd scripts; ./generate_data.sh SCENARIO [OUTPUT_DIR] [CONTROLLER_DIR] [GPU]```. `OUTPUT_DIR` defaults to `$HOME/physion_data/`, `CONTROLLER_DIR` defaults to `../controllers`, and `GPU` defaults to `0` (if there are no GPUs available, generation will run on the CPU.) 
+
 ## Notes
-Each scenario's directory (`./generation/[SCENARIO]`) contains subdirectories that correspond to different sets of "args" passed to the controller. Collectively, these args determine the types of scenes in each scenario. The actual command line args are located in the `./generation/[SCENARIO]/[ARG_NAME]/commandline_args.txt` file. 
+Each scenario (`./configs/[SCENARIO]`) contains subdirectories that correspond to different sets of "args" passed to the controller. Collectively, these args determine the types of scenes in each scenario. The actual command line args are located in the `./configs/[ARG_NAME]/commandline_args.txt` file. 
 
 N.B. Some args correspond to the familiarization trials and are not used for generating the training and readout data. 
 
 A `mutliplier` is set for each specific arg setting to ensure that approximately 2000 trials are generated for training and 1000 trials for the readout. 
 
-Controllers for each scenario are located in the previously mentioned [`tdw_physics`](https://github.com/neuroailab/tdw_physics/tree/master) repo, in [`tdw_physics/target_controllers`](https://github.com/neuroailab/tdw_physics/tree/master/tdw_physics/target_controllers).
+# tdw_physics controllers
 
-# tdw_physics target controllers
-
-Controllers in this directory are for generating human benchmark stimuli and training data for models that will be compared to humans. The "target" refers to a single special object per scenario that will be the subject of a task prompt, e.g. "Will the red object hit the yellow area of the ground?"
+The scripts in the `controllers` subdirectory can also be used to generate novel training or testing data. In what follows, the "target" and "zone" (also "agent" and "patient", respectively) refer to special objects per scenario that will be the subject of a task prompt, e.g. "Will the red object hit the yellow object?"
 
 Each controller will generate stimuli featuring a single type of physical scenario, detailed below. They can be called with
 ```
