@@ -2,60 +2,50 @@
 
 ![Animation of the 8 scenarios](figures/scenario_animation.gif)
 
-## Dataset generation
+This repo contains code and data to reproduce the results in our paper, [Physion: Evaluating Physical Prediction from Vision in Humans and Machines](https://arxiv.org/abs/2106.08261). Please see below for details about how to download the Physion dataset, replicate our modeling & human experiments, and statistical analyses to reproduce our results. 
 
-This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/tdw_physics).
+1. [Downloading the Physion dataset](#downloading-the-physion-dataset)
+2. [Dataset generation](#dataset-generation)
+3. [Modeling experiments](#modeling-experiments)
+4. [Human experiments](#human-experiments)
+5. [Comparing models and humans](#comparing-models-and-humans)
 
-Specifically, [`tdw_physics`](https://github.com/neuroailab/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
+-----
 
-Instructions for using the ThreeDWorld simulator to regenerate datasets used in our work can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/controllers/stimuli/generation). Links for downloading the Physion testing, training, and readout fitting datasets can be found below.
+## Downloading the Physion dataset
 
-## Modeling experiments
-This repo depends on outputs from [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking).
+### Downloading the **Physion test set** (a.k.a. stimuli)
 
-The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo was used to conduct physical-prediction model training and evaluation. 
+#### PhysionTest-Core (270 MB)
+`PhysionTest-Core` is all you need to evaluate humans and models on exactly the same test stimuli used in our paper. 
 
-## Human experiments
+It contains eight directories, one for each scenario type (e.g., `collide`, `contain`, `dominoes`, `drape`, `drop`, `link`, `roll`, `support`).
 
-This repo contains code to conduct the human behavioral experiments reported in this paper, as well as analyze the resulting data from both human and modeling experiments. 
+Each of these directories contains three subdirectories:
+- `maps`: Contains PNG segmentation maps for each test stimulus, indicating location of `agent` object in red and `patient` object in yellow. 
+- `mp4s`: Contains the MP4 video files presented to human participants. The `agent` and `patient` objects appear in random colors. 
+- `mp4s-redyellow`: Contains the MP4 video files passed into models. The `agent` and `patient` objects consistently appear in red and yellow, respectively.
 
-Here is what each main directory in this repo contains:
-- `experiments`: This directory contains code to run the online human behavioral experiments reported in this paper. 
-- `analysis` (aka `notebooks`): This directory contains our analysis jupyter/Rmd notebooks. This repo assumes you have also imported model evaluation results from `physopt`. 
-- `results`: This directory contains "intermediate" results of modeling/human experiments. It contains three subdirectories: `csv`, `plots`, and `summary`. 
-	- `/results/csv/` contains `csv` files containing tidy dataframes with "raw" data. 
-	- `/results/plots/` contains `.pdf`/`.png` plots, a selection of which are then polished and formatted for inclusion in the paper using Adobe Illustrator. 
-	- *Important: Before pushing any csv files containing human behavioral data to a public code repository, triple check that this data is properly anonymized. This means no bare AMT Worker ID's or Prolific participant IDs.*
-- `stimuli`: This directory contains any download/preprocessing scripts for data (a.k.a. stimuli) that are the _inputs_ to human behavioral experiments. This repo assumes you have generated stimuli using `tdw_physics`. This repo uses code in this directory to upload stimuli to AWS S3 and generate metadata to control the timeline of stimulus presentation in the human behavioral experiments.
-- `utils`: This directory is meant to contain any files containing general helper functions. 
+**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
 
-<!-- ## Reproducibility of results -->
+#### PhysionTest-Complete (380 GB)
+`PhysionTest-Complete` is what you want if you need more detailed metadata for each test stimulus. 
 
-<!-- ### Regenerating the dataset
-To download the code used to generate the training and test datasets, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
+Each stimulus is encoded in an HDF5 file containing comprehensive information regarding depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as other information about the physical states of objects at each time step. 
 
-### Reproducing modeling experiments
-To reproduce the model training and evaluation experiments, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
+**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). 
 
-### Reproducing human experiments
-To reproduce the human behavioral experiments, please follow these instructions:
-1. XXX
-2. YYY
-3. ZZZ
- -->
-## Downloading the testing dataset (a.k.a. the physical prediction stimuli)
-You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
 
-The full HDF5 files for each testing stimulus are considerably larger than the movie stimuli. These include depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as the physical states of objects and trial-level metadata. The HDF5s for the Physion testing set can be downloaded here: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). You can also download the testing data for individual scenarios from the table in the next section.
+You can also download the testing data for individual scenarios from the table in the next section.
 
-## Downloading the training datasets
+### Downloading the **Physion training set**
+
+#### Downloading `PhysionTrain-Training`
+
 The dataset used to train the models we benchmarked consists of ~2000 movies from each of the eight physical scenarios (or subsets of this meant to assess various types of generalization.) These trials were generated from the same distribution of physical parameters as the testing stimuli (above), so models trained on this dataset will not encounter any "new physics" during testing.
+
+
+#### Downloading `PhysionTrain-Readout`
 
 In addition, we created "readout fitting sets" of 1000 trials for each of the eight scenarios. These trials are drawn from the same physical parameter distributions as above, but in addition they also have the same "red agent object, yellow patient object" visual appearance as the testing trials. The purpose of these readout sets is to fit a simple model (i.e. logistic regression) from a set of _pretrained model features_ to do the red-yellow OCP task. Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
 
@@ -72,7 +62,62 @@ You can download MP4s of all the training trials here [https://physics-benchmark
 | Link | [Link_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_training_HDF5s.tar.gz) | [Link_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_readout_HDF5s.tar.gz)         | [Link_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_testing_HDF5s.tar.gz) |
 | Drape | [Drape_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_training_HDF5s.tar.gz) | [Drape_readout_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_readout_HDF5s.tar.gz)         | [Drape_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_testing_HDF5s.tar.gz) |
 
-## Reproducing analyses of human and modeling behavior
+
+## Dataset generation
+
+This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/tdw_physics).
+
+Specifically, [`tdw_physics`](https://github.com/neuroailab/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
+
+Instructions for using the ThreeDWorld simulator to regenerate datasets used in our work can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/master/stimuli/generation). Links for downloading the Physion testing, training, and readout fitting datasets can be found below.
+
+## Modeling experiments
+
+The modeling component of this repo depends on the [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo.  The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo implements an interface through which a wide variety of physics prediction models from the literature (be they neural networks or otherwise) can be adapted to accept the inputs provided by our training and testing datasets and produce outputs for comparison with our human measurements. 
+
+
+The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) also contains code for model training and evaluation.  Specifically, [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) implements three train/test procols:
+
+- The `only protocol`, in which each candidate physics model architecture is trained -- using that model's native loss function as specified by the model's authors -- separately on each of the scenarios listed above (e.g. "dominoes", "support", &c).  This produces eight separately-trained models per candidate architecture (one for each scenario).  Each of these separate models are then tested in comparison to humans on the testing data for that scenario.
+- A `all protocol`, in which each candidate physics architecture is trained on mixed data from all of the scenarios simultaneously (again, using that model's native loss function). This single model is then tested and compared to humans separately on each scenario.
+- A `all-but-one protocol`, in which each candidate physics architecture is trained on mixed data drawn for all but one scenario -- separately for all possible choices of the held-out scenario.  This produces eight separately-trained models per candidate architecture (one for each held-out scenario).  Each of these separate models are then tested in comparison to humans on the testing data for that scenario.
+
+Results from each of the three protocols are separately compared to humans (as described below in the section on comparison of humans to models).  All model-human comparisons are carried using a representation-learning paradigm, in which models are trained on their native loss functions (as encoded by the original authors of the model).  Trained models are then evaluated on the specific physion red-object-contacts-yellow-zone prediction task.  This evaluation is carried by further training a "readout", implemented as a linear logistic regression.  Readouts are always trained in a per-scenario fashion. 
+
+Currently, physopt implements the following specific physics prediction models:
+
+
+| Model Name | Our Code Link | Original Paper | Description |
+| ---------- | ------------- | -------------- | ----------- |
+| SVG        |               | [`Denton and Fergus 2018`](http://proceedings.mlr.press/v80/denton18a.html) | Image-like latent |
+| OP3        |               | [`Veerapaneni et. al. 2020`](http://proceedings.mlr.press/v100/veerapaneni20a.html) | |
+| CSWM       |               | [`Kipf et. al. 2020`](https://openreview.net/forum?id=H1gax6VtDB) | |
+| RPIN       |               | [`Qi et. al. 2021`](https://openreview.net/forum?id=_X_4Akcd8Re) | |
+| pVGG-mlp   |               | | |
+| pVGG-lstm  |               | | |
+| pDEIT-mlp  |               | [`Touvron et. al.`](https://arxiv.org/abs/2012.12877)| |
+| pDEIT-lstm |               | | |
+| GNS        |               | [`Sanchez-Gonzalez et. al. 2020`](https://arxiv.org/abs/2002.09405)| |
+| GNS-R      |               | | |
+| DPI        |               | [`Li et. al. 2019`](http://dpi.csail.mit.edu/)| |  
+
+
+## Human experiments
+
+This repo contains code to conduct the human behavioral experiments reported in this paper, as well as analyze the resulting data from both human and modeling experiments. 
+
+Here is what each main directory in this repo contains:
+- `experiments`: This directory contains code to run the online human behavioral experiments reported in this paper. 
+- `analysis` (aka `notebooks`): This directory contains our analysis jupyter/Rmd notebooks. This repo assumes you have also imported model evaluation results from `physopt`. 
+- `results`: This directory contains "intermediate" results of modeling/human experiments. It contains three subdirectories: `csv`, `plots`, and `summary`. 
+	- `/results/csv/` contains `csv` files containing tidy dataframes with "raw" data. 
+	- `/results/plots/` contains `.pdf`/`.png` plots, a selection of which are then polished and formatted for inclusion in the paper using Adobe Illustrator. 
+	- *Important: Before pushing any csv files containing human behavioral data to a public code repository, triple check that this data is properly anonymized. This means no bare AMT Worker ID's or Prolific participant IDs.*
+- `stimuli`: This directory contains any download/preprocessing scripts for data (a.k.a. stimuli) that are the _inputs_ to human behavioral experiments. This repo assumes you have generated stimuli using `tdw_physics`. This repo uses code in this directory to upload stimuli to AWS S3 and generate metadata to control the timeline of stimulus presentation in the human behavioral experiments.
+- `utils`: This directory is meant to contain any files containing general helper functions. 
+
+
+## Comparing models and humans
 
 The results reported in this paper can be reproduced by running the Jupyter notebooks contained in the `analysis` directory. 
 
@@ -90,12 +135,3 @@ The results reported in this paper can be reproduced by running the Jupyter note
 		* Visualize human-human and model-human agreement (Cohen's kappa)
 		* Compare performance between models	
 	- `paper_plots.ipynb`: The purpose of this notebook is to create publication-quality figures for inclusion in the paper.
-
-
-
-
-
-
-
-
-
