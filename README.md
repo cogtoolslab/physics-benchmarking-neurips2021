@@ -10,15 +10,42 @@ This repo contains code and data to reproduce the results in our paper, [Physion
 4. [Human experiments](#human-experiments)
 5. [Comparing models and humans](#comparing-models-and-humans)
 
+-----
+
 ## Downloading the Physion dataset
 
-### Downloading the testing dataset (a.k.a. the physical prediction stimuli)
-You can easily download the stimuli used in our human and model evaluations by clicking this link: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
+### Downloading the **Physion test set** (a.k.a. stimuli)
 
-The full HDF5 files for each testing stimulus are considerably larger than the movie stimuli. These include depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as the physical states of objects and trial-level metadata. The HDF5s for the Physion testing set can be downloaded here: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). You can also download the testing data for individual scenarios from the table in the next section.
+#### PhysionTest-Core (270 MB)
+`PhysionTest-Core` is all you need to evaluate humans and models on exactly the same test stimuli used in our paper. 
 
-### Downloading the training datasets
+It contains eight directories, one for each scenario type (e.g., `collide`, `contain`, `dominoes`, `drape`, `drop`, `link`, `roll`, `support`).
+
+Each of these directories contains three subdirectories:
+- `maps`: Contains PNG segmentation maps for each test stimulus, indicating location of `agent` object in red and `patient` object in yellow. 
+- `mp4s`: Contains the MP4 video files presented to human participants. The `agent` and `patient` objects appear in random colors. 
+- `mp4s-redyellow`: Contains the MP4 video files passed into models. The `agent` and `patient` objects consistently appear in red and yellow, respectively.
+
+**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip).
+
+#### PhysionTest-Complete (380 GB)
+`PhysionTest-Complete` is what you want if you need more detailed metadata for each test stimulus. 
+
+Each stimulus is encoded in an HDF5 file containing comprehensive information regarding depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as other information about the physical states of objects at each time step. 
+
+**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). 
+
+
+You can also download the testing data for individual scenarios from the table in the next section.
+
+### Downloading the **Physion training set**
+
+#### Downloading `PhysionTrain-Training`
+
 The dataset used to train the models we benchmarked consists of ~2000 movies from each of the eight physical scenarios (or subsets of this meant to assess various types of generalization.) These trials were generated from the same distribution of physical parameters as the testing stimuli (above), so models trained on this dataset will not encounter any "new physics" during testing.
+
+
+#### Downloading `PhysionTrain-Readout`
 
 In addition, we created "readout fitting sets" of 1000 trials for each of the eight scenarios. These trials are drawn from the same physical parameter distributions as above, but in addition they also have the same "red agent object, yellow patient object" visual appearance as the testing trials. The purpose of these readout sets is to fit a simple model (i.e. logistic regression) from a set of _pretrained model features_ to do the red-yellow OCP task. Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
 
