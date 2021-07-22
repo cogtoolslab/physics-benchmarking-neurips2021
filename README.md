@@ -35,21 +35,25 @@ Each stimulus is encoded in an HDF5 file containing comprehensive information re
 
 **Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). 
 
-
 You can also download the testing data for individual scenarios from the table in the next section.
 
 ### Downloading the **Physion training set**
 
 #### Downloading `PhysionTrain-Training`
 
-The dataset used to train the models we benchmarked consists of ~2000 movies from each of the eight physical scenarios (or subsets of this meant to assess various types of generalization.) These trials were generated from the same distribution of physical parameters as the testing stimuli (above), so models trained on this dataset will not encounter any "new physics" during testing.
+`PhysionTrain-Training` contains the full dataset used to train models benchmarked in our paper. It consists of approximately 2K stimuli per scenario type.
 
+**Download URL** (770 MB): [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz)
 
 #### Downloading `PhysionTrain-Readout`
 
-In addition, we created "readout fitting sets" of 1000 trials for each of the eight scenarios. These trials are drawn from the same physical parameter distributions as above, but in addition they also have the same "red agent object, yellow patient object" visual appearance as the testing trials. The purpose of these readout sets is to fit a simple model (i.e. logistic regression) from a set of _pretrained model features_ to do the red-yellow OCP task. Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
+`PhysionTrain-Readout` contains a separate dataset used for training the object-contact prediction (OCP) module for models pretrained on the `PhysionTrain-Training` dataset. It consists of 1K stimuli per scenario type.
 
-You can download MP4s of all the training trials here [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTrainMP4s.tar.gz) and HDF5s for each scenario's training and readout sets below:
+The `agent` and `patient` objects in each of these readout stimuli consistently appear in red and yellow, respectively (as in the `mp4s-redyellow` examples from `PhysionTest-Core` above).
+
+*NB*: Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
+
+**Download URLs** for complete `PhysionTrain-Training` and `PhysionTrain-Readout`:
 
 | Scenario | Training Set         | Readout Set       | Testing Set      |
 | -------- | -------------------- | ----------------- | ---------------- |
