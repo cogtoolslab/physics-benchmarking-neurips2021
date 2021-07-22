@@ -1,4 +1,4 @@
-# Reenerating training, readout, and testing data
+# Regenerating training, readout, and testing data
 
 1. Install [`tdw_physics`](https://github.com/neuroailab/tdw_physics/tree/master) following the instructions
 2. Bash scripts for generating training and readout data, testing data, or human stimuli can be found in the `scripts` subdirectory. The usage is ```cd scripts; ./generate_data.sh SCENARIO [OUTPUT_DIR] [CONTROLLER_DIR] [GPU]```. `OUTPUT_DIR` defaults to `$HOME/physion_data/`, `CONTROLLER_DIR` defaults to `../controllers`, and `GPU` defaults to `0` (if there are no GPUs available, generation will run on the CPU.) 
