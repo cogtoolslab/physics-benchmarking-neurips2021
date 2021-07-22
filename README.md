@@ -77,6 +77,8 @@ Instructions for using the ThreeDWorld simulator to regenerate datasets used in 
 
 ## Modeling experiments
 
+**TODO**: Add topic sentence that states high-level input-output relationship between physopt and current repo.
+
 The modeling component of this repo depends on the [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo.  The [`physopt`](https://github.com/neuroailab/physopt-physics-benchmarking) repo implements an interface through which a wide variety of physics prediction models from the literature (be they neural networks or otherwise) can be adapted to accept the inputs provided by our training and testing datasets and produce outputs for comparison with our human measurements. 
 
 
