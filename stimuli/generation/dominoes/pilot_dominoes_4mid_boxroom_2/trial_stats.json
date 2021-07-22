@@ -1,0 +1,35 @@
+{
+    "stimulus_name/avg_label": "pilot_dominoes_4mid_boxroom_2_0000-pilot_dominoes_4mid_boxroom_2_0006",
+    "controller_name/avg_label": "MultiDominoes",
+    "git_commit/avg_label": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+    "num_frames/avg_label": 242.0,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 1.0,
+    "does_target_miss_zone/avg_label": 0.0,
+    "does_target_hit_ground/avg_label": 1.0,
+    "first_target_move_frame/avg_label": 166.429,
+    "first_target_contact_zone_frame/avg_label": 202.857,
+    "first_target_hit_ground_frame/avg_label": 158.0,
+    "final_target_displacement/avg_label": {
+        "x": 0.052,
+        "y": 0.05,
+        "z": 0.0
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.078,
+        0.092
+    ],
+    "target_visible_area/avg_label": 0.013,
+    "zone_visible_area/avg_label": 0.015,
+    "probe_visible_area/avg_label": 0.019,
+    "is_any_object_fully_occluded/avg_label": 0.143,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": 42003.0,
+    "push_time/avg_label": 6.429,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 0.0,
+    "num_middle_objects/avg_label": 4.0,
+    "remove_middle/avg_label": 0.0,
+    "num_trials": 7
+}

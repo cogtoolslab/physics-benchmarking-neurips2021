@@ -1,0 +1,172 @@
+--dir
+/Users/dbear/neuroailab/physics_benchmarking/stimuli/pilot_linking_nl1-8_ms03_aCylcap_bCyl_tdwroom
+--num
+5
+--temp
+D:/temp.hdf5
+--width
+512
+--height
+512
+--gpu
+0
+--seed
+420
+--random
+0
+--num_views
+1
+--viewpoint
+0
+--run
+1
+--monochrome
+False
+--room
+tdw
+--write_passes
+_img,_id
+--save_passes
+_img
+--save_movies
+True
+--save_labels
+True
+--num_middle_objects
+3
+--target
+['cube']
+--zlocation
+{'x': 1.5, 'y': 0.0, 'z': 0.0}
+--zfriction
+0.2
+--trot
+[0, 0]
+--prot
+[0, 0]
+--horizontal
+False
+--color
+[1.0, 0.0, 0.0]
+--zcolor
+[1.0, 1.0, 0.0]
+--rcolor
+[0.75, 0.75, 1.0]
+--pcolor
+None
+--mcolor
+None
+--lateral_jitter
+0.2
+--remove_zone
+0
+--material_types
+['Wood', 'Metal', 'Plastic']
+--tmaterial
+parquet_wood_red_cedar
+--zmaterial
+wood_european_ash
+--pmaterial
+parquet_wood_red_cedar
+--mmaterial
+parquet_wood_red_cedar
+--distractor
+['24_in_wall_cabinet_white_wood', '24_in_wall_cabinet_wood_beach_honey', '36_in_wall_cabinet_white_wood', '36_in_wall_cabinet_wood_beach_honey', 'afl_lamp', 'alivar_tech_bench_sofa', 'alma_floor_lamp', 'appliance-ge-profile-microwave', 'appliance-ge-profile-microwave3', 'aquostv', 'arco_lamp', 'arflex_hollywood_sofa', 'arflex_strips_sofa', 'arturoalvarez_v_floor_lamp', 'atmosphere_nodo', 'bag_14', 'bag_3', 'bakerparisfloorlamp03', 'baking_sheet01', 'baking_sheet02', 'baking_sheet03', 'baking_sheet04', 'baking_sheet05', 'baking_sheet06', 'baking_sheet07', 'baking_sheet08', 'baking_sheet09', 'baking_sheet10', 'balance_double_doghouse', 'baleri_italia_folded_black_table', 'barcelona_bench_sofa', 'basket_18inx18inx12iin', 'basket_18inx18inx12iin_bamboo', 'basket_18inx18inx12iin_plastic_lattice', 'basket_18inx18inx12iin_wicker', 'basket_18inx18inx12iin_wood_mesh', 'bastone_floor_lamp', 'baton_table_lamp_dark', 'bed01', 'bed01_blue', 'bed01_red', 'bee', 'black_lamp', 'blue_bag', 'blue_club_chair', 'blue_rug', 'blue_satchal', 'blue_side_chair', 'bookend01', 'bookend03', 'bookend04', 'bookend05', 'bookend06', 'bookend07', 'bork_vacuum', 'bow_rake', 'box_18inx18inx12in_cardboard', 'box_24inx18inx12in_cherry', 'box_tapered_beech', 'box_tapered_white_mesh', 'bronze_purse', 'brown_leather_dining_chair', 'brown_leather_side_chair', 'buddah', 'cabinet_24_door_drawer_wood_beach_honey', 'cabinet_24_singledoor_wood_beach_honey', 'cabinet_24_two_drawer_white_wood', 'cabinet_24_two_drawer_wood_beach_honey', 'cabinet_24_white_wood', 'cabinet_24_wood_beach_honey', 'cabinet_36_white_wood', 'cabinet_36_wood_beach_honey', 'cabinet_full_height_white_wood', 'cabinet_full_height_wood_beach_honey', 'candle', 'carpet_rug', 'cerno_lamp', 'chain_purse', 'chair_annabelle', 'chair_billiani_doll', 'chair_eames_plastic_armchair', 'chair_willisau_riale', 'chista_slice_of_teak_table', 'club_house_italia_nautilus_sofa', 'coffee_001', 'coffee_0023', 'coffee_005_13', 'coffee_maker', 'coffee_table_glass_round', 'dark_red_club_chair', 'de_castelli_placas_table', 'de_castelli_placas_table_low', 'desk_lamp', 'dining_room_table', 'dishwasher_4', 'duffle_bag', 'duffle_bag_sm', 'easter4', 'elephant_bowl', 'elf_painting', 'emeco_navy_chair', 'f10_apple_iphone_4', 'flat_woven_rug', 'fork1', 'fork2', 'fork3', 'fork4', 'foscarini_cage_mic_lamp', 'framed_painting', 'fridge_large', 'fruit_basket', 'glass1', 'glass2', 'glass3', 'glass_coffee_table_long', 'glass_table', 'glass_table_round', 'green_bag', 'green_side_chair', 'h-shape_wood_block', 'half_circle_wood_block', 'heart', 'hexagonal_toy', 'hiker_backpack', 'hp_printer', 'its_about_time_painting', 'jigsaw_puzzle_composite', 'jug01', 'jug02', 'jug03', 'jug04', 'jug05', 'juicer', 'kettle', 'kevin_reilly_pattern_table_lamp', 'kids_luggage_1', 'kids_luggage_2', 'knife1', 'knife2', 'knife3', 'l-shape_wood_block', 'lamp_02', 'lapalma_stil_chair', 'lawnmower', 'lg_table_marble_green', 'lg_table_white', 'ligne_roset_armchair', 'linbrazil_diz_armchair', 'linen_dining_chair', 'lint_roller01', 'lint_roller02', 'lint_roller03', 'lint_roller04', 'lint_roller05', 'live_edge_coffee_table', 'luggage_bag_1', 'macbook_air', 'marble_table', 'marble_table_white', 'meridiani_belmondo_bench_sofa', 'meridiani_freeman_sofa', 'metal_briefcase', 'metal_sculpture', 'microwave', 'minotti_helion_3_seater_sofa', 'molteni_turner_sofa', 'monster_beats_studio', 'mouse_m505_1', 'napoleon_iii_sofa', 'naughtone_pinch_stool_chair', 'notes_02', 'on_the_rocks_sofa', 'pencil_all', 'pentagon_wood_block', 'pepper', 'pillow', 'pillow01', 'pillow02', 'pillow03', 'pillow04', 'pillow05', 'pillow06', 'pillow07', 'pillow08', 'poliform_atollo_curved_sofa', 'poliform_park_low_arm_sofa', 'pot', 'printer_hp_laserjet1321', 'purple_woven_rug', 'purse', 'puzzle_box_composite', 'rattan_basket', 'rectangle_wood_block', 'red_bag', 'red_lamp', 'red_side_chair', 'refridgerator_slim', 'rh1', 'rh10', 'rh18', 'rope_table_lamp', 'round_bowl_large_metal_perf', 'round_bowl_large_padauk', 'round_bowl_large_thin', 'round_bowl_small_beech', 'round_bowl_small_walnut', 'round_bowl_talll_wenge', 'salt', 'satiro_sculpture', 'sayonara_sofa', 'serving_bowl', 'servingfork', 'shallow_basket_white_mesh', 'shallow_basket_wicker', 'shark', 'side_table_wood', 'silver_frame_painting', 'sink_base_white_wood', 'sink_base_wood_beach_honey', 'skillet_closed', 'skillet_open', 'skillet_open_no_lid', 'slotted_spatula_black02', 'sm_table_white', 'small_purse', 'small_table_green_marble', 'soup_ladle_black_02', 'spagetti-server', 'spatula', 'spatula2', 'spatula3', 'spoon1', 'spoon2', 'spunlight_designermesh_lamp', 'square_wood_block', 'stack_of_cups_composite', 'star_wood_block', 't-shape_wood_block', 'table_square', 'table_stack', 'tablespoon', 'tan_lounger_chair', 'tan_purse', 'tan_side_chair', 'toaster_002', 'toaster_b', 'trapezoidal_table', 'trunck', 'vase_01', 'vase_02', 'vase_03', 'vase_05', 'vase_06', 'vitra_meda_chair', 'whisk', 'white_club_chair', 'white_lamp', 'white_lounger_chair', 'white_shopping_bag', 'willisau_varion_w3_table', 'wood_chair', 'woven_box', 'yellow_side_chair', 'zenblocks']
+--distractor_categories
+None
+--num_distractors
+0
+--occluder
+['24_in_wall_cabinet_white_wood', '24_in_wall_cabinet_wood_beach_honey', '36_in_wall_cabinet_white_wood', '36_in_wall_cabinet_wood_beach_honey', 'afl_lamp', 'alivar_tech_bench_sofa', 'alma_floor_lamp', 'appliance-ge-profile-microwave', 'appliance-ge-profile-microwave3', 'aquostv', 'arco_lamp', 'arflex_hollywood_sofa', 'arflex_strips_sofa', 'arturoalvarez_v_floor_lamp', 'atmosphere_nodo', 'bag_14', 'bag_3', 'bakerparisfloorlamp03', 'baking_sheet01', 'baking_sheet02', 'baking_sheet03', 'baking_sheet04', 'baking_sheet05', 'baking_sheet06', 'baking_sheet07', 'baking_sheet08', 'baking_sheet09', 'baking_sheet10', 'balance_double_doghouse', 'baleri_italia_folded_black_table', 'barcelona_bench_sofa', 'basket_18inx18inx12iin', 'basket_18inx18inx12iin_bamboo', 'basket_18inx18inx12iin_plastic_lattice', 'basket_18inx18inx12iin_wicker', 'basket_18inx18inx12iin_wood_mesh', 'bastone_floor_lamp', 'baton_table_lamp_dark', 'bed01', 'bed01_blue', 'bed01_red', 'bee', 'black_lamp', 'blue_bag', 'blue_club_chair', 'blue_rug', 'blue_satchal', 'blue_side_chair', 'bookend01', 'bookend03', 'bookend04', 'bookend05', 'bookend06', 'bookend07', 'bork_vacuum', 'bow_rake', 'box_18inx18inx12in_cardboard', 'box_24inx18inx12in_cherry', 'box_tapered_beech', 'box_tapered_white_mesh', 'bronze_purse', 'brown_leather_dining_chair', 'brown_leather_side_chair', 'buddah', 'cabinet_24_door_drawer_wood_beach_honey', 'cabinet_24_singledoor_wood_beach_honey', 'cabinet_24_two_drawer_white_wood', 'cabinet_24_two_drawer_wood_beach_honey', 'cabinet_24_white_wood', 'cabinet_24_wood_beach_honey', 'cabinet_36_white_wood', 'cabinet_36_wood_beach_honey', 'cabinet_full_height_white_wood', 'cabinet_full_height_wood_beach_honey', 'candle', 'carpet_rug', 'cerno_lamp', 'chain_purse', 'chair_annabelle', 'chair_billiani_doll', 'chair_eames_plastic_armchair', 'chair_willisau_riale', 'chista_slice_of_teak_table', 'club_house_italia_nautilus_sofa', 'coffee_001', 'coffee_0023', 'coffee_005_13', 'coffee_maker', 'coffee_table_glass_round', 'dark_red_club_chair', 'de_castelli_placas_table', 'de_castelli_placas_table_low', 'desk_lamp', 'dining_room_table', 'dishwasher_4', 'duffle_bag', 'duffle_bag_sm', 'easter4', 'elephant_bowl', 'elf_painting', 'emeco_navy_chair', 'f10_apple_iphone_4', 'flat_woven_rug', 'fork1', 'fork2', 'fork3', 'fork4', 'foscarini_cage_mic_lamp', 'framed_painting', 'fridge_large', 'fruit_basket', 'glass1', 'glass2', 'glass3', 'glass_coffee_table_long', 'glass_table', 'glass_table_round', 'green_bag', 'green_side_chair', 'h-shape_wood_block', 'half_circle_wood_block', 'heart', 'hexagonal_toy', 'hiker_backpack', 'hp_printer', 'its_about_time_painting', 'jigsaw_puzzle_composite', 'jug01', 'jug02', 'jug03', 'jug04', 'jug05', 'juicer', 'kettle', 'kevin_reilly_pattern_table_lamp', 'kids_luggage_1', 'kids_luggage_2', 'knife1', 'knife2', 'knife3', 'l-shape_wood_block', 'lamp_02', 'lapalma_stil_chair', 'lawnmower', 'lg_table_marble_green', 'lg_table_white', 'ligne_roset_armchair', 'linbrazil_diz_armchair', 'linen_dining_chair', 'lint_roller01', 'lint_roller02', 'lint_roller03', 'lint_roller04', 'lint_roller05', 'live_edge_coffee_table', 'luggage_bag_1', 'macbook_air', 'marble_table', 'marble_table_white', 'meridiani_belmondo_bench_sofa', 'meridiani_freeman_sofa', 'metal_briefcase', 'metal_sculpture', 'microwave', 'minotti_helion_3_seater_sofa', 'molteni_turner_sofa', 'monster_beats_studio', 'mouse_m505_1', 'napoleon_iii_sofa', 'naughtone_pinch_stool_chair', 'notes_02', 'on_the_rocks_sofa', 'pencil_all', 'pentagon_wood_block', 'pepper', 'pillow', 'pillow01', 'pillow02', 'pillow03', 'pillow04', 'pillow05', 'pillow06', 'pillow07', 'pillow08', 'poliform_atollo_curved_sofa', 'poliform_park_low_arm_sofa', 'pot', 'printer_hp_laserjet1321', 'purple_woven_rug', 'purse', 'puzzle_box_composite', 'rattan_basket', 'rectangle_wood_block', 'red_bag', 'red_lamp', 'red_side_chair', 'refridgerator_slim', 'rh1', 'rh10', 'rh18', 'rope_table_lamp', 'round_bowl_large_metal_perf', 'round_bowl_large_padauk', 'round_bowl_large_thin', 'round_bowl_small_beech', 'round_bowl_small_walnut', 'round_bowl_talll_wenge', 'salt', 'satiro_sculpture', 'sayonara_sofa', 'serving_bowl', 'servingfork', 'shallow_basket_white_mesh', 'shallow_basket_wicker', 'shark', 'side_table_wood', 'silver_frame_painting', 'sink_base_white_wood', 'sink_base_wood_beach_honey', 'skillet_closed', 'skillet_open', 'skillet_open_no_lid', 'slotted_spatula_black02', 'sm_table_white', 'small_purse', 'small_table_green_marble', 'soup_ladle_black_02', 'spagetti-server', 'spatula', 'spatula2', 'spatula3', 'spoon1', 'spoon2', 'spunlight_designermesh_lamp', 'square_wood_block', 'stack_of_cups_composite', 'star_wood_block', 't-shape_wood_block', 'table_square', 'table_stack', 'tablespoon', 'tan_lounger_chair', 'tan_purse', 'tan_side_chair', 'toaster_002', 'toaster_b', 'trapezoidal_table', 'trunck', 'vase_01', 'vase_02', 'vase_03', 'vase_05', 'vase_06', 'vitra_meda_chair', 'whisk', 'white_club_chair', 'white_lamp', 'white_lounger_chair', 'white_shopping_bag', 'willisau_varion_w3_table', 'wood_chair', 'woven_box', 'yellow_side_chair', 'zenblocks']
+--occluder_categories
+None
+--num_occluders
+0
+--occlusion_scale
+0.75
+--remove_middle
+False
+--remove_target
+1
+--num_blocks
+3
+--mgrad
+0.0
+--tower_cap
+['bowl']
+--mrot
+[-45, 45]
+--probe
+['sphere']
+--pmass
+12.0
+--pscale
+0.6
+--tscale
+[0.5, 0.5]
+--zone
+['cube']
+--zscale
+{'x': 2.0, 'y': 0.01, 'z': 4.0}
+--fscale
+1.0
+--frot
+[0, 0]
+--foffset
+{'x': 0.0, 'y': 0.5, 'z': 0.0}
+--fjitter
+0.0
+--fwait
+15
+--middle
+['torus']
+--mscale
+0.3
+--mmass
+2.0
+--num_middle_range
+[1, 9]
+--spacing_jitter
+0.0
+--target_link_range
+None
+--attachment
+['cylinder']
+--ascale
+{'x': 0.15, 'y': 1.0, 'z': 0.15}
+--amass
+4.0
+--acolor
+[1.0, 1.0, 1.0]
+--amaterial
+wood_european_ash
+--attachment_fixed
+True
+--attachment_capped
+True
+--base
+['cylinder']
+--bscale
+{'x': 0.6, 'y': 0.3, 'z': 0.6}
+--bmass
+4.0
+--bcolor
+[1.0, 1.0, 1.0]
+--bmaterial
+wood_european_ash
+--ramp
+1
+--collision_axis_length
+2.0
+--camera_distance
+2.75
+--camera_min_angle
+0.0
+--camera_max_angle
+90.0
+--camera_min_height
+1.5
+--camera_max_height
+2.5
+--training_data_mode
+False

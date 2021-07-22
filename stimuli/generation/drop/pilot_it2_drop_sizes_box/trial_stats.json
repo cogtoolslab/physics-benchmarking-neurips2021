@@ -1,0 +1,35 @@
+{
+    "stimulus_name/avg_label": "pilot_it2_drop_sizes_box_0000-pilot_it2_drop_sizes_box_0009",
+    "controller_name/avg_label": "Drop",
+    "git_commit/avg_label": "cc950a254c7d6f74744dedae7a34869146d1b3d2",
+    "num_frames/avg_label": 222.8,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": 1.0,
+    "does_target_contact_zone/avg_label": 0.7,
+    "does_target_miss_zone/avg_label": 0.3,
+    "does_target_hit_ground/avg_label": 0.7,
+    "first_target_move_frame/avg_label": 1.0,
+    "first_target_contact_zone_frame/avg_label": 87.857,
+    "first_target_hit_ground_frame/avg_label": 88.143,
+    "final_target_displacement/avg_label": {
+        "x": 0.015,
+        "y": 0.46,
+        "z": -0.279
+    },
+    "final_target_mask_displacement/avg_label": [
+        0.549,
+        0.019
+    ],
+    "target_visible_area/avg_label": 0.045,
+    "zone_visible_area/avg_label": 0.157,
+    "probe_visible_area/avg_label": null,
+    "is_any_object_fully_occluded/avg_label": 0.1,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": 247004.5,
+    "push_time/avg_label": 0.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 0.0,
+    "num_middle_objects/avg_label": 0.0,
+    "remove_middle/avg_label": 0.0,
+    "num_trials": 10
+}

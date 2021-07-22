@@ -1,0 +1,30 @@
+{
+    "stimulus_name/avg_label": "test12_0000-test12_0019",
+    "controller_name/avg_label": "ClothSagging",
+    "git_commit/avg_label": "5fe246925870b36b80a1bbac52f4690d3a52a30f",
+    "num_frames/avg_label": 151.0,
+    "is_trial_valid/avg_label": 1.0,
+    "does_target_move/avg_label": null,
+    "does_target_contact_zone/avg_label": 0.85,
+    "does_target_miss_zone/avg_label": null,
+    "does_target_hit_ground/avg_label": null,
+    "first_target_move_frame/avg_label": null,
+    "first_target_contact_zone_frame/avg_label": 46.706,
+    "first_target_hit_ground_frame/avg_label": null,
+    "final_target_displacement/avg_label": null,
+    "final_target_mask_displacement/avg_label": [
+        0.548,
+        -0.03
+    ],
+    "target_visible_area/avg_label": 0.059,
+    "zone_visible_area/avg_label": 0.004,
+    "probe_visible_area/avg_label": null,
+    "is_any_object_fully_occluded/avg_label": 0.85,
+    "room/avg_label": "b'box'",
+    "trial_seed/avg_label": 3009.5,
+    "push_time/avg_label": 0.0,
+    "num_distractors/avg_label": 0.0,
+    "num_occluders/avg_label": 0.0,
+    "minimum_distance_target_to_zone/avg_label": 0.121,
+    "num_trials": 20
+}
