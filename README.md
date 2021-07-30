@@ -47,13 +47,13 @@ You can also download the testing data for individual scenarios from the table i
 
 #### Downloading `PhysionTrain-Readout`
 
-`PhysionTrain-Readout` contains a separate dataset used for training the object-contact prediction (OCP) module for models pretrained on the `PhysionTrain-Training` dataset. It consists of 1K stimuli per scenario type.
+`PhysionTrain-Readout` contains a separate dataset used for training the object-contact prediction (OCP) module for models pretrained on the `PhysionTrain-Dynamics` dataset. It consists of 1K stimuli per scenario type.
 
 The `agent` and `patient` objects in each of these readout stimuli consistently appear in red and yellow, respectively (as in the `mp4s-redyellow` examples from `PhysionTest-Core` above).
 
 *NB*: Code for using these readout sets to benchmark **any** pretrained model (not just models trained on the Physion training sets) will be released prior to publication.
 
-**Download URLs** for complete `PhysionTrain-Training` and `PhysionTrain-Readout`:
+**Download URLs** for complete `PhysionTrain-Dynamics` and `PhysionTrain-Readout`:
 
 | Scenario | Dynamics Training Set         | Readout Training Set       | Test Set      |
 | -------- | -------------------- | ----------------- | ---------------- |
