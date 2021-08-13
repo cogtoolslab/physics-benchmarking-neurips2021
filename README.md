@@ -112,6 +112,8 @@ Currently, physopt implements the following specific physics prediction models:
 
 This repo contains code to conduct the human behavioral experiments reported in this paper, as well as analyze the resulting data from both human and modeling experiments. 
 
+The details of the experimental design and analysis plan are documented in our [study preregistration](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/blob/master/prereg/preregistration_neurips2021.md) contained within this repository. The format for this preregistration is adapted from the templates provided by the Open Science Framework for our studies, and put under the same type of version control as the rest of the codebase for this project. 
+
 Here is what each main directory in this repo contains:
 - `experiments`: This directory contains code to run the online human behavioral experiments reported in this paper. 
 - `analysis` (aka `notebooks`): This directory contains our analysis jupyter/Rmd notebooks. This repo assumes you have also imported model evaluation results from `physopt`. 
