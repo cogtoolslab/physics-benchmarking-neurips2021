@@ -4,7 +4,7 @@
 2. Bash scripts for generating training and readout data, testing data, or human stimuli can be found in the `scripts` subdirectory. The usage is ```cd scripts; ./generate_data.sh SCENARIO [OUTPUT_DIR] [CONTROLLER_DIR] [GPU]```. `OUTPUT_DIR` defaults to `$HOME/physion_data/`, `CONTROLLER_DIR` defaults to `../controllers`, and `GPU` defaults to `0` (if there are no GPUs available, generation will run on the CPU.) 
 
 ## Notes
-Each scenario (`./configs/[SCENARIO]`) contains subdirectories that correspond to different sets of "args" passed to the controller. Collectively, these args determine the types of scenes in each scenario. The actual command line args are located in the `./configs/[ARG_NAME]/commandline_args.txt` file. 
+Each scenario (`./configs/[SCENARIO]`) contains subdirectories that correspond to different sets of "args" passed to the controller. Collectively, these args determine the types of scenes in each scenario. The actual command line args are located in the `./configs/[SCENARIO]/[ARG_NAME]/commandline_args.txt` file. 
 
 N.B. Some args correspond to the familiarization trials and are not used for generating the training and readout data. 
 
