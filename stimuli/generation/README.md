@@ -10,6 +10,8 @@ N.B. Some args correspond to the familiarization trials and are not used for gen
 
 A `mutliplier` is set for each specific arg setting to ensure that approximately 2000 trials are generated for training and 1000 trials for the readout. 
 
+Some assets in TDW are not yet publicly released. To use only the publicly available assets set the `--distractor` or `-occluder` to `core` instead of `full`.
+
 # tdw_physics controllers
 
 The scripts in the `controllers` subdirectory can also be used to generate novel training or testing data. In what follows, the "target" and "zone" (also "agent" and "patient", respectively) refer to special objects per scenario that will be the subject of a task prompt, e.g. "Will the red object hit the yellow object?"
