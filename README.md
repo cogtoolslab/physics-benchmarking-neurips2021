@@ -33,7 +33,7 @@ Each of these directories contains three subdirectories:
 
 Each stimulus is encoded in an HDF5 file containing comprehensive information regarding depth, surface normals, optical flow, and segmentation maps associated with each frame of each trial, as well as other information about the physical states of objects at each time step. 
 
-**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTest.tar.gz). 
+**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTestHDF5.tar.gz](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/PhysionTestHDF5.tar.gz). 
 
 You can also download the testing data for individual scenarios from the table in the next section.
 
