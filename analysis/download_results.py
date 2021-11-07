@@ -6,8 +6,7 @@ from glob import glob
 import argparse
 
 '''
-To download features & metadata, use command: python download_results.py 
-
+To download features & metadata, use command: python download_results.py with analysis as working directory. Otherwise, set download_dir to the directory where you want to download the files.
 '''
 
 def str2bool(v):
