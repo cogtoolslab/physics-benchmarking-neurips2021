@@ -52,7 +52,7 @@ def item(x):
 # set up directories
 ## directory & file hierarchy
 try:
-    proj_dir = str(os.path.abspath(__file__)).split('human-physics-benchmarking')[0]+'human-physics-benchmarking'
+    proj_dir = str(os.path.abspath(__file__)).split('physics-benchmarking-neurips2021')[0]+'physics-benchmarking-neurips2021'
 except:
     print("ERROR: this script needs to be located in the human-physics-benchmarking folder")
 analysis_dir =  os.path.join(proj_dir,'analysis')
@@ -109,7 +109,11 @@ anonymizeIDs=True
 
 # have to fix this to be able to analyze from local
 import pymongo as pm
-conn = pm.MongoClient('mongodb://sketchloop:' + pswd + '@127.0.0.1')
+try:
+    conn = pm.MongoClient('mongodb://sketchloop:' + pswd + '@127.0.0.1')
+except:
+    print('Could not connect to database. Try to set up ssh bridge to write to mongodb. Insert your username. If you dont have an SSH secret set yet, run `ssh -fNL 27017:127.0.0.1:27017 USERNAME@cogtoolslab.org` in your shell.')
+    sys.exit()
 
 neurips2021_iterations = [
     {'study' : "dominoes_pilot",
