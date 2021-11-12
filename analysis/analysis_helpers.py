@@ -91,6 +91,11 @@ def load_and_preprocess_data(path_to_data):
     _D = d[colnames]
     _D = _D.assign(scenarioName=scenarioName)
 
+    _D = basic_preprocessing(_D)
+
+    return _D
+
+def basic_preprocessing(_D):
     # preprocess RTs (subtract 2500ms presentation time, log transform)
     _D = _D.assign(RT=_D['rt'] - 2500)
     _D = _D.assign(logRT=np.log(_D['RT']))
@@ -103,7 +108,6 @@ def load_and_preprocess_data(path_to_data):
 
     # remove _img from stimulus name
     _D['stim_ID'] = _D['stim_ID'].apply(lambda n: n.split("_img")[0])
-
     return _D
 
 
@@ -127,6 +131,14 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
     # print name of scenario
     scenarionName = np.unique(D['scenarioName'])[0]
 
+    # check if we have prolificIDAnon
+    if 'prolificIDAnon' in D.columns:
+        userIDcol = 'prolificIDAnon'
+    else:
+        userIDcol = 'gameID'
+        if verbose:
+            print("WARNING: no prolificIDAnon column found. Using gameID instead.")
+
     # init flaggedIDs var
     flaggedIDs = []
 
@@ -137,7 +149,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
 
     # flag sessions with long streaks
     streakyIDs = []
-    for name, group in D.groupby('prolificIDAnon'):
+    for name, group in D.groupby(userIDcol):
         seq = group['response'].values
         streak_length = get_longest_streak_length(group['response'].values)
         if streak_length > thresh:
@@ -149,7 +161,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
     # flag sessions with suspicious alternation pattern
     alternatingIDs = []
     pattern = list(np.unique(D['response'].values))*10
-    for name, group in D.groupby('prolificIDAnon'):
+    for name, group in D.groupby(userIDcol):
         seq = group['response'].values
         substr = ''.join(pattern)
         fullstr = ''.join(seq)
@@ -173,7 +185,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
     if familiarization_D is not None:
         # do we have coverage for all prolific IDs?
         if verbose: print('Familiarization dataframe has {} rows.'.format(len(familiarization_D)))
-        if set(np.unique(familiarization_D['prolificIDAnon'])) != set(np.unique(D['prolificIDAnon'])):
+        if set(np.unique(familiarization_D[userIDcol])) != set(np.unique(D[userIDcol])):
             if verbose: print('Not all prolific IDs are covered in familiarization data. Make sure you pass familiarization data for all trials!')
         try:
             C_df = familiarization_D.groupby('gameID').agg({'correct': ['sum', 'count']})
@@ -185,7 +197,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
             # get ProlificIDs for gameIDs
             famIDs = []
             for gameID in excludedIDs:
-                famIDs.append(np.unique(familiarization_D[familiarization_D['gameID'] == gameID]['prolificIDAnon'])[0])
+                famIDs.append(np.unique(familiarization_D[familiarization_D['gameID'] == gameID][userIDcol])[0])
         except:
             if verbose: print("An error occured during familiarization exclusion")
         if verbose:
@@ -194,7 +206,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
         if verbose: print('No familiarization data provided. Pass a dataframe with data from the familiarization trials (full dataframe is okay). Skipping familiarization exclusion.')
     
     # flag sessions with unusually low accuracy
-    Dacc = D.groupby('prolificIDAnon').agg({'correct':np.mean})
+    Dacc = D.groupby(userIDcol).agg({'correct':np.mean})
     thresh = np.mean(Dacc['correct']) - 3*np.std(Dacc['correct'])
     Dacc = Dacc.assign(lowAcc = Dacc['correct']<thresh)
     lowAccIDs = list(Dacc[Dacc['lowAcc']==True].index)
@@ -202,7 +214,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
         print('There are {} flagged IDs so far due to low accuracy.'.format(len(lowAccIDs))) 
     
     # flag sessions with unusually high RTs
-    Drt = D.groupby('prolificIDAnon').agg({'logRT':np.median})
+    Drt = D.groupby(userIDcol).agg({'logRT':np.median})
     thresh = np.median(Drt['logRT']) + 3*np.std(Drt['logRT'])
     Drt = Drt.assign(highRT = Drt['logRT']>thresh)
     highRTIDs = list(Drt[Drt['highRT']==True].index)
@@ -221,8 +233,8 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
         print("{} observations are excluded due to removal of ledge stimuli".format(np.sum(~mask)))
 
     # removing flagged sessions from dataset
-    D = D[~D.prolificIDAnon.isin(flaggedIDs)]
-    numSubs = len(np.unique(D.prolificIDAnon.values))
+    D = D[~D[userIDcol].isin(flaggedIDs)]
+    numSubs = len(np.unique(D[userIDcol].values))
     if verbose:
         print('There are a total of {} valid and complete sessions for {}.'.format(numSubs, scenarionName))   
     

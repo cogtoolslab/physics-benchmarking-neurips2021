@@ -2,7 +2,7 @@
 
 import os
 import sys
-import urllib, io
+
 os.getcwd()
 sys.path.append("..")
 sys.path.append("../utils")
@@ -13,31 +13,10 @@ import scipy.stats as stats
 import pandas as pd
 
 import pymongo as pm
-from collections import Counter
-import json
-import re
-import ast
-
-from PIL import Image, ImageOps, ImageDraw, ImageFont 
-
-from io import BytesIO
-import base64
 
 from tqdm import tqdm
 
-import  matplotlib
-from matplotlib import pylab, mlab, pyplot
-import matplotlib.pyplot as plt
-from IPython.core.pylabtools import figsize, getfigs
-plt = pyplot
-import matplotlib as mpl
-mpl.rcParams['pdf.fonttype'] = 42
-plt.style.use('seaborn-white')
-
-import seaborn as sns
-sns.set_context('talk')
-sns.set_style('darkgrid')
-from IPython.display import clear_output
+from analysis_helpers import apply_exclusion_criteria, basic_preprocessing
 
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -162,10 +141,10 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     stim_df = pd.DataFrame(stim_coll.find({}))
     stim_df.set_index('_id')
     df = coll.find({
-            'iterationName':iterationName
-    #             'prolificID': {'$exists' : True},
-    #             'studyID': {'$exists' : True},
-    #             'sessionID': {'$exists' : True},
+            'iterationName':iterationName,
+            'prolificID': {'$exists' : True},
+            'studyID': {'$exists' : True},
+            'sessionID': {'$exists' : True},
     })
     df = pd.DataFrame(df)
     
@@ -199,6 +178,15 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
                 break
         if not found_empty: complete_gameids.append(gameid)
     
+    # add scenario name
+    df['scenarioName'] = study.split('_')[0]
+
+    # apply basic preprocessing
+    df = basic_preprocessing(df)
+
+    # apply exclusion criteria
+    df = apply_exclusion_criteria(df,verbose=True) # should automatically pull familiarization trials from full dataframe
+
     #mark unfinished entries
     df['complete_experiment'] = df['gameID'].isin(complete_gameids) 
     # # we only consider the first 100 gameIDs
