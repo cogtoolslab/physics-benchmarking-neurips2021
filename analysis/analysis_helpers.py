@@ -102,7 +102,7 @@ def basic_preprocessing(_D):
     _D = _D.drop(columns=['rt'], axis=1)
 
     # convert responses to boolean
-    binary_mapper = {'YES': True, 'NO': False}
+    binary_mapper = {'YES': True, 'NO': False, np.nan: np.nan}
     _D = _D.assign(responseBool=_D['response'].apply(
         lambda x: binary_mapper[x]), axis=0)
 
@@ -160,7 +160,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
 
     # flag sessions with suspicious alternation pattern
     alternatingIDs = []
-    pattern = list(np.unique(D['response'].values))*10
+    pattern = list(D['response'].dropna().unique())*10
     for name, group in D.groupby(userIDcol):
         seq = group['response'].values
         substr = ''.join(pattern)
