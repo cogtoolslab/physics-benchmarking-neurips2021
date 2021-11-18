@@ -102,7 +102,7 @@ def basic_preprocessing(_D):
     _D = _D.drop(columns=['rt'], axis=1)
 
     # convert responses to boolean
-    binary_mapper = {'YES': True, 'NO': False, np.nan: np.nan}
+    binary_mapper = {'YES': True, 'NO': False, np.nan: np.nan, "Next":np.nan} # Next can show up when we feed in the results of a familiarization dataframe—ignore it for present purposes
     _D = _D.assign(responseBool=_D['response'].apply(
         lambda x: binary_mapper[x]), axis=0)
 
@@ -162,7 +162,7 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
     alternatingIDs = []
     pattern = list(D['response'].dropna().unique())*10
     for name, group in D.groupby(userIDcol):
-        seq = group['response'].values
+        seq = group['response'].dropna().values
         substr = ''.join(pattern)
         fullstr = ''.join(seq)
         if substr in fullstr:
@@ -206,7 +206,10 @@ def apply_exclusion_criteria(D, familiarization_D=None, verbose=False):
         if verbose: print('No familiarization data provided. Pass a dataframe with data from the familiarization trials (full dataframe is okay). Skipping familiarization exclusion.')
     
     # flag sessions with unusually low accuracy
-    Dacc = D.groupby(userIDcol).agg({'correct':np.mean})
+    # ignore nan responses
+    Dacc = D[D['correct'].isna() == False]
+    Dacc['correct'] = Dacc['correct'].astype(int)
+    Dacc = Dacc.groupby(userIDcol).agg({'correct':'mean'})
     thresh = np.mean(Dacc['correct']) - 3*np.std(Dacc['correct'])
     Dacc = Dacc.assign(lowAcc = Dacc['correct']<thresh)
     lowAccIDs = list(Dacc[Dacc['lowAcc']==True].index)
