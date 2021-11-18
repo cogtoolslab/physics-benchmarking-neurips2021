@@ -86,9 +86,11 @@ def load_and_preprocess_data(path_to_data):
     colnames = ['gameID', 'trialNum', 'prolificIDAnon', 'stim_ID',
         'response', 'target_hit_zone_label', 'correct', 'choices', 'rt']
     # colnames = ['gameID','trialNum','stim_ID','response','target_hit_zone_label','correct','choices','rt']
+    # include all the columns that we can
+    intersect_cols = [col for col in colnames if col in d.columns]
 
     # subset dataframe by colnames of interest
-    _D = d[colnames]
+    _D = d[intersect_cols]
     _D = _D.assign(scenarioName=scenarioName)
 
     _D = basic_preprocessing(_D)
@@ -96,10 +98,14 @@ def load_and_preprocess_data(path_to_data):
     return _D
 
 def basic_preprocessing(_D):
-    # preprocess RTs (subtract 2500ms presentation time, log transform)
-    _D = _D.assign(RT=_D['rt'] - 2500)
-    _D = _D.assign(logRT=np.log(_D['RT']))
-    _D = _D.drop(columns=['rt'], axis=1)
+    try:
+        # preprocess RTs (subtract 2500ms presentation time, log transform)
+        _D = _D.assign(RT=_D['rt'] - 2500)
+        _D = _D.assign(logRT=np.log(_D['RT']))
+        _D = _D.drop(columns=['rt'], axis=1)
+    except:
+        _D['RT'] = np.nan
+        _D['logRT'] = np.nan
 
     # convert responses to boolean
     binary_mapper = {'YES': True, 'NO': False, np.nan: np.nan, "Next":np.nan} # Next can show up when we feed in the results of a familiarization dataframe—ignore it for present purposes
