@@ -131,8 +131,28 @@ neurips2021_iterations = [
 
 def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
     """Get's and saves the given iteration from the mongoDB. Writes out two dataframes."""
+    df_trial_entries, df_familiarization_entries = pull_dataframes_from_mongo(study, bucket_name, stim_version, iterationName)
+
+    # save out df_trials_entries
+    df_trial_entries.to_csv(os.path.join(csv_dir,"human_responses-{}-{}.csv".format(study,iterationName)))
+    # save out df_famili arizations_entries
+    df_familiarization_entries.to_csv(os.path.join(csv_dir,"familiarization_human_responses-{}-{}.csv".format(study,iterationName)))
+
+    #generate per stim aggregated df
+    df_trial_entries['c'] = 1 #add dummy variable for count in agg
+    per_stim_agg = df_trial_entries.groupby('stim_ID').agg({
+        'correct' : lambda cs: np.mean([1 if c == True else 0 for c in cs]),
+        'c' : 'count',
+    })
+    #save
+    per_stim_agg.to_csv(os.path.join(csv_dir,"human_accuracy-{}-{}.csv".format(study,iterationName)))
+    return
+
+
+def pull_dataframes_from_mongo(study, bucket_name, stim_version, iterationName, database_name='human_physics_benchmarking'):
+    """Gets dataframes from mongo and returns both the experimental and the familiarization trials"""
     # connect to database
-    db = conn['human_physics_benchmarking']
+    db = conn[database_name]
     coll = db[study]
     stim_db = conn['stimuli']
     stim_coll = stim_db[bucket_name+'_'+stim_version]
@@ -206,21 +226,20 @@ def get_dfs_from_mongo(study,bucket_name,stim_version,iterationName):
         df_trial_entries.drop(labels=['prolificID'],axis=1, inplace=True)
         df_familiarization_entries = df_familiarization_entries.assign(prolificIDAnon = df_familiarization_entries['prolificID'].apply(lambda x: anonymize(x)), axis=0)
         df_familiarization_entries.drop(labels=['prolificID'],axis=1, inplace=True)
+    return df_trial_entries,df_familiarization_entries
 
-    # save out df_trials_entries
-    df_trial_entries.to_csv(os.path.join(csv_dir,"human_responses-{}-{}.csv".format(study,iterationName)))
-    # save out df_famili arizations_entries
-    df_familiarization_entries.to_csv(os.path.join(csv_dir,"familiarization_human_responses-{}-{}.csv".format(study,iterationName)))
+def pull_straight_df_from_mongo(study, database_name):
+    """Simply gets entire study from mongo, no processing applied"""
+    db = conn[database_name]
+    coll = db[study]
 
-    #generate per stim aggregated df
-    df_trial_entries['c'] = 1 #add dummy variable for count in agg
-    per_stim_agg = df_trial_entries.groupby('stim_ID').agg({
-        'correct' : lambda cs: np.mean([1 if c == True else 0 for c in cs]),
-        'c' : 'count',
-    })
-    #save
-    per_stim_agg.to_csv(os.path.join(csv_dir,"human_accuracy-{}-{}.csv".format(study,iterationName)))
-    return
+    # get dataframe of served stims
+    df = coll.find({})
+    df = pd.DataFrame(df)
+    
+    assert len(df)>0, "df from mongo empty"
+
+    return df
 
 if __name__ == "__main__":
     print("Fetching neurIPS 2021 results")
