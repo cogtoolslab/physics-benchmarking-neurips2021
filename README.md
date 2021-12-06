@@ -2,7 +2,9 @@
 
 ![Animation of the 8 scenarios](figures/scenario_animation.gif)
 
-This repo contains code and data to reproduce the results in our paper, [Physion: Evaluating Physical Prediction from Vision in Humans and Machines](https://arxiv.org/abs/2106.08261). Please see below for details about how to download the Physion dataset, replicate our modeling & human experiments, and statistical analyses to reproduce our results. 
+This repo contains code and data to reproduce the results in our NeurIPS 2021 paper, [Physion: Evaluating Physical Prediction from Vision in Humans and Machines](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/d09bf41544a3365a46c9077ebb5e35c3-Abstract-round1.html). For a brief overview, please check out our project website: [https://physion-benchmark.github.io/](https://physion-benchmark.github.io/). 
+
+Please see below for details about how to download the Physion dataset, replicate our modeling & human experiments, and statistical analyses to reproduce our results.
 
 1. [Downloading the Physion dataset](#downloading-the-physion-dataset)
 2. [Dataset generation](#dataset-generation)
