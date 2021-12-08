@@ -423,45 +423,48 @@ class Tower(MultiDominoes):
             block_mass *= self.STANDARD_MASS_FACTOR
 
             ## master
-            # commands.extend(
-            #     self.add_physics_object(
-            #         record=record,
-            #         position=block_pos,
-            #         rotation=block_rot,
-            #         mass=block_mass,
-            #         dynamic_friction=random.uniform(0, 0.9),
-            #         static_friction=random.uniform(0, 0.9),
-            #         bounciness=random.uniform(0, 1),
-            #         o_id=o_id))
-
-
             commands.extend(
-                self.add_primitive(
+                self.add_physics_object(
                     record=record,
                     position=block_pos,
                     rotation=block_rot,
-                    scale=scale,
-                    material=self.middle_material,
-                    color=rgb,
-                    scale_mass=False,
-                    o_id=o_id,
-                    apply_texture=(True if (record.name in PRIMITIVE_NAMES) or (self.middle_material is not None) else False)
-                ))
+                    mass=block_mass,
+                    dynamic_friction=random.uniform(0, 0.9),
+                    static_friction=random.uniform(0, 0.9),
+                    bounciness=random.uniform(0, 1),
+                    o_id=o_id))
+
+
+            # commands.extend(
+            #     self.add_primitive(
+            #         record=record,
+            #         position=block_pos,
+            #         rotation=block_rot,
+            #         scale=scale,
+            #         material=self.middle_material,
+            #         dynamic_friction=random.uniform(0, 0.9),
+            #         static_friction=random.uniform(0, 0.9),
+            #         bounciness=random.uniform(0, 1),                    
+            #         color=rgb,
+            #         scale_mass=False,
+            #         o_id=o_id,
+            #         apply_texture=(True if (record.name in PRIMITIVE_NAMES) or (self.middle_material is not None) else False)
+            #     ))
 
             # Set the block object material
-            # commands.extend(
-            #     self.get_object_material_commands(
-            #         record, o_id, self.get_material_name(self.middle_material)))
+            commands.extend(
+                self.get_object_material_commands(
+                    record, o_id, self.get_material_name(self.middle_material)))
 
 
             # # Scale the object and set its color.
-            # commands.extend([
-            #     {"$type": "set_color",
-            #      "color": {"r": rgb[0], "g": rgb[1], "b": rgb[2], "a": 1.},
-            #      "id": o_id},
-            #     {"$type": "scale_object",
-            #      "scale_factor": scale,
-            #      "id": o_id}])
+            commands.extend([
+                {"$type": "set_color",
+                 "color": {"r": rgb[0], "g": rgb[1], "b": rgb[2], "a": 1.},
+                 "id": o_id},
+                {"$type": "scale_object",
+                 "scale_factor": scale,
+                 "id": o_id}])
 
             print("placed middle object %s" % str(m+1))
 

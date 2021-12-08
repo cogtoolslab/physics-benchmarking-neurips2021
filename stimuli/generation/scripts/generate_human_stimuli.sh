@@ -11,7 +11,7 @@ height=512
 width=512
 
 group=human
-echo "Generating testing data"
+echo "Generating human testing data"
 for arg_name in ../configs/$scenario/*
 do
     case $arg_name in
