@@ -317,6 +317,7 @@ class RollingSliding(MultiDominoes):
                 position=self.probe_initial_position,
                 rotation=rot,
                 mass=self.probe_mass,
+                scale_mass=False,
                 material=self.target_material,
                 color=rgb,
                 scale=scale,
@@ -327,7 +328,7 @@ class RollingSliding(MultiDominoes):
                 static_friction=0.4,
                 bounciness=0,
                 o_id=o_id,
-                add_data=True
+                add_data=True,
             ))        
 
         # Set the target material

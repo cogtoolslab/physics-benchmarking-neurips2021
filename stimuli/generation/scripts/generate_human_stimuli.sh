@@ -11,14 +11,19 @@ height=512
 width=512
 
 group=human
-echo "Generating testing data"
+echo "Generating human testing data"
 for arg_name in ../configs/$scenario/*
 do
     case $arg_name in
         (./*familiarization*) continue;;
     esac
+    if [[ $scenario == 'roll' && $arg_name == *"collision"* ]]; then
+        controller_file=$controller_dir"/collide.py"
+    else
+        controller_file=$controller_dir"/"$scenario".py"
+    fi
     subdir=`echo $(basename "$arg_name")`
-    cmd="python3 "$controller_dir"/"$scenario".py @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --save_passes '_img' --write_passes '_img,_id' --gpu "$gpu
+    cmd="python3 "$controller_file" @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --save_passes '_img' --write_passes '_img,_id' --gpu "$gpu
     echo $cmd
     eval " $cmd"
 done

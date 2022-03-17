@@ -60,8 +60,13 @@ do
     case $arg_name in
         (./*familiarization*) continue;;
     esac
+    if [[ $scenario == 'roll' && $arg_name == *"collision"* ]]; then
+        controller_file=$controller_dir"/collide.py"
+    else
+        controller_file=$controller_dir"/"$scenario".py"
+    fi
     subdir=`echo $(basename "$arg_name")`    
-    cmd="python3 "$controller_dir"/"$scenario".py @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$tmult" --training_data_mode --gpu "$gpu
+    cmd="python3 "$controller_file" @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$tmult" --training_data_mode --gpu "$gpu
     echo $cmd
     eval " $cmd"
 done
@@ -75,8 +80,13 @@ do
     case $arg_name in
         (./*familiarization*) continue;;
     esac
+    if [[ $scenario == 'roll' && $arg_name == *"collision"* ]]; then
+        controller_file=$controller_dir"/collide.py"
+    else
+        controller_file=$controller_dir"/"$scenario".py"
+    fi
     subdir=`echo $(basename "$arg_name")`    
-    cmd="python3 "$controller_dir"/"$scenario".py @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$rmult" --readout_data_mode --gpu "$gpu
+    cmd="python3 "$controller_file" @$arg_name""/commandline_args.txt --dir "$output_dir"/"$scenario"/"$group"/"$subdir" --height "$height" --width "$width" --seed "$seed" --save_passes '' --write_passes '_img,_id' --save_meshes --num_multiplier "$rmult" --readout_data_mode --gpu "$gpu
     echo $cmd
     eval " $cmd"
 done
