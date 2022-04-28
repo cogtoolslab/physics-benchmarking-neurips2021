@@ -79,7 +79,7 @@ This repo depends on outputs from [`tdw_physics`](https://github.com/neuroailab/
 
 Specifically, [`tdw_physics`](https://github.com/neuroailab/tdw_physics) is used to generate the dataset of physical scenarios (a.k.a. stimuli), including both the **training datasets** used to train physical-prediction models, as well as **test datasets** used to measure prediction accuracy in both physical-prediction models and human participants.
 
-Instructions for using the ThreeDWorld simulator to regenerate datasets used in our work can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/master/stimuli/generation). Links for downloading the Physion testing, training, and readout fitting datasets can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/controllers/stimuli/generation).
+Instructions for using the ThreeDWorld simulator to regenerate datasets used in our work can be found [here](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/master/stimuli/generation).
 
 ## Modeling experiments
 
