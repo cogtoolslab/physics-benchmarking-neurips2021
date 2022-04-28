@@ -18,9 +18,7 @@ Please see below for details about how to download the Physion dataset, replicat
 
 ### Downloading the **Physion test set** (a.k.a. stimuli)
 
-All videos in the Physion test set have been manually evaluated to ensure that the behavior of the simulated physics does not feature glitches or unexpected behaviors. A small number of stimuli that contain potential physics glitches have been identified; the stimulus names can be seen [here](analysis/manual_stim_evaluation_buggy_stims.txt) or downloaded at the following link:
-
-**Download URL**: [https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/manual_stim_evaluation_glitchy_test_stims.txt](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/manual_stim_evaluation_glitchy_test_stims.txt).
+All videos in the Physion test set have been manually evaluated to ensure that the behavior of the simulated physics does not feature glitches or unexpected behaviors. A small number of stimuli that contain potential physics glitches have been identified; the stimulus names can be seen [here](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/manual_stim_evaluation_glitchy_test_stims.txt).
 
 #### PhysionTest-Core (270 MB)
 `PhysionTest-Core` is all you need to evaluate humans and models on exactly the same test stimuli used in our paper. 
