@@ -70,7 +70,7 @@ The `agent` and `patient` objects in each of these readout stimuli consistently 
 | Link | [Link_dynamics_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_dynamics_training_HDF5s.tar.gz) | [Link_readout_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_readout_training_HDF5s.tar.gz)         | [Link_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Link_testing_HDF5s.tar.gz) |
 | Drape | [Drape_dynamics_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_dynamics_training_HDF5s.tar.gz) | [Drape_readout_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_readout_training_HDF5s.tar.gz)         | [Drape_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Drape_testing_HDF5s.tar.gz) |
 
-To help more easily download a portion of these 24 huge files (~1TB in total, i.e. ~40GB/ file), please refer to [`data`](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/controllers/data)
+To help more easily download a portion of these 24 huge files (~1TB in total, i.e. ~40GB/ file), please refer to [`data`](https://github.com/cogtoolslab/physics-benchmarking-neurips2021/tree/master/data)
 
 ## Dataset generation
 
