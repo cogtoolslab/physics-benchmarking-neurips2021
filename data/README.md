@@ -17,7 +17,7 @@ The downloaded files will be store in `./data` following this structure:
 
 
 
-(Reference to the complete `PhysionTrain-Dynamics` and `PhysionTrain-Readout`:)
+(Reference to the complete `PhysionTrain-Dynamics` and `PhysionTrain-Readout`)
 | Scenario | Dynamics Training Set         | Readout Training Set       | Test Set      |
 | -------- | -------------------- | ----------------- | ---------------- |
 | Dominoes | [Dominoes_dynamics_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_dynamics_training_HDF5s.tar.gz) | [Dominoes_readout_training_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_readout_training_HDF5s.tar.gz)         | [Dominoes_testing_HDF5s](https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Dominoes_testing_HDF5s.tar.gz) |
