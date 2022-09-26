@@ -1,3 +1,4 @@
+
 # Pregistration
 
 **Researchers**: 
@@ -64,7 +65,7 @@ As outlined above, subjects are not assigned to any conditions. The manipulation
     3. Full video is shown and feedback is given (correct/incorrect)
 4. If sufficient number of familiarization trials guessed correctly (4 out first 5 OR three correct in a row) proceed to (5.) otherwise end of study
 5. Not informing subjects that the main part of the trial starts
-6. 100 trials
+6. 150 trials
     1. Fixation cross is shown for random interval between 500ms and 1000ms
     **2. First frozen frame shown for 500ms**
     3. Video is played for 1500ms, then hidden
@@ -86,7 +87,7 @@ As outlined above, subjects are not assigned to any conditions. The manipulation
  Each trial is preceded by a fixation cross shown for a time randomly sampled from the interval $[500,1500]$ ms. After $1500$ms, the video is removed and the white background is shown in its place (so subjects need to rely on the information they were able to gather in the $1500$ms to make their prediction). The next trial is started immediately after giving a response. 
  To account for side biases, the order of response button is randomized between subjects
 
-Each subject is shown 100 scenes in random order sampled from the set of scenes generated as described above. Scenes are sampled such that 50 of the scenes shown to the participant are positive (ie. the red target objects touches the yellow zone) and 50 are negative.
+Each subject is shown 150 scenes in random order sampled from the set of scenes generated as described above. Scenes are sampled such that 50 of the scenes shown to the participant are positive (ie. the red target objects touches the yellow zone) and 50 are negative.
 
 ###   Measured variables
  <!-- Precisely define each variable that you will measure. This includes outcome measures, as well as other measured predictor variables. -->

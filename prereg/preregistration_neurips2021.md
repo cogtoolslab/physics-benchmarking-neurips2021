@@ -62,7 +62,7 @@ As outlined above, participants are not assigned to any conditions. The manipula
     4. Full video is shown and feedback is given (correct/incorrect)
     5. Participants can proceed after full video has played
 5. Participants are informed that the main trial starts
-6. 100 trials
+6. 150 trials
     1. Fixation cross is shown for random interval between 500ms and 1500ms
     2. First frozen frame shown for 2000ms, with red/yellow segmentation map indicating agent/patient object flashing at 2Hz
     3. Video is played for 1500ms, then hidden
